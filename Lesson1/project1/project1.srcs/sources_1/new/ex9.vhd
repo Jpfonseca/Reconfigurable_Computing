@@ -37,9 +37,9 @@ begin
             elsif btnU='1' then
                 counter<=sw;
             elsif btnL ='1' then
-                counter<=counter(15 downto 1)&'0';
+                counter<='0'&counter(15 downto 1);
             elsif btnR ='1' then
-                counter<='0'&counter(14 downto 0);
+                counter<=counter(14 downto 0)&'0';
             end if;
         end if;       
     end process shift;
