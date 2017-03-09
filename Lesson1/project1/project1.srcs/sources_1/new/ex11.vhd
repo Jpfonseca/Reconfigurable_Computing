@@ -1,3 +1,6 @@
+--This file was "forked" from:
+--https://github.com/nmssilva/cr/blob/master/P1/P1.srcs/sources_1/new/SDR_P1_11.vhd
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.all;
