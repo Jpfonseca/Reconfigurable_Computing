@@ -1,13 +1,14 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.all;
 
 entity counter is
 generic(size: integer :=4);
     Port ( 
-        clk: in std_logic;
+        clock: in std_logic;
         reset: in std_logic;
-        operation: in std_logic_vector(1 downto 0);--sets operation sum or subtraction
+        operation: in std_logic_vector(0 downto 0);--sets operation sum or subtraction
         output :out std_logic_vector(size-1 downto 0)--exports the data
     );
 end counter;
@@ -21,12 +22,13 @@ signal divided_clk : std_logic;
 
 
 begin
-    clock_div: process(clk)
+    clock_div: process(clock)
         begin
-        if rising_edge(clk) then
+        if rising_edge(clock) then
             if reset='1' then
                 increment<=(others=>'0');
-            else increment<= increment + 1;
+            else 
+                increment<= increment + 1;
             end if;
         end if;
     end process clock_div;
@@ -38,13 +40,10 @@ begin
                  if reset = '1' then 
                     counter <= (others => '0');
                  end if;
-                 case operation(1 downto 0) is
-                     when "10"=>
-                         counter <= counter+1;
-                     when "01"=>
-                         counter <= counter-1;
+                 case operation(0 downto 0) is
+                     when "1"=>
                      when others=>
-                         counter <= counter;
+                         counter <= counter+1;
                  end case ;
             end if;
         end process coun_ter;
