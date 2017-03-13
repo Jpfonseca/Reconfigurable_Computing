@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson2/Lesson2.srcs/sources_1/imports/new/ex1.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity ex1
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson2/Lesson2.srcs/sources_1/new/ex1_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity ex1_tb

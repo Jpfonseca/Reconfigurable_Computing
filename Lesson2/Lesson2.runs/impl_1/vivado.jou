@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri Mar 10 13:26:34 2017
-# Process ID: 7088
+# Start of session at: Mon Mar 13 11:16:24 2017
+# Process ID: 6708
 # Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson2/Lesson2.runs/impl_1
-# Command line: vivado.exe -log ex3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ex3.tcl -notrace
-# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson2/Lesson2.runs/impl_1/ex3.vdi
+# Command line: vivado.exe -log ex4.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ex4.tcl -notrace
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson2/Lesson2.runs/impl_1/ex4.vdi
 # Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson2/Lesson2.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source ex3.tcl -notrace
+source ex4.tcl -notrace
