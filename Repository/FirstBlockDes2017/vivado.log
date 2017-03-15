@@ -1,0 +1,370 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Mar 09 19:40:40 2017
+# Process ID: 5092
+# Current directory: K:/CRExamples2017/AT5/Repository/FirstBlockDes2017
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent696 K:\CRExamples2017\AT5\Repository\FirstBlockDes2017\FirstBlockDes2017.xpr
+# Log file: K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/vivado.log
+# Journal file: K:/CRExamples2017/AT5/Repository/FirstBlockDes2017\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.xpr
+INFO: [Project 1-313] Project file moved from 'K:/CRExamples2017/FirstBlockDes2017' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'K:/CRExamples2017/AT5/Repository/Repository', nor could it be found using path 'K:/CRExamples2017/Repository'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'k:/CRExamples2017/AT5/Repository/Repository'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'FirstBlock.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+FirstBlock_EightDispControl_0_0
+FirstBlock_BinToBCD16_0_0
+
+ipx::package_project -root_dir k:/crexamples2017/at5/repository/firstblockdes2017/firstblockdes2017.srcs -vendor ua.pt -library user -taxonomy /UserIP
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {k:/crexamples2017/at5/repository/firstblockdes2017/firstblockdes2017.srcs k:/CRExamples2017/AT5/Repository/Repository} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/crexamples2017/at5/repository/firstblockdes2017/firstblockdes2017.srcs'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'k:/CRExamples2017/AT5/Repository/Repository'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+open_bd_design {K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.srcs/sources_1/bd/FirstBlock/FirstBlock.bd}
+Adding cell -- ua.pt:user:EightDispControl:1.0 - EightDispControl_0
+Adding cell -- ua.pt:user:BinToBCD16:1.0 - BinToBCD16_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Successfully read diagram <FirstBlock> from BD file <K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.srcs/sources_1/bd/FirstBlock/FirstBlock.bd>
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Mar 09 19:42:45 2017] Launched impl_1...
+Run output will be captured here: K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+2. Failed to delete one or more files in run directory K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Thu Mar 09 19:42:56 2017] Launched synth_1...
+Run output will be captured here: K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Mar 09 19:43:28 2017] Launched impl_1...
+Run output will be captured here: K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.runs/impl_1/runme.log
+open_bd_design {K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.srcs/sources_1/bd/FirstBlock/FirstBlock.bd}
+set_property  ip_repo_paths  k:/CRExamples2017/AT5/Repository/Repository [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'k:/CRExamples2017/AT5/Repository/Repository'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+set_property  ip_repo_paths  {k:/CRExamples2017/AT5/Repository/Repository K:/CRExamples2017/AT5/Repository} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'k:/CRExamples2017/AT5/Repository/Repository'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/CRExamples2017/AT5/Repository'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'k:/CRExamples2017/AT5/Repository' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'k:/CRExamples2017/AT5/Repository/FirstBlockDes2017'.)
+set_property  ip_repo_paths  k:/CRExamples2017/AT5/Repository [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/CRExamples2017/AT5/Repository'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'k:/CRExamples2017/AT5/Repository' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'k:/CRExamples2017/AT5/Repository/FirstBlockDes2017'.)
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Mar 09 19:45:11 2017] Launched impl_1...
+Run output will be captured here: K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.runs/impl_1/runme.log
+ipx::package_project -root_dir k:/crexamples2017/at5/repository/firstblockdes2017/firstblockdes2017.srcs -vendor ua.pt -library user -taxonomy /UserIP -force
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {k:/crexamples2017/at5/repository/firstblockdes2017/firstblockdes2017.srcs k:/CRExamples2017/AT5/Repository} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'k:/crexamples2017/at5/repository/firstblockdes2017/firstblockdes2017.srcs'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/CRExamples2017/AT5/Repository'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'k:/CRExamples2017/AT5/Repository' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'k:/CRExamples2017/AT5/Repository/FirstBlockDes2017'.)
+close_project
+create_project MemoryDisp2017 K:/CRExamples2017/AT5/Repository/MemoryDisp2017 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+set_property target_language VHDL [current_project]
+create_bd_design "memdis"
+Wrote  : <K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd> 
+set_property  ip_repo_paths  K:/CRExamples2017/AT5/Repository [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/CRExamples2017/AT5/Repository'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'k:/CRExamples2017/AT5/Repository' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017'.)
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:FirstBlock_wrapper:1.0 FirstBlock_wrapper_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {16} CONFIG.Write_Depth_A {16384} CONFIG.Enable_A {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Read_Width_A {16} CONFIG.Write_Width_B {16} CONFIG.Read_Width_B {16} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_A_Write_Rate {0}] [get_bd_cells blk_mem_gen_0]
+endgroup
+set_property location {1 110 -403} [get_bd_cells blk_mem_gen_0]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins FirstBlock_wrapper_0/sw]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/douta is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Write_Depth_A {65536}] [get_bd_cells blk_mem_gen_0]
+endgroup
+create_bd_port -dir I -from 15 -to 0 sw
+connect_bd_net [get_bd_ports sw] [get_bd_pins blk_mem_gen_0/addra]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/addra is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+create_bd_port -dir I clk
+connect_bd_net [get_bd_ports clk] [get_bd_pins blk_mem_gen_0/clka]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/clka is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_ports clk] [get_bd_pins FirstBlock_wrapper_0/clk]
+create_bd_port -dir I btnC
+connect_bd_net [get_bd_ports btnC] [get_bd_pins FirstBlock_wrapper_0/btnC]
+create_bd_port -dir O -from 7 -to 0 an
+startgroup
+connect_bd_net [get_bd_ports an] [get_bd_pins FirstBlock_wrapper_0/an]
+endgroup
+create_bd_port -dir O -from 6 -to 0 seg
+set_property location {492 -152} [get_bd_ports seg]
+startgroup
+connect_bd_net [get_bd_ports seg] [get_bd_pins FirstBlock_wrapper_0/seg]
+endgroup
+save_bd_design
+Wrote  : <K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd> 
+add_files -fileset constrs_1 -norecurse K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.srcs/constrs_1/imports/Aula1_2017/Nexys4_Master.xdc
+import_files -fileset constrs_1 K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.srcs/constrs_1/imports/Aula1_2017/Nexys4_Master.xdc
+open_bd_design {K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd}
+make_wrapper -files [get_files K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd] -top
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.vhd
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis_wrapper.vhd
+Wrote  : <K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd> 
+add_files -norecurse K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+generate_target all [get_files  K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd]
+INFO: [BD 41-1662] The design 'memdis.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.vhd
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FirstBlock_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+Exporting to file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis.hwh
+Generated Block Design Tcl file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis_bd.tcl
+Generated Hardware Definition File K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.hwdef
+export_ip_user_files -of_objects [get_files K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd]
+launch_runs -jobs 4 {memdis_FirstBlock_wrapper_0_0_synth_1 memdis_blk_mem_gen_0_0_synth_1}
+[Thu Mar 09 19:58:22 2017] Launched memdis_FirstBlock_wrapper_0_0_synth_1, memdis_blk_mem_gen_0_0_synth_1...
+Run output will be captured here:
+memdis_FirstBlock_wrapper_0_0_synth_1: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_FirstBlock_wrapper_0_0_synth_1/runme.log
+memdis_blk_mem_gen_0_0_synth_1: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_blk_mem_gen_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd] -directory K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.ip_user_files/sim_scripts -ip_user_files_dir K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.ip_user_files -ipstatic_source_dir K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.ip_user_files/ipstatic -lib_map_path [list {modelsim=K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.cache/compile_simlib/modelsim} {questa=K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.cache/compile_simlib/questa} {riviera=K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.cache/compile_simlib/riviera} {activehdl=K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Load_Init_File {true} CONFIG.Coe_File {K:/CRExamples2017/AT5/JAVA/mul.coe}] [get_bd_cells blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'k:/CRExamples2017/AT5/JAVA/mul.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../JAVA/mul.coe'
+endgroup
+save_bd_design
+Wrote  : <K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd> 
+reset_run memdis_blk_mem_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.vhd
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis_wrapper.vhd
+Wrote  : <K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FirstBlock_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+Exporting to file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis.hwh
+Generated Block Design Tcl file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis_bd.tcl
+Generated Hardware Definition File K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.hwdef
+[Thu Mar 09 20:03:55 2017] Launched memdis_blk_mem_gen_0_0_synth_1, synth_1...
+Run output will be captured here:
+memdis_blk_mem_gen_0_0_synth_1: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_blk_mem_gen_0_0_synth_1/runme.log
+synth_1: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/synth_1/runme.log
+[Thu Mar 09 20:03:55 2017] Launched impl_1...
+Run output will be captured here: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1284.973 ; gain = 29.078
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274663111A
+set_property PROGRAM.FILE {K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/impl_1/memdis_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/impl_1/memdis_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/impl_1/memdis_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210274663111A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+open_bd_design {K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Coe_File {K:/CRExamples2017/AT5/JAVA/mul.coe}] [get_bd_cells blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'k:/CRExamples2017/AT5/JAVA/mul.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../JAVA/mul.coe'
+endgroup
+save_bd_design
+Wrote  : <K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd> 
+reset_run synth_1
+reset_run memdis_blk_mem_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.vhd
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis_wrapper.vhd
+Wrote  : <K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FirstBlock_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+Exporting to file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis.hwh
+Generated Block Design Tcl file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis_bd.tcl
+Generated Hardware Definition File K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.hwdef
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'k:/CRExamples2017/AT5/Repository'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'k:/CRExamples2017/AT5/Repository' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017'.)
+INFO: [BD 41-1662] The design 'memdis.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.vhd
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FirstBlock_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+Exporting to file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis.hwh
+Generated Block Design Tcl file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis_bd.tcl
+Generated Hardware Definition File K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Synthesis'. Expected 'Generated', got 'Stale' for source 'K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd'
+INFO: [BD 41-1662] The design 'memdis.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.vhd
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FirstBlock_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+Exporting to file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis.hwh
+Generated Block Design Tcl file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis_bd.tcl
+Generated Hardware Definition File K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Implementation'. Expected 'Generated', got 'Stale' for source 'K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd'
+[Thu Mar 09 20:40:44 2017] Launched memdis_blk_mem_gen_0_0_synth_1, synth_1...
+Run output will be captured here:
+memdis_blk_mem_gen_0_0_synth_1: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_blk_mem_gen_0_0_synth_1/runme.log
+synth_1: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/synth_1/runme.log
+[Thu Mar 09 20:40:44 2017] Launched impl_1...
+Run output will be captured here: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1528.945 ; gain = 74.371
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/impl_1/memdis_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+open_bd_design {K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Coe_File {K:/CRExamples2017/AT5/JAVA/mul.coe}] [get_bd_cells blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'k:/CRExamples2017/AT5/JAVA/mul.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../JAVA/mul.coe'
+endgroup
+save_bd_design
+Wrote  : <K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd> 
+reset_run synth_1
+reset_run memdis_blk_mem_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.vhd
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis_wrapper.vhd
+Wrote  : <K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FirstBlock_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+Exporting to file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis.hwh
+Generated Block Design Tcl file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis_bd.tcl
+Generated Hardware Definition File K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.hwdef
+INFO: [BD 41-1662] The design 'memdis.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.vhd
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FirstBlock_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+Exporting to file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis.hwh
+Generated Block Design Tcl file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis_bd.tcl
+Generated Hardware Definition File K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Synthesis'. Expected 'Generated', got 'Stale' for source 'K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd'
+INFO: [BD 41-1662] The design 'memdis.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.vhd
+VHDL Output written to : K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FirstBlock_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+Exporting to file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis.hwh
+Generated Block Design Tcl file K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hw_handoff/memdis_bd.tcl
+Generated Hardware Definition File K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/hdl/memdis.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Implementation'. Expected 'Generated', got 'Stale' for source 'K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/memdis.bd'
+[Thu Mar 09 20:50:31 2017] Launched memdis_blk_mem_gen_0_0_synth_1, synth_1...
+Run output will be captured here:
+memdis_blk_mem_gen_0_0_synth_1: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_blk_mem_gen_0_0_synth_1/runme.log
+synth_1: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/synth_1/runme.log
+[Thu Mar 09 20:50:31 2017] Launched impl_1...
+Run output will be captured here: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1672.965 ; gain = 103.727
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/impl_1/memdis_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 09 20:59:11 2017...

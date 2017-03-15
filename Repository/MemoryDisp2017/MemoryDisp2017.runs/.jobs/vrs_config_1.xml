@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="memdis_FirstBlock_wrapper_0_0_synth_1" LaunchDir="K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_FirstBlock_wrapper_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="memdis_blk_mem_gen_0_0_synth_1" LaunchDir="K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

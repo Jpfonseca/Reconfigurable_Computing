@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Mar 09 19:58:23 2017
+# Process ID: 2708
+# Current directory: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_FirstBlock_wrapper_0_0_synth_1
+# Command line: vivado.exe -log memdis_FirstBlock_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source memdis_FirstBlock_wrapper_0_0.tcl
+# Log file: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_FirstBlock_wrapper_0_0_synth_1/memdis_FirstBlock_wrapper_0_0.vds
+# Journal file: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_FirstBlock_wrapper_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source memdis_FirstBlock_wrapper_0_0.tcl -notrace

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Mar 09 19:42:56 2017
+# Process ID: 3092
+# Current directory: K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.runs/synth_1
+# Command line: vivado.exe -log FirstBlock_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FirstBlock_wrapper.tcl
+# Log file: K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.runs/synth_1/FirstBlock_wrapper.vds
+# Journal file: K:/CRExamples2017/AT5/Repository/FirstBlockDes2017/FirstBlockDes2017.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FirstBlock_wrapper.tcl -notrace

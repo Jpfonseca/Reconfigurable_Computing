@@ -1,0 +1,359 @@
+
+*** Running vivado
+    with args -log memdis_FirstBlock_wrapper_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source memdis_FirstBlock_wrapper_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source memdis_FirstBlock_wrapper_0_0.tcl -notrace
+Command: synth_design -top memdis_FirstBlock_wrapper_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3312 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 318.488 ; gain = 107.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'memdis_FirstBlock_wrapper_0_0' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/synth/memdis_FirstBlock_wrapper_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'FirstBlock_wrapper' declared at 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ipshared/c445/sources_1/bd/FirstBlock/hdl/FirstBlock_wrapper.vhd:14' bound to instance 'U0' of component 'FirstBlock_wrapper' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/synth/memdis_FirstBlock_wrapper_0_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'FirstBlock_wrapper' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ipshared/c445/sources_1/bd/FirstBlock/hdl/FirstBlock_wrapper.vhd:24]
+INFO: [Synth 8-3491] module 'FirstBlock' declared at 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ipshared/c445/sources_1/bd/FirstBlock/hdl/FirstBlock.vhd:14' bound to instance 'FirstBlock_i' of component 'FirstBlock' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ipshared/c445/sources_1/bd/FirstBlock/hdl/FirstBlock_wrapper.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'FirstBlock' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ipshared/c445/sources_1/bd/FirstBlock/hdl/FirstBlock.vhd:28]
+INFO: [Synth 8-3491] module 'FirstBlock_BinToBCD16_0_0' declared at 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_BinToBCD16_0_0/synth/FirstBlock_BinToBCD16_0_0.vhd:56' bound to instance 'BinToBCD16_0' of component 'FirstBlock_BinToBCD16_0_0' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ipshared/c445/sources_1/bd/FirstBlock/hdl/FirstBlock.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'FirstBlock_BinToBCD16_0_0' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_BinToBCD16_0_0/synth/FirstBlock_BinToBCD16_0_0.vhd:71]
+	Parameter size_of_data_to_convert bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'BinToBCD16' declared at 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/3dd5/Binary_to_BCD16.vhd:6' bound to instance 'U0' of component 'BinToBCD16' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_BinToBCD16_0_0/synth/FirstBlock_BinToBCD16_0_0.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'BinToBCD16' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/3dd5/Binary_to_BCD16.vhd:19]
+	Parameter size_of_data_to_convert bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BinToBCD16' (1#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/3dd5/Binary_to_BCD16.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'FirstBlock_BinToBCD16_0_0' (2#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_BinToBCD16_0_0/synth/FirstBlock_BinToBCD16_0_0.vhd:71]
+INFO: [Synth 8-3491] module 'FirstBlock_EightDispControl_0_0' declared at 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_EightDispControl_0_0/synth/FirstBlock_EightDispControl_0_0.vhd:56' bound to instance 'EightDispControl_0' of component 'FirstBlock_EightDispControl_0_0' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ipshared/c445/sources_1/bd/FirstBlock/hdl/FirstBlock.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'FirstBlock_EightDispControl_0_0' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_EightDispControl_0_0/synth/FirstBlock_EightDispControl_0_0.vhd:72]
+INFO: [Synth 8-3491] module 'EightDispControl' declared at 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/9a41/disp.vhd:2' bound to instance 'U0' of component 'EightDispControl' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_EightDispControl_0_0/synth/FirstBlock_EightDispControl_0_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'EightDispControl' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/9a41/disp.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'segment_decoder' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/9a41/segment_decoder.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'segment_decoder' (3#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/9a41/segment_decoder.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'EightDispControl' (4#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/9a41/disp.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'FirstBlock_EightDispControl_0_0' (5#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_EightDispControl_0_0/synth/FirstBlock_EightDispControl_0_0.vhd:72]
+INFO: [Synth 8-3491] module 'FirstBlock_xlconstant_0_0' declared at 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_xlconstant_0_0/sim/FirstBlock_xlconstant_0_0.vhd:29' bound to instance 'xlconstant_0' of component 'FirstBlock_xlconstant_0_0' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ipshared/c445/sources_1/bd/FirstBlock/hdl/FirstBlock.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'FirstBlock_xlconstant_0_0' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_xlconstant_0_0/sim/FirstBlock_xlconstant_0_0.vhd:35]
+	Parameter CONST_VAL bound to: 4'b0000 
+	Parameter CONST_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'xlconstant' declared at 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/e147/xlconstant.vhd:27' bound to instance 'U0' of component 'xlconstant' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_xlconstant_0_0/sim/FirstBlock_xlconstant_0_0.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'xlconstant' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/e147/xlconstant.vhd:36]
+	Parameter CONST_VAL bound to: 4'b0000 
+	Parameter CONST_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconstant' (6#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/e147/xlconstant.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'FirstBlock_xlconstant_0_0' (7#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_xlconstant_0_0/sim/FirstBlock_xlconstant_0_0.vhd:35]
+INFO: [Synth 8-3491] module 'FirstBlock_xlconstant_1_0' declared at 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_xlconstant_1_0/sim/FirstBlock_xlconstant_1_0.vhd:29' bound to instance 'xlconstant_1' of component 'FirstBlock_xlconstant_1_0' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ipshared/c445/sources_1/bd/FirstBlock/hdl/FirstBlock.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'FirstBlock_xlconstant_1_0' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_xlconstant_1_0/sim/FirstBlock_xlconstant_1_0.vhd:35]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xlconstant' declared at 'k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/e147/xlconstant.vhd:27' bound to instance 'U0' of component 'xlconstant' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_xlconstant_1_0/sim/FirstBlock_xlconstant_1_0.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'xlconstant__parameterized1' [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/e147/xlconstant.vhd:36]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlconstant__parameterized1' (7#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ipshared/e147/xlconstant.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'FirstBlock_xlconstant_1_0' (8#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/ip/FirstBlock_xlconstant_1_0/sim/FirstBlock_xlconstant_1_0.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'FirstBlock' (9#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ipshared/c445/sources_1/bd/FirstBlock/hdl/FirstBlock.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'FirstBlock_wrapper' (10#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ipshared/c445/sources_1/bd/FirstBlock/hdl/FirstBlock_wrapper.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'memdis_FirstBlock_wrapper_0_0' (11#1) [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/synth/memdis_FirstBlock_wrapper_0_0.vhd:66]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 356.484 ; gain = 145.938
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 356.484 ; gain = 145.938
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/FirstBlock_ooc.xdc] for cell 'U0/FirstBlock_i'
+Finished Parsing XDC File [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/FirstBlock_ooc.xdc] for cell 'U0/FirstBlock_i'
+Parsing XDC File [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/constrs_1/imports/Aula1_2017/Nexys4_Master.xdc] for cell 'U0'
+Finished Parsing XDC File [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/constrs_1/imports/Aula1_2017/Nexys4_Master.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/constrs_1/imports/Aula1_2017/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/memdis_FirstBlock_wrapper_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/memdis_FirstBlock_wrapper_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_FirstBlock_wrapper_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_FirstBlock_wrapper_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 665.395 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/FirstBlock_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/FirstBlock_i/BinToBCD16_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/FirstBlock_i/EightDispControl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/FirstBlock_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/FirstBlock_i/xlconstant_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module BinToBCD16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module EightDispControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     5|
+|2     |LUT1   |    19|
+|3     |LUT2   |     7|
+|4     |LUT3   |    26|
+|5     |LUT4   |     9|
+|6     |LUT5   |     3|
+|7     |LUT6   |    32|
+|8     |MUXF7  |     4|
+|9     |FDRE   |    80|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------+--------------------------------+------+
+|      |Instance                 |Module                          |Cells |
++------+-------------------------+--------------------------------+------+
+|1     |top                      |                                |   185|
+|2     |  U0                     |FirstBlock_wrapper              |   185|
+|3     |    FirstBlock_i         |FirstBlock                      |   185|
+|4     |      BinToBCD16_0       |FirstBlock_BinToBCD16_0_0       |   119|
+|5     |        U0               |BinToBCD16                      |   119|
+|6     |      EightDispControl_0 |FirstBlock_EightDispControl_0_0 |    66|
+|7     |        U0               |EightDispControl                |    66|
+|8     |      xlconstant_0       |FirstBlock_xlconstant_0_0       |     0|
+|9     |      xlconstant_1       |FirstBlock_xlconstant_1_0       |     0|
++------+-------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 665.395 ; gain = 454.848
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 665.395 ; gain = 116.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 665.395 ; gain = 454.848
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/FirstBlock_ooc.xdc] for cell 'U0/FirstBlock_i'
+Finished Parsing XDC File [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/sources_1/bd/FirstBlock/FirstBlock_ooc.xdc] for cell 'U0/FirstBlock_i'
+Parsing XDC File [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/constrs_1/imports/Aula1_2017/Nexys4_Master.xdc] for cell 'U0'
+Finished Parsing XDC File [k:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.srcs/sources_1/bd/memdis/ip/memdis_FirstBlock_wrapper_0_0/constrs_1/imports/Aula1_2017/Nexys4_Master.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 665.395 ; gain = 425.594
+INFO: [Common 17-1381] The checkpoint 'K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_FirstBlock_wrapper_0_0_synth_1/memdis_FirstBlock_wrapper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+INFO: [Common 17-1381] The checkpoint 'K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_FirstBlock_wrapper_0_0_synth_1/memdis_FirstBlock_wrapper_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 665.395 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 09 19:58:49 2017...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Mar 09 20:50:31 2017
+# Process ID: 268
+# Current directory: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_blk_mem_gen_0_0_synth_1
+# Command line: vivado.exe -log memdis_blk_mem_gen_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source memdis_blk_mem_gen_0_0.tcl
+# Log file: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_blk_mem_gen_0_0_synth_1/memdis_blk_mem_gen_0_0.vds
+# Journal file: K:/CRExamples2017/AT5/Repository/MemoryDisp2017/MemoryDisp2017.runs/memdis_blk_mem_gen_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source memdis_blk_mem_gen_0_0.tcl -notrace
