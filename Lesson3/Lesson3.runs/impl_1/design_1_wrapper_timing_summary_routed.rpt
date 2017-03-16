@@ -1,0 +1,1934 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Thu Mar 16 17:03:32 2017
+| Host         : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -rpx design_1_wrapper_timing_summary_routed.rpx
+| Design       : design_1_wrapper
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.16 2016-11-09
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 17 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 15 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -5.730      -44.728                      8                  157        0.189        0.000                      0                  157        4.500        0.000                       0                    98  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin        -5.730      -44.728                      8                  157        0.189        0.000                      0                  157        4.500        0.000                       0                    98  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            8  Failing Endpoints,  Worst Slack       -5.730ns,  Total Violation      -44.728ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.189ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -5.730ns  (required time - arrival time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/FSM_B_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        15.695ns  (logic 8.992ns (57.293%)  route 6.703ns (42.707%))
+  Logic Levels:           30  (CARRY4=19 LUT3=5 LUT4=2 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.032ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.034ns = ( 15.034 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.259ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.722     5.325    design_1_i/maxdivider_0/U0/clk
+    SLICE_X84Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y83         FDRE (Prop_fdre_C_Q)         0.518     5.843 f  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.685     6.528    design_1_i/maxdivider_0/U0/FSM_B[1]
+    SLICE_X84Y83         LUT6 (Prop_lut6_I1_O)        0.124     6.652 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_97/O
+                         net (fo=13, routed)          0.351     7.003    design_1_i/maxdivider_0/U0/FSM_B[7]_i_97_n_0
+    SLICE_X84Y82         LUT4 (Prop_lut4_I1_O)        0.124     7.127 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_89/O
+                         net (fo=4, routed)           0.490     7.617    design_1_i/maxdivider_0/U0/FSM_B[7]_i_89_n_0
+    SLICE_X82Y82         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580     8.197 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71/CO[3]
+                         net (fo=1, routed)           0.000     8.197    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71_n_0
+    SLICE_X82Y83         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.311 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68/CO[3]
+                         net (fo=1, routed)           0.000     8.311    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68_n_0
+    SLICE_X82Y84         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     8.582 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67/CO[0]
+                         net (fo=11, routed)          0.663     9.245    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67_n_3
+    SLICE_X86Y83         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.829    10.074 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59/CO[3]
+                         net (fo=1, routed)           0.000    10.074    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59_n_0
+    SLICE_X86Y84         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.188 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56/CO[3]
+                         net (fo=1, routed)           0.000    10.188    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56_n_0
+    SLICE_X86Y85         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    10.345 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55/CO[1]
+                         net (fo=11, routed)          0.637    10.982    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55_n_2
+    SLICE_X85Y85         LUT3 (Prop_lut3_I0_O)        0.329    11.311 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_66/O
+                         net (fo=1, routed)           0.000    11.311    design_1_i/maxdivider_0/U0/FSM_B[7]_i_66_n_0
+    SLICE_X85Y85         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    11.861 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000    11.861    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X85Y86         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.975 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44/CO[3]
+                         net (fo=1, routed)           0.000    11.975    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44_n_0
+    SLICE_X85Y87         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    12.132 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43/CO[1]
+                         net (fo=11, routed)          0.550    12.682    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43_n_2
+    SLICE_X84Y86         LUT3 (Prop_lut3_I0_O)        0.329    13.011 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_54/O
+                         net (fo=1, routed)           0.000    13.011    design_1_i/maxdivider_0/U0/FSM_B[7]_i_54_n_0
+    SLICE_X84Y86         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    13.544 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000    13.544    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X84Y87         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.661 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32/CO[3]
+                         net (fo=1, routed)           0.000    13.661    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32_n_0
+    SLICE_X84Y88         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    13.818 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31/CO[1]
+                         net (fo=11, routed)          0.697    14.515    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31_n_2
+    SLICE_X84Y89         LUT3 (Prop_lut3_I0_O)        0.332    14.847 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_42/O
+                         net (fo=1, routed)           0.000    14.847    design_1_i/maxdivider_0/U0/FSM_B[7]_i_42_n_0
+    SLICE_X84Y89         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    15.380 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    15.380    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X84Y90         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.497 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    15.497    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X84Y91         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.654 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.635    16.289    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22_n_2
+    SLICE_X85Y90         LUT3 (Prop_lut3_I0_O)        0.332    16.621 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    16.621    design_1_i/maxdivider_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X85Y90         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    17.171 r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    17.171    design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X85Y91         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    17.285 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10/CO[3]
+                         net (fo=1, routed)           0.000    17.285    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10_n_0
+    SLICE_X85Y92         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.442 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9/CO[1]
+                         net (fo=11, routed)          0.507    17.949    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9_n_2
+    SLICE_X87Y91         LUT3 (Prop_lut3_I0_O)        0.329    18.278 r  design_1_i/maxdivider_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    18.278    design_1_i/maxdivider_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X87Y91         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    18.858 f  design_1_i/maxdivider_0/U0/FSM_B_reg[2]_i_3/O[2]
+                         net (fo=5, routed)           0.485    19.343    design_1_i/maxdivider_0/U0/FSM_B_reg[2]_i_3_n_5
+    SLICE_X87Y90         LUT4 (Prop_lut4_I3_O)        0.302    19.645 f  design_1_i/maxdivider_0/U0/FSM_B[7]_i_21/O
+                         net (fo=1, routed)           0.263    19.908    design_1_i/maxdivider_0/U0/FSM_B[7]_i_21_n_0
+    SLICE_X87Y90         LUT5 (Prop_lut5_I0_O)        0.124    20.032 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_7/O
+                         net (fo=4, routed)           0.585    20.618    design_1_i/maxdivider_0/U0/FSM_B[7]_i_7_n_0
+    SLICE_X89Y92         LUT6 (Prop_lut6_I4_O)        0.124    20.742 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_3/O
+                         net (fo=1, routed)           0.154    20.896    design_1_i/maxdivider_0/U0/FSM_B[7]_i_3_n_0
+    SLICE_X89Y92         LUT6 (Prop_lut6_I1_O)        0.124    21.020 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_1/O
+                         net (fo=1, routed)           0.000    21.020    design_1_i/maxdivider_0/U0/FSM_B_next[7]
+    SLICE_X89Y92         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.611    15.034    design_1_i/maxdivider_0/U0/clk
+    SLICE_X89Y92         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]/C
+                         clock pessimism              0.259    15.293    
+                         clock uncertainty           -0.035    15.257    
+    SLICE_X89Y92         FDRE (Setup_fdre_C_D)        0.032    15.289    design_1_i/maxdivider_0/U0/FSM_B_reg[7]
+  -------------------------------------------------------------------
+                         required time                         15.289    
+                         arrival time                         -21.020    
+  -------------------------------------------------------------------
+                         slack                                 -5.730    
+
+Slack (VIOLATED) :        -5.719ns  (required time - arrival time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/FSM_B_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        15.682ns  (logic 8.992ns (57.340%)  route 6.690ns (42.660%))
+  Logic Levels:           30  (CARRY4=19 LUT3=5 LUT4=2 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.033ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.033ns = ( 15.033 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.259ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.722     5.325    design_1_i/maxdivider_0/U0/clk
+    SLICE_X84Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y83         FDRE (Prop_fdre_C_Q)         0.518     5.843 f  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.685     6.528    design_1_i/maxdivider_0/U0/FSM_B[1]
+    SLICE_X84Y83         LUT6 (Prop_lut6_I1_O)        0.124     6.652 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_97/O
+                         net (fo=13, routed)          0.351     7.003    design_1_i/maxdivider_0/U0/FSM_B[7]_i_97_n_0
+    SLICE_X84Y82         LUT4 (Prop_lut4_I1_O)        0.124     7.127 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_89/O
+                         net (fo=4, routed)           0.490     7.617    design_1_i/maxdivider_0/U0/FSM_B[7]_i_89_n_0
+    SLICE_X82Y82         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580     8.197 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71/CO[3]
+                         net (fo=1, routed)           0.000     8.197    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71_n_0
+    SLICE_X82Y83         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.311 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68/CO[3]
+                         net (fo=1, routed)           0.000     8.311    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68_n_0
+    SLICE_X82Y84         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     8.582 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67/CO[0]
+                         net (fo=11, routed)          0.663     9.245    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67_n_3
+    SLICE_X86Y83         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.829    10.074 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59/CO[3]
+                         net (fo=1, routed)           0.000    10.074    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59_n_0
+    SLICE_X86Y84         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.188 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56/CO[3]
+                         net (fo=1, routed)           0.000    10.188    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56_n_0
+    SLICE_X86Y85         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    10.345 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55/CO[1]
+                         net (fo=11, routed)          0.637    10.982    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55_n_2
+    SLICE_X85Y85         LUT3 (Prop_lut3_I0_O)        0.329    11.311 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_66/O
+                         net (fo=1, routed)           0.000    11.311    design_1_i/maxdivider_0/U0/FSM_B[7]_i_66_n_0
+    SLICE_X85Y85         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    11.861 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000    11.861    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X85Y86         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.975 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44/CO[3]
+                         net (fo=1, routed)           0.000    11.975    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44_n_0
+    SLICE_X85Y87         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    12.132 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43/CO[1]
+                         net (fo=11, routed)          0.550    12.682    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43_n_2
+    SLICE_X84Y86         LUT3 (Prop_lut3_I0_O)        0.329    13.011 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_54/O
+                         net (fo=1, routed)           0.000    13.011    design_1_i/maxdivider_0/U0/FSM_B[7]_i_54_n_0
+    SLICE_X84Y86         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    13.544 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000    13.544    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X84Y87         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.661 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32/CO[3]
+                         net (fo=1, routed)           0.000    13.661    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32_n_0
+    SLICE_X84Y88         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    13.818 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31/CO[1]
+                         net (fo=11, routed)          0.697    14.515    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31_n_2
+    SLICE_X84Y89         LUT3 (Prop_lut3_I0_O)        0.332    14.847 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_42/O
+                         net (fo=1, routed)           0.000    14.847    design_1_i/maxdivider_0/U0/FSM_B[7]_i_42_n_0
+    SLICE_X84Y89         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    15.380 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    15.380    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X84Y90         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.497 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    15.497    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X84Y91         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.654 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.635    16.289    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22_n_2
+    SLICE_X85Y90         LUT3 (Prop_lut3_I0_O)        0.332    16.621 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    16.621    design_1_i/maxdivider_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X85Y90         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    17.171 r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    17.171    design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X85Y91         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    17.285 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10/CO[3]
+                         net (fo=1, routed)           0.000    17.285    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10_n_0
+    SLICE_X85Y92         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.442 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9/CO[1]
+                         net (fo=11, routed)          0.507    17.949    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9_n_2
+    SLICE_X87Y91         LUT3 (Prop_lut3_I0_O)        0.329    18.278 r  design_1_i/maxdivider_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    18.278    design_1_i/maxdivider_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X87Y91         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    18.858 f  design_1_i/maxdivider_0/U0/FSM_B_reg[2]_i_3/O[2]
+                         net (fo=5, routed)           0.485    19.343    design_1_i/maxdivider_0/U0/FSM_B_reg[2]_i_3_n_5
+    SLICE_X87Y90         LUT4 (Prop_lut4_I3_O)        0.302    19.645 f  design_1_i/maxdivider_0/U0/FSM_B[7]_i_21/O
+                         net (fo=1, routed)           0.263    19.908    design_1_i/maxdivider_0/U0/FSM_B[7]_i_21_n_0
+    SLICE_X87Y90         LUT5 (Prop_lut5_I0_O)        0.124    20.032 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_7/O
+                         net (fo=4, routed)           0.435    20.468    design_1_i/maxdivider_0/U0/FSM_B[7]_i_7_n_0
+    SLICE_X89Y90         LUT6 (Prop_lut6_I3_O)        0.124    20.592 r  design_1_i/maxdivider_0/U0/FSM_B[4]_i_2/O
+                         net (fo=1, routed)           0.291    20.883    design_1_i/maxdivider_0/U0/FSM_B[4]_i_2_n_0
+    SLICE_X87Y89         LUT5 (Prop_lut5_I4_O)        0.124    21.007 r  design_1_i/maxdivider_0/U0/FSM_B[4]_i_1/O
+                         net (fo=1, routed)           0.000    21.007    design_1_i/maxdivider_0/U0/FSM_B_next[4]
+    SLICE_X87Y89         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.610    15.033    design_1_i/maxdivider_0/U0/clk
+    SLICE_X87Y89         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[4]/C
+                         clock pessimism              0.259    15.292    
+                         clock uncertainty           -0.035    15.256    
+    SLICE_X87Y89         FDRE (Setup_fdre_C_D)        0.031    15.287    design_1_i/maxdivider_0/U0/FSM_B_reg[4]
+  -------------------------------------------------------------------
+                         required time                         15.287    
+                         arrival time                         -21.007    
+  -------------------------------------------------------------------
+                         slack                                 -5.719    
+
+Slack (VIOLATED) :        -5.716ns  (required time - arrival time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/FSM_B_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        15.691ns  (logic 8.763ns (55.848%)  route 6.928ns (44.152%))
+  Logic Levels:           28  (CARRY4=19 LUT3=4 LUT4=2 LUT6=3)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.026ns = ( 15.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.277ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.722     5.325    design_1_i/maxdivider_0/U0/clk
+    SLICE_X84Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y83         FDRE (Prop_fdre_C_Q)         0.518     5.843 f  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.685     6.528    design_1_i/maxdivider_0/U0/FSM_B[1]
+    SLICE_X84Y83         LUT6 (Prop_lut6_I1_O)        0.124     6.652 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_97/O
+                         net (fo=13, routed)          0.351     7.003    design_1_i/maxdivider_0/U0/FSM_B[7]_i_97_n_0
+    SLICE_X84Y82         LUT4 (Prop_lut4_I1_O)        0.124     7.127 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_89/O
+                         net (fo=4, routed)           0.490     7.617    design_1_i/maxdivider_0/U0/FSM_B[7]_i_89_n_0
+    SLICE_X82Y82         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580     8.197 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71/CO[3]
+                         net (fo=1, routed)           0.000     8.197    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71_n_0
+    SLICE_X82Y83         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.311 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68/CO[3]
+                         net (fo=1, routed)           0.000     8.311    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68_n_0
+    SLICE_X82Y84         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     8.582 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67/CO[0]
+                         net (fo=11, routed)          0.663     9.245    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67_n_3
+    SLICE_X86Y83         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.829    10.074 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59/CO[3]
+                         net (fo=1, routed)           0.000    10.074    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59_n_0
+    SLICE_X86Y84         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.188 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56/CO[3]
+                         net (fo=1, routed)           0.000    10.188    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56_n_0
+    SLICE_X86Y85         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    10.345 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55/CO[1]
+                         net (fo=11, routed)          0.637    10.982    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55_n_2
+    SLICE_X85Y85         LUT3 (Prop_lut3_I0_O)        0.329    11.311 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_66/O
+                         net (fo=1, routed)           0.000    11.311    design_1_i/maxdivider_0/U0/FSM_B[7]_i_66_n_0
+    SLICE_X85Y85         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    11.861 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000    11.861    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X85Y86         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.975 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44/CO[3]
+                         net (fo=1, routed)           0.000    11.975    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44_n_0
+    SLICE_X85Y87         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    12.132 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43/CO[1]
+                         net (fo=11, routed)          0.550    12.682    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43_n_2
+    SLICE_X84Y86         LUT3 (Prop_lut3_I0_O)        0.329    13.011 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_54/O
+                         net (fo=1, routed)           0.000    13.011    design_1_i/maxdivider_0/U0/FSM_B[7]_i_54_n_0
+    SLICE_X84Y86         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    13.544 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000    13.544    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X84Y87         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.661 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32/CO[3]
+                         net (fo=1, routed)           0.000    13.661    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32_n_0
+    SLICE_X84Y88         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    13.818 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31/CO[1]
+                         net (fo=11, routed)          0.697    14.515    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31_n_2
+    SLICE_X84Y89         LUT3 (Prop_lut3_I0_O)        0.332    14.847 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_42/O
+                         net (fo=1, routed)           0.000    14.847    design_1_i/maxdivider_0/U0/FSM_B[7]_i_42_n_0
+    SLICE_X84Y89         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    15.380 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    15.380    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X84Y90         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.497 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    15.497    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X84Y91         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.654 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.635    16.289    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22_n_2
+    SLICE_X85Y90         LUT3 (Prop_lut3_I0_O)        0.332    16.621 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    16.621    design_1_i/maxdivider_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X85Y90         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    17.171 r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    17.171    design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X85Y91         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    17.285 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10/CO[3]
+                         net (fo=1, routed)           0.000    17.285    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10_n_0
+    SLICE_X85Y92         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.442 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9/CO[1]
+                         net (fo=11, routed)          0.544    17.986    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9_n_2
+    SLICE_X87Y91         CARRY4 (Prop_carry4_CYINIT_O[1])
+                                                      0.803    18.789 r  design_1_i/maxdivider_0/U0/FSM_B_reg[2]_i_3/O[1]
+                         net (fo=5, routed)           0.619    19.408    design_1_i/maxdivider_0/U0/FSM_B_reg[2]_i_3_n_6
+    SLICE_X87Y89         LUT4 (Prop_lut4_I1_O)        0.303    19.711 r  design_1_i/maxdivider_0/U0/FSM_B[3]_i_3/O
+                         net (fo=1, routed)           0.433    20.144    design_1_i/maxdivider_0/U0/FSM_B[3]_i_3_n_0
+    SLICE_X87Y89         LUT6 (Prop_lut6_I1_O)        0.124    20.268 r  design_1_i/maxdivider_0/U0/FSM_B[3]_i_2/O
+                         net (fo=1, routed)           0.624    20.892    design_1_i/maxdivider_0/U0/FSM_B[3]_i_2_n_0
+    SLICE_X85Y83         LUT6 (Prop_lut6_I2_O)        0.124    21.016 r  design_1_i/maxdivider_0/U0/FSM_B[3]_i_1/O
+                         net (fo=1, routed)           0.000    21.016    design_1_i/maxdivider_0/U0/FSM_B_next[3]
+    SLICE_X85Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.603    15.026    design_1_i/maxdivider_0/U0/clk
+    SLICE_X85Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[3]/C
+                         clock pessimism              0.277    15.303    
+                         clock uncertainty           -0.035    15.267    
+    SLICE_X85Y83         FDRE (Setup_fdre_C_D)        0.032    15.299    design_1_i/maxdivider_0/U0/FSM_B_reg[3]
+  -------------------------------------------------------------------
+                         required time                         15.299    
+                         arrival time                         -21.016    
+  -------------------------------------------------------------------
+                         slack                                 -5.716    
+
+Slack (VIOLATED) :        -5.657ns  (required time - arrival time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/FSM_B_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        15.631ns  (logic 8.992ns (57.525%)  route 6.639ns (42.475%))
+  Logic Levels:           30  (CARRY4=19 LUT3=5 LUT4=2 LUT5=1 LUT6=3)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.028ns = ( 15.028 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.275ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.722     5.325    design_1_i/maxdivider_0/U0/clk
+    SLICE_X84Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y83         FDRE (Prop_fdre_C_Q)         0.518     5.843 f  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.685     6.528    design_1_i/maxdivider_0/U0/FSM_B[1]
+    SLICE_X84Y83         LUT6 (Prop_lut6_I1_O)        0.124     6.652 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_97/O
+                         net (fo=13, routed)          0.351     7.003    design_1_i/maxdivider_0/U0/FSM_B[7]_i_97_n_0
+    SLICE_X84Y82         LUT4 (Prop_lut4_I1_O)        0.124     7.127 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_89/O
+                         net (fo=4, routed)           0.490     7.617    design_1_i/maxdivider_0/U0/FSM_B[7]_i_89_n_0
+    SLICE_X82Y82         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580     8.197 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71/CO[3]
+                         net (fo=1, routed)           0.000     8.197    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71_n_0
+    SLICE_X82Y83         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.311 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68/CO[3]
+                         net (fo=1, routed)           0.000     8.311    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68_n_0
+    SLICE_X82Y84         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     8.582 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67/CO[0]
+                         net (fo=11, routed)          0.663     9.245    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67_n_3
+    SLICE_X86Y83         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.829    10.074 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59/CO[3]
+                         net (fo=1, routed)           0.000    10.074    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59_n_0
+    SLICE_X86Y84         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.188 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56/CO[3]
+                         net (fo=1, routed)           0.000    10.188    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56_n_0
+    SLICE_X86Y85         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    10.345 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55/CO[1]
+                         net (fo=11, routed)          0.637    10.982    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55_n_2
+    SLICE_X85Y85         LUT3 (Prop_lut3_I0_O)        0.329    11.311 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_66/O
+                         net (fo=1, routed)           0.000    11.311    design_1_i/maxdivider_0/U0/FSM_B[7]_i_66_n_0
+    SLICE_X85Y85         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    11.861 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000    11.861    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X85Y86         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.975 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44/CO[3]
+                         net (fo=1, routed)           0.000    11.975    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44_n_0
+    SLICE_X85Y87         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    12.132 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43/CO[1]
+                         net (fo=11, routed)          0.550    12.682    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43_n_2
+    SLICE_X84Y86         LUT3 (Prop_lut3_I0_O)        0.329    13.011 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_54/O
+                         net (fo=1, routed)           0.000    13.011    design_1_i/maxdivider_0/U0/FSM_B[7]_i_54_n_0
+    SLICE_X84Y86         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    13.544 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000    13.544    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X84Y87         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.661 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32/CO[3]
+                         net (fo=1, routed)           0.000    13.661    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32_n_0
+    SLICE_X84Y88         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    13.818 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31/CO[1]
+                         net (fo=11, routed)          0.697    14.515    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31_n_2
+    SLICE_X84Y89         LUT3 (Prop_lut3_I0_O)        0.332    14.847 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_42/O
+                         net (fo=1, routed)           0.000    14.847    design_1_i/maxdivider_0/U0/FSM_B[7]_i_42_n_0
+    SLICE_X84Y89         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    15.380 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    15.380    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X84Y90         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.497 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    15.497    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X84Y91         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.654 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.635    16.289    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22_n_2
+    SLICE_X85Y90         LUT3 (Prop_lut3_I0_O)        0.332    16.621 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    16.621    design_1_i/maxdivider_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X85Y90         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    17.171 r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    17.171    design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X85Y91         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    17.285 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10/CO[3]
+                         net (fo=1, routed)           0.000    17.285    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10_n_0
+    SLICE_X85Y92         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.442 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9/CO[1]
+                         net (fo=11, routed)          0.507    17.949    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9_n_2
+    SLICE_X87Y91         LUT3 (Prop_lut3_I0_O)        0.329    18.278 r  design_1_i/maxdivider_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    18.278    design_1_i/maxdivider_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X87Y91         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    18.858 f  design_1_i/maxdivider_0/U0/FSM_B_reg[2]_i_3/O[2]
+                         net (fo=5, routed)           0.485    19.343    design_1_i/maxdivider_0/U0/FSM_B_reg[2]_i_3_n_5
+    SLICE_X87Y90         LUT4 (Prop_lut4_I3_O)        0.302    19.645 f  design_1_i/maxdivider_0/U0/FSM_B[7]_i_21/O
+                         net (fo=1, routed)           0.263    19.908    design_1_i/maxdivider_0/U0/FSM_B[7]_i_21_n_0
+    SLICE_X87Y90         LUT5 (Prop_lut5_I0_O)        0.124    20.032 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_7/O
+                         net (fo=4, routed)           0.188    20.220    design_1_i/maxdivider_0/U0/FSM_B[7]_i_7_n_0
+    SLICE_X87Y90         LUT6 (Prop_lut6_I5_O)        0.124    20.344 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_3/O
+                         net (fo=1, routed)           0.488    20.832    design_1_i/maxdivider_0/U0/FSM_B[6]_i_3_n_0
+    SLICE_X83Y85         LUT6 (Prop_lut6_I1_O)        0.124    20.956 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_1/O
+                         net (fo=1, routed)           0.000    20.956    design_1_i/maxdivider_0/U0/FSM_B_next[6]
+    SLICE_X83Y85         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.605    15.028    design_1_i/maxdivider_0/U0/clk
+    SLICE_X83Y85         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]/C
+                         clock pessimism              0.275    15.303    
+                         clock uncertainty           -0.035    15.267    
+    SLICE_X83Y85         FDRE (Setup_fdre_C_D)        0.032    15.299    design_1_i/maxdivider_0/U0/FSM_B_reg[6]
+  -------------------------------------------------------------------
+                         required time                         15.299    
+                         arrival time                         -20.956    
+  -------------------------------------------------------------------
+                         slack                                 -5.657    
+
+Slack (VIOLATED) :        -5.622ns  (required time - arrival time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/FSM_B_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        15.583ns  (logic 8.992ns (57.704%)  route 6.591ns (42.296%))
+  Logic Levels:           30  (CARRY4=19 LUT3=5 LUT4=2 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.033ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.033ns = ( 15.033 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.259ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.722     5.325    design_1_i/maxdivider_0/U0/clk
+    SLICE_X84Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y83         FDRE (Prop_fdre_C_Q)         0.518     5.843 f  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.685     6.528    design_1_i/maxdivider_0/U0/FSM_B[1]
+    SLICE_X84Y83         LUT6 (Prop_lut6_I1_O)        0.124     6.652 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_97/O
+                         net (fo=13, routed)          0.351     7.003    design_1_i/maxdivider_0/U0/FSM_B[7]_i_97_n_0
+    SLICE_X84Y82         LUT4 (Prop_lut4_I1_O)        0.124     7.127 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_89/O
+                         net (fo=4, routed)           0.490     7.617    design_1_i/maxdivider_0/U0/FSM_B[7]_i_89_n_0
+    SLICE_X82Y82         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580     8.197 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71/CO[3]
+                         net (fo=1, routed)           0.000     8.197    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71_n_0
+    SLICE_X82Y83         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.311 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68/CO[3]
+                         net (fo=1, routed)           0.000     8.311    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68_n_0
+    SLICE_X82Y84         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     8.582 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67/CO[0]
+                         net (fo=11, routed)          0.663     9.245    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67_n_3
+    SLICE_X86Y83         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.829    10.074 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59/CO[3]
+                         net (fo=1, routed)           0.000    10.074    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59_n_0
+    SLICE_X86Y84         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.188 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56/CO[3]
+                         net (fo=1, routed)           0.000    10.188    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56_n_0
+    SLICE_X86Y85         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    10.345 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55/CO[1]
+                         net (fo=11, routed)          0.637    10.982    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55_n_2
+    SLICE_X85Y85         LUT3 (Prop_lut3_I0_O)        0.329    11.311 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_66/O
+                         net (fo=1, routed)           0.000    11.311    design_1_i/maxdivider_0/U0/FSM_B[7]_i_66_n_0
+    SLICE_X85Y85         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    11.861 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000    11.861    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X85Y86         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.975 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44/CO[3]
+                         net (fo=1, routed)           0.000    11.975    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44_n_0
+    SLICE_X85Y87         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    12.132 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43/CO[1]
+                         net (fo=11, routed)          0.550    12.682    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43_n_2
+    SLICE_X84Y86         LUT3 (Prop_lut3_I0_O)        0.329    13.011 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_54/O
+                         net (fo=1, routed)           0.000    13.011    design_1_i/maxdivider_0/U0/FSM_B[7]_i_54_n_0
+    SLICE_X84Y86         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    13.544 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000    13.544    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X84Y87         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.661 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32/CO[3]
+                         net (fo=1, routed)           0.000    13.661    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32_n_0
+    SLICE_X84Y88         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    13.818 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31/CO[1]
+                         net (fo=11, routed)          0.697    14.515    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31_n_2
+    SLICE_X84Y89         LUT3 (Prop_lut3_I0_O)        0.332    14.847 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_42/O
+                         net (fo=1, routed)           0.000    14.847    design_1_i/maxdivider_0/U0/FSM_B[7]_i_42_n_0
+    SLICE_X84Y89         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    15.380 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    15.380    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X84Y90         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.497 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    15.497    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X84Y91         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.654 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.635    16.289    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22_n_2
+    SLICE_X85Y90         LUT3 (Prop_lut3_I0_O)        0.332    16.621 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    16.621    design_1_i/maxdivider_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X85Y90         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    17.171 r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    17.171    design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X85Y91         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    17.285 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10/CO[3]
+                         net (fo=1, routed)           0.000    17.285    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10_n_0
+    SLICE_X85Y92         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.442 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9/CO[1]
+                         net (fo=11, routed)          0.507    17.949    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9_n_2
+    SLICE_X87Y91         LUT3 (Prop_lut3_I0_O)        0.329    18.278 r  design_1_i/maxdivider_0/U0/FSM_B[2]_i_6/O
+                         net (fo=1, routed)           0.000    18.278    design_1_i/maxdivider_0/U0/FSM_B[2]_i_6_n_0
+    SLICE_X87Y91         CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.580    18.858 f  design_1_i/maxdivider_0/U0/FSM_B_reg[2]_i_3/O[2]
+                         net (fo=5, routed)           0.485    19.343    design_1_i/maxdivider_0/U0/FSM_B_reg[2]_i_3_n_5
+    SLICE_X87Y90         LUT4 (Prop_lut4_I3_O)        0.302    19.645 f  design_1_i/maxdivider_0/U0/FSM_B[7]_i_21/O
+                         net (fo=1, routed)           0.263    19.908    design_1_i/maxdivider_0/U0/FSM_B[7]_i_21_n_0
+    SLICE_X87Y90         LUT5 (Prop_lut5_I0_O)        0.124    20.032 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_7/O
+                         net (fo=4, routed)           0.466    20.498    design_1_i/maxdivider_0/U0/FSM_B[7]_i_7_n_0
+    SLICE_X86Y89         LUT6 (Prop_lut6_I3_O)        0.124    20.622 r  design_1_i/maxdivider_0/U0/FSM_B[5]_i_2/O
+                         net (fo=1, routed)           0.162    20.784    design_1_i/maxdivider_0/U0/FSM_B_next0[5]
+    SLICE_X86Y89         LUT5 (Prop_lut5_I2_O)        0.124    20.908 r  design_1_i/maxdivider_0/U0/FSM_B[5]_i_1/O
+                         net (fo=1, routed)           0.000    20.908    design_1_i/maxdivider_0/U0/FSM_B_next[5]
+    SLICE_X86Y89         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.610    15.033    design_1_i/maxdivider_0/U0/clk
+    SLICE_X86Y89         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[5]/C
+                         clock pessimism              0.259    15.292    
+                         clock uncertainty           -0.035    15.256    
+    SLICE_X86Y89         FDRE (Setup_fdre_C_D)        0.029    15.285    design_1_i/maxdivider_0/U0/FSM_B_reg[5]
+  -------------------------------------------------------------------
+                         required time                         15.285    
+                         arrival time                         -20.908    
+  -------------------------------------------------------------------
+                         slack                                 -5.622    
+
+Slack (VIOLATED) :        -5.465ns  (required time - arrival time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_B_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/FSM_B_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        15.489ns  (logic 8.818ns (56.931%)  route 6.671ns (43.069%))
+  Logic Levels:           29  (CARRY4=20 LUT3=5 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.026ns = ( 15.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.277ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.722     5.325    design_1_i/maxdivider_0/U0/clk
+    SLICE_X85Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X85Y83         FDRE (Prop_fdre_C_Q)         0.456     5.781 f  design_1_i/maxdivider_0/U0/FSM_B_reg[3]/Q
+                         net (fo=17, routed)          0.728     6.508    design_1_i/maxdivider_0/U0/FSM_B[3]
+    SLICE_X84Y83         LUT6 (Prop_lut6_I0_O)        0.124     6.632 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_97/O
+                         net (fo=13, routed)          0.351     6.983    design_1_i/maxdivider_0/U0/FSM_B[7]_i_97_n_0
+    SLICE_X84Y82         LUT4 (Prop_lut4_I1_O)        0.124     7.107 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_89/O
+                         net (fo=4, routed)           0.490     7.597    design_1_i/maxdivider_0/U0/FSM_B[7]_i_89_n_0
+    SLICE_X82Y82         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580     8.177 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71/CO[3]
+                         net (fo=1, routed)           0.000     8.177    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71_n_0
+    SLICE_X82Y83         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.291 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68/CO[3]
+                         net (fo=1, routed)           0.000     8.291    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68_n_0
+    SLICE_X82Y84         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     8.562 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67/CO[0]
+                         net (fo=11, routed)          0.663     9.225    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67_n_3
+    SLICE_X86Y83         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.829    10.054 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59/CO[3]
+                         net (fo=1, routed)           0.000    10.054    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59_n_0
+    SLICE_X86Y84         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.168 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56/CO[3]
+                         net (fo=1, routed)           0.000    10.168    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56_n_0
+    SLICE_X86Y85         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    10.325 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55/CO[1]
+                         net (fo=11, routed)          0.637    10.962    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55_n_2
+    SLICE_X85Y85         LUT3 (Prop_lut3_I0_O)        0.329    11.291 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_66/O
+                         net (fo=1, routed)           0.000    11.291    design_1_i/maxdivider_0/U0/FSM_B[7]_i_66_n_0
+    SLICE_X85Y85         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    11.841 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000    11.841    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X85Y86         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.955 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44/CO[3]
+                         net (fo=1, routed)           0.000    11.955    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44_n_0
+    SLICE_X85Y87         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    12.112 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43/CO[1]
+                         net (fo=11, routed)          0.550    12.662    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43_n_2
+    SLICE_X84Y86         LUT3 (Prop_lut3_I0_O)        0.329    12.991 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_54/O
+                         net (fo=1, routed)           0.000    12.991    design_1_i/maxdivider_0/U0/FSM_B[7]_i_54_n_0
+    SLICE_X84Y86         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    13.524 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000    13.524    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X84Y87         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.641 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32/CO[3]
+                         net (fo=1, routed)           0.000    13.641    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32_n_0
+    SLICE_X84Y88         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    13.798 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31/CO[1]
+                         net (fo=11, routed)          0.697    14.495    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31_n_2
+    SLICE_X84Y89         LUT3 (Prop_lut3_I0_O)        0.332    14.827 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_42/O
+                         net (fo=1, routed)           0.000    14.827    design_1_i/maxdivider_0/U0/FSM_B[7]_i_42_n_0
+    SLICE_X84Y89         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    15.360 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    15.360    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X84Y90         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.477 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    15.477    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X84Y91         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.634 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.635    16.269    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22_n_2
+    SLICE_X85Y90         LUT3 (Prop_lut3_I0_O)        0.332    16.601 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    16.601    design_1_i/maxdivider_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X85Y90         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    17.151 r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    17.151    design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X85Y91         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    17.265 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10/CO[3]
+                         net (fo=1, routed)           0.000    17.265    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10_n_0
+    SLICE_X85Y92         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.422 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9/CO[1]
+                         net (fo=11, routed)          0.651    18.073    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9_n_2
+    SLICE_X87Y92         LUT3 (Prop_lut3_I0_O)        0.329    18.402 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_9/O
+                         net (fo=1, routed)           0.000    18.402    design_1_i/maxdivider_0/U0/FSM_B[6]_i_9_n_0
+    SLICE_X87Y92         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    18.934 r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_4/CO[3]
+                         net (fo=1, routed)           0.000    18.934    design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_4_n_0
+    SLICE_X87Y93         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    19.091 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_4/CO[1]
+                         net (fo=8, routed)           0.763    19.854    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_4_n_2
+    SLICE_X86Y88         LUT5 (Prop_lut5_I0_O)        0.329    20.183 r  design_1_i/maxdivider_0/U0/FSM_B[1]_i_2/O
+                         net (fo=1, routed)           0.506    20.690    design_1_i/maxdivider_0/U0/FSM_B_next0[1]
+    SLICE_X84Y83         LUT5 (Prop_lut5_I2_O)        0.124    20.814 r  design_1_i/maxdivider_0/U0/FSM_B[1]_i_1/O
+                         net (fo=1, routed)           0.000    20.814    design_1_i/maxdivider_0/U0/FSM_B_next[1]
+    SLICE_X84Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.603    15.026    design_1_i/maxdivider_0/U0/clk
+    SLICE_X84Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+                         clock pessimism              0.277    15.303    
+                         clock uncertainty           -0.035    15.267    
+    SLICE_X84Y83         FDRE (Setup_fdre_C_D)        0.081    15.348    design_1_i/maxdivider_0/U0/FSM_B_reg[1]
+  -------------------------------------------------------------------
+                         required time                         15.348    
+                         arrival time                         -20.814    
+  -------------------------------------------------------------------
+                         slack                                 -5.465    
+
+Slack (VIOLATED) :        -5.437ns  (required time - arrival time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/FSM_B_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        15.410ns  (logic 8.880ns (57.624%)  route 6.530ns (42.376%))
+  Logic Levels:           29  (CARRY4=20 LUT3=5 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.026ns = ( 15.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.277ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.722     5.325    design_1_i/maxdivider_0/U0/clk
+    SLICE_X84Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y83         FDRE (Prop_fdre_C_Q)         0.518     5.843 f  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.685     6.528    design_1_i/maxdivider_0/U0/FSM_B[1]
+    SLICE_X84Y83         LUT6 (Prop_lut6_I1_O)        0.124     6.652 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_97/O
+                         net (fo=13, routed)          0.351     7.003    design_1_i/maxdivider_0/U0/FSM_B[7]_i_97_n_0
+    SLICE_X84Y82         LUT4 (Prop_lut4_I1_O)        0.124     7.127 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_89/O
+                         net (fo=4, routed)           0.490     7.617    design_1_i/maxdivider_0/U0/FSM_B[7]_i_89_n_0
+    SLICE_X82Y82         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580     8.197 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71/CO[3]
+                         net (fo=1, routed)           0.000     8.197    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71_n_0
+    SLICE_X82Y83         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.311 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68/CO[3]
+                         net (fo=1, routed)           0.000     8.311    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68_n_0
+    SLICE_X82Y84         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     8.582 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67/CO[0]
+                         net (fo=11, routed)          0.663     9.245    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67_n_3
+    SLICE_X86Y83         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.829    10.074 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59/CO[3]
+                         net (fo=1, routed)           0.000    10.074    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59_n_0
+    SLICE_X86Y84         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.188 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56/CO[3]
+                         net (fo=1, routed)           0.000    10.188    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56_n_0
+    SLICE_X86Y85         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    10.345 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55/CO[1]
+                         net (fo=11, routed)          0.637    10.982    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55_n_2
+    SLICE_X85Y85         LUT3 (Prop_lut3_I0_O)        0.329    11.311 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_66/O
+                         net (fo=1, routed)           0.000    11.311    design_1_i/maxdivider_0/U0/FSM_B[7]_i_66_n_0
+    SLICE_X85Y85         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    11.861 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000    11.861    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X85Y86         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.975 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44/CO[3]
+                         net (fo=1, routed)           0.000    11.975    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44_n_0
+    SLICE_X85Y87         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    12.132 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43/CO[1]
+                         net (fo=11, routed)          0.550    12.682    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43_n_2
+    SLICE_X84Y86         LUT3 (Prop_lut3_I0_O)        0.329    13.011 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_54/O
+                         net (fo=1, routed)           0.000    13.011    design_1_i/maxdivider_0/U0/FSM_B[7]_i_54_n_0
+    SLICE_X84Y86         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    13.544 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000    13.544    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X84Y87         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.661 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32/CO[3]
+                         net (fo=1, routed)           0.000    13.661    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32_n_0
+    SLICE_X84Y88         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    13.818 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31/CO[1]
+                         net (fo=11, routed)          0.697    14.515    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31_n_2
+    SLICE_X84Y89         LUT3 (Prop_lut3_I0_O)        0.332    14.847 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_42/O
+                         net (fo=1, routed)           0.000    14.847    design_1_i/maxdivider_0/U0/FSM_B[7]_i_42_n_0
+    SLICE_X84Y89         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    15.380 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    15.380    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X84Y90         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.497 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    15.497    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X84Y91         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.654 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.635    16.289    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22_n_2
+    SLICE_X85Y90         LUT3 (Prop_lut3_I0_O)        0.332    16.621 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    16.621    design_1_i/maxdivider_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X85Y90         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    17.171 r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    17.171    design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X85Y91         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    17.285 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10/CO[3]
+                         net (fo=1, routed)           0.000    17.285    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10_n_0
+    SLICE_X85Y92         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.442 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9/CO[1]
+                         net (fo=11, routed)          0.651    18.093    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9_n_2
+    SLICE_X87Y92         LUT3 (Prop_lut3_I0_O)        0.329    18.422 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_9/O
+                         net (fo=1, routed)           0.000    18.422    design_1_i/maxdivider_0/U0/FSM_B[6]_i_9_n_0
+    SLICE_X87Y92         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    18.954 r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_4/CO[3]
+                         net (fo=1, routed)           0.000    18.954    design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_4_n_0
+    SLICE_X87Y93         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    19.111 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_4/CO[1]
+                         net (fo=8, routed)           0.674    19.785    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_4_n_2
+    SLICE_X85Y88         LUT5 (Prop_lut5_I3_O)        0.329    20.114 r  design_1_i/maxdivider_0/U0/FSM_B[0]_i_2/O
+                         net (fo=1, routed)           0.497    20.611    design_1_i/maxdivider_0/U0/FSM_B[0]_i_2_n_0
+    SLICE_X85Y83         LUT5 (Prop_lut5_I4_O)        0.124    20.735 r  design_1_i/maxdivider_0/U0/FSM_B[0]_i_1/O
+                         net (fo=1, routed)           0.000    20.735    design_1_i/maxdivider_0/U0/FSM_B_next[0]
+    SLICE_X85Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.603    15.026    design_1_i/maxdivider_0/U0/clk
+    SLICE_X85Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[0]/C
+                         clock pessimism              0.277    15.303    
+                         clock uncertainty           -0.035    15.267    
+    SLICE_X85Y83         FDRE (Setup_fdre_C_D)        0.031    15.298    design_1_i/maxdivider_0/U0/FSM_B_reg[0]
+  -------------------------------------------------------------------
+                         required time                         15.298    
+                         arrival time                         -20.735    
+  -------------------------------------------------------------------
+                         slack                                 -5.437    
+
+Slack (VIOLATED) :        -5.381ns  (required time - arrival time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/FSM_B_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        15.353ns  (logic 8.880ns (57.839%)  route 6.473ns (42.161%))
+  Logic Levels:           29  (CARRY4=20 LUT3=5 LUT4=1 LUT6=3)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.026ns = ( 15.026 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.277ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.722     5.325    design_1_i/maxdivider_0/U0/clk
+    SLICE_X84Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y83         FDRE (Prop_fdre_C_Q)         0.518     5.843 f  design_1_i/maxdivider_0/U0/FSM_B_reg[1]/Q
+                         net (fo=22, routed)          0.685     6.528    design_1_i/maxdivider_0/U0/FSM_B[1]
+    SLICE_X84Y83         LUT6 (Prop_lut6_I1_O)        0.124     6.652 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_97/O
+                         net (fo=13, routed)          0.351     7.003    design_1_i/maxdivider_0/U0/FSM_B[7]_i_97_n_0
+    SLICE_X84Y82         LUT4 (Prop_lut4_I1_O)        0.124     7.127 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_89/O
+                         net (fo=4, routed)           0.490     7.617    design_1_i/maxdivider_0/U0/FSM_B[7]_i_89_n_0
+    SLICE_X82Y82         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.580     8.197 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71/CO[3]
+                         net (fo=1, routed)           0.000     8.197    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_71_n_0
+    SLICE_X82Y83         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.311 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68/CO[3]
+                         net (fo=1, routed)           0.000     8.311    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_68_n_0
+    SLICE_X82Y84         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271     8.582 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67/CO[0]
+                         net (fo=11, routed)          0.663     9.245    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_67_n_3
+    SLICE_X86Y83         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.829    10.074 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59/CO[3]
+                         net (fo=1, routed)           0.000    10.074    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_59_n_0
+    SLICE_X86Y84         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.188 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56/CO[3]
+                         net (fo=1, routed)           0.000    10.188    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_56_n_0
+    SLICE_X86Y85         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    10.345 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55/CO[1]
+                         net (fo=11, routed)          0.637    10.982    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_55_n_2
+    SLICE_X85Y85         LUT3 (Prop_lut3_I0_O)        0.329    11.311 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_66/O
+                         net (fo=1, routed)           0.000    11.311    design_1_i/maxdivider_0/U0/FSM_B[7]_i_66_n_0
+    SLICE_X85Y85         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    11.861 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47/CO[3]
+                         net (fo=1, routed)           0.000    11.861    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_47_n_0
+    SLICE_X85Y86         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.975 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44/CO[3]
+                         net (fo=1, routed)           0.000    11.975    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_44_n_0
+    SLICE_X85Y87         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    12.132 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43/CO[1]
+                         net (fo=11, routed)          0.550    12.682    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_43_n_2
+    SLICE_X84Y86         LUT3 (Prop_lut3_I0_O)        0.329    13.011 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_54/O
+                         net (fo=1, routed)           0.000    13.011    design_1_i/maxdivider_0/U0/FSM_B[7]_i_54_n_0
+    SLICE_X84Y86         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    13.544 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35/CO[3]
+                         net (fo=1, routed)           0.000    13.544    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_35_n_0
+    SLICE_X84Y87         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.661 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32/CO[3]
+                         net (fo=1, routed)           0.000    13.661    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_32_n_0
+    SLICE_X84Y88         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    13.818 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31/CO[1]
+                         net (fo=11, routed)          0.697    14.515    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_31_n_2
+    SLICE_X84Y89         LUT3 (Prop_lut3_I0_O)        0.332    14.847 r  design_1_i/maxdivider_0/U0/FSM_B[7]_i_42/O
+                         net (fo=1, routed)           0.000    14.847    design_1_i/maxdivider_0/U0/FSM_B[7]_i_42_n_0
+    SLICE_X84Y89         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    15.380 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26/CO[3]
+                         net (fo=1, routed)           0.000    15.380    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_26_n_0
+    SLICE_X84Y90         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    15.497 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23/CO[3]
+                         net (fo=1, routed)           0.000    15.497    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_23_n_0
+    SLICE_X84Y91         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    15.654 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22/CO[1]
+                         net (fo=11, routed)          0.635    16.289    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_22_n_2
+    SLICE_X85Y90         LUT3 (Prop_lut3_I0_O)        0.332    16.621 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_12/O
+                         net (fo=1, routed)           0.000    16.621    design_1_i/maxdivider_0/U0/FSM_B[6]_i_12_n_0
+    SLICE_X85Y90         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    17.171 r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5/CO[3]
+                         net (fo=1, routed)           0.000    17.171    design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_5_n_0
+    SLICE_X85Y91         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    17.285 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10/CO[3]
+                         net (fo=1, routed)           0.000    17.285    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_10_n_0
+    SLICE_X85Y92         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    17.442 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9/CO[1]
+                         net (fo=11, routed)          0.651    18.093    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_9_n_2
+    SLICE_X87Y92         LUT3 (Prop_lut3_I0_O)        0.329    18.422 r  design_1_i/maxdivider_0/U0/FSM_B[6]_i_9/O
+                         net (fo=1, routed)           0.000    18.422    design_1_i/maxdivider_0/U0/FSM_B[6]_i_9_n_0
+    SLICE_X87Y92         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    18.954 r  design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_4/CO[3]
+                         net (fo=1, routed)           0.000    18.954    design_1_i/maxdivider_0/U0/FSM_B_reg[6]_i_4_n_0
+    SLICE_X87Y93         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157    19.111 r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_4/CO[1]
+                         net (fo=8, routed)           0.605    19.716    design_1_i/maxdivider_0/U0/FSM_B_reg[7]_i_4_n_2
+    SLICE_X87Y89         LUT6 (Prop_lut6_I0_O)        0.329    20.045 r  design_1_i/maxdivider_0/U0/FSM_B[2]_i_2/O
+                         net (fo=1, routed)           0.508    20.554    design_1_i/maxdivider_0/U0/FSM_B[2]_i_2_n_0
+    SLICE_X85Y83         LUT6 (Prop_lut6_I2_O)        0.124    20.678 r  design_1_i/maxdivider_0/U0/FSM_B[2]_i_1/O
+                         net (fo=1, routed)           0.000    20.678    design_1_i/maxdivider_0/U0/FSM_B_next[2]
+    SLICE_X85Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.603    15.026    design_1_i/maxdivider_0/U0/clk
+    SLICE_X85Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[2]/C
+                         clock pessimism              0.277    15.303    
+                         clock uncertainty           -0.035    15.267    
+    SLICE_X85Y83         FDRE (Setup_fdre_C_D)        0.029    15.296    design_1_i/maxdivider_0/U0/FSM_B_reg[2]
+  -------------------------------------------------------------------
+                         required time                         15.296    
+                         arrival time                         -20.678    
+  -------------------------------------------------------------------
+                         slack                                 -5.381    
+
+Slack (MET) :             4.677ns  (required time - arrival time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_B_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/FSM_B_reg[7]/CE
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.051ns  (logic 0.828ns (16.393%)  route 4.223ns (83.607%))
+  Logic Levels:           3  (LUT4=2 LUT5=1)
+  Clock Path Skew:        -0.032ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.034ns = ( 15.034 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.259ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.722     5.325    design_1_i/maxdivider_0/U0/clk
+    SLICE_X85Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X85Y83         FDRE (Prop_fdre_C_Q)         0.456     5.781 r  design_1_i/maxdivider_0/U0/FSM_B_reg[3]/Q
+                         net (fo=17, routed)          1.500     7.280    design_1_i/maxdivider_0/U0/FSM_B[3]
+    SLICE_X87Y86         LUT4 (Prop_lut4_I2_O)        0.124     7.404 r  design_1_i/maxdivider_0/U0/Res[7]_i_7/O
+                         net (fo=1, routed)           0.667     8.071    design_1_i/maxdivider_0/U0/Res[7]_i_7_n_0
+    SLICE_X87Y86         LUT5 (Prop_lut5_I4_O)        0.124     8.195 r  design_1_i/maxdivider_0/U0/Res[7]_i_4/O
+                         net (fo=2, routed)           0.161     8.356    design_1_i/maxdivider_0/U0/Res[7]_i_4_n_0
+    SLICE_X87Y86         LUT4 (Prop_lut4_I2_O)        0.124     8.480 r  design_1_i/maxdivider_0/U0/FSM_A[7]_i_1/O
+                         net (fo=17, routed)          1.895    10.376    design_1_i/maxdivider_0/U0/FSM_A[7]_i_1_n_0
+    SLICE_X89Y92         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.611    15.034    design_1_i/maxdivider_0/U0/clk
+    SLICE_X89Y92         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[7]/C
+                         clock pessimism              0.259    15.293    
+                         clock uncertainty           -0.035    15.257    
+    SLICE_X89Y92         FDRE (Setup_fdre_C_CE)      -0.205    15.052    design_1_i/maxdivider_0/U0/FSM_B_reg[7]
+  -------------------------------------------------------------------
+                         required time                         15.052    
+                         arrival time                         -10.376    
+  -------------------------------------------------------------------
+                         slack                                  4.677    
+
+Slack (MET) :             4.759ns  (required time - arrival time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_B_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/FSM_B_reg[4]/CE
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.967ns  (logic 0.828ns (16.669%)  route 4.139ns (83.331%))
+  Logic Levels:           3  (LUT4=2 LUT5=1)
+  Clock Path Skew:        -0.033ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.033ns = ( 15.033 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.325ns
+    Clock Pessimism Removal (CPR):    0.259ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.722     5.325    design_1_i/maxdivider_0/U0/clk
+    SLICE_X85Y83         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X85Y83         FDRE (Prop_fdre_C_Q)         0.456     5.781 r  design_1_i/maxdivider_0/U0/FSM_B_reg[3]/Q
+                         net (fo=17, routed)          1.500     7.280    design_1_i/maxdivider_0/U0/FSM_B[3]
+    SLICE_X87Y86         LUT4 (Prop_lut4_I2_O)        0.124     7.404 r  design_1_i/maxdivider_0/U0/Res[7]_i_7/O
+                         net (fo=1, routed)           0.667     8.071    design_1_i/maxdivider_0/U0/Res[7]_i_7_n_0
+    SLICE_X87Y86         LUT5 (Prop_lut5_I4_O)        0.124     8.195 r  design_1_i/maxdivider_0/U0/Res[7]_i_4/O
+                         net (fo=2, routed)           0.161     8.356    design_1_i/maxdivider_0/U0/Res[7]_i_4_n_0
+    SLICE_X87Y86         LUT4 (Prop_lut4_I2_O)        0.124     8.480 r  design_1_i/maxdivider_0/U0/FSM_A[7]_i_1/O
+                         net (fo=17, routed)          1.812    10.292    design_1_i/maxdivider_0/U0/FSM_A[7]_i_1_n_0
+    SLICE_X87Y89         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[4]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          1.610    15.033    design_1_i/maxdivider_0/U0/clk
+    SLICE_X87Y89         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_B_reg[4]/C
+                         clock pessimism              0.259    15.292    
+                         clock uncertainty           -0.035    15.256    
+    SLICE_X87Y89         FDRE (Setup_fdre_C_CE)      -0.205    15.051    design_1_i/maxdivider_0/U0/FSM_B_reg[4]
+  -------------------------------------------------------------------
+                         required time                         15.051    
+                         arrival time                         -10.292    
+  -------------------------------------------------------------------
+                         slack                                  4.759    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.189ns  (arrival time - required time)
+  Source:                 design_1_i/BinToBCD16_0/U0/BCD1_c_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/BinToBCD16_0/U0/BCD1_c_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.325ns  (logic 0.186ns (57.146%)  route 0.139ns (42.854%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.040ns
+    Source Clock Delay      (SCD):    1.523ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.604     1.523    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X87Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X87Y87         FDRE (Prop_fdre_C_Q)         0.141     1.664 r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[0]/Q
+                         net (fo=5, routed)           0.139     1.804    design_1_i/BinToBCD16_0/U0/BCD1_c[0]
+    SLICE_X88Y87         LUT6 (Prop_lut6_I4_O)        0.045     1.849 r  design_1_i/BinToBCD16_0/U0/BCD1[2]_i_1/O
+                         net (fo=2, routed)           0.000     1.849    design_1_i/BinToBCD16_0/U0/BCD1[2]_i_1_n_0
+    SLICE_X88Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.875     2.040    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X88Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[2]/C
+                         clock pessimism             -0.501     1.538    
+    SLICE_X88Y87         FDRE (Hold_fdre_C_D)         0.121     1.659    design_1_i/BinToBCD16_0/U0/BCD1_c_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.659    
+                         arrival time                           1.849    
+  -------------------------------------------------------------------
+                         slack                                  0.189    
+
+Slack (MET) :             0.189ns  (arrival time - required time)
+  Source:                 design_1_i/BinToBCD16_0/U0/BCD1_c_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/BinToBCD16_0/U0/BCD1_c_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.325ns  (logic 0.186ns (57.146%)  route 0.139ns (42.854%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.040ns
+    Source Clock Delay      (SCD):    1.523ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.604     1.523    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X87Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X87Y87         FDRE (Prop_fdre_C_Q)         0.141     1.664 r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[0]/Q
+                         net (fo=5, routed)           0.139     1.804    design_1_i/BinToBCD16_0/U0/BCD1_c[0]
+    SLICE_X88Y87         LUT6 (Prop_lut6_I2_O)        0.045     1.849 r  design_1_i/BinToBCD16_0/U0/BCD1[3]_i_1/O
+                         net (fo=2, routed)           0.000     1.849    design_1_i/BinToBCD16_0/U0/BCD1[3]_i_1_n_0
+    SLICE_X88Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.875     2.040    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X88Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[3]/C
+                         clock pessimism             -0.501     1.538    
+    SLICE_X88Y87         FDRE (Hold_fdre_C_D)         0.121     1.659    design_1_i/BinToBCD16_0/U0/BCD1_c_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.659    
+                         arrival time                           1.849    
+  -------------------------------------------------------------------
+                         slack                                  0.189    
+
+Slack (MET) :             0.192ns  (arrival time - required time)
+  Source:                 design_1_i/BinToBCD16_0/U0/BCD1_c_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/BinToBCD16_0/U0/BCD1_c_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.327ns  (logic 0.186ns (56.797%)  route 0.141ns (43.203%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.040ns
+    Source Clock Delay      (SCD):    1.523ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.604     1.523    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X87Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X87Y87         FDRE (Prop_fdre_C_Q)         0.141     1.664 r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[0]/Q
+                         net (fo=5, routed)           0.141     1.806    design_1_i/BinToBCD16_0/U0/BCD1_c[0]
+    SLICE_X88Y87         LUT6 (Prop_lut6_I2_O)        0.045     1.851 r  design_1_i/BinToBCD16_0/U0/BCD1[1]_i_1/O
+                         net (fo=2, routed)           0.000     1.851    design_1_i/BinToBCD16_0/U0/BCD1[1]_i_1_n_0
+    SLICE_X88Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.875     2.040    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X88Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD1_c_reg[1]/C
+                         clock pessimism             -0.501     1.538    
+    SLICE_X88Y87         FDRE (Hold_fdre_C_D)         0.120     1.658    design_1_i/BinToBCD16_0/U0/BCD1_c_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.658    
+                         arrival time                           1.851    
+  -------------------------------------------------------------------
+                         slack                                  0.192    
+
+Slack (MET) :             0.201ns  (arrival time - required time)
+  Source:                 design_1_i/BinToBCD16_0/U0/index_c_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/BinToBCD16_0/U0/c_s_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.305ns  (logic 0.186ns (61.026%)  route 0.119ns (38.974%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.041ns
+    Source Clock Delay      (SCD):    1.523ns
+    Clock Pessimism Removal (CPR):    0.504ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.604     1.523    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X82Y89         FDRE                                         r  design_1_i/BinToBCD16_0/U0/index_c_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X82Y89         FDRE (Prop_fdre_C_Q)         0.141     1.664 f  design_1_i/BinToBCD16_0/U0/index_c_reg[4]/Q
+                         net (fo=5, routed)           0.119     1.783    design_1_i/BinToBCD16_0/U0/index_c[4]
+    SLICE_X83Y89         LUT6 (Prop_lut6_I1_O)        0.045     1.828 r  design_1_i/BinToBCD16_0/U0/c_s[1]_i_1/O
+                         net (fo=1, routed)           0.000     1.828    design_1_i/BinToBCD16_0/U0/c_s[1]_i_1_n_0
+    SLICE_X83Y89         FDRE                                         r  design_1_i/BinToBCD16_0/U0/c_s_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.876     2.041    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X83Y89         FDRE                                         r  design_1_i/BinToBCD16_0/U0/c_s_reg[1]/C
+                         clock pessimism             -0.504     1.536    
+    SLICE_X83Y89         FDRE (Hold_fdre_C_D)         0.091     1.627    design_1_i/BinToBCD16_0/U0/c_s_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.627    
+                         arrival time                           1.828    
+  -------------------------------------------------------------------
+                         slack                                  0.201    
+
+Slack (MET) :             0.212ns  (arrival time - required time)
+  Source:                 design_1_i/BinToBCD16_0/U0/int_rg_c_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/BinToBCD16_0/U0/int_rg_c_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.343ns  (logic 0.249ns (72.541%)  route 0.094ns (27.459%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.035ns
+    Source Clock Delay      (SCD):    1.518ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.599     1.518    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X80Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X80Y87         FDRE (Prop_fdre_C_Q)         0.148     1.666 r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[4]/Q
+                         net (fo=1, routed)           0.094     1.761    design_1_i/BinToBCD16_0/U0/int_rg_c[4]
+    SLICE_X80Y87         LUT3 (Prop_lut3_I0_O)        0.101     1.862 r  design_1_i/BinToBCD16_0/U0/int_rg_c[5]_i_1/O
+                         net (fo=1, routed)           0.000     1.862    design_1_i/BinToBCD16_0/U0/int_rg_n[5]
+    SLICE_X80Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.870     2.035    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X80Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[5]/C
+                         clock pessimism             -0.516     1.518    
+    SLICE_X80Y87         FDRE (Hold_fdre_C_D)         0.131     1.649    design_1_i/BinToBCD16_0/U0/int_rg_c_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -1.649    
+                         arrival time                           1.862    
+  -------------------------------------------------------------------
+                         slack                                  0.212    
+
+Slack (MET) :             0.226ns  (arrival time - required time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_A_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/Res_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.289ns  (logic 0.141ns (48.836%)  route 0.148ns (51.164%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.039ns
+    Source Clock Delay      (SCD):    1.521ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.602     1.521    design_1_i/maxdivider_0/U0/clk
+    SLICE_X82Y85         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_A_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X82Y85         FDRE (Prop_fdre_C_Q)         0.141     1.662 r  design_1_i/maxdivider_0/U0/FSM_A_reg[1]/Q
+                         net (fo=6, routed)           0.148     1.810    design_1_i/maxdivider_0/U0/FSM_A_reg_n_0_[1]
+    SLICE_X83Y87         FDRE                                         r  design_1_i/maxdivider_0/U0/Res_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.874     2.039    design_1_i/maxdivider_0/U0/clk
+    SLICE_X83Y87         FDRE                                         r  design_1_i/maxdivider_0/U0/Res_reg[1]/C
+                         clock pessimism             -0.501     1.537    
+    SLICE_X83Y87         FDRE (Hold_fdre_C_D)         0.047     1.584    design_1_i/maxdivider_0/U0/Res_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.584    
+                         arrival time                           1.810    
+  -------------------------------------------------------------------
+                         slack                                  0.226    
+
+Slack (MET) :             0.231ns  (arrival time - required time)
+  Source:                 design_1_i/BinToBCD16_0/U0/int_rg_c_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/BinToBCD16_0/U0/int_rg_c_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.352ns  (logic 0.209ns (59.346%)  route 0.143ns (40.654%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.035ns
+    Source Clock Delay      (SCD):    1.518ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.599     1.518    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X80Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X80Y87         FDRE (Prop_fdre_C_Q)         0.164     1.682 r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[1]/Q
+                         net (fo=1, routed)           0.143     1.826    design_1_i/BinToBCD16_0/U0/int_rg_c[1]
+    SLICE_X80Y87         LUT3 (Prop_lut3_I0_O)        0.045     1.871 r  design_1_i/BinToBCD16_0/U0/int_rg_c[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.871    design_1_i/BinToBCD16_0/U0/int_rg_n[2]
+    SLICE_X80Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.870     2.035    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X80Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[2]/C
+                         clock pessimism             -0.516     1.518    
+    SLICE_X80Y87         FDRE (Hold_fdre_C_D)         0.121     1.639    design_1_i/BinToBCD16_0/U0/int_rg_c_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.639    
+                         arrival time                           1.871    
+  -------------------------------------------------------------------
+                         slack                                  0.231    
+
+Slack (MET) :             0.235ns  (arrival time - required time)
+  Source:                 design_1_i/maxdivider_0/U0/FSM_A_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/maxdivider_0/U0/Res_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.273ns  (logic 0.128ns (46.844%)  route 0.145ns (53.156%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.039ns
+    Source Clock Delay      (SCD):    1.521ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.602     1.521    design_1_i/maxdivider_0/U0/clk
+    SLICE_X82Y85         FDRE                                         r  design_1_i/maxdivider_0/U0/FSM_A_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X82Y85         FDRE (Prop_fdre_C_Q)         0.128     1.649 r  design_1_i/maxdivider_0/U0/FSM_A_reg[4]/Q
+                         net (fo=6, routed)           0.145     1.795    design_1_i/maxdivider_0/U0/FSM_A_reg_n_0_[4]
+    SLICE_X83Y87         FDRE                                         r  design_1_i/maxdivider_0/U0/Res_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.874     2.039    design_1_i/maxdivider_0/U0/clk
+    SLICE_X83Y87         FDRE                                         r  design_1_i/maxdivider_0/U0/Res_reg[4]/C
+                         clock pessimism             -0.501     1.537    
+    SLICE_X83Y87         FDRE (Hold_fdre_C_D)         0.022     1.559    design_1_i/maxdivider_0/U0/Res_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.559    
+                         arrival time                           1.795    
+  -------------------------------------------------------------------
+                         slack                                  0.235    
+
+Slack (MET) :             0.238ns  (arrival time - required time)
+  Source:                 design_1_i/BinToBCD16_0/U0/int_rg_c_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/BinToBCD16_0/U0/int_rg_c_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.369ns  (logic 0.207ns (56.082%)  route 0.162ns (43.918%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.035ns
+    Source Clock Delay      (SCD):    1.518ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.599     1.518    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X80Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X80Y87         FDRE (Prop_fdre_C_Q)         0.164     1.682 r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[3]/Q
+                         net (fo=1, routed)           0.162     1.844    design_1_i/BinToBCD16_0/U0/int_rg_c[3]
+    SLICE_X80Y87         LUT3 (Prop_lut3_I0_O)        0.043     1.887 r  design_1_i/BinToBCD16_0/U0/int_rg_c[4]_i_1/O
+                         net (fo=1, routed)           0.000     1.887    design_1_i/BinToBCD16_0/U0/int_rg_n[4]
+    SLICE_X80Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.870     2.035    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X80Y87         FDRE                                         r  design_1_i/BinToBCD16_0/U0/int_rg_c_reg[4]/C
+                         clock pessimism             -0.516     1.518    
+    SLICE_X80Y87         FDRE (Hold_fdre_C_D)         0.131     1.649    design_1_i/BinToBCD16_0/U0/int_rg_c_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.649    
+                         arrival time                           1.887    
+  -------------------------------------------------------------------
+                         slack                                  0.238    
+
+Slack (MET) :             0.239ns  (arrival time - required time)
+  Source:                 design_1_i/BinToBCD16_0/U0/BCD3_c_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/BinToBCD16_0/U0/BCD3_c_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.331ns  (logic 0.186ns (56.223%)  route 0.145ns (43.777%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.037ns
+    Source Clock Delay      (SCD):    1.519ns
+    Clock Pessimism Removal (CPR):    0.517ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.600     1.519    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X81Y88         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD3_c_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X81Y88         FDRE (Prop_fdre_C_Q)         0.141     1.660 r  design_1_i/BinToBCD16_0/U0/BCD3_c_reg[2]/Q
+                         net (fo=4, routed)           0.145     1.805    design_1_i/BinToBCD16_0/U0/BCD3_c[2]
+    SLICE_X81Y88         LUT6 (Prop_lut6_I0_O)        0.045     1.850 r  design_1_i/BinToBCD16_0/U0/BCD3[2]_i_1/O
+                         net (fo=2, routed)           0.000     1.850    design_1_i/BinToBCD16_0/U0/BCD3[2]_i_1_n_0
+    SLICE_X81Y88         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD3_c_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    clk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
+                         net (fo=97, routed)          0.872     2.037    design_1_i/BinToBCD16_0/U0/clk
+    SLICE_X81Y88         FDRE                                         r  design_1_i/BinToBCD16_0/U0/BCD3_c_reg[2]/C
+                         clock pessimism             -0.517     1.519    
+    SLICE_X81Y88         FDRE (Hold_fdre_C_D)         0.092     1.611    design_1_i/BinToBCD16_0/U0/BCD3_c_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.611    
+                         arrival time                           1.850    
+  -------------------------------------------------------------------
+                         slack                                  0.239    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y16  clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X83Y88    design_1_i/BinToBCD16_0/U0/BCD0_c_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X83Y86    design_1_i/BinToBCD16_0/U0/BCD0_c_reg[1]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X83Y86    design_1_i/BinToBCD16_0/U0/BCD0_c_reg[2]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X83Y86    design_1_i/BinToBCD16_0/U0/BCD0_c_reg[3]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X84Y89    design_1_i/BinToBCD16_0/U0/BCD0_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X85Y85    design_1_i/BinToBCD16_0/U0/BCD0_reg[1]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X87Y88    design_1_i/BinToBCD16_0/U0/BCD0_reg[2]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X85Y85    design_1_i/BinToBCD16_0/U0/BCD0_reg[3]/C
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X88Y87    design_1_i/BinToBCD16_0/U0/BCD2_c_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X83Y88    design_1_i/BinToBCD16_0/U0/BCD0_c_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X82Y88    design_1_i/BinToBCD16_0/U0/BCD2_c_reg[1]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X82Y88    design_1_i/BinToBCD16_0/U0/BCD2_c_reg[2]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X82Y88    design_1_i/BinToBCD16_0/U0/BCD2_c_reg[3]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X82Y88    design_1_i/BinToBCD16_0/U0/BCD3_c_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X83Y88    design_1_i/BinToBCD16_0/U0/c_s_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X87Y85    design_1_i/EightDispControl_0/U0/div_reg[16]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X84Y88    design_1_i/maxdivider_0/U0/Res_reg[7]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X85Y88    design_1_i/BinToBCD16_0/U0/index_c_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X85Y88    design_1_i/BinToBCD16_0/U0/index_c_reg[1]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y87    design_1_i/BinToBCD16_0/U0/BCD2_c_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X86Y87    design_1_i/BinToBCD16_0/U0/BCD2_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X86Y87    design_1_i/BinToBCD16_0/U0/BCD4_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X86Y87    design_1_i/BinToBCD16_0/U0/BCD4_reg[2]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X87Y87    design_1_i/BinToBCD16_0/U0/BCD1_c_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y87    design_1_i/BinToBCD16_0/U0/BCD1_c_reg[1]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y87    design_1_i/BinToBCD16_0/U0/BCD1_c_reg[2]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X88Y87    design_1_i/BinToBCD16_0/U0/BCD1_c_reg[3]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X86Y87    design_1_i/BinToBCD16_0/U0/BCD1_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X86Y87    design_1_i/BinToBCD16_0/U0/BCD1_reg[2]/C
+
+
+

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x1C84CBD145BB632D" bd:device="xc7a100tcsg324-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="ex1_1" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x1C84CBD145BB632D" bd:device="xc7a100tcsg324-1" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="ex1_1" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -101,6 +101,14 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex1_1_xlconstant_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconstant_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ex1_1_xlconstant_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_WIDTH">4</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
@@ -129,14 +137,6 @@
         <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="rightL"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>xlconstant_0_dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlconstant_0" spirit:portRef="dout"/>
-        <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="leftL"/>
-        <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="near_leftL"/>
-        <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="near_rightL"/>
-        <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="request"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>EightDispControl_0_select_display</spirit:name>
         <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="select_display"/>
         <spirit:externalPortReference spirit:portRef="an"/>
@@ -145,11 +145,6 @@
         <spirit:name>EightDispControl_0_segments</spirit:name>
         <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="segments"/>
         <spirit:externalPortReference spirit:portRef="seg"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>ex1_0_led</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="ex1_0" spirit:portRef="led"/>
-        <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="binary"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_1</spirit:name>
@@ -168,6 +163,18 @@
         <spirit:name>sw_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="sw"/>
         <spirit:internalPortReference spirit:componentRef="ex1_0" spirit:portRef="sw"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconstant_0_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconstant_0" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="BinToBCD16_0" spirit:portRef="request"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconstant_1_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconstant_1" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="near_leftL"/>
+        <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="leftL"/>
+        <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="near_rightL"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>
