@@ -1,0 +1,644 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Mar 17 15:17:06 2017
+# Process ID: 22144
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21976 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson3\Ex1\ex1.xpr
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/vivado.log
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ex1:1.0'. The one found in IP location 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs' will take precedence over the same IP in location c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/imports/new
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 761.223 ; gain = 126.828
+make_wrapper -files [get_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd] -top
+Adding cell -- ua.pt:user:BinToBCD16:1.0 - BinToBCD16_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- ua.pt:user:EightDispControl:1.0 - EightDispControl_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:user:ex1:1.0 - ex1_0
+Successfully read diagram <ex1> from BD file <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd>
+INFO: [BD 41-1662] The design 'ex1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 17 15:19:55 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/synth_1/runme.log
+[Fri Mar 17 15:19:55 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/impl_1/runme.log
+ipx::open_ipxact_file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/component.xml
+ipx::unload_core c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/component.xml
+remove_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+make_wrapper -files [get_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd] -top
+Adding cell -- ua.pt:user:BinToBCD16:1.0 - BinToBCD16_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- ua.pt:user:EightDispControl:1.0 - EightDispControl_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:user:ex1:1.0 - ex1_0
+Successfully read diagram <ex1> from BD file <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd>
+INFO: [BD 41-1662] The design 'ex1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+add_files -norecurse C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+remove_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+file delete -force C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+report_ip_status -name ip_status 
+open_bd_design {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd}
+Adding cell -- ua.pt:user:BinToBCD16:1.0 - BinToBCD16_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- ua.pt:user:EightDispControl:1.0 - EightDispControl_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- xilinx.com:user:ex1:1.0 - ex1_0
+Successfully read diagram <ex1> from BD file <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 886.828 ; gain = 32.824
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 17 15:24:10 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/synth_1/runme.log
+[Fri Mar 17 15:24:10 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/impl_1/runme.log
+make_wrapper -files [get_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd] -top
+INFO: [BD 41-1662] The design 'ex1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+add_files -norecurse C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 17 15:26:42 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/synth_1/runme.log
+[Fri Mar 17 15:26:42 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/impl_1/runme.log
+reset_target all [get_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd] -sync -no_script -force -quiet
+remove_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+file delete -force C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+validate_bd_design -force
+make_wrapper -files [get_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd] -top
+INFO: [BD 41-1662] The design 'ex1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+import_files -force -norecurse C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+remove_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/imports/hdl/ex1_wrapper.vhd
+file delete -force C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/imports/hdl/ex1_wrapper.vhd
+make_wrapper -files [get_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd] -fileset [get_filesets sources_1] -inst_template
+INFO: [BD 41-1662] The design 'ex1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+make_wrapper -files [get_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd] -top
+INFO: [BD 41-1662] The design 'ex1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+add_files -norecurse C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/hdl/ex1_wrapper.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 17 15:34:19 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/synth_1/runme.log
+[Fri Mar 17 15:34:19 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/impl_1/runme.log
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets EightDispControl_0_select_display] [get_bd_nets EightDispControl_0_segments] [get_bd_ports an] [get_bd_ports seg]
+create_bd_port -dir O -from 7 -to 0 an
+set_property location {703 146} [get_bd_ports an]
+connect_bd_net [get_bd_ports an] [get_bd_pins EightDispControl_0/select_display]
+create_bd_port -dir O -from 6 -to 0 seg
+set_property location {707 165} [get_bd_ports seg]
+connect_bd_net [get_bd_ports seg] [get_bd_pins EightDispControl_0/segments]
+set_property location {694 171} [get_bd_ports seg]
+set_property location {691 152} [get_bd_ports an]
+save_bd_design
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ex1.bd> 
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/bd/ex1/ui/bd_b3c3585e.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 17 15:37:18 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/synth_1/runme.log
+[Fri Mar 17 15:37:18 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/impl_1/runme.log
+set_property target_constrs_file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/constrs_1/imports/Not_working/Nexys4_Master.xdc [current_fileset -constrset]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 17 15:38:03 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/synth_1/runme.log
+[Fri Mar 17 15:38:03 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.runs/impl_1/runme.log
+close_project
+create_project Ex2 C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+set_property target_language VHDL [current_project]
+add_files -norecurse C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Not_working/Lesson3.srcs/sources_1/new/maxdivider.vhd
+import_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Not_working/Lesson3.srcs/sources_1/new/maxdivider.vhd
+add_files -fileset constrs_1 -norecurse C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Not_working/Nexys4_Master.xdc
+import_files -fileset constrs_1 C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Not_working/Nexys4_Master.xdc
+ipx::package_project -root_dir c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs -vendor xilinx.com -library user -taxonomy /UserIP
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs'.
+ipx::unload_core c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs/component.xml
+set_property  ip_repo_paths  {c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository'.
+create_bd_design "ex2"
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+create_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1119.988 ; gain = 0.000
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:maxdivider:1.0 maxdivider_0
+endgroup
+set_property location {0.5 -26 -39} [get_bd_cells maxdivider_0]
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:BinToBCD16:1.0 BinToBCD16_0
+endgroup
+set_property location {0.5 -183 -85} [get_bd_cells maxdivider_0]
+set_property location {2 103 -60} [get_bd_cells BinToBCD16_0]
+set_property location {2.5 109 -80} [get_bd_cells BinToBCD16_0]
+connect_bd_net [get_bd_pins BinToBCD16_0/binary] [get_bd_pins maxdivider_0/led]
+startgroup
+set_property -dict [list CONFIG.size_of_data_to_convert {8}] [get_bd_cells BinToBCD16_0]
+endgroup
+create_bd_port -dir I clk
+set_property location {-313 -150} [get_bd_ports clk]
+add_files -norecurse C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson2/Lesson2.srcs/sim_1/new/counter.vhd
+import_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson2/Lesson2.srcs/sim_1/new/counter.vhd
+remove_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/imports/new/counter.vhd
+file delete -force C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/imports/new/counter.vhd
+set_property  ip_repo_paths  {c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Counter} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Counter'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:counter:1.0 counter_0
+endgroup
+connect_bd_net [get_bd_ports clk] [get_bd_pins counter_0/clock]
+connect_bd_net [get_bd_pins counter_0/output] [get_bd_pins maxdivider_0/clk]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /counter_0/output(undef) and /maxdivider_0/clk(clk)
+startgroup
+set_property -dict [list CONFIG.size {1}] [get_bd_cells counter_0]
+endgroup
+connect_bd_net [get_bd_pins counter_0/output] [get_bd_pins BinToBCD16_0/clk]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /counter_0/output(undef) and /BinToBCD16_0/clk(clk)
+delete_bd_objs [get_bd_nets counter_0_output]
+delete_bd_objs [get_bd_nets clk_1] [get_bd_cells counter_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins maxdivider_0/clk]
+create_bd_port -dir I btnC
+set_property location {-323 -101} [get_bd_ports btnC]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins maxdivider_0/btnC]
+create_bd_port -dir I -from 15 -to 0 sw
+set_property location {-426 -61} [get_bd_ports sw]
+connect_bd_net [get_bd_ports sw] [get_bd_pins maxdivider_0/sw]
+connect_bd_net [get_bd_ports clk] [get_bd_pins BinToBCD16_0/clk]
+save_bd_design
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+startgroup
+create_bd_cell -type ip -vlnv ua.pt:user:EightDispControl:1.0 EightDispControl_0
+endgroup
+set_property location {3.5 473 -93} [get_bd_cells EightDispControl_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins EightDispControl_0/clk]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports clk] [get_bd_pins EightDispControl_0/clk]'
+create_project clockdivider C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+set_property target_language VHDL [current_project]
+add_files -norecurse C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson1/project1/project1.srcs/sources_1/new/ex4.vhd
+import_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson1/project1/project1.srcs/sources_1/new/ex4.vhd
+update_files -from_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/imports/new/clockdivider.vhd -to_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/imports/new/ex4.vhd -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/imports/new/ex4.vhd' with file 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/imports/new/clockdivider.vhd'.
+INFO: [filemgmt 20-1080] Importing file from 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/imports/new/clockdivider.vhd' to 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/imports/new/clockdivider.vhd'.
+remove_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/imports/new/clockdivider.vhd
+file delete -force C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/imports/new/clockdivider.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+file mkdir C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/new
+close [ open C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/new/clockdivider.vhd w ]
+add_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/new/clockdivider.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+ipx::package_project -root_dir c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/clockdivider/clockdivider.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/clockdivider/clockdivider.srcs/sources_1/new [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/clockdivider/clockdivider.srcs/sources_1/new'.
+close_project
+set_property  ip_repo_paths  {c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Counter C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Counter'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clockdivider:1.0 clockdivider_0
+endgroup
+set_property location {2.5 153 -260} [get_bd_cells clockdivider_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clockdivider_0/clk]
+connect_bd_net [get_bd_pins clockdivider_0/led] [get_bd_pins clockdivider_0/btnc]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins clockdivider_0/led] [get_bd_pins clockdivider_0/btnc]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports clk] [get_bd_pins clockdivider_0/clk]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 153 -260} [get_bd_cells clockdivider_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv xilinx.com:user:clockdivider:1.0 clockdivider_0'
+INFO: [Common 17-17] undo 'startgroup'
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Counter'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider'.
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clockdivider:1.0 clockdivider_0
+endgroup
+set_property location {2 -56 -233} [get_bd_cells clockdivider_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clockdivider_0/clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins clockdivider_0/btnc]
+connect_bd_net [get_bd_pins clockdivider_0/led] [get_bd_pins EightDispControl_0/clk]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clockdivider_0/led(undef) and /EightDispControl_0/clk(clk)
+connect_bd_net [get_bd_pins BinToBCD16_0/BCD0] [get_bd_pins EightDispControl_0/rightR]
+connect_bd_net [get_bd_pins EightDispControl_0/near_rightR] [get_bd_pins BinToBCD16_0/BCD1]
+connect_bd_net [get_bd_pins EightDispControl_0/near_leftR] [get_bd_pins BinToBCD16_0/BCD2]
+connect_bd_net [get_bd_pins EightDispControl_0/leftR] [get_bd_pins BinToBCD16_0/BCD3]
+connect_bd_net [get_bd_pins EightDispControl_0/rightL] [get_bd_pins BinToBCD16_0/BCD4]
+set_property location {3 602 -138} [get_bd_cells EightDispControl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property -dict [list CONFIG.CONST_WIDTH {4}] [get_bd_cells xlconstant_0]
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins EightDispControl_0/leftL]
+connect_bd_net [get_bd_pins EightDispControl_0/near_leftL] [get_bd_pins xlconstant_0/dout]
+connect_bd_net [get_bd_pins EightDispControl_0/near_rightL] [get_bd_pins xlconstant_0/dout]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins BinToBCD16_0/request]
+create_bd_port -dir I -from 7 -to 0 an
+report_ip_status -name ip_status 
+set_property location {756 -217} [get_bd_ports an]
+delete_bd_objs [get_bd_ports an]
+create_bd_port -dir O an
+connect_bd_net [get_bd_ports an] [get_bd_pins EightDispControl_0/select_display]
+delete_bd_objs [get_bd_nets EightDispControl_0_select_display] [get_bd_ports an]
+create_bd_port -dir O -from 7 -to 0 an
+set_property location {772 -215} [get_bd_ports an]
+connect_bd_net [get_bd_ports an] [get_bd_pins EightDispControl_0/select_display]
+set_property location {762 -151} [get_bd_ports an]
+create_bd_port -dir I -from 6 -to 0 seg
+delete_bd_objs [get_bd_ports seg]
+create_bd_port -dir O -from 6 -to 0 seg
+set_property location {766 -95} [get_bd_ports seg]
+connect_bd_net [get_bd_ports seg] [get_bd_pins EightDispControl_0/segments]
+regenerate_bd_layout
+make_wrapper -files [get_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd] -top
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/BinToBCD16_0/reset
+
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2_wrapper.vhd
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ui/bd_b44167df.ui> 
+add_files -norecurse C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2_wrapper.vhd
+connect_bd_net [get_bd_ports btnC] [get_bd_pins BinToBCD16_0/reset]
+remove_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2_wrapper.vhd
+file delete -force C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2_wrapper.vhd
+make_wrapper -files [get_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd] -top
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2_wrapper.vhd
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+add_files -norecurse C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2_wrapper.vhd
+save_bd_design
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ui/bd_b44167df.ui> 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'ex2.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block maxdivider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BinToBCD16_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDispControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clockdivider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+Exporting to file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hw_handoff/ex2.hwh
+Generated Block Design Tcl file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hw_handoff/ex2_bd.tcl
+Generated Hardware Definition File C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2.hwdef
+[Fri Mar 17 17:15:58 2017] Launched ex2_maxdivider_0_0_synth_1, ex2_BinToBCD16_0_0_synth_1, ex2_EightDispControl_0_0_synth_1, ex2_clockdivider_0_1_synth_1, ex2_xlconstant_0_0_synth_1, ex2_xlconstant_1_0_synth_1, synth_1...
+Run output will be captured here:
+ex2_maxdivider_0_0_synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_maxdivider_0_0_synth_1/runme.log
+ex2_BinToBCD16_0_0_synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_BinToBCD16_0_0_synth_1/runme.log
+ex2_EightDispControl_0_0_synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_EightDispControl_0_0_synth_1/runme.log
+ex2_clockdivider_0_1_synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_clockdivider_0_1_synth_1/runme.log
+ex2_xlconstant_0_0_synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_xlconstant_0_0_synth_1/runme.log
+ex2_xlconstant_1_0_synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_xlconstant_1_0_synth_1/runme.log
+synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/synth_1/runme.log
+[Fri Mar 17 17:15:59 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1259.832 ; gain = 17.273
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274664038A
+set_property PROGRAM.FILE {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/impl_1/ex2_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/impl_1/ex2_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+close_hw
+report_ip_status -name ip_status 
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+ipx::open_ipxact_file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/new/component.xml
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/new
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/new'
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1506.980 ; gain = 0.000
+current_project Ex2
+delete_bd_objs [get_bd_nets clockdivider_0_led] [get_bd_cells clockdivider_0]
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Counter'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider'.
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clockdivider:1.0 clockdivider_0
+endgroup
+set_property location {3 415 122} [get_bd_cells clockdivider_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clockdivider_0/clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins clockdivider_0/btnc]
+connect_bd_net [get_bd_pins clockdivider_0/led] [get_bd_pins EightDispControl_0/clk]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clockdivider_0/led(undef) and /EightDispControl_0/clk(clk)
+save_bd_design
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ui/bd_b44167df.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2_wrapper.vhd
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block maxdivider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BinToBCD16_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDispControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clockdivider_0 .
+Exporting to file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hw_handoff/ex2.hwh
+Generated Block Design Tcl file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hw_handoff/ex2_bd.tcl
+Generated Hardware Definition File C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2.hwdef
+[Fri Mar 17 18:03:12 2017] Launched ex2_clockdivider_0_0_synth_1, synth_1...
+Run output will be captured here:
+ex2_clockdivider_0_0_synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_clockdivider_0_0_synth_1/runme.log
+synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/synth_1/runme.log
+[Fri Mar 17 18:03:12 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/impl_1/runme.log
+report_ip_status -name ip_status 
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1559.305 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274664038A
+set_property PROGRAM.FILE {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/impl_1/ex2_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/impl_1/ex2_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+current_project clockdivider
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/new
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/new'
+update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1570.422 ; gain = 0.000
+close_hw
+current_project Ex2
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Counter'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider'.
+report_ip_status -name ip_status
+current_project clockdivider
+current_project Ex2
+upgrade_ip -vlnv xilinx.com:user:clockdivider:1.0 [get_ips  ex2_clockdivider_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd'
+INFO: [IP_Flow 19-3422] Upgraded ex2_clockdivider_0_0 (clockdivider_v1_0 1.0) from revision 3 to revision 4
+WARNING: [BD 41-1731] Type mismatch between connected pins: /EightDispControl_0/clk(clk) and /clockdivider_0_upgraded_ipi/led(undef)
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips ex2_clockdivider_0_0] -no_script -sync -force -quiet
+delete_bd_objs [get_bd_nets clockdivider_0_led] [get_bd_cells clockdivider_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clockdivider:1.0 clockdivider_0
+endgroup
+set_property location {3 467 134} [get_bd_cells clockdivider_0]
+connect_bd_net [get_bd_pins clockdivider_0/led] [get_bd_pins EightDispControl_0/clk]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clockdivider_0/led(undef) and /EightDispControl_0/clk(clk)
+connect_bd_net [get_bd_ports clk] [get_bd_pins clockdivider_0/clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins clockdivider_0/btnc]
+save_bd_design
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ui/bd_b44167df.ui> 
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2_wrapper.vhd
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block maxdivider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BinToBCD16_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDispControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clockdivider_0 .
+Exporting to file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hw_handoff/ex2.hwh
+Generated Block Design Tcl file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hw_handoff/ex2_bd.tcl
+Generated Hardware Definition File C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2.hwdef
+[Fri Mar 17 18:26:54 2017] Launched ex2_clockdivider_0_1_synth_1, synth_1...
+Run output will be captured here:
+ex2_clockdivider_0_1_synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_clockdivider_0_1_synth_1/runme.log
+synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/synth_1/runme.log
+[Fri Mar 17 18:26:54 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/impl_1/runme.log
+report_ip_status -name ip_status 
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1619.016 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274664038A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210274664038A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/impl_1/ex2_wrapper.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+close_hw
+current_project clockdivider
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/new
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider/clockdivider.srcs/sources_1/new'
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1619.016 ; gain = 0.000
+current_project Ex2
+delete_bd_objs [get_bd_nets clockdivider_0_led] [get_bd_cells clockdivider_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:clockdivider:1.0 clockdivider_0
+endgroup
+set_property location {3 491 122} [get_bd_cells clockdivider_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins clockdivider_0/clk]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins clockdivider_0/btnc]
+connect_bd_net [get_bd_pins clockdivider_0/led] [get_bd_pins EightDispControl_0/clk]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clockdivider_0/led(undef) and /EightDispControl_0/clk(clk)
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson3/ex2/ex2.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Counter'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/clockdivider'.
+report_ip_status -name ip_status
+save_bd_design
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ui/bd_b44167df.ui> 
+upgrade_ip -vlnv xilinx.com:user:clockdivider:1.0 [get_ips  ex2_clockdivider_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd'
+INFO: [IP_Flow 19-3422] Upgraded ex2_clockdivider_0_0 (clockdivider_v1_0 1.0) from revision 4 to revision 5
+WARNING: [BD 41-1731] Type mismatch between connected pins: /EightDispControl_0/clk(clk) and /clockdivider_0_upgraded_ipi/led(undef)
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips ex2_clockdivider_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2.vhd
+VHDL Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2_wrapper.vhd
+Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ex2.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block maxdivider_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BinToBCD16_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDispControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clockdivider_0 .
+Exporting to file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hw_handoff/ex2.hwh
+Generated Block Design Tcl file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hw_handoff/ex2_bd.tcl
+Generated Hardware Definition File C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/hdl/ex2.hwdef
+[Fri Mar 17 18:38:16 2017] Launched ex2_clockdivider_0_0_synth_1, synth_1...
+Run output will be captured here:
+ex2_clockdivider_0_0_synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_clockdivider_0_0_synth_1/runme.log
+synth_1: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/synth_1/runme.log
+[Fri Mar 17 18:38:16 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/impl_1/runme.log

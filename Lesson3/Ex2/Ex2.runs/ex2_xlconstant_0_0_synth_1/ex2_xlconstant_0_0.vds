@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Mar 17 17:18:50 2017
+# Process ID: 34912
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_xlconstant_0_0_synth_1
+# Command line: vivado.exe -log ex2_xlconstant_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ex2_xlconstant_0_0.tcl
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_xlconstant_0_0_synth_1/ex2_xlconstant_0_0.vds
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.runs/ex2_xlconstant_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ex2_xlconstant_0_0.tcl -notrace
+Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:40 . Memory (MB): peak = 290.109 ; gain = 80.793
+INFO: [Synth 8-638] synthesizing module 'ex2_xlconstant_0_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ip/ex2_xlconstant_0_0/sim/ex2_xlconstant_0_0.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'xlconstant' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ipshared/e147/xlconstant.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'xlconstant' (1#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ipshared/e147/xlconstant.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'ex2_xlconstant_0_0' (2#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.srcs/sources_1/bd/ex2/ip/ex2_xlconstant_0_0/sim/ex2_xlconstant_0_0.vhd:35]
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 327.621 ; gain = 118.305
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 327.621 ; gain = 118.305
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 327.621 ; gain = 118.305
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 327.621 ; gain = 118.305
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 442.156 ; gain = 232.840
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 442.156 ; gain = 232.840
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 445.828 ; gain = 236.512
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:50 . Memory (MB): peak = 445.828 ; gain = 236.512
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:50 . Memory (MB): peak = 445.828 ; gain = 236.512
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:50 . Memory (MB): peak = 445.828 ; gain = 236.512
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:50 . Memory (MB): peak = 445.828 ; gain = 236.512
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:50 . Memory (MB): peak = 445.828 ; gain = 236.512
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:50 . Memory (MB): peak = 445.828 ; gain = 236.512
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:50 . Memory (MB): peak = 445.828 ; gain = 236.512
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 531.332 ; gain = 315.836
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 907.902 ; gain = 376.570
