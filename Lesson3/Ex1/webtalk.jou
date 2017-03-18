@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Mar 17 19:00:41 2017
+# Process ID: 23748
+# Current directory: c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1
+# Command line: wbtcv.exe -mode batch -source C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/webtalk.log
+# Journal file: c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex2/Ex2.hw/webtalk/labtool_webtalk.tcl -notrace
