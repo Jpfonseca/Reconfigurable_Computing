@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1490364585">
+  <File Type="PWROPT-DRC" Name="disp32bits_wrapper_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="disp32bits_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="disp32bits_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="disp32bits_wrapper_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="disp32bits_wrapper.tcl"/>
+  <File Type="OPT-HWDEF" Name="disp32bits_wrapper.hwdef"/>
+  <File Type="RDI-RDI" Name="disp32bits_wrapper.vdi"/>
+  <File Type="OPT-DCP" Name="disp32bits_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="disp32bits_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="disp32bits_wrapper_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="disp32bits_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="disp32bits_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="disp32bits_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="disp32bits_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="disp32bits_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="disp32bits_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="disp32bits_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="disp32bits_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="disp32bits_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="disp32bits_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="disp32bits_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="disp32bits_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="disp32bits_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="disp32bits_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="disp32bits_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="disp32bits_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="disp32bits_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="disp32bits_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="disp32bits_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="disp32bits_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="disp32bits_wrapper_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="disp32bits_wrapper.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="disp32bits_wrapper_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="disp32bits_wrapper.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="disp32bits_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="disp32bits_wrapper.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="disp32bits_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="disp32bits_wrapper.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="disp32bits_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="disp32bits_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="disp32bits_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="disp32bits_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="disp32bits_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="disp32bits_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="disp32bits_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="disp32bits_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="disp32bits_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="disp32bits_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="disp32bits_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="disp32bits_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="disp32bits_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="disp32bits_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="disp32bits_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="disp32bits_wrapper.bit"/>
+  <File Type="BITSTR-RBT" Name="disp32bits_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="disp32bits_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="disp32bits_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="disp32bits_wrapper.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="disp32bits_wrapper.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/disp32bits/disp32bits.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/disp32bits/hdl/disp32bits_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="disp32bits_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Nexys4_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_2_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_EightDispControl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_5_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_2_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_clockdivider_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_2_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_2_5"/>
+</GenRun>

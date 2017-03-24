@@ -1,0 +1,340 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Mar 24 12:33:33 2017
+# Process ID: 13160
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1
+# Command line: vivado.exe -log swtodisplays_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source swtodisplays_wrapper.tcl
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/swtodisplays_wrapper.vds
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source swtodisplays_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ex1:1.0'. The one found in IP location 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs' will take precedence over the same IP in location c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex1/ex1.srcs/sources_1/imports/ex1.srcs
+Command: synth_design -top swtodisplays_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12084 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 292.531 ; gain = 82.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'swtodisplays_wrapper' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays_wrapper.vhd:24]
+INFO: [Synth 8-3491] module 'swtodisplays' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:14' bound to instance 'swtodisplays_i' of component 'swtodisplays' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays_wrapper.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'swtodisplays' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:28]
+INFO: [Synth 8-3491] module 'swtodisplays_BinToBCD16_0_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/realtime/swtodisplays_BinToBCD16_0_0_stub.vhdl:5' bound to instance 'BinToBCD16_0' of component 'swtodisplays_BinToBCD16_0_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'swtodisplays_BinToBCD16_0_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/realtime/swtodisplays_BinToBCD16_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'swtodisplays_EightDispControl_0_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/realtime/swtodisplays_EightDispControl_0_0_stub.vhdl:5' bound to instance 'EightDispControl_0' of component 'swtodisplays_EightDispControl_0_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'swtodisplays_EightDispControl_0_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/realtime/swtodisplays_EightDispControl_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'swtodisplays_clockdivider_0_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/realtime/swtodisplays_clockdivider_0_0_stub.vhdl:5' bound to instance 'clockdivider_0' of component 'swtodisplays_clockdivider_0_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'swtodisplays_clockdivider_0_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/realtime/swtodisplays_clockdivider_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'swtodisplays_xlconstant_0_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/realtime/swtodisplays_xlconstant_0_0_stub.vhdl:5' bound to instance 'xlconstant_0' of component 'swtodisplays_xlconstant_0_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'swtodisplays_xlconstant_0_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/realtime/swtodisplays_xlconstant_0_0_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'swtodisplays_xlconstant_1_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/realtime/swtodisplays_xlconstant_1_0_stub.vhdl:5' bound to instance 'xlconstant_1' of component 'swtodisplays_xlconstant_1_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'swtodisplays_xlconstant_1_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/realtime/swtodisplays_xlconstant_1_0_stub.vhdl:12]
+INFO: [Synth 8-256] done synthesizing module 'swtodisplays' (1#1) [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'swtodisplays_wrapper' (2#1) [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays_wrapper.vhd:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 330.031 ; gain = 119.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 330.031 ; gain = 119.820
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'swtodisplays_BinToBCD16_0_0' instantiated as 'swtodisplays_i/BinToBCD16_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:95]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'swtodisplays_EightDispControl_0_0' instantiated as 'swtodisplays_i/EightDispControl_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:108]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'swtodisplays_clockdivider_0_0' instantiated as 'swtodisplays_i/clockdivider_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:122]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'swtodisplays_xlconstant_0_0' instantiated as 'swtodisplays_i/xlconstant_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:128]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'swtodisplays_xlconstant_1_0' instantiated as 'swtodisplays_i/xlconstant_1' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.srcs/sources_1/bd/swtodisplays/hdl/swtodisplays.vhd:132]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/dcp/swtodisplays_EightDispControl_0_0_in_context.xdc] for cell 'swtodisplays_i/EightDispControl_0'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/dcp/swtodisplays_EightDispControl_0_0_in_context.xdc] for cell 'swtodisplays_i/EightDispControl_0'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/dcp_2/swtodisplays_clockdivider_0_0_in_context.xdc] for cell 'swtodisplays_i/clockdivider_0'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/dcp_2/swtodisplays_clockdivider_0_0_in_context.xdc] for cell 'swtodisplays_i/clockdivider_0'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/dcp_3/swtodisplays_BinToBCD16_0_0_in_context.xdc] for cell 'swtodisplays_i/BinToBCD16_0'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/dcp_3/swtodisplays_BinToBCD16_0_0_in_context.xdc] for cell 'swtodisplays_i/BinToBCD16_0'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/dcp_4/swtodisplays_xlconstant_0_0_in_context.xdc] for cell 'swtodisplays_i/xlconstant_0'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/dcp_4/swtodisplays_xlconstant_0_0_in_context.xdc] for cell 'swtodisplays_i/xlconstant_0'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/dcp_5/swtodisplays_xlconstant_1_0_in_context.xdc] for cell 'swtodisplays_i/xlconstant_1'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/.Xil/Vivado-13160-DESKTOP-2SMIO6T/dcp_5/swtodisplays_xlconstant_1_0_in_context.xdc] for cell 'swtodisplays_i/xlconstant_1'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:197]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:198]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:200]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:201]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:203]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:204]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:206]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc:207]
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/swtodisplays_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/swtodisplays_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/swtodisplays_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 568.695 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 568.695 ; gain = 358.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 568.695 ; gain = 358.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for swtodisplays_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swtodisplays_i/BinToBCD16_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swtodisplays_i/EightDispControl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swtodisplays_i/clockdivider_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swtodisplays_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for swtodisplays_i/xlconstant_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 568.695 ; gain = 358.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 568.695 ; gain = 358.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 568.695 ; gain = 358.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 571.938 ; gain = 361.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 571.938 ; gain = 361.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 581.652 ; gain = 371.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 581.652 ; gain = 371.441
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 581.652 ; gain = 371.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 581.652 ; gain = 371.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 581.652 ; gain = 371.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 581.652 ; gain = 371.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 581.652 ; gain = 371.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |swtodisplays_BinToBCD16_0_0       |         1|
+|2     |swtodisplays_EightDispControl_0_0 |         1|
+|3     |swtodisplays_clockdivider_0_0     |         1|
+|4     |swtodisplays_xlconstant_0_0       |         1|
+|5     |swtodisplays_xlconstant_1_0       |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------------+------+
+|      |Cell                                   |Count |
++------+---------------------------------------+------+
+|1     |swtodisplays_BinToBCD16_0_0_bbox       |     1|
+|2     |swtodisplays_EightDispControl_0_0_bbox |     1|
+|3     |swtodisplays_clockdivider_0_0_bbox     |     1|
+|4     |swtodisplays_xlconstant_0_0_bbox       |     1|
+|5     |swtodisplays_xlconstant_1_0_bbox       |     1|
+|6     |IBUF                                   |    18|
+|7     |OBUF                                   |    15|
++------+---------------------------------------+------+
+
+Report Instance Areas: 
++------+-----------------+-------------+------+
+|      |Instance         |Module       |Cells |
++------+-----------------+-------------+------+
+|1     |top              |             |    75|
+|2     |  swtodisplays_i |swtodisplays |    42|
++------+-----------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 581.652 ; gain = 371.441
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 581.652 ; gain = 123.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 581.652 ; gain = 371.441
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 47 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 595.730 ; gain = 380.402
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/synth_1/swtodisplays_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 595.730 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 12:34:23 2017...

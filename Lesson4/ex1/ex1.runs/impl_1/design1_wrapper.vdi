@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Mar 24 15:31:39 2017
+# Process ID: 7180
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1
+# Command line: vivado.exe -log design1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design1_wrapper.tcl -notrace
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/design1_wrapper.vdi
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design1_wrapper.tcl -notrace
+Command: open_checkpoint design1_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 210.219 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/an[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:3857]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/an[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:3864]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/an[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:3871]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/an[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:3878]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/an[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:3885]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/an[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:3892]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/an[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:3899]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/an[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:3906]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/btnC' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:3842]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:3849]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/seg[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:4075]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/seg[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:4082]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/seg[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:4089]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/seg[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:4096]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/seg[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:4103]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/seg[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:4110]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design1_i/disp32bits_wrapper_0/seg[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-8504-DESKTOP-2SMIO6T/dcp_3/design1_disp32bits_wrapper_0_0.edf:4117]
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-7180-DESKTOP-2SMIO6T/dcp/design1_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-7180-DESKTOP-2SMIO6T/dcp/design1_wrapper_early.xdc]
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-7180-DESKTOP-2SMIO6T/dcp/design1_wrapper.xdc]
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/ex1/ex1.runs/impl_1/.Xil/Vivado-7180-DESKTOP-2SMIO6T/dcp/design1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 474.941 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 474.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1756540
+open_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 474.941 ; gain = 264.723
+Command: write_bitstream -force -no_partial_bitfile design1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 859.402 ; gain = 384.461
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 15:32:20 2017...

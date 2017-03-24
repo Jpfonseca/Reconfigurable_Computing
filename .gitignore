@@ -87,3 +87,5 @@
 !*.elf
 !*.bmm
 !*.xmp
+
+\.idea/

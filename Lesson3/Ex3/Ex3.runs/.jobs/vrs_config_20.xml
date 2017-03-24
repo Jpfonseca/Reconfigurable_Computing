@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Find1000_RandomGenerator_0_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex3/Ex3.runs/Find1000_RandomGenerator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

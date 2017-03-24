@@ -1,0 +1,39 @@
+
+*** Running vivado
+    with args -log Find1000_xlconcat_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Find1000_xlconcat_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Find1000_xlconcat_0_0.tcl -notrace
+Starting Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 290.469 ; gain = 80.301
+INFO: [Synth 8-638] synthesizing module 'Find1000_xlconcat_0_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex3/Ex3.srcs/sources_1/bd/Find1000/ip/Find1000_xlconcat_0_0/synth/Find1000_xlconcat_0_0.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex3/Ex3.srcs/sources_1/bd/Find1000/ipshared/2e37/xlconcat.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (1#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex3/Ex3.srcs/sources_1/bd/Find1000/ipshared/2e37/xlconcat.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'Find1000_xlconcat_0_0' (2#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson3/Ex3/Ex3.srcs/sources_1/bd/Find1000/ip/Find1000_xlconcat_0_0/synth/Find1000_xlconcat_0_0.vhd:67]
+Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 327.895 ; gain = 117.727
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 327.895 ; gain = 117.727
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 327.895 ; gain = 117.727
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 334.598 ; gain = 124.430
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 423.090 ; gain = 212.922
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 423.090 ; gain = 212.922
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 425.078 ; gain = 214.910
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 425.078 ; gain = 214.910
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 425.078 ; gain = 214.910
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 425.078 ; gain = 214.910
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 425.078 ; gain = 214.910
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 425.078 ; gain = 214.910
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 425.078 ; gain = 214.910
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 425.078 ; gain = 214.910
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 522.895 ; gain = 307.480
+write_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 909.180 ; gain = 386.285

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Mar 24 12:28:28 2017
+# Process ID: 16340
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/swtodisplays_xlconstant_1_0_synth_1
+# Command line: vivado.exe -log swtodisplays_xlconstant_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source swtodisplays_xlconstant_1_0.tcl
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/swtodisplays_xlconstant_1_0_synth_1/swtodisplays_xlconstant_1_0.vds
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/swtodisplays/swtodisplays.runs/swtodisplays_xlconstant_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source swtodisplays_xlconstant_1_0.tcl -notrace

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="disp32bits_xlslice_1_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_xlslice_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="disp32bits_xlslice_0_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_xlslice_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="disp32bits_xlslice_3_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_xlslice_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="disp32bits_EightDispControl_0_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_EightDispControl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="disp32bits_clockdivider_0_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_clockdivider_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="disp32bits_xlslice_2_3_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_xlslice_2_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="disp32bits_xlslice_2_2_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_xlslice_2_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="disp32bits_xlslice_0_1_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_xlslice_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="disp32bits_xlslice_2_1_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_xlslice_2_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="disp32bits_xlslice_2_5_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_xlslice_2_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="disp32bits_xlslice_4_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_xlslice_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="disp32bits_xlslice_5_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/disp32bits_xlslice_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="disp32bits_xlslice_1_0_synth_1"/>
+		<Parent Id="disp32bits_xlslice_0_0_synth_1"/>
+		<Parent Id="disp32bits_xlslice_3_0_synth_1"/>
+		<Parent Id="disp32bits_EightDispControl_0_0_synth_1"/>
+		<Parent Id="disp32bits_clockdivider_0_0_synth_1"/>
+		<Parent Id="disp32bits_xlslice_2_3_synth_1"/>
+		<Parent Id="disp32bits_xlslice_2_2_synth_1"/>
+		<Parent Id="disp32bits_xlslice_0_1_synth_1"/>
+		<Parent Id="disp32bits_xlslice_2_1_synth_1"/>
+		<Parent Id="disp32bits_xlslice_2_5_synth_1"/>
+		<Parent Id="disp32bits_xlslice_4_0_synth_1"/>
+		<Parent Id="disp32bits_xlslice_5_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="disp32bits_xlslice_1_0_synth_1"/>
+		<Parent Id="disp32bits_xlslice_0_0_synth_1"/>
+		<Parent Id="disp32bits_xlslice_3_0_synth_1"/>
+		<Parent Id="disp32bits_EightDispControl_0_0_synth_1"/>
+		<Parent Id="disp32bits_clockdivider_0_0_synth_1"/>
+		<Parent Id="disp32bits_xlslice_2_3_synth_1"/>
+		<Parent Id="disp32bits_xlslice_2_2_synth_1"/>
+		<Parent Id="disp32bits_xlslice_0_1_synth_1"/>
+		<Parent Id="disp32bits_xlslice_2_1_synth_1"/>
+		<Parent Id="disp32bits_xlslice_2_5_synth_1"/>
+		<Parent Id="disp32bits_xlslice_4_0_synth_1"/>
+		<Parent Id="disp32bits_xlslice_5_0_synth_1"/>
+	</Run>
+</Runs>
+
