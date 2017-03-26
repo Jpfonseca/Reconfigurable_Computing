@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Fri Mar 24 15:31:28 2017">
+<application name="pa" timeStamp="Fri Mar 24 16:08:54 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="e45c4c24b7e944b08dabc8c82bace5dc" type="ProjectID"/>
 <property name="ProjectIteration" value="5" type="ProjectIteration"/>
@@ -23,17 +23,21 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CustomizeRSBBlock" value="2" type="JavaHandler"/>
 <property name="EditDelete" value="2" type="JavaHandler"/>
 <property name="EditUndo" value="1" type="JavaHandler"/>
-<property name="NewProject" value="2" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="2" type="JavaHandler"/>
+<property name="NewProject" value="3" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="1" type="JavaHandler"/>
 <property name="OpenProject" value="1" type="JavaHandler"/>
-<property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="4" type="JavaHandler"/>
+<property name="ProgramDevice" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="3" type="JavaHandler"/>
 <property name="RunBitgen" value="4" type="JavaHandler"/>
 <property name="RunImplementation" value="1" type="JavaHandler"/>
 <property name="SaveRSBDesign" value="3" type="JavaHandler"/>
 <property name="UpgradeIP" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="BaseDialog_CANCEL" value="1" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="16" type="GuiResourceData"/>
+<property name="BaseDialog_CANCEL" value="3" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="17" type="GuiResourceData"/>
 <property name="BaseReportTab_RERUN" value="3" type="GuiResourceData"/>
 <property name="CmdMsgDialog_OK" value="1" type="GuiResourceData"/>
 <property name="ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS" value="1" type="GuiResourceData"/>
@@ -44,30 +48,35 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CustomizeErrorDialog_MESSAGES" value="5" type="GuiResourceData"/>
 <property name="CustomizeErrorDialog_OK" value="6" type="GuiResourceData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="17" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="7" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="13" type="GuiResourceData"/>
 <property name="GettingStartedView_RECENT_PROJECTS" value="1" type="GuiResourceData"/>
 <property name="HACGCCoeFileDialog_CLOSE" value="2" type="GuiResourceData"/>
 <property name="HACGCCoeFileDialog_SAVE" value="10" type="GuiResourceData"/>
 <property name="HACGCCoeFileDialog_VALIDATE" value="6" type="GuiResourceData"/>
 <property name="HACGCCoeFileWidget_BROWSE" value="4" type="GuiResourceData"/>
 <property name="HACGCCoeFileWidget_EDIT" value="1" type="GuiResourceData"/>
+<property name="HardwareTreePanel_HARDWARE_TREE_TABLE" value="3" type="GuiResourceData"/>
 <property name="IPStatusSectionPanel_UPGRADE_SELECTED" value="1" type="GuiResourceData"/>
 <property name="IPStatusTablePanel_IP_STATUS_TABLE" value="5" type="GuiResourceData"/>
-<property name="MainMenuMgr_FILE" value="10" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="12" type="GuiResourceData"/>
 <property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="3" type="GuiResourceData"/>
 <property name="MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_ADD_SOURCES" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_AUTO_UPDATE_HIER" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_CLOSE_PROJECT" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_CREATE_TOP_HDL" value="1" type="GuiResourceData"/>
-<property name="PACommandNames_NEW_PROJECT" value="2" type="GuiResourceData"/>
+<property name="PACommandNames_NEW_PROJECT" value="3" type="GuiResourceData"/>
 <property name="PACommandNames_OPEN_PROJECT" value="1" type="GuiResourceData"/>
-<property name="PartChooser_FAMILY_CHOOSER" value="1" type="GuiResourceData"/>
-<property name="PartChooser_PARTS" value="2" type="GuiResourceData"/>
-<property name="PartChooser_PART_PACKAGE_CHOOSER" value="1" type="GuiResourceData"/>
-<property name="PartChooser_PART_SPEED_CHOOSER" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_OPEN_TARGET_WIZARD" value="1" type="GuiResourceData"/>
+<property name="PartChooser_FAMILY_CHOOSER" value="2" type="GuiResourceData"/>
+<property name="PartChooser_PARTS" value="3" type="GuiResourceData"/>
+<property name="PartChooser_PART_PACKAGE_CHOOSER" value="2" type="GuiResourceData"/>
+<property name="PartChooser_PART_SPEED_CHOOSER" value="2" type="GuiResourceData"/>
 <property name="PartChooser_TEMP_CHOOSER" value="1" type="GuiResourceData"/>
-<property name="ProjectNameChooser_PROJECT_NAME" value="1" type="GuiResourceData"/>
+<property name="ProgramDebugTab_PROGRAM_DEVICE" value="2" type="GuiResourceData"/>
+<property name="ProgramFpgaDialog_PROGRAM" value="2" type="GuiResourceData"/>
+<property name="ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE" value="1" type="GuiResourceData"/>
+<property name="ProjectNameChooser_PROJECT_NAME" value="2" type="GuiResourceData"/>
 <property name="RDICommands_DELETE" value="1" type="GuiResourceData"/>
 <property name="SaveProjectUtils_CANCEL" value="1" type="GuiResourceData"/>
 <property name="SaveProjectUtils_SAVE" value="1" type="GuiResourceData"/>
@@ -80,6 +89,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SystemBuilderMenu_CREATE_PORT" value="1" type="GuiResourceData"/>
 <property name="SystemBuilderView_ADD_IP" value="1" type="GuiResourceData"/>
 <property name="SystemTab_SHOW_IP_STATUS" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="32" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="22" type="TclMode"/>
 </item>
 </section>
 </application>

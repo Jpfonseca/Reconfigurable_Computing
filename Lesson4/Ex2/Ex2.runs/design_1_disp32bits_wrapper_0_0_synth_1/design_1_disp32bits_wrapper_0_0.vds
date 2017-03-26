@@ -1,0 +1,900 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Mar 26 19:24:33 2017
+# Process ID: 25636
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/design_1_disp32bits_wrapper_0_0_synth_1
+# Command line: vivado.exe -log design_1_disp32bits_wrapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_disp32bits_wrapper_0_0.tcl
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/design_1_disp32bits_wrapper_0_0_synth_1/design_1_disp32bits_wrapper_0_0.vds
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/design_1_disp32bits_wrapper_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_disp32bits_wrapper_0_0.tcl -notrace
+Command: synth_design -top design_1_disp32bits_wrapper_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23328 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 293.336 ; gain = 83.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_disp32bits_wrapper_0_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/synth/design_1_disp32bits_wrapper_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_wrapper' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits_wrapper.vhd:14' bound to instance 'U0' of component 'disp32bits_wrapper' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/synth/design_1_disp32bits_wrapper_0_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_wrapper' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits_wrapper.vhd:24]
+INFO: [Synth 8-3491] module 'disp32bits' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:14' bound to instance 'disp32bits_i' of component 'disp32bits' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits_wrapper.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'disp32bits' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:28]
+INFO: [Synth 8-3491] module 'disp32bits_EightDispControl_0_1' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_EightDispControl_0_1/synth/disp32bits_EightDispControl_0_1.vhd:56' bound to instance 'EightDispControl_0' of component 'disp32bits_EightDispControl_0_1' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_EightDispControl_0_1' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_EightDispControl_0_1/synth/disp32bits_EightDispControl_0_1.vhd:72]
+INFO: [Synth 8-3491] module 'EightDispControl' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/1eec/disp.vhd:2' bound to instance 'U0' of component 'EightDispControl' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_EightDispControl_0_1/synth/disp32bits_EightDispControl_0_1.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'EightDispControl' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/1eec/disp.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'segment_decoder' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/1eec/segment_decoder.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'segment_decoder' (1#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/1eec/segment_decoder.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'EightDispControl' (2#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/1eec/disp.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_EightDispControl_0_1' (3#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_EightDispControl_0_1/synth/disp32bits_EightDispControl_0_1.vhd:72]
+INFO: [Synth 8-3491] module 'disp32bits_clockdivider_0_1' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_clockdivider_0_1/synth/disp32bits_clockdivider_0_1.vhd:56' bound to instance 'clockdivider_0' of component 'disp32bits_clockdivider_0_1' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_clockdivider_0_1' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_clockdivider_0_1/synth/disp32bits_clockdivider_0_1.vhd:64]
+	Parameter number_of_bits bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'clockdivider' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/7312/clockdivider.vhd:5' bound to instance 'U0' of component 'clockdivider' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_clockdivider_0_1/synth/disp32bits_clockdivider_0_1.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'clockdivider' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/7312/clockdivider.vhd:13]
+	Parameter number_of_bits bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clockdivider' (4#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/7312/clockdivider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_clockdivider_0_1' (5#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_clockdivider_0_1/synth/disp32bits_clockdivider_0_1.vhd:64]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_0_2' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_2/synth/disp32bits_xlslice_0_2.vhd:59' bound to instance 'xlslice_0' of component 'disp32bits_xlslice_0_2' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_0_2' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_2/synth/disp32bits_xlslice_0_2.vhd:66]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_2/synth/disp32bits_xlslice_0_2.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice' (6#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_0_2' (7#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_2/synth/disp32bits_xlslice_0_2.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_0_3' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_3/synth/disp32bits_xlslice_0_3.vhd:59' bound to instance 'xlslice_1' of component 'disp32bits_xlslice_0_3' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_0_3' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_3/synth/disp32bits_xlslice_0_3.vhd:66]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_3/synth/disp32bits_xlslice_0_3.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized1' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized1' (7#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_0_3' (8#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_3/synth/disp32bits_xlslice_0_3.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_6_1' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_6_1/synth/disp32bits_xlslice_6_1.vhd:59' bound to instance 'xlslice_10' of component 'disp32bits_xlslice_6_1' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_6_1' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_6_1/synth/disp32bits_xlslice_6_1.vhd:66]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_6_1/synth/disp32bits_xlslice_6_1.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized3' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized3' (8#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_6_1' (9#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_6_1/synth/disp32bits_xlslice_6_1.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_7_1' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_7_1/synth/disp32bits_xlslice_7_1.vhd:59' bound to instance 'xlslice_11' of component 'disp32bits_xlslice_7_1' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_7_1' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_7_1/synth/disp32bits_xlslice_7_1.vhd:66]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_7_1/synth/disp32bits_xlslice_7_1.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized5' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized5' (9#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_7_1' (10#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_7_1/synth/disp32bits_xlslice_7_1.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_8_0' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_8_0/synth/disp32bits_xlslice_8_0.vhd:59' bound to instance 'xlslice_12' of component 'disp32bits_xlslice_8_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_8_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_8_0/synth/disp32bits_xlslice_8_0.vhd:66]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_8_0/synth/disp32bits_xlslice_8_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized7' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized7' (10#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_8_0' (11#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_8_0/synth/disp32bits_xlslice_8_0.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_9_0' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_9_0/synth/disp32bits_xlslice_9_0.vhd:59' bound to instance 'xlslice_13' of component 'disp32bits_xlslice_9_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_9_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_9_0/synth/disp32bits_xlslice_9_0.vhd:66]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_9_0/synth/disp32bits_xlslice_9_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized9' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized9' (11#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_9_0' (12#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_9_0/synth/disp32bits_xlslice_9_0.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_0_4' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_4/synth/disp32bits_xlslice_0_4.vhd:59' bound to instance 'xlslice_2' of component 'disp32bits_xlslice_0_4' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_0_4' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_4/synth/disp32bits_xlslice_0_4.vhd:66]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 31 - type: integer 
+	Parameter DIN_TO bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_4/synth/disp32bits_xlslice_0_4.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized11' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 31 - type: integer 
+	Parameter DIN_TO bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized11' (12#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_0_4' (13#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_4/synth/disp32bits_xlslice_0_4.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_0_5' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_5/synth/disp32bits_xlslice_0_5.vhd:59' bound to instance 'xlslice_3' of component 'disp32bits_xlslice_0_5' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_0_5' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_5/synth/disp32bits_xlslice_0_5.vhd:66]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_5/synth/disp32bits_xlslice_0_5.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized13' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized13' (13#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_0_5' (14#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_5/synth/disp32bits_xlslice_0_5.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_0_9' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_9/synth/disp32bits_xlslice_0_9.vhd:59' bound to instance 'xlslice_4' of component 'disp32bits_xlslice_0_9' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:221]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_0_9' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_9/synth/disp32bits_xlslice_0_9.vhd:66]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_9/synth/disp32bits_xlslice_0_9.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_0_9' (15#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_9/synth/disp32bits_xlslice_0_9.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_3_2' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_3_2/synth/disp32bits_xlslice_3_2.vhd:59' bound to instance 'xlslice_5' of component 'disp32bits_xlslice_3_2' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_3_2' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_3_2/synth/disp32bits_xlslice_3_2.vhd:66]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_3_2/synth/disp32bits_xlslice_3_2.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized16' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized16' (15#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_3_2' (16#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_3_2/synth/disp32bits_xlslice_3_2.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_0_7' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_7/synth/disp32bits_xlslice_0_7.vhd:59' bound to instance 'xlslice_6' of component 'disp32bits_xlslice_0_7' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_0_7' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_7/synth/disp32bits_xlslice_0_7.vhd:66]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_7/synth/disp32bits_xlslice_0_7.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized18' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized18' (16#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_0_7' (17#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_7/synth/disp32bits_xlslice_0_7.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_0_8' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_8/synth/disp32bits_xlslice_0_8.vhd:59' bound to instance 'xlslice_7' of component 'disp32bits_xlslice_0_8' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_0_8' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_8/synth/disp32bits_xlslice_0_8.vhd:66]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_8/synth/disp32bits_xlslice_0_8.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized20' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized20' (17#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_0_8' (18#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_0_8/synth/disp32bits_xlslice_0_8.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_6_0' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_6_0/synth/disp32bits_xlslice_6_0.vhd:59' bound to instance 'xlslice_8' of component 'disp32bits_xlslice_6_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_6_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_6_0/synth/disp32bits_xlslice_6_0.vhd:66]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_6_0/synth/disp32bits_xlslice_6_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized22' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized22' (18#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_6_0' (19#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_6_0/synth/disp32bits_xlslice_6_0.vhd:66]
+INFO: [Synth 8-3491] module 'disp32bits_xlslice_7_0' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_7_0/synth/disp32bits_xlslice_7_0.vhd:59' bound to instance 'xlslice_9' of component 'disp32bits_xlslice_7_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'disp32bits_xlslice_7_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_7_0/synth/disp32bits_xlslice_7_0.vhd:66]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xlslice' declared at 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:27' bound to instance 'U0' of component 'xlslice' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_7_0/synth/disp32bits_xlslice_7_0.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'xlslice__parameterized24' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xlslice__parameterized24' (19#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/ipshared/c49f/xlslice.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_xlslice_7_0' (20#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_xlslice_7_0/synth/disp32bits_xlslice_7_0.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits' (21#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'disp32bits_wrapper' (22#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ipshared/0e13/src/disp32bits_wrapper.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'design_1_disp32bits_wrapper_0_0' (23#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/synth/design_1_disp32bits_wrapper_0_0.vhd:66]
+WARNING: [Synth 8-3331] design xlslice__parameterized24 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice__parameterized24 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice__parameterized24 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice__parameterized24 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice__parameterized22 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice__parameterized22 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice__parameterized22 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice__parameterized22 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice__parameterized20 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice__parameterized20 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice__parameterized20 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice__parameterized20 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice__parameterized18 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice__parameterized16 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice__parameterized16 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice__parameterized16 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice__parameterized16 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice__parameterized16 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice__parameterized16 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice__parameterized16 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice__parameterized16 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice__parameterized13 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice__parameterized13 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice__parameterized13 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice__parameterized13 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice__parameterized13 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice__parameterized13 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice__parameterized13 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice__parameterized13 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice__parameterized11 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice__parameterized9 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice__parameterized9 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice__parameterized9 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice__parameterized9 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice__parameterized7 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice__parameterized7 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice__parameterized7 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice__parameterized7 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice__parameterized5 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice__parameterized5 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice__parameterized5 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice__parameterized5 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice__parameterized3 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice__parameterized3 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice__parameterized3 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice__parameterized3 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[31]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[30]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice__parameterized1 has unconnected port Din[16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 330.715 ; gain = 120.871
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 330.715 ; gain = 120.871
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/32bitstodisp.srcs/sources_1/bd/disp32bits/disp32bits_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/32bitstodisp.srcs/sources_1/bd/disp32bits/disp32bits_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_ooc.xdc] for cell 'U0/disp32bits_i'
+Finished Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_ooc.xdc] for cell 'U0/disp32bits_i'
+Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc] for cell 'U0'
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:197]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:198]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_disp32bits_wrapper_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_disp32bits_wrapper_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/design_1_disp32bits_wrapper_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/design_1_disp32bits_wrapper_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 640.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/EightDispControl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/clockdivider_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_11. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_12. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_13. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_8. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/disp32bits_i/xlslice_9. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module EightDispControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3331] design disp32bits_xlslice_7_0 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design disp32bits_xlslice_7_0 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design disp32bits_xlslice_7_0 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design disp32bits_xlslice_7_0 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design disp32bits_xlslice_6_0 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design disp32bits_xlslice_6_0 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design disp32bits_xlslice_6_0 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design disp32bits_xlslice_6_0 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design disp32bits_xlslice_0_8 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design disp32bits_xlslice_0_8 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design disp32bits_xlslice_0_8 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design disp32bits_xlslice_0_8 has unconnected port Din[4]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     9|
+|2     |LUT1   |    33|
+|3     |LUT3   |     8|
+|4     |LUT4   |     7|
+|5     |LUT6   |     8|
+|6     |MUXF7  |     4|
+|7     |FDRE   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------+--------------------------------+------+
+|      |Instance                 |Module                          |Cells |
++------+-------------------------+--------------------------------+------+
+|1     |top                      |                                |   102|
+|2     |  U0                     |disp32bits_wrapper              |   102|
+|3     |    disp32bits_i         |disp32bits                      |   102|
+|4     |      EightDispControl_0 |disp32bits_EightDispControl_0_1 |    66|
+|5     |        U0               |EightDispControl                |    66|
+|6     |      clockdivider_0     |disp32bits_clockdivider_0_1     |    36|
+|7     |        U0               |clockdivider                    |    36|
+|8     |      xlslice_0          |disp32bits_xlslice_0_2          |     0|
+|9     |      xlslice_1          |disp32bits_xlslice_0_3          |     0|
+|10    |      xlslice_10         |disp32bits_xlslice_6_1          |     0|
+|11    |      xlslice_11         |disp32bits_xlslice_7_1          |     0|
+|12    |      xlslice_12         |disp32bits_xlslice_8_0          |     0|
+|13    |      xlslice_13         |disp32bits_xlslice_9_0          |     0|
+|14    |      xlslice_2          |disp32bits_xlslice_0_4          |     0|
+|15    |      xlslice_3          |disp32bits_xlslice_0_5          |     0|
+|16    |      xlslice_4          |disp32bits_xlslice_0_9          |     0|
+|17    |      xlslice_5          |disp32bits_xlslice_3_2          |     0|
+|18    |      xlslice_6          |disp32bits_xlslice_0_7          |     0|
+|19    |      xlslice_7          |disp32bits_xlslice_0_8          |     0|
+|20    |      xlslice_8          |disp32bits_xlslice_6_0          |     0|
+|21    |      xlslice_9          |disp32bits_xlslice_7_0          |     0|
++------+-------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 640.059 ; gain = 430.215
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 96 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 640.059 ; gain = 114.699
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 640.059 ; gain = 430.215
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/32bitstodisp.srcs/sources_1/bd/disp32bits/disp32bits_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/32bitstodisp.srcs/sources_1/bd/disp32bits/disp32bits_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_ooc.xdc] for cell 'U0/disp32bits_i'
+Finished Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/disp32bits_ooc.xdc] for cell 'U0/disp32bits_i'
+Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc] for cell 'U0'
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:54]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc:54]
+Finished Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/src/Nexys4_Master.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+120 Infos, 200 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 640.059 ; gain = 424.043
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/design_1_disp32bits_wrapper_0_0_synth_1/design_1_disp32bits_wrapper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_disp32bits_wrapper_0_0/design_1_disp32bits_wrapper_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 20 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/design_1_disp32bits_wrapper_0_0_synth_1/design_1_disp32bits_wrapper_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 640.059 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 26 19:25:12 2017...

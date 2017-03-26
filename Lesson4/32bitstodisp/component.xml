@@ -45,7 +45,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3fb81b58</spirit:value>
+            <spirit:value>4fc43d83</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -70,7 +70,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8262e859</spirit:value>
+            <spirit:value>dcd5bbcc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -498,8 +498,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>disp32bits_wrapper_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2017-03-24T15:13:39Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>5</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2017-03-26T18:20:57Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:disp32bits_wrapper:1.0_ARCHIVE_LOCATION">c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp</xilinx:tag>
       </xilinx:tags>
@@ -507,7 +507,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2016.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="5d682510"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ce697511"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6a0422dd"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="cb9b724a"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="a6217112"/>
     </xilinx:packagingInfo>

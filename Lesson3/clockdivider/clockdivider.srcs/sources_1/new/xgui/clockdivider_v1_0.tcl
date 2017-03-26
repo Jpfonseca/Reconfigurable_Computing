@@ -7,4 +7,18 @@ proc init_gui { IPINST } {
 
 }
 
+proc update_PARAM_VALUE.number_of_bits { PARAM_VALUE.number_of_bits } {
+	# Procedure called to update number_of_bits when any of the dependent parameters in the arguments change
+}
+
+proc validate_PARAM_VALUE.number_of_bits { PARAM_VALUE.number_of_bits } {
+	# Procedure called to validate number_of_bits
+	return true
+}
+
+
+proc update_MODELPARAM_VALUE.number_of_bits { MODELPARAM_VALUE.number_of_bits PARAM_VALUE.number_of_bits } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.number_of_bits}] ${MODELPARAM_VALUE.number_of_bits}
+}
 
