@@ -156,16 +156,12 @@ proc create_root_design { parentCell } {
 
   # Create ports
   set an [ create_bd_port -dir O -from 7 -to 0 an ]
-  set btnC [ create_bd_port -dir I btnC ]
   set clk [ create_bd_port -dir I clk ]
   set seg [ create_bd_port -dir O -from 6 -to 0 seg ]
   set sw [ create_bd_port -dir I -from 31 -to 0 sw ]
 
   # Create instance: EightDispControl_0, and set properties
   set EightDispControl_0 [ create_bd_cell -type ip -vlnv ua.pt:user:EightDispControl:1.0 EightDispControl_0 ]
-
-  # Create instance: clockdivider_0, and set properties
-  set clockdivider_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:clockdivider:1.0 clockdivider_0 ]
 
   # Create instance: xlslice_0, and set properties
   set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
@@ -258,9 +254,7 @@ CONFIG.DOUT_WIDTH {4} \
   # Create port connections
   connect_bd_net -net EightDispControl_0_segments [get_bd_ports seg] [get_bd_pins EightDispControl_0/segments]
   connect_bd_net -net EightDispControl_0_select_display [get_bd_ports an] [get_bd_pins EightDispControl_0/select_display]
-  connect_bd_net -net btnC_1 [get_bd_ports btnC] [get_bd_pins clockdivider_0/btnc]
-  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins clockdivider_0/clk]
-  connect_bd_net -net clockdivider_0_led [get_bd_pins EightDispControl_0/clk] [get_bd_pins clockdivider_0/led]
+  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins EightDispControl_0/clk]
   connect_bd_net -net sw_1 [get_bd_ports sw] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din]
   connect_bd_net -net xlslice_0_Dout [get_bd_pins xlslice_0/Dout] [get_bd_pins xlslice_6/Din] [get_bd_pins xlslice_7/Din] [get_bd_pins xlslice_8/Din] [get_bd_pins xlslice_9/Din]
   connect_bd_net -net xlslice_1_Dout [get_bd_pins xlslice_1/Dout] [get_bd_pins xlslice_2/Din] [get_bd_pins xlslice_3/Din] [get_bd_pins xlslice_4/Din] [get_bd_pins xlslice_5/Din]
@@ -279,7 +273,6 @@ CONFIG.DOUT_WIDTH {4} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port btnC -pg 1 -y 190 -defaultsOSRD
 preplace port clk -pg 1 -y 140 -defaultsOSRD
 preplace portBus sw -pg 1 -y 280 -defaultsOSRD
 preplace portBus an -pg 1 -y 270 -defaultsOSRD
@@ -288,31 +281,28 @@ preplace inst EightDispControl_0 -pg 1 -lvl 3 -y 280 -defaultsOSRD
 preplace inst xlslice_0 -pg 1 -lvl 1 -y 360 -defaultsOSRD
 preplace inst xlslice_1 -pg 1 -lvl 1 -y 280 -defaultsOSRD
 preplace inst xlslice_2 -pg 1 -lvl 2 -y 40 -defaultsOSRD
-preplace inst xlslice_3 -pg 1 -lvl 2 -y 170 -defaultsOSRD
-preplace inst xlslice_4 -pg 1 -lvl 2 -y 250 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 2 -y 130 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 2 -y 210 -defaultsOSRD
 preplace inst xlslice_5 -pg 1 -lvl 2 -y 330 -defaultsOSRD
 preplace inst xlslice_6 -pg 1 -lvl 2 -y 410 -defaultsOSRD
-preplace inst clockdivider_0 -pg 1 -lvl 1 -y 120 -defaultsOSRD
 preplace inst xlslice_7 -pg 1 -lvl 2 -y 490 -defaultsOSRD
 preplace inst xlslice_8 -pg 1 -lvl 2 -y 570 -defaultsOSRD
 preplace inst xlslice_9 -pg 1 -lvl 2 -y 650 -defaultsOSRD
 preplace netloc EightDispControl_0_segments 1 3 1 NJ
-preplace netloc xlslice_9_Dout 1 2 1 580J
-preplace netloc xlslice_4_Dout 1 2 1 550J
-preplace netloc xlslice_3_Dout 1 2 1 540J
-preplace netloc xlslice_1_Dout 1 1 1 360
-preplace netloc clockdivider_0_led 1 1 2 NJ 120 550
-preplace netloc btnC_1 1 0 1 30
-preplace netloc xlslice_7_Dout 1 2 1 560J
-preplace netloc xlslice_5_Dout 1 2 1 540J
-preplace netloc clk_1 1 0 1 20
-preplace netloc xlslice_2_Dout 1 2 1 560J
-preplace netloc xlslice_8_Dout 1 2 1 570J
+preplace netloc xlslice_9_Dout 1 2 1 590J
+preplace netloc xlslice_4_Dout 1 2 1 560J
+preplace netloc xlslice_3_Dout 1 2 1 570J
+preplace netloc xlslice_1_Dout 1 1 1 370
+preplace netloc xlslice_7_Dout 1 2 1 570J
+preplace netloc xlslice_5_Dout 1 2 1 550J
+preplace netloc clk_1 1 0 3 NJ 140 360J 260 550
+preplace netloc xlslice_2_Dout 1 2 1 590J
+preplace netloc xlslice_8_Dout 1 2 1 580J
 preplace netloc sw_1 1 0 1 20
 preplace netloc EightDispControl_0_select_display 1 3 1 NJ
-preplace netloc xlslice_6_Dout 1 2 1 550J
+preplace netloc xlslice_6_Dout 1 2 1 560J
 preplace netloc xlslice_0_Dout 1 1 1 360
-levelinfo -pg 1 0 270 450 710 860 -top -10 -bot 700
+levelinfo -pg 1 0 270 460 730 890 -top -10 -bot 700
 ",
 }
 

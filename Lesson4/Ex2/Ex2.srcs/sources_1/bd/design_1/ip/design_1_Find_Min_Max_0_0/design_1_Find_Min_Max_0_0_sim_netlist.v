@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-// Date        : Sun Mar 26 17:27:41 2017
+// Date        : Mon Mar 27 12:02:42 2017
 // Host        : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_Find_Min_Max_0_0/design_1_Find_Min_Max_0_0_sim_netlist.v
+//               C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_Find_Min_Max_0_0/design_1_Find_Min_Max_0_0_sim_netlist.v
 // Design      : design_1_Find_Min_Max_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -262,12 +262,11 @@ module design_1_Find_Min_Max_0_0_Find_Min_Max
   wire [3:0]\NLW_index_reg[13]_i_1_O_UNCONNECTED ;
   wire [3:0]\NLW_index_reg[13]_i_2_O_UNCONNECTED ;
 
-  LUT3 #(
-    .INIT(8'h40)) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \c_max[31]_i_1 
-       (.I0(\c_min_reg[31]_i_2_n_0 ),
-        .I1(\index_reg[13]_i_1_n_1 ),
-        .I2(\c_max_reg[31]_i_2_n_0 ),
+       (.I0(\index_reg[13]_i_1_n_1 ),
+        .I1(\c_max_reg[31]_i_2_n_0 ),
         .O(c_max));
   LUT4 #(
     .INIT(16'h9009)) 

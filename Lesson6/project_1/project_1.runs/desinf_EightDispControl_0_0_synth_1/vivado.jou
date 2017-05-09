@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Apr 05 13:11:33 2017
+# Process ID: 8868
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/project_1/project_1.runs/desinf_EightDispControl_0_0_synth_1
+# Command line: vivado.exe -log desinf_EightDispControl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source desinf_EightDispControl_0_0.tcl
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/project_1/project_1.runs/desinf_EightDispControl_0_0_synth_1/desinf_EightDispControl_0_0.vds
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/project_1/project_1.runs/desinf_EightDispControl_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source desinf_EightDispControl_0_0.tcl -notrace

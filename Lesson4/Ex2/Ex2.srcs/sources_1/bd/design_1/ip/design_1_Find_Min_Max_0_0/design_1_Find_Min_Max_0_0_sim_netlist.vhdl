@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
--- Date        : Sun Mar 26 17:27:41 2017
+-- Date        : Mon Mar 27 12:02:42 2017
 -- Host        : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_Find_Min_Max_0_0/design_1_Find_Min_Max_0_0_sim_netlist.vhdl
+--               C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_Find_Min_Max_0_0/design_1_Find_Min_Max_0_0_sim_netlist.vhdl
 -- Design      : design_1_Find_Min_Max_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -259,14 +259,13 @@ architecture STRUCTURE of design_1_Find_Min_Max_0_0_Find_Min_Max is
   attribute SOFT_HLUTNM of \val_output[8]_INST_0\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \val_output[9]_INST_0\ : label is "soft_lutpair4";
 begin
-\c_max[31]_i_1\: unisim.vcomponents.LUT3
+\c_max[31]_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"40"
+      INIT => X"8"
     )
         port map (
-      I0 => \c_min_reg[31]_i_2_n_0\,
-      I1 => \index_reg[13]_i_1_n_1\,
-      I2 => \c_max_reg[31]_i_2_n_0\,
+      I0 => \index_reg[13]_i_1_n_1\,
+      I1 => \c_max_reg[31]_i_2_n_0\,
       O => c_max
     );
 \c_max[31]_i_10\: unisim.vcomponents.LUT4

@@ -1,6 +1,61 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Mon Mar 27 12:01:00 2017
+| Host         : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Find_Min_Max_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_Find_Min_Max_0_0 (xilinx.com:user:Find_Min_Max:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Mon Mar 27 11:49:24 2017
+| Host         : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_disp32bits_wrapper_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_disp32bits_wrapper_0_0 (xilinx.com:user:disp32bits_wrapper:1.0) from (Rev. 5) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_disp32bits_wrapper_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'ins'
+
+-Upgrade has added port 'sw'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
 | Date         : Sun Mar 26 19:23:29 2017
 | Host         : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

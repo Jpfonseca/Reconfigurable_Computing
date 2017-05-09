@@ -1,0 +1,572 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+Process ID: 22820
+
+Current time: 	3/27/17 3:54:06 PM BST
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Joao
+User home directory: C:/Users/Joao
+User working directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Joao/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Joao/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	148 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 398 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson4\Ex3\Ex3.xpr. Version: Vivado v2016.4 
+// [GUI Memory]: 35 MB (+34491kb) [00:00:10]
+// [Engine Memory]: 383 MB (+249940kb) [00:00:10]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 398 MB. GUI used memory: 26 MB. Current time: 3/27/17 3:54:08 PM BST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 423 MB (+21637kb) [00:00:20]
+// [GUI Memory]: 41 MB (+4514kb) [00:00:21]
+// [Engine Memory]: 474 MB (+31281kb) [00:00:22]
+// [GUI Memory]: 44 MB (+591kb) [00:00:22]
+// [GUI Memory]: 51 MB (+5518kb) [00:00:22]
+// Tcl Message: open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// Project name: Ex3; location: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 703.418 ; gain = 109.320 
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// a:a (cd:JFrame): Critical Messages: addNotify
+// [GUI Memory]: 57 MB (+3063kb) [00:00:25]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // y:i (D:JPanel, cd:JFrame)
+// PAPropertyPanels.initPanels (desig.bd) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, desig (desig.bd)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, desig (desig.bd)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// bt:g (cd:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.srcs/sources_1/bd/desig/desig.bd} 
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding cell -- xilinx.com:user:Sort:1.0 - Sort_0 Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - blk_mem_gen_0 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 525 MB (+28919kb) [00:00:40]
+// PAPropertyPanels.initPanels (desig.bd) elapsed time: 0.2s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Successfully read diagram <desig> from BD file <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.srcs/sources_1/bd/desig/desig.bd> 
+// HMemoryUtils.trashcanNow. Engine heap size: 550 MB. GUI used memory: 35 MB. Current time: 3/27/17 3:54:35 PM BST
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 740.090 ; gain = 29.844 
+// [Engine Memory]: 556 MB (+5381kb) [00:00:41]
+dismissDialog("Open Block Design"); // bt:g (cd:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 308, 114, 746, 336, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+// [GUI Memory]: 60 MB (+141kb) [00:00:49]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// [GUI Memory]: 65 MB (+1719kb) [00:00:52]
+setText("Size", "32"); // M:ak (aT:L, p:g)
+setText("Words", "512", true); // M:ak (aT:L, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.words {512} CONFIG.size {32}] [get_bd_cells Sort_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.words {512} CONFIG.size {32}] [get_bd_cells Sort_0] 
+// Tcl Message: endgroup 
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "read"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // M:ab (JViewport:JComponent, ResizableWindow:JWindow)
+// bt:g (cd:JFrame):  Add IP : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:RomRead:1.0 RomRead_0 
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 585 MB (+1163kb) [00:01:11]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Command: 'set_property location {1 86 151} [get_bd_cells RomRead_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 86 151} [get_bd_cells RomRead_0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 598 MB. GUI used memory: 38 MB. Current time: 3/27/17 3:55:18 PM BST
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// [GUI Memory]: 71 MB (+3524kb) [00:01:35]
+// Elapsed time: 30 seconds
+setText("Address Bits", "32"); // M:ak (aT:L, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+// Tcl Command: 'set_property -dict [list CONFIG.address_bits {32}] [get_bd_cells RomRead_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Tcl Message: set_property -dict [list CONFIG.address_bits {32}] [get_bd_cells RomRead_0] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cd:JFrame): Re-customize IP: addNotify
+setText("Data Width", "512", true); // M:ak (aT:L, p:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 40 MB. Current time: 3/27/17 3:55:43 PM BST
+// [Engine Memory]: 624 MB (+9893kb) [00:01:49]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+// Tcl Command: 'set_property -dict [list CONFIG.data_width {512}] [get_bd_cells RomRead_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Tcl Message: set_property -dict [list CONFIG.data_width {512}] [get_bd_cells RomRead_0] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// [GUI Memory]: 77 MB (+2413kb) [00:02:05]
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// Elapsed time: 20 seconds
+setText("Data Width", "16384"); // M:ak (aT:L, p:g)
+applyEnter("Address Bits", "32"); // M:ak (aT:L, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+// Tcl Command: 'set_property -dict [list CONFIG.data_width {16384}] [get_bd_cells RomRead_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Tcl Message: set_property -dict [list CONFIG.data_width {16384}] [get_bd_cells RomRead_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins Sort_0/data_in] [get_bd_pins RomRead_0/data_in] 
+// Tcl Command: 'set_property location {1 110 202} [get_bd_cells RomRead_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {1 110 202} [get_bd_cells RomRead_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets Net] 
+// Run Command: PAResourceCommand.PACommandNames_OPEN_FILE
+// [GUI Memory]: 82 MB (+1029kb) [00:03:15]
+// Elapsed time: 150 seconds
+dismissFileChooser();
+// 'e' command handler elapsed time: 99 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 645 MB. GUI used memory: 46 MB. Current time: 3/27/17 3:58:48 PM BST
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open Project..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead/RomRead.xpr");
+// Opening Vivado Project: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead/RomRead.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead/RomRead.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead'. 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// Project name: RomRead; location: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead; part: xc7a100tcsg324-1
+// 'i' command handler elapsed time: 12 seconds
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 92 MB (+5611kb) [00:05:11]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RomRead - Behavioral (RomRead.vhd)]", 1, false); // y:i (D:JPanel, cd:JFrame)
+// [Engine Memory]: 657 MB (+1621kb) [00:05:17]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RomRead - Behavioral (RomRead.vhd)]", 1, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 55 MB. Current time: 3/27/17 3:59:13 PM BST
+// Elapsed time: 18 seconds
+selectCodeEditor("RomRead.vhd", 399, 177); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 39 seconds
+closeMainWindow("RomRead - [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead/RomRead.xpr] - Vivado 2016.4"); // cd:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// ai:r (cd:JFrame): Save Project: addNotify
+// Elapsed time: 27 seconds
+selectButton(PAResourceQtoS.SaveProjectUtils_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ai:r)
+// 'b' command handler elapsed time: 27 seconds
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+closeMainWindow("RomRead - [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead/RomRead.xpr] - Vivado 2016.4"); // cd:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// ai:r (cd:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save"); // a:JButton (JPanel:JComponent, ai:r)
+// y:aO (cd:JFrame): Close Project: addNotify
+dismissDialog("Save Project"); // ai:r (cd:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // y:aO (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 51 MB. Current time: 3/27/17 4:00:49 PM BST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bt:g (cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 284, 222, 746, 336, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Pin Properties..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// Elapsed time: 14 seconds
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Elapsed time: 18 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 626, 131, 746, 336, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 637, 46, 746, 336, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// [Engine Memory]: 777 MB (+91973kb) [00:07:53]
+// HMemoryUtils.trashcanNow. Engine heap size: 795 MB. GUI used memory: 51 MB. Current time: 3/27/17 4:01:48 PM BST
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// [Engine Memory]: 834 MB (+18391kb) [00:07:56]
+// Elapsed time: 12 seconds
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectComboBox("Mode (use_bram_block)", "Stand Alone", 1); // y:e (C:JPanel, p:g)
+selectComboBox("Memory Type (Memory_Type)", "Single Port ROM", 3); // y:e (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aS:g (C:JPanel, p:g)
+// Elapsed time: 15 seconds
+setText("Write Depth", "16384"); // M:ak (aT:L, p:g)
+selectCheckBox((HResource) null, "Primitives Output Register", false); // g:JCheckBox (l:F, p:g): FALSE
+selectComboBox("Enable Port Type (Enable_A)", "Always Enabled", 0); // y:e (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aS:g (C:JPanel, p:g)
+selectCheckBox((HResource) null, "Load Init File", true); // g:JCheckBox (l:F, p:g): TRUE
+selectButton(PAResourceEtoH.HACGCCoeFileWidget_BROWSE, "Browse"); // a:JButton (JPanel:JComponent, p:g)
+// Elapsed time: 11 seconds
+setFileChooser("C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/mul.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Depth_A {16384} CONFIG.Enable_A {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/mul.coe} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_A_Write_Rate {0}] [get_bd_cells blk_mem_gen_0]'
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Depth_A {16384} CONFIG.Enable_A {Always_Enabled} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/mul.coe} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_A_Write_Rate {0}] [get_bd_cells blk_mem_gen_0] 
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// bt:g (p:g):  Customize IP : addNotify
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/mul.coe' provided. It will be converted relative to IP Instance files '../../../../../../../mul.coe' 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bt:g (p:g)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 71 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 197, 235, 746, 336, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k:q (cd:JFrame): Edit in IP Packager: addNotify
+applyEnter(PAResourceEtoH.EditIPProjectNameChooser_PROJECT_NAME, "RomRead_v1_0_project"); // ak:JTextField (JPanel:JComponent, k:q)
+// bt:g (cd:JFrame):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name RomRead_v1_0_project -directory C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.tmp/RomRead_v1_0_project c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson4/ex3/ex3.tmp/romread_v1_0_project' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 96 MB (+249kb) [00:10:17]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1013.609 ; gain = 0.000 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, k:q)
+// 'i' command handler elapsed time: 9 seconds
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("Edit in IP Packager"); // bt:g (cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // al:k (JViewport:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // al:k (JViewport:JComponent, cd:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cd:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 3 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bt:g (cd:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 868 MB. GUI used memory: 62 MB. Current time: 3/27/17 4:04:23 PM BST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bt:g (cd:JFrame)
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 128, 237, 746, 336, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing' 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 188, 194, 746, 312, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // h:k (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// bt:g (cd:JFrame):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bt:g (cd:JFrame)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a:JButton (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:RomRead:1.0 [get_ips  desig_RomRead_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.srcs/sources_1/bd/desig/desig.bd' 
+// bt:g (cd:JFrame):  Upgrade IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded desig_RomRead_0_0 (RomRead_v1_0 1.0) from revision 2 to revision 3 
+// Tcl Message: Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.srcs/sources_1/bd/desig/desig.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips desig_RomRead_0_0] -no_script -sync -force -quiet 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// at:q (cd:JFrame): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Skip"); // a:JButton (JPanel:JComponent, at:q)
+dismissDialog("Generate Output Products"); // at:q (cd:JFrame)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a:JButton (JPanel:JComponent, cd:JFrame)
+// [Engine Memory]: 897 MB (+22981kb) [00:10:47]
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+selectButton("PAResourceTtoZ.UpgradeIP_SELECTED_IPS_CANT_BE_UPGRADED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// HMemoryUtils.trashcanNow. Engine heap size: 897 MB. GUI used memory: 61 MB. Current time: 3/27/17 4:04:43 PM BST
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h:k (JPanel:JComponent, cd:JFrame)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 176, 211, 746, 312, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+// Elapsed time: 40 seconds
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h:k (JPanel:JComponent, cd:JFrame)
+// TclEventType: CREATE_IP_CATALOG
+// bt:g (cd:JFrame):  Refresh IP Catalog : addNotify
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing'. 
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+// a:a (cd:JFrame): Critical Messages: addNotify
+dismissDialog("Refresh IP Catalog"); // bt:g (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 200, 204, 746, 336, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 178, 208, 746, 336, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k:q (cd:JFrame): Edit in IP Packager: addNotify
+applyEnter(PAResourceEtoH.EditIPProjectNameChooser_PROJECT_NAME, "RomRead_v1_0_project"); // ak:JTextField (JPanel:JComponent, k:q)
+// bt:g (cd:JFrame):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name RomRead_v1_0_project -directory C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.tmp/RomRead_v1_0_project c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/joao/desktop/cr/git/reconfigurable_computing/lesson4/ex3/ex3.tmp/romread_v1_0_project' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 102 MB (+1324kb) [00:12:03]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing'. 
+// Tcl Message: INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1044.914 ; gain = 0.000 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, k:q)
+// 'i' command handler elapsed time: 9 seconds
+dismissDialog("Edit in IP Packager"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RomRead - Behavioral (RomRead.vhd)]", 1, false); // y:i (D:JPanel, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RomRead - Behavioral (RomRead.vhd)]", 1, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RomRead - Behavioral (RomRead.vhd)]", 1, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RomRead - Behavioral (RomRead.vhd)]", 1, false); // y:i (D:JPanel, cd:JFrame)
+selectCodeEditor("RomRead.vhd", 651, 62); // bF:I (JPanel:JComponent, cd:JFrame)
+// Tcl Message: current_project Ex3 
+// Elapsed time: 194 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 206, 203, 746, 336, false, false, false, true, false); // eW:aE (k:TdiGroup, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Properties..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// Elapsed time: 12 seconds
+setText("Address Bits", "32"); // M:ak (aT:L, p:g)
+setText("Data Width", "16384"); // M:ak (aT:L, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+// Tcl Command: 'set_property -dict [list CONFIG.address_bits {32}] [get_bd_cells RomRead_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// bt:g (p:g):  Customize IP : addNotify
+// Tcl Message: set_property -dict [list CONFIG.address_bits {32}] [get_bd_cells RomRead_0] 
+dismissDialog("Customize IP"); // bt:g (p:g)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a:JButton (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// bt:g (cd:JFrame):  Upgrade IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 108 MB (+102kb) [00:15:59]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:RomRead:1.0 [get_ips  desig_RomRead_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.srcs/sources_1/bd/desig/desig.bd' 
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded desig_RomRead_0_0 from RomRead_v1_0 1.0 to RomRead_v1_0 1.0 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.srcs/sources_1/bd/desig/desig.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips desig_RomRead_0_0] -no_script -sync -force -quiet 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// at:q (cd:JFrame): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Skip"); // a:JButton (JPanel:JComponent, at:q)
+dismissDialog("Generate Output Products"); // at:q (cd:JFrame)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h:k (JPanel:JComponent, cd:JFrame)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// bt:g (cd:JFrame):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bt:g (cd:JFrame)
+// [GUI Memory]: 114 MB (+1076kb) [00:16:08]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins Sort_0/data_in] [get_bd_pins RomRead_0/data_in] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// Elapsed time: 12 seconds
+setText("Address Bits", "32"); // M:ak (aT:L, p:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 923 MB. GUI used memory: 75 MB. Current time: 3/27/17 4:10:13 PM BST
+setText("Data Width", "512", true); // M:ak (aT:L, p:g)
+setText("Data Width", "16384", true); // M:ak (aT:L, p:g)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Tcl Command: 'set_property -dict [list CONFIG.data_width {16384} CONFIG.address_bits {32}] [get_bd_cells RomRead_0]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.data_width {16384} CONFIG.address_bits {32}] [get_bd_cells RomRead_0] 
+// Tcl Message: endgroup 

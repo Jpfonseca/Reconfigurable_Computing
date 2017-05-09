@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Sun Mar 26 19:58:50 2017
+| Date             : Mon Mar 27 12:05:36 2017
 | Host             : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -50,13 +50,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      405 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      109 |     63400 |            0.17 |
-|   CARRY4       |    <0.001 |       31 |     15850 |            0.20 |
-|   Register     |    <0.001 |      157 |    126800 |            0.12 |
+| Slice Logic    |    <0.001 |      382 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      108 |     63400 |            0.17 |
+|   CARRY4       |    <0.001 |       27 |     15850 |            0.17 |
+|   Register     |    <0.001 |      141 |    126800 |            0.11 |
 |   F7/F8 Muxes  |    <0.001 |        4 |     63400 |           <0.01 |
-|   Others       |     0.000 |       42 |       --- |             --- |
-| Signals        |     0.002 |      382 |       --- |             --- |
+|   Others       |     0.000 |       40 |       --- |             --- |
+| Signals        |     0.002 |      363 |       --- |             --- |
 | Block RAM      |    <0.001 |     14.5 |       135 |           10.74 |
 | I/O            |     0.033 |       32 |       210 |           15.24 |
 | Static Power   |     0.098 |          |           |                 |
@@ -189,14 +189,8 @@ Table of Contents
 |         disp32bits_i                           |    <0.001 |
 |           EightDispControl_0                   |    <0.001 |
 |             U0                                 |    <0.001 |
-|           clockdivider_0                       |    <0.001 |
-|             U0                                 |    <0.001 |
 |           xlslice_0                            |     0.000 |
 |           xlslice_1                            |     0.000 |
-|           xlslice_10                           |     0.000 |
-|           xlslice_11                           |     0.000 |
-|           xlslice_12                           |     0.000 |
-|           xlslice_13                           |     0.000 |
 |           xlslice_2                            |     0.000 |
 |           xlslice_3                            |     0.000 |
 |           xlslice_4                            |     0.000 |

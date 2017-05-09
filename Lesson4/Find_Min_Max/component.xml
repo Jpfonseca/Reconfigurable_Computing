@@ -36,7 +36,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f55070b8</spirit:value>
+            <spirit:value>d013185a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -52,7 +52,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2f0f915a</spirit:value>
+            <spirit:value>4c81078b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -193,7 +193,7 @@
       <spirit:file>
         <spirit:name>Find_Min_Max.srcs/sources_1/new/Find_Min_Max.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_ea3c5f6b</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_59dd08ea</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -240,8 +240,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Find_Min_Max_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>7</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2017-03-26T16:26:15Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2017-03-27T11:00:47Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:Find_Min_Max:1.0_ARCHIVE_LOCATION">c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Find_Min_Max</xilinx:tag>
       </xilinx:tags>
@@ -249,7 +249,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2016.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="5d682510"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="aac9823c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9cbb37fc"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="8c1d6ee2"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="c43f26c6"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="12fc8826"/>

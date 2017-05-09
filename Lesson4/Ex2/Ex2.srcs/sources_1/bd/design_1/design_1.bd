@@ -28,9 +28,13 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>clk</spirit:name>
+          <spirit:name>led</spirit:name>
           <spirit:wire>
-            <spirit:direction>in</spirit:direction>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>13</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -64,13 +68,9 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>led</spirit:name>
+          <spirit:name>clk</spirit:name>
           <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>13</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
+            <spirit:direction>in</spirit:direction>
           </spirit:wire>
         </spirit:port>
       </spirit:ports>
@@ -115,13 +115,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>Find_Min_Max_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="Find_Min_Max" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_Find_Min_Max_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>clockdivider_0</spirit:instanceName>
         <spirit:componentRef spirit:library="user" spirit:name="clockdivider" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -132,7 +125,14 @@
         <spirit:instanceName>disp32bits_wrapper_0</spirit:instanceName>
         <spirit:componentRef spirit:library="user" spirit:name="disp32bits_wrapper" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_disp32bits_wrapper_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_disp32bits_wrapper_0_2</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>Find_Min_Max_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="Find_Min_Max" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_Find_Min_Max_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -146,16 +146,15 @@
         <spirit:name>btnC_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="btnC"/>
         <spirit:internalPortReference spirit:componentRef="counter_0" spirit:portRef="reset"/>
-        <spirit:internalPortReference spirit:componentRef="Find_Min_Max_0" spirit:portRef="btnC"/>
         <spirit:internalPortReference spirit:componentRef="clockdivider_0" spirit:portRef="btnc"/>
-        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="btnC"/>
+        <spirit:internalPortReference spirit:componentRef="Find_Min_Max_0" spirit:portRef="btnC"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>counter_0_output</spirit:name>
         <spirit:internalPortReference spirit:componentRef="counter_0" spirit:portRef="val_output"/>
+        <spirit:externalPortReference spirit:portRef="led"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="addra"/>
         <spirit:internalPortReference spirit:componentRef="Find_Min_Max_0" spirit:portRef="val"/>
-        <spirit:externalPortReference spirit:portRef="led"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>blk_mem_gen_0_douta</spirit:name>
@@ -170,17 +169,7 @@
       <spirit:adHocConnection>
         <spirit:name>Find_Min_Max_0_output</spirit:name>
         <spirit:internalPortReference spirit:componentRef="Find_Min_Max_0" spirit:portRef="val_output"/>
-        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="ins"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>disp32bits_wrapper_0_an</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="an"/>
-        <spirit:externalPortReference spirit:portRef="an"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>disp32bits_wrapper_0_seg</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="seg"/>
-        <spirit:externalPortReference spirit:portRef="seg"/>
+        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="sw"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_1</spirit:name>
@@ -192,8 +181,18 @@
         <spirit:name>clockdivider_0_led</spirit:name>
         <spirit:internalPortReference spirit:componentRef="clockdivider_0" spirit:portRef="led"/>
         <spirit:internalPortReference spirit:componentRef="counter_0" spirit:portRef="clock"/>
-        <spirit:internalPortReference spirit:componentRef="Find_Min_Max_0" spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="clka"/>
+        <spirit:internalPortReference spirit:componentRef="Find_Min_Max_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>disp32bits_wrapper_0_an</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="an"/>
+        <spirit:externalPortReference spirit:portRef="an"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>disp32bits_wrapper_0_seg</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="seg"/>
+        <spirit:externalPortReference spirit:portRef="seg"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

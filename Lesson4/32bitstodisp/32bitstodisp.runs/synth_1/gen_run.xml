@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1490364585">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1490612004">
   <File Type="RDS-PROPCONSTRS" Name="disp32bits_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="disp32bits_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="disp32bits_wrapper.vds"/>
@@ -42,21 +42,8 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_2_1"/>
   <BlockFileSet Type="BlockSrcs" Name="disp32bits_EightDispControl_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_5_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_2_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="disp32bits_clockdivider_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_4_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_2_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="disp32bits_xlslice_2_5"/>
 </GenRun>

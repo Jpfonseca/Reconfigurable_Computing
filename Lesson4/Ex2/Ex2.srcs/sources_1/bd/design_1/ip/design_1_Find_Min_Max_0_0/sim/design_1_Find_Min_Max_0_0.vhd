@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:Find_Min_Max:1.0
--- IP Revision: 7
+-- IP Revision: 8
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

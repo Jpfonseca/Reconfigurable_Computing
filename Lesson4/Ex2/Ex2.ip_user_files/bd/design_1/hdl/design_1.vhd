@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
---Date        : Sun Mar 26 19:12:32 2017
+--Date        : Sun Mar 26 19:56:29 2017
 --Host        : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -16,6 +16,7 @@ entity design_1 is
     an : out STD_LOGIC_VECTOR ( 7 downto 0 );
     btnC : in STD_LOGIC;
     clk : in STD_LOGIC;
+    led : out STD_LOGIC_VECTOR ( 13 downto 0 );
     seg : out STD_LOGIC_VECTOR ( 6 downto 0 );
     sw : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
@@ -56,6 +57,13 @@ architecture STRUCTURE of design_1 is
     val_output : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component design_1_Find_Min_Max_0_0;
+  component design_1_clockdivider_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    btnc : in STD_LOGIC;
+    led : out STD_LOGIC
+  );
+  end component design_1_clockdivider_0_0;
   component design_1_disp32bits_wrapper_0_0 is
   port (
     an : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -65,13 +73,6 @@ architecture STRUCTURE of design_1 is
     seg : out STD_LOGIC_VECTOR ( 6 downto 0 )
   );
   end component design_1_disp32bits_wrapper_0_0;
-  component design_1_clockdivider_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    btnc : in STD_LOGIC;
-    led : out STD_LOGIC
-  );
-  end component design_1_clockdivider_0_0;
   signal Find_Min_Max_0_output : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal blk_mem_gen_0_douta : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal btnC_1 : STD_LOGIC;
@@ -86,6 +87,7 @@ begin
   an(7 downto 0) <= disp32bits_wrapper_0_an(7 downto 0);
   btnC_1 <= btnC;
   clk_1 <= clk;
+  led(13 downto 0) <= counter_0_output(13 downto 0);
   seg(6 downto 0) <= disp32bits_wrapper_0_seg(6 downto 0);
   sw_1(0) <= sw(0);
 Find_Min_Max_0: component design_1_Find_Min_Max_0_0
@@ -100,7 +102,7 @@ Find_Min_Max_0: component design_1_Find_Min_Max_0_0
 blk_mem_gen_0: component design_1_blk_mem_gen_0_0
      port map (
       addra(13 downto 0) => counter_0_output(13 downto 0),
-      clka => '0',
+      clka => clockdivider_0_led,
       douta(31 downto 0) => blk_mem_gen_0_douta(31 downto 0)
     );
 clockdivider_0: component design_1_clockdivider_0_0

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xF14EB9ABF020D855" bd:device="xc7a100tcsg324-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="design1" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xF14EB9ABF020D855" bd:device="xc7a100tcsg324-1" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="design1" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -28,6 +28,22 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
+          <spirit:name>sw</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>13</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>btnC</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
           <spirit:name>an</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
@@ -43,22 +59,6 @@
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
               <spirit:left>6</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>btnC</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>sw</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>13</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
           </spirit:wire>
@@ -99,14 +99,15 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_disp32bits_wrapper_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>clockdivider_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="clockdivider" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_clockdivider_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:adHocConnections>
-      <spirit:adHocConnection>
-        <spirit:name>clk_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="clk"/>
-        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="clka"/>
-        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="clk"/>
-      </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>sw_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="sw"/>
@@ -115,7 +116,7 @@
       <spirit:adHocConnection>
         <spirit:name>btnC_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="btnC"/>
-        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="btnC"/>
+        <spirit:internalPortReference spirit:componentRef="clockdivider_0" spirit:portRef="btnc"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>disp32bits_wrapper_0_an</spirit:name>
@@ -130,7 +131,18 @@
       <spirit:adHocConnection>
         <spirit:name>blk_mem_gen_0_douta</spirit:name>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="douta"/>
-        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="ins"/>
+        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="sw"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clockdivider_0_led</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clockdivider_0" spirit:portRef="led"/>
+        <spirit:internalPortReference spirit:componentRef="disp32bits_wrapper_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="clka"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="clockdivider_0" spirit:portRef="clk"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

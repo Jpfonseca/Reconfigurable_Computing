@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 27 16:49:26 2017
+# Process ID: 24836
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21580 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson4\RomRead\RomRead.xpr
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead/vivado.log
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead/RomRead.xpr
+close_project
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.xpr

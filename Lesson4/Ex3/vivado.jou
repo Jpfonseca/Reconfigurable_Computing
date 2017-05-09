@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 27 16:49:19 2017
+# Process ID: 25324
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20224 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson4\Ex3\Ex3.xpr
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/vivado.log
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.xpr
+open_bd_design {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.srcs/sources_1/bd/desig/desig.bd}
+set_property -dict [list CONFIG.address_bits {8}] [get_bd_cells RomRead_0]
+set_property -dict [list CONFIG.address_bits {9}] [get_bd_cells RomRead_0]
+connect_bd_net [get_bd_pins RomRead_0/data_out] [get_bd_pins Sort_0/data_in]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins RomRead_0/data_in]
+set_property location {0.5 -107 80} [get_bd_cells RomRead_0]
+set_property location {2 159 67} [get_bd_cells Sort_0]
+create_bd_port -dir I clk
+connect_bd_net [get_bd_ports clk] [get_bd_pins RomRead_0/clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins Sort_0/clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins blk_mem_gen_0/clka]
+create_bd_port -dir I btnC
+connect_bd_net [get_bd_ports btnC] [get_bd_pins Sort_0/reset]
+startgroup
+create_bd_port -dir O led
+connect_bd_net [get_bd_pins /RomRead_0/completed] [get_bd_ports led]
+endgroup
+undo
+undo
+create_bd_port -dir O -from 0 -to 0 led
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property location {3 290 169} [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins Sort_0/done] [get_bd_pins xlconcat_0/In0]
+connect_bd_net [get_bd_pins RomRead_0/completed] [get_bd_pins xlconcat_0/In1]
+delete_bd_objs [get_bd_ports led]
+create_bd_port -dir O -from 1 -to 0 led
+connect_bd_net [get_bd_ports led] [get_bd_pins xlconcat_0/dout]
+connect_bd_net [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins RomRead_0/addr]
+connect_bd_net [get_bd_ports clk] [get_bd_pins RomRead_0/rst]
+undo
+connect_bd_net [get_bd_ports btnC] [get_bd_pins RomRead_0/rst]
+connect_bd_net [get_bd_ports btnC] [get_bd_pins Sort_0/reset]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_1
+endgroup
+startgroup
+set_property -dict [list CONFIG.Memory_Type {Single_Port_RAM} CONFIG.Write_Depth_A {16384} CONFIG.Enable_A {Always_Enabled} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/mul.coe} CONFIG.Use_RSTA_Pin {false} CONFIG.use_bram_block {Stand_Alone} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Port_A_Write_Rate {50}] [get_bd_cells blk_mem_gen_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Operating_Mode_A {READ_FIRST} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Disable_Collision_Warnings {true}] [get_bd_cells blk_mem_gen_1]
+endgroup
+set_property location {3.5 554 322} [get_bd_cells blk_mem_gen_1]
+delete_bd_objs [get_bd_nets RomRead_0_addr] [get_bd_nets blk_mem_gen_0_douta] [get_bd_cells blk_mem_gen_0]
+connect_bd_net [get_bd_pins RomRead_0/addr] [get_bd_pins blk_mem_gen_1/addra]
+connect_bd_net [get_bd_ports clk] [get_bd_pins blk_mem_gen_1/clka]
+connect_bd_net [get_bd_pins blk_mem_gen_1/dina] [get_bd_pins Sort_0/data_out]
+connect_bd_net [get_bd_pins blk_mem_gen_1/douta] [get_bd_pins RomRead_0/data_in]
+undo
+undo
+undo
+ipx::edit_ip_in_project -upgrade true -name RomRead_v1_0_project -directory C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.tmp/RomRead_v1_0_project c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomRead/component.xml
+create_project RomWrite C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomWrite -part xc7a100tcsg324-1
+set_property target_language VHDL [current_project]
+add_files -fileset constrs_1 -norecurse C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc
+file mkdir C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomWrite/RomWrite.srcs/sources_1/new
+close [ open C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomWrite/RomWrite.srcs/sources_1/new/RomWrite.vhd w ]
+add_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/RomWrite/RomWrite.srcs/sources_1/new/RomWrite.vhd
+close_project
+close_project
+save_bd_design

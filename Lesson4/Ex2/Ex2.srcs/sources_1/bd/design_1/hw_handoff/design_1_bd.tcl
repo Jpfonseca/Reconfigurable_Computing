@@ -205,9 +205,9 @@ CONFIG.size {14} \
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
 
   # Create port connections
-  connect_bd_net -net Find_Min_Max_0_output [get_bd_pins Find_Min_Max_0/val_output] [get_bd_pins disp32bits_wrapper_0/ins]
+  connect_bd_net -net Find_Min_Max_0_output [get_bd_pins Find_Min_Max_0/val_output] [get_bd_pins disp32bits_wrapper_0/sw]
   connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins Find_Min_Max_0/sw] [get_bd_pins blk_mem_gen_0/douta]
-  connect_bd_net -net btnC_1 [get_bd_ports btnC] [get_bd_pins Find_Min_Max_0/btnC] [get_bd_pins clockdivider_0/btnc] [get_bd_pins counter_0/reset] [get_bd_pins disp32bits_wrapper_0/btnC]
+  connect_bd_net -net btnC_1 [get_bd_ports btnC] [get_bd_pins Find_Min_Max_0/btnC] [get_bd_pins clockdivider_0/btnc] [get_bd_pins counter_0/reset]
   connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins clockdivider_0/clk] [get_bd_pins disp32bits_wrapper_0/clk]
   connect_bd_net -net clockdivider_0_led [get_bd_pins Find_Min_Max_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins clockdivider_0/led] [get_bd_pins counter_0/clock]
   connect_bd_net -net counter_0_output [get_bd_ports led] [get_bd_pins Find_Min_Max_0/val] [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins counter_0/val_output]
@@ -230,21 +230,21 @@ preplace portBus led -pg 1 -y 0 -defaultsOSRD
 preplace portBus seg -pg 1 -y 200 -defaultsOSRD
 preplace inst Find_Min_Max_0 -pg 1 -lvl 3 -y 290 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 1 -y 100 -defaultsOSRD
-preplace inst disp32bits_wrapper_0 -pg 1 -lvl 4 -y 190 -defaultsOSRD
+preplace inst disp32bits_wrapper_0 -pg 1 -lvl 4 -y 270 -defaultsOSRD
 preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 90 -defaultsOSRD
 preplace inst clockdivider_0 -pg 1 -lvl 2 -y 190 -defaultsOSRD
-preplace inst counter_0 -pg 1 -lvl 2 -y 60 -defaultsOSRD
-preplace netloc clockdivider_0_led 1 1 2 150 130 420
-preplace netloc btnC_1 1 0 4 NJ 250 130 -10 400 -10 670J
-preplace netloc counter_0_output 1 2 3 410 0 NJ 0 NJ
-preplace netloc clk_1 1 0 4 NJ 180 140 250 430J 190 N
-preplace netloc disp32bits_wrapper_0_an 1 4 1 NJ
-preplace netloc xlconstant_0_dout 1 1 1 140J
-preplace netloc blk_mem_gen_0_douta 1 2 1 440
-preplace netloc Find_Min_Max_0_output 1 3 1 670
-preplace netloc sw_1 1 0 3 10J 290 NJ 290 NJ
-preplace netloc disp32bits_wrapper_0_seg 1 4 1 NJ
-levelinfo -pg 1 -10 70 280 560 770 880 -top -20 -bot 380
+preplace inst counter_0 -pg 1 -lvl 2 -y 50 -defaultsOSRD
+preplace netloc clockdivider_0_led 1 1 2 310 120 580
+preplace netloc btnC_1 1 0 3 0J 200 290 260 550J
+preplace netloc counter_0_output 1 2 3 560 0 NJ 0 NJ
+preplace netloc disp32bits_wrapper_0_an 1 4 1 990
+preplace netloc clk_1 1 0 4 NJ 180 280 250 570J 200 810
+preplace netloc xlconstant_0_dout 1 1 1 300J
+preplace netloc blk_mem_gen_0_douta 1 2 1 590
+preplace netloc Find_Min_Max_0_output 1 3 1 810
+preplace netloc sw_1 1 0 3 0J 290 NJ 290 NJ
+preplace netloc disp32bits_wrapper_0_seg 1 4 1 1000
+levelinfo -pg 1 -20 220 430 700 900 1020 -top -40 -bot 380
 ",
 }
 

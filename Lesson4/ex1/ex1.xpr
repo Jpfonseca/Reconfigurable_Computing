@@ -59,17 +59,15 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_blk_mem_gen_0_0_1/design1_blk_mem_gen_0_0.xci">
-          <Proxy FileSetName="design1_blk_mem_gen_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="hdl/design1.vhd"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="design1_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_disp32bits_wrapper_0_0/design1_disp32bits_wrapper_0_0.xci">
-          <Proxy FileSetName="design1_disp32bits_wrapper_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="hdl/design1.hwdef"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="hw_handoff/design1_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="hw_handoff/design1.hwh"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="design1_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_disp32bits_wrapper_0_0/design1_disp32bits_wrapper_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="hdl/design1.vhd"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_blk_mem_gen_0_0_1/design1_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="design1_blk_mem_gen_0_0"/>
+        </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/design1/hdl/design1_wrapper.vhd">
         <FileInfo>
@@ -119,12 +117,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="design1_disp32bits_wrapper_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design1_disp32bits_wrapper_0_0">
-      <Config>
-        <Option Name="TopModule" Val="design1_disp32bits_wrapper_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -155,19 +147,7 @@
     </Run>
     <Run Id="design1_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="design1_blk_mem_gen_0_0" Part="xc7a100tcsg324-1" ConstrsSet="design1_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design1_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="design1_disp32bits_wrapper_0_0_synth_1" Type="Ft3:Synth" SrcSet="design1_disp32bits_wrapper_0_0" Part="xc7a100tcsg324-1" ConstrsSet="design1_disp32bits_wrapper_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/design1_disp32bits_wrapper_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -191,26 +171,7 @@
     </Run>
     <Run Id="design1_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="design1_blk_mem_gen_0_0" Description="Default settings for Implementation." SynthRun="design1_blk_mem_gen_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="design1_disp32bits_wrapper_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="design1_disp32bits_wrapper_0_0" Description="Default settings for Implementation." SynthRun="design1_disp32bits_wrapper_0_0_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

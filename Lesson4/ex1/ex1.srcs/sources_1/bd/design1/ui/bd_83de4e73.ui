@@ -1,19 +1,22 @@
 {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port btnC -pg 1 -y 40 -defaultsOSRD
-preplace port clk -pg 1 -y 60 -defaultsOSRD
+preplace port btnC -pg 1 -y 0 -defaultsOSRD
+preplace port clk -pg 1 -y 50 -defaultsOSRD
 preplace portBus sw -pg 1 -y 20 -defaultsOSRD
 preplace portBus an -pg 1 -y 50 -defaultsOSRD
 preplace portBus seg -pg 1 -y 70 -defaultsOSRD
 preplace inst disp32bits_wrapper_0 -pg 1 -lvl 2 -y 50 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 230 -defaultsOSRD
-preplace netloc btnC_1 1 0 2 NJ 40 -70
-preplace netloc disp32bits_wrapper_0_an 1 2 2 NJ 40 590
-preplace netloc clk_1 1 0 3 NJ 60 -70 230 N
-preplace netloc blk_mem_gen_0_douta 1 1 2 -60 250 NJ
-preplace netloc sw_1 1 0 3 -110J 210 N 210 N
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 240 -defaultsOSRD
+preplace inst clockdivider_0 -pg 1 -lvl 1 -y 10 -defaultsOSRD
+preplace netloc clockdivider_0_led 1 1 2 0 240 NJ
+preplace netloc btnC_1 1 0 1 -170J
+preplace netloc clk_1 1 0 1 -160
+preplace netloc disp32bits_wrapper_0_an 1 2 2 NJ 40 590J
+preplace netloc blk_mem_gen_0_douta 1 1 2 10 260 NJ
+preplace netloc sw_1 1 0 3 -180J 220 NJ 220 N
 preplace netloc disp32bits_wrapper_0_seg 1 2 2 N 60 590J
-levelinfo -pg 1 -130 -90 290 490 610 -top -110 -bot 320
+levelinfo -pg 1 -200 -80 290 490 610 -top -110 -bot 330
 ",
 }
+0

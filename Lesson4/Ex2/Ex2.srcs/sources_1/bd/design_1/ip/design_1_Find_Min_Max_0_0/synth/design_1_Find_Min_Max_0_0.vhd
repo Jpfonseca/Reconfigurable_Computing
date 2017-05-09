@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:Find_Min_Max:1.0
--- IP Revision: 7
+-- IP Revision: 8
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -85,7 +85,7 @@ ARCHITECTURE design_1_Find_Min_Max_0_0_arch OF design_1_Find_Min_Max_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_Find_Min_Max_0_0_arch : ARCHITECTURE IS "design_1_Find_Min_Max_0_0,Find_Min_Max,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_Find_Min_Max_0_0_arch: ARCHITECTURE IS "design_1_Find_Min_Max_0_0,Find_Min_Max,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Find_Min_Max,x_ipVersion=1.0,x_ipCoreRevision=7,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,number_of_bits=32}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_Find_Min_Max_0_0_arch: ARCHITECTURE IS "design_1_Find_Min_Max_0_0,Find_Min_Max,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Find_Min_Max,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,number_of_bits=32}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN

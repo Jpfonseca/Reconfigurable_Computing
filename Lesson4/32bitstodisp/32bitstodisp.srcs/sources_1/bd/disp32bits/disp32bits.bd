@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xC5E3A64DC48DC7B3" bd:device="xc7a100tcsg324-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="disp32bits" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x16DE8C31A0A78B26" bd:device="xc7a100tcsg324-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="disp32bits" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -57,12 +57,6 @@
             <spirit:direction>in</spirit:direction>
           </spirit:wire>
         </spirit:port>
-        <spirit:port>
-          <spirit:name>btnC</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
       </spirit:ports>
     </spirit:model>
   </spirit:component>
@@ -87,7 +81,7 @@
         <spirit:instanceName>xlslice_1</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_1_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">16</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">16</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_FROM">31</spirit:configurableElementValue>
@@ -97,7 +91,7 @@
         <spirit:instanceName>xlslice_2</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_2_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">12</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_FROM">15</spirit:configurableElementValue>
@@ -108,7 +102,7 @@
         <spirit:instanceName>xlslice_3</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_2_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_3_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">8</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_FROM">11</spirit:configurableElementValue>
@@ -119,7 +113,7 @@
         <spirit:instanceName>xlslice_4</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_2_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_4_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_FROM">7</spirit:configurableElementValue>
@@ -130,7 +124,7 @@
         <spirit:instanceName>xlslice_5</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_2_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_5_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_FROM">3</spirit:configurableElementValue>
@@ -141,7 +135,7 @@
         <spirit:instanceName>xlslice_6</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_2_5</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_6_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">12</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_FROM">15</spirit:configurableElementValue>
@@ -152,7 +146,7 @@
         <spirit:instanceName>xlslice_7</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_3_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_7_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">8</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_FROM">11</spirit:configurableElementValue>
@@ -163,7 +157,7 @@
         <spirit:instanceName>xlslice_8</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_4_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_8_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_FROM">7</spirit:configurableElementValue>
@@ -174,7 +168,7 @@
         <spirit:instanceName>xlslice_9</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_5_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_xlslice_9_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">4</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_FROM">3</spirit:configurableElementValue>
@@ -186,13 +180,6 @@
         <spirit:componentRef spirit:library="user" spirit:name="EightDispControl" spirit:vendor="ua.pt" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_EightDispControl_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>clockdivider_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="clockdivider" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">disp32bits_clockdivider_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -272,16 +259,6 @@
       <spirit:adHocConnection>
         <spirit:name>clk_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="clk"/>
-        <spirit:internalPortReference spirit:componentRef="clockdivider_0" spirit:portRef="clk"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>btnC_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="btnC"/>
-        <spirit:internalPortReference spirit:componentRef="clockdivider_0" spirit:portRef="btnc"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>clockdivider_0_led</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="clockdivider_0" spirit:portRef="led"/>
         <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="clk"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>

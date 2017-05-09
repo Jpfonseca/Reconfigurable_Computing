@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
---Date        : Fri Mar 24 14:27:20 2017
+--Date        : Fri Mar 24 15:15:23 2017
 --Host        : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
 --Command     : generate_target design1.bd
 --Design      : design1
@@ -38,8 +38,8 @@ architecture STRUCTURE of design1 is
     an : out STD_LOGIC_VECTOR ( 7 downto 0 );
     btnC : in STD_LOGIC;
     clk : in STD_LOGIC;
-    seg : out STD_LOGIC_VECTOR ( 6 downto 0 );
-    sw : in STD_LOGIC_VECTOR ( 31 downto 0 )
+    ins : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    seg : out STD_LOGIC_VECTOR ( 6 downto 0 )
   );
   end component design1_disp32bits_wrapper_0_0;
   signal blk_mem_gen_0_douta : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -65,7 +65,7 @@ disp32bits_wrapper_0: component design1_disp32bits_wrapper_0_0
       an(7 downto 0) => disp32bits_wrapper_0_an(7 downto 0),
       btnC => btnC_1,
       clk => clk_1,
-      seg(6 downto 0) => disp32bits_wrapper_0_seg(6 downto 0),
-      sw(31 downto 0) => blk_mem_gen_0_douta(31 downto 0)
+      ins(31 downto 0) => blk_mem_gen_0_douta(31 downto 0),
+      seg(6 downto 0) => disp32bits_wrapper_0_seg(6 downto 0)
     );
 end STRUCTURE;

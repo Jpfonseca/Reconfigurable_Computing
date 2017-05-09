@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Fri Mar 24 14:19:35 2017
+| Date         : Mon Mar 27 11:55:29 2017
 | Host         : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
 | Command      : report_utilization -file disp32bits_wrapper_utilization_synth.rpt -pb disp32bits_wrapper_utilization_synth.pb
 | Design       : disp32bits_wrapper
@@ -109,7 +109,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   49 |     0 |       210 | 23.33 |
+| Bonded IOB                  |   48 |     0 |       210 | 22.86 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -165,7 +165,7 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| IBUF     |   34 |                  IO |
+| IBUF     |   33 |                  IO |
 | OBUF     |   15 |                  IO |
 +----------+------+---------------------+
 
@@ -176,17 +176,16 @@ Table of Contents
 +---------------------------------+------+
 |             Ref Name            | Used |
 +---------------------------------+------+
+| disp32bits_xlslice_9_0          |    1 |
+| disp32bits_xlslice_8_0          |    1 |
+| disp32bits_xlslice_7_0          |    1 |
+| disp32bits_xlslice_6_0          |    1 |
 | disp32bits_xlslice_5_0          |    1 |
 | disp32bits_xlslice_4_0          |    1 |
 | disp32bits_xlslice_3_0          |    1 |
-| disp32bits_xlslice_2_5          |    1 |
-| disp32bits_xlslice_2_3          |    1 |
-| disp32bits_xlslice_2_2          |    1 |
-| disp32bits_xlslice_2_1          |    1 |
+| disp32bits_xlslice_2_0          |    1 |
 | disp32bits_xlslice_1_0          |    1 |
-| disp32bits_xlslice_0_1          |    1 |
 | disp32bits_xlslice_0_0          |    1 |
-| disp32bits_clockdivider_0_0     |    1 |
 | disp32bits_EightDispControl_0_0 |    1 |
 +---------------------------------+------+
 

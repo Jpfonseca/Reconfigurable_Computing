@@ -57,30 +57,28 @@ set rc [catch {
   set_property ip_output_repo C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.runs/synth_1/disp32bits_wrapper.dcp
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_0_0/disp32bits_xlslice_0_0.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_0_0/disp32bits_xlslice_0_0.dcp]
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_0_1/disp32bits_xlslice_0_1.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_0_1/disp32bits_xlslice_0_1.dcp]
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_1_0/disp32bits_xlslice_1_0.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_1_0/disp32bits_xlslice_1_0.dcp]
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_2_1/disp32bits_xlslice_2_1.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_2_1/disp32bits_xlslice_2_1.dcp]
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_2_2/disp32bits_xlslice_2_2.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_2_2/disp32bits_xlslice_2_2.dcp]
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_2_3/disp32bits_xlslice_2_3.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_2_3/disp32bits_xlslice_2_3.dcp]
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_2_5/disp32bits_xlslice_2_5.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_2_5/disp32bits_xlslice_2_5.dcp]
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_3_0/disp32bits_xlslice_3_0.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_3_0/disp32bits_xlslice_3_0.dcp]
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_4_0/disp32bits_xlslice_4_0.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_4_0/disp32bits_xlslice_4_0.dcp]
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_5_0/disp32bits_xlslice_5_0.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_5_0/disp32bits_xlslice_5_0.dcp]
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_EightDispControl_0_0/disp32bits_EightDispControl_0_0.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_EightDispControl_0_0/disp32bits_EightDispControl_0_0.dcp]
-  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_clockdivider_0_0/disp32bits_clockdivider_0_0.dcp
-  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_clockdivider_0_0/disp32bits_clockdivider_0_0.dcp]
+  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_0_0_1/disp32bits_xlslice_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_0_0_1/disp32bits_xlslice_0_0.dcp]
+  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_1_0_1/disp32bits_xlslice_1_0.dcp
+  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_1_0_1/disp32bits_xlslice_1_0.dcp]
+  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_2_0/disp32bits_xlslice_2_0.dcp
+  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_2_0/disp32bits_xlslice_2_0.dcp]
+  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_3_0_1/disp32bits_xlslice_3_0.dcp
+  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_3_0_1/disp32bits_xlslice_3_0.dcp]
+  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_4_0_1/disp32bits_xlslice_4_0.dcp
+  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_4_0_1/disp32bits_xlslice_4_0.dcp]
+  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_5_0_1/disp32bits_xlslice_5_0.dcp
+  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_5_0_1/disp32bits_xlslice_5_0.dcp]
+  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_6_0/disp32bits_xlslice_6_0.dcp
+  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_6_0/disp32bits_xlslice_6_0.dcp]
+  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_7_0/disp32bits_xlslice_7_0.dcp
+  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_7_0/disp32bits_xlslice_7_0.dcp]
+  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_8_0/disp32bits_xlslice_8_0.dcp
+  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_8_0/disp32bits_xlslice_8_0.dcp]
+  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_9_0/disp32bits_xlslice_9_0.dcp
+  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_xlslice_9_0/disp32bits_xlslice_9_0.dcp]
+  add_files -quiet c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_EightDispControl_0_0_1/disp32bits_EightDispControl_0_0.dcp
+  set_property netlist_only true [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/32bitstodisp/32bitstodisp.srcs/sources_1/bd/disp32bits/ip/disp32bits_EightDispControl_0_0_1/disp32bits_EightDispControl_0_0.dcp]
   read_xdc C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Nexys4_Master.xdc
   link_design -top disp32bits_wrapper -part xc7a100tcsg324-1
   write_hwdef -file disp32bits_wrapper.hwdef
@@ -151,24 +149,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  catch { write_mem_info -force disp32bits_wrapper.mmi }
-  write_bitstream -force -no_partial_bitfile disp32bits_wrapper.bit 
-  catch { write_sysdef -hwdef disp32bits_wrapper.hwdef -bitfile disp32bits_wrapper.bit -meminfo disp32bits_wrapper.mmi -file disp32bits_wrapper.sysdef }
-  catch {write_debug_probes -quiet -force debug_nets}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

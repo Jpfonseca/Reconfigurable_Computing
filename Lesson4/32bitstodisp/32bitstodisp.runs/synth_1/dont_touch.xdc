@@ -6,40 +6,37 @@
 # Block Designs: bd/disp32bits/disp32bits.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits || ORIG_REF_NAME==disp32bits}]
 
-# IP: bd/disp32bits/ip/disp32bits_xlslice_0_0/disp32bits_xlslice_0_0.xci
+# IP: bd/disp32bits/ip/disp32bits_xlslice_0_0_1/disp32bits_xlslice_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_0_0 || ORIG_REF_NAME==disp32bits_xlslice_0_0}]
 
-# IP: bd/disp32bits/ip/disp32bits_xlslice_0_1/disp32bits_xlslice_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_0_1 || ORIG_REF_NAME==disp32bits_xlslice_0_1}]
-
-# IP: bd/disp32bits/ip/disp32bits_xlslice_1_0/disp32bits_xlslice_1_0.xci
+# IP: bd/disp32bits/ip/disp32bits_xlslice_1_0_1/disp32bits_xlslice_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_1_0 || ORIG_REF_NAME==disp32bits_xlslice_1_0}]
 
-# IP: bd/disp32bits/ip/disp32bits_xlslice_2_1/disp32bits_xlslice_2_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_2_1 || ORIG_REF_NAME==disp32bits_xlslice_2_1}]
+# IP: bd/disp32bits/ip/disp32bits_xlslice_2_0/disp32bits_xlslice_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_2_0 || ORIG_REF_NAME==disp32bits_xlslice_2_0}]
 
-# IP: bd/disp32bits/ip/disp32bits_xlslice_2_2/disp32bits_xlslice_2_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_2_2 || ORIG_REF_NAME==disp32bits_xlslice_2_2}]
-
-# IP: bd/disp32bits/ip/disp32bits_xlslice_2_3/disp32bits_xlslice_2_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_2_3 || ORIG_REF_NAME==disp32bits_xlslice_2_3}]
-
-# IP: bd/disp32bits/ip/disp32bits_xlslice_2_5/disp32bits_xlslice_2_5.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_2_5 || ORIG_REF_NAME==disp32bits_xlslice_2_5}]
-
-# IP: bd/disp32bits/ip/disp32bits_xlslice_3_0/disp32bits_xlslice_3_0.xci
+# IP: bd/disp32bits/ip/disp32bits_xlslice_3_0_1/disp32bits_xlslice_3_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_3_0 || ORIG_REF_NAME==disp32bits_xlslice_3_0}]
 
-# IP: bd/disp32bits/ip/disp32bits_xlslice_4_0/disp32bits_xlslice_4_0.xci
+# IP: bd/disp32bits/ip/disp32bits_xlslice_4_0_1/disp32bits_xlslice_4_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_4_0 || ORIG_REF_NAME==disp32bits_xlslice_4_0}]
 
-# IP: bd/disp32bits/ip/disp32bits_xlslice_5_0/disp32bits_xlslice_5_0.xci
+# IP: bd/disp32bits/ip/disp32bits_xlslice_5_0_1/disp32bits_xlslice_5_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_5_0 || ORIG_REF_NAME==disp32bits_xlslice_5_0}]
 
-# IP: bd/disp32bits/ip/disp32bits_EightDispControl_0_0/disp32bits_EightDispControl_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_EightDispControl_0_0 || ORIG_REF_NAME==disp32bits_EightDispControl_0_0}]
+# IP: bd/disp32bits/ip/disp32bits_xlslice_6_0/disp32bits_xlslice_6_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_6_0 || ORIG_REF_NAME==disp32bits_xlslice_6_0}]
 
-# IP: bd/disp32bits/ip/disp32bits_clockdivider_0_0/disp32bits_clockdivider_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_clockdivider_0_0 || ORIG_REF_NAME==disp32bits_clockdivider_0_0}]
+# IP: bd/disp32bits/ip/disp32bits_xlslice_7_0/disp32bits_xlslice_7_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_7_0 || ORIG_REF_NAME==disp32bits_xlslice_7_0}]
+
+# IP: bd/disp32bits/ip/disp32bits_xlslice_8_0/disp32bits_xlslice_8_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_8_0 || ORIG_REF_NAME==disp32bits_xlslice_8_0}]
+
+# IP: bd/disp32bits/ip/disp32bits_xlslice_9_0/disp32bits_xlslice_9_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_xlslice_9_0 || ORIG_REF_NAME==disp32bits_xlslice_9_0}]
+
+# IP: bd/disp32bits/ip/disp32bits_EightDispControl_0_0_1/disp32bits_EightDispControl_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==disp32bits_EightDispControl_0_0 || ORIG_REF_NAME==disp32bits_EightDispControl_0_0}]
 
 # XDC: bd/disp32bits/disp32bits_ooc.xdc

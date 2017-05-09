@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Fri Mar 24 14:20:25 2017
+| Date         : Mon Mar 27 11:56:24 2017
 | Host         : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
 | Command      : report_io -file disp32bits_wrapper_io_placed.rpt
 | Design       : disp32bits_wrapper
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            49 |
+|            48 |
 +---------------+
 
 
@@ -49,7 +49,7 @@ Table of Contents
 | A14        |             | High Range | IO_L9N_T1_DQS_AD3N_15        | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | A15        |             | High Range | IO_L8P_T1_AD10P_15           | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | A16        |             | High Range | IO_L8N_T1_AD10N_15           | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
-| A17        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
+| A17        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |   any** |            |           |          |      |                  |
 | A18        |             | High Range | IO_L10N_T1_AD11N_15          | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | B1         |             | High Range | IO_L9P_T1_DQS_AD7P_35        | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |
 | B2         |             | High Range | IO_L10N_T1_AD15N_35          | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |
@@ -81,7 +81,7 @@ Table of Contents
 | C10        |             | High Range | IO_L13N_T2_MRCC_16           | User IO     |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |
 | C11        |             | High Range | IO_L13P_T2_MRCC_16           | User IO     |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |
 | C12        |             | High Range | IO_L3P_T0_DQS_AD1P_15        | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
-| C13        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
+| C13        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |   any** |            |           |          |      |                  |
 | C14        |             | High Range | IO_L1N_T0_AD0N_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | C15        |             | High Range | IO_L12N_T1_MRCC_15           | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | C16        |             | High Range | IO_L20P_T3_A20_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
@@ -102,7 +102,7 @@ Table of Contents
 | D13        |             | High Range | IO_L6N_T0_VREF_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | D14        |             | High Range | IO_L1P_T0_AD0P_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | D15        |             | High Range | IO_L12P_T1_MRCC_15           | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
-| D16        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
+| D16        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |   any** |            |           |          |      |                  |
 | D17        |             | High Range | IO_L16N_T2_A27_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | D18        |             | High Range | IO_L21N_T3_DQS_A18_15        | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | E1         |             | High Range | IO_L18N_T2_35                | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |
@@ -120,7 +120,7 @@ Table of Contents
 | E13        |             | Dedicated  | TDO_0                        | Config      |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |
 | E14        |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | E15        |             | High Range | IO_L11P_T1_SRCC_15           | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
-| E16        | btnC        | High Range | IO_L11N_T1_SRCC_15           | INPUT       | LVCMOS33    |      15 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
+| E16        |             | High Range | IO_L11N_T1_SRCC_15           | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | E17        |             | High Range | IO_L16P_T2_A28_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | E18        |             | High Range | IO_L21P_T3_DQS_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | F1         |             | High Range | IO_L18P_T2_35                | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |
@@ -155,7 +155,7 @@ Table of Contents
 | G12        |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | G13        |             | High Range | IO_0_15                      | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | G14        |             | High Range | IO_L15N_T2_DQS_ADV_B_15      | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
-| G15        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
+| G15        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |   any** |            |           |          |      |                  |
 | G16        |             | High Range | IO_L13N_T2_MRCC_15           | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | G17        |             | High Range | IO_L18N_T2_A23_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | G18        |             | High Range | IO_L22P_T3_A17_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
@@ -176,7 +176,7 @@ Table of Contents
 | H15        |             | High Range | IO_L19N_T3_A21_VREF_15       | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | H16        |             | High Range | IO_L13P_T2_MRCC_15           | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | H17        |             | High Range | IO_L18P_T2_A24_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
-| H18        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
+| H18        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |   any** |            |           |          |      |                  |
 | J1         |             | High Range | VCCO_35                      | VCCO        |             |      35 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
 | J2         |             | High Range | IO_L22N_T3_35                | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |
 | J3         |             | High Range | IO_L22P_T3_35                | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |
@@ -208,7 +208,7 @@ Table of Contents
 | K11        |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |
 | K12        |             |            | VCCAUX                       | VCCAUX      |             |         |            |      |                     |                      |    1.80 |            |           |          |      |                  |
 | K13        |             | High Range | IO_L17P_T2_A26_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
-| K14        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
+| K14        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |   any** |            |           |          |      |                  |
 | K15        |             | High Range | IO_L24P_T3_RS1_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | K16        |             | High Range | IO_25_15                     | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | K17        |             | High Range | IO_L1P_T0_D00_MOSI_14        | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |

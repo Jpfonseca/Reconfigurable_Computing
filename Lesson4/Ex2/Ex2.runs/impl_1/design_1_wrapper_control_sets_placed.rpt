@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Sun Mar 26 19:58:01 2017
+| Date         : Mon Mar 27 12:04:31 2017
 | Host         : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
 | Design       : design_1_wrapper
@@ -35,28 +35,28 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              33 |           11 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              46 |           12 |
+| No           | Yes                   | No                     |              30 |            8 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              78 |           25 |
+| Yes          | Yes                   | No                     |              78 |           21 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------------------------------------------+----------------------------------------------------+------------------+------------------+----------------+
-|                              Clock Signal                              |                    Enable Signal                   | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+------------------------------------------------------------------------+----------------------------------------------------+------------------+------------------+----------------+
-|  design_1_i/clockdivider_0/U0/led                                      |                                                    |                  |                2 |              2 |
-|  design_1_i/clockdivider_0/U0/led                                      |                                                    | btnC_IBUF        |                4 |             14 |
-|  design_1_i/clockdivider_0/U0/led                                      | design_1_i/Find_Min_Max_0/U0/index_reg[13]_i_1_n_1 | btnC_IBUF        |                4 |             14 |
-|  design_1_i/counter_0/U0/clk                                           |                                                    |                  |                4 |             14 |
-|  design_1_i/disp32bits_wrapper_0/U0/disp32bits_i/clockdivider_0/U0/led |                                                    |                  |                5 |             17 |
-|  design_1_i/clockdivider_0/U0/led                                      | design_1_i/Find_Min_Max_0/U0/c_min                 | btnC_IBUF        |               13 |             32 |
-|  design_1_i/clockdivider_0/U0/led                                      | design_1_i/Find_Min_Max_0/U0/c_max                 | btnC_IBUF        |                8 |             32 |
-|  clk_IBUF_BUFG                                                         |                                                    | btnC_IBUF        |                8 |             32 |
-+------------------------------------------------------------------------+----------------------------------------------------+------------------+------------------+----------------+
++-----------------------------------+----------------------------------------------------+------------------+------------------+----------------+
+|            Clock Signal           |                    Enable Signal                   | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------------------------+----------------------------------------------------+------------------+------------------+----------------+
+|  design_1_i/clockdivider_0/U0/led |                                                    |                  |                2 |              2 |
+|  design_1_i/clockdivider_0/U0/led |                                                    | btnC_IBUF        |                4 |             14 |
+|  design_1_i/clockdivider_0/U0/led | design_1_i/Find_Min_Max_0/U0/index_reg[13]_i_1_n_1 | btnC_IBUF        |                4 |             14 |
+|  design_1_i/counter_0/U0/clk      |                                                    |                  |                4 |             14 |
+|  clk_IBUF_BUFG                    |                                                    | btnC_IBUF        |                4 |             16 |
+|  clk_IBUF_BUFG                    |                                                    |                  |                5 |             17 |
+|  design_1_i/clockdivider_0/U0/led | design_1_i/Find_Min_Max_0/U0/c_min                 | btnC_IBUF        |                9 |             32 |
+|  design_1_i/clockdivider_0/U0/led | design_1_i/Find_Min_Max_0/U0/c_max                 | btnC_IBUF        |                8 |             32 |
++-----------------------------------+----------------------------------------------------+------------------+------------------+----------------+
 
 
 +--------+-----------------------+

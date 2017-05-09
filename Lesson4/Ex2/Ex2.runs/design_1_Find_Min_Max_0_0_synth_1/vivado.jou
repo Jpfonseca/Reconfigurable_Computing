@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Sun Mar 26 17:26:58 2017
-# Process ID: 22704
+# Start of session at: Mon Mar 27 12:01:45 2017
+# Process ID: 21244
 # Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/design_1_Find_Min_Max_0_0_synth_1
 # Command line: vivado.exe -log design_1_Find_Min_Max_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Find_Min_Max_0_0.tcl
 # Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/design_1_Find_Min_Max_0_0_synth_1/design_1_Find_Min_Max_0_0.vds

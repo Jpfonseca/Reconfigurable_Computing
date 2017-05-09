@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 27 16:46:17 2017
+# Process ID: 11360
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14812 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson4\Ex3\Ex3.xpr
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/vivado.log
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.xpr
+open_bd_design {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex3/Ex3.srcs/sources_1/bd/desig/desig.bd}
+set_property -dict [list CONFIG.address_bits {14}] [get_bd_cells RomRead_0]
