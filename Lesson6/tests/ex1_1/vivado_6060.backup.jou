@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon May 15 10:11:15 2017
+# Process ID: 6060
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5764 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson6\ex1_1\ex1_1.xpr
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/vivado.log
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.xpr

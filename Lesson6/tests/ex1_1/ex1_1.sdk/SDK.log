@@ -1,0 +1,31 @@
+01:22:25 INFO  : Registering command handlers for SDK TCF services
+01:22:27 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson6\ex1_1\ex1_1.sdk\temp_xsdb_launch_script.tcl
+01:22:35 INFO  : XSCT server has started successfully.
+01:22:35 INFO  : Successfully done setting XSCT server connection channel  
+01:22:45 INFO  : Successfully done setting SDK workspace  
+01:22:45 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.sdk/design_1_wrapper.hdf.
+01:24:17 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson6\ex1_1\ex1_1.sdk\temp_xsdb_launch_script.tcl
+01:24:18 INFO  : XSCT server has started successfully.
+01:24:18 INFO  : Successfully done setting XSCT server connection channel  
+01:24:18 INFO  : Successfully done setting SDK workspace  
+01:24:19 INFO  : Registering command handlers for SDK TCF services
+01:24:21 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.sdk/design_1_wrapper.hdf.
+01:24:22 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+01:34:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:34:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274664038A" && level==0} -index 0' command is executed.
+01:34:59 INFO  : FPGA configured successfully with bitstream "C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.sdk/design_1_wrapper_hw_platform_0/download.bit"
+01:41:57 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+12:50:17 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

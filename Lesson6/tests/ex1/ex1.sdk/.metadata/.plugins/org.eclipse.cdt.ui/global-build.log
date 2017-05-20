@@ -1,0 +1,74 @@
+19:17:14 **** Build of project First_SDK_app_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+19:17:26 **** Build of configuration Debug for project First_SDK_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../First_SDK_app_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../First_SDK_app_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: First_SDK_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../First_SDK_app_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "First_SDK_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: First_SDK_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size First_SDK_app.elf  |tee "First_SDK_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2908	    292	   3128	   6328	   18b8	First_SDK_app.elf
+'Finished building: First_SDK_app.elf.size'
+' '
+19:17:31 **** Auto Build of configuration Debug for project First_SDK_app ****
+make all 
+make: Nothing to be done for `all'.
+19:30:55 **** Auto Build of configuration Debug for project First_SDK_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../First_SDK_app_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: First_SDK_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../First_SDK_app_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "First_SDK_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: First_SDK_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size First_SDK_app.elf  |tee "First_SDK_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2972	    292	   3128	   6392	   18f8	First_SDK_app.elf
+'Finished building: First_SDK_app.elf.size'
+' '
+19:41:25 **** Incremental Build of configuration Debug for project First_SDK_app ****
+make all 
+make: Nothing to be done for `all'.
+20:10:50 **** Incremental Build of configuration Debug for project First_SDK_app ****
+make all 
+make: Nothing to be done for `all'.

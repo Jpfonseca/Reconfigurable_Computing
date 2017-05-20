@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat May 20 18:05:47 2017
+# Process ID: 18904
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/synth_1
+# Command line: vivado.exe -log vlock_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vlock_design_wrapper.tcl
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/synth_1/vlock_design_wrapper.vds
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vlock_design_wrapper.tcl -notrace

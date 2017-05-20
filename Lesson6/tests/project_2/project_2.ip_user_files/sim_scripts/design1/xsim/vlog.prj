@@ -1,0 +1,8 @@
+verilog xil_defaultlib "../../../bd/design1/ip/design1_blk_mem_gen_0_0/sim/design1_blk_mem_gen_0_0.v" 
+verilog xil_defaultlib "../../../bd/design1/hdl/design1.v" 
+verilog xil_defaultlib "../../../bd/design1/ipshared/e147/xlconstant.v" 
+verilog xil_defaultlib "../../../bd/design1/ip/design1_xlconstant_0_0/sim/design1_xlconstant_0_0.v" 
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

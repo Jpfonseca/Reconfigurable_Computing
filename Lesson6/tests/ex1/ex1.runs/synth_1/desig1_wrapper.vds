@@ -1,0 +1,461 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 09 18:47:11 2017
+# Process ID: 11272
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1
+# Command line: vivado.exe -log desig1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source desig1_wrapper.tcl
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/desig1_wrapper.vds
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source desig1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 253.027 ; gain = 43.016
+Command: synth_design -top desig1_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11776 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 331.277 ; gain = 121.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'desig1_wrapper' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1_wrapper.vhd:21]
+INFO: [Synth 8-3491] module 'desig1' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:836' bound to instance 'desig1_i' of component 'desig1' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1_wrapper.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'desig1' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:847]
+INFO: [Synth 8-3491] module 'desig1_clk_wiz_1_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'desig1_clk_wiz_1_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:1169]
+INFO: [Synth 8-638] synthesizing module 'desig1_clk_wiz_1_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_clk_wiz_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'desig1_mdm_1_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'desig1_mdm_1_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:1176]
+INFO: [Synth 8-638] synthesizing module 'desig1_mdm_1_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_mdm_1_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'desig1_microblaze_0_1' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_microblaze_0_1_stub.vhdl:5' bound to instance 'microblaze_0' of component 'desig1_microblaze_0_1' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:1209]
+INFO: [Synth 8-638] synthesizing module 'desig1_microblaze_0_1' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_microblaze_0_1_stub.vhdl:137]
+INFO: [Synth 8-638] synthesizing module 'desig1_microblaze_0_axi_periph_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:712]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_CZWOO9' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:609]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_CZWOO9' (1#1) [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:609]
+INFO: [Synth 8-256] done synthesizing module 'desig1_microblaze_0_axi_periph_0' (2#1) [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:712]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1ALOXLM' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:40]
+INFO: [Synth 8-3491] module 'desig1_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'desig1_dlmb_bram_if_cntlr_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:250]
+INFO: [Synth 8-638] synthesizing module 'desig1_dlmb_bram_if_cntlr_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'desig1_dlmb_v10_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'desig1_dlmb_v10_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'desig1_dlmb_v10_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'desig1_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'desig1_ilmb_bram_if_cntlr_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:332]
+INFO: [Synth 8-638] synthesizing module 'desig1_ilmb_bram_if_cntlr_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'desig1_ilmb_v10_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'desig1_ilmb_v10_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:386]
+INFO: [Synth 8-638] synthesizing module 'desig1_ilmb_v10_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'desig1_lmb_bram_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'desig1_lmb_bram_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:414]
+INFO: [Synth 8-638] synthesizing module 'desig1_lmb_bram_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_lmb_bram_0_stub.vhdl:25]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1ALOXLM' (3#1) [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:40]
+INFO: [Synth 8-3491] module 'desig1_rst_clk_wiz_1_100M_0' declared at 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'desig1_rst_clk_wiz_1_100M_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:1405]
+INFO: [Synth 8-638] synthesizing module 'desig1_rst_clk_wiz_1_100M_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/realtime/desig1_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'desig1' (4#1) [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:847]
+INFO: [Synth 8-256] done synthesizing module 'desig1_wrapper' (5#1) [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1_wrapper.vhd:21]
+WARNING: [Synth 8-3331] design s00_couplers_imp_CZWOO9 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_CZWOO9 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_CZWOO9 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_CZWOO9 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design desig1_microblaze_0_axi_periph_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design desig1_microblaze_0_axi_periph_0 has unconnected port ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 370.480 ; gain = 160.469
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 370.480 ; gain = 160.469
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'desig1_clk_wiz_1_0' instantiated as 'desig1_i/clk_wiz_1' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:1169]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'desig1_dlmb_bram_if_cntlr_0' instantiated as 'desig1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:250]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'desig1_dlmb_v10_0' instantiated as 'desig1_i/microblaze_0_local_memory/dlmb_v10' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:304]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'desig1_ilmb_bram_if_cntlr_0' instantiated as 'desig1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:332]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'desig1_ilmb_v10_0' instantiated as 'desig1_i/microblaze_0_local_memory/ilmb_v10' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:386]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'desig1_lmb_bram_0' instantiated as 'desig1_i/microblaze_0_local_memory/lmb_bram' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:414]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'desig1_mdm_1_0' instantiated as 'desig1_i/mdm_1' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:1176]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'desig1_microblaze_0_1' instantiated as 'desig1_i/microblaze_0' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:1209]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'desig1_rst_clk_wiz_1_100M_0' instantiated as 'desig1_i/rst_clk_wiz_1_100M' [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.srcs/sources_1/bd/desig1/hdl/desig1.vhd:1405]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp/desig1_microblaze_0_1_in_context.xdc] for cell 'desig1_i/microblaze_0'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp/desig1_microblaze_0_1_in_context.xdc] for cell 'desig1_i/microblaze_0'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_2/desig1_dlmb_v10_0_in_context.xdc] for cell 'desig1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_2/desig1_dlmb_v10_0_in_context.xdc] for cell 'desig1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_3/desig1_ilmb_v10_0_in_context.xdc] for cell 'desig1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_3/desig1_ilmb_v10_0_in_context.xdc] for cell 'desig1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_4/desig1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'desig1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_4/desig1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'desig1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_5/desig1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'desig1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_5/desig1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'desig1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_6/desig1_lmb_bram_0_in_context.xdc] for cell 'desig1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_6/desig1_lmb_bram_0_in_context.xdc] for cell 'desig1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_7/desig1_mdm_1_0_in_context.xdc] for cell 'desig1_i/mdm_1'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_7/desig1_mdm_1_0_in_context.xdc] for cell 'desig1_i/mdm_1'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_8/desig1_clk_wiz_1_0_in_context.xdc] for cell 'desig1_i/clk_wiz_1'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_8/desig1_clk_wiz_1_0_in_context.xdc] for cell 'desig1_i/clk_wiz_1'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_9/desig1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'desig1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_9/desig1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'desig1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:156]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:172]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:173]
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:176]
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:178]
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:181]
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:182]
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:184]
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:185]
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:194]
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:195]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:197]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:198]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:200]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:201]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc:201]
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/desig1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/desig1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/desig1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 632.363 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'desig1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_8/desig1_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/.Xil/Vivado-11272-DESKTOP-2SMIO6T/dcp_8/desig1_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for desig1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for desig1_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for desig1_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for desig1_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for desig1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for desig1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for desig1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for desig1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for desig1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for desig1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for desig1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design desig1_microblaze_0_axi_periph_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design desig1_microblaze_0_axi_periph_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design desig1_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design desig1_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design desig1_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design desig1_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'desig1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'desig1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'desig1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'desig1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'desig1_i/mdm_1/Dbg_Clk_0' to pin 'desig1_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'desig1_i/mdm_1/Dbg_Update_0' to pin 'desig1_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'desig1_i/clk_wiz_1/clk_out1' to pin 'desig1_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |desig1_clk_wiz_1_0          |         1|
+|2     |desig1_mdm_1_0              |         1|
+|3     |desig1_microblaze_0_1       |         1|
+|4     |desig1_rst_clk_wiz_1_100M_0 |         1|
+|5     |desig1_dlmb_bram_if_cntlr_0 |         1|
+|6     |desig1_dlmb_v10_0           |         1|
+|7     |desig1_ilmb_bram_if_cntlr_0 |         1|
+|8     |desig1_ilmb_v10_0           |         1|
+|9     |desig1_lmb_bram_0           |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |desig1_clk_wiz_1_0_bbox          |     1|
+|2     |desig1_dlmb_bram_if_cntlr_0_bbox |     1|
+|3     |desig1_dlmb_v10_0_bbox           |     1|
+|4     |desig1_ilmb_bram_if_cntlr_0_bbox |     1|
+|5     |desig1_ilmb_v10_0_bbox           |     1|
+|6     |desig1_lmb_bram_0_bbox           |     1|
+|7     |desig1_mdm_1_0_bbox              |     1|
+|8     |desig1_microblaze_0_1_bbox       |     1|
+|9     |desig1_rst_clk_wiz_1_100M_0_bbox |     1|
+|10    |IBUF                             |     1|
++------+---------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------------+------+
+|      |Instance                      |Module                                |Cells |
++------+------------------------------+--------------------------------------+------+
+|1     |top                           |                                      |  1095|
+|2     |  desig1_i                    |desig1                                |  1094|
+|3     |    microblaze_0_axi_periph   |desig1_microblaze_0_axi_periph_0      |     0|
+|4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1ALOXLM |   494|
++------+------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:49 . Memory (MB): peak = 632.363 ; gain = 422.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 632.363 ; gain = 111.766
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 632.363 ; gain = 422.352
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 123 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 636.156 ; gain = 383.129
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1/ex1.runs/synth_1/desig1_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 636.156 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 09 18:48:03 2017...

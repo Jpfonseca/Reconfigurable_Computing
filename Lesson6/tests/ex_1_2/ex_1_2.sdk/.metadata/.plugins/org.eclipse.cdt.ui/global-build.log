@@ -1,0 +1,243 @@
+10:58:58 **** Build of project Ex1_2_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+10:59:07 **** Build of configuration Debug for project Ex1_2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Ex1_2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../Ex1_2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Ex1_2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Ex1_2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Ex1_2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Ex1_2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Ex1_2.elf  |tee "Ex1_2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2852	    292	   3128	   6272	   1880	Ex1_2.elf
+'Finished building: Ex1_2.elf.size'
+' '
+10:59:10 **** Auto Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.
+11:00:30 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.
+11:01:48 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.
+11:02:29 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.
+13:35:56 **** Auto Build of configuration Debug for project Ex1_2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Ex1_2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:56:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_0_conf'
+ XGpio_Config GPIO_0_conf;
+              ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:2: error: 'GPIO_0_conf' undeclared (first use in this function)
+  GPIO_0_conf.BaseAddress=XPAR_AXI_GPIO_0_BASEADDR;
+  ^
+../src/helloworld.c:60:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:69:25: error: 'GPIO_0' undeclared (first use in this function)
+    XGpio_DiscreteWrite(&GPIO_0,1,0xD1234567);
+                         ^
+../src/helloworld.c:71:24: error: too many arguments to function 'XGpio_DiscreteRead'
+    xil_printf("HW%d\n",XGpio_DiscreteRead(&GPIO_0,0,2));
+                        ^
+In file included from ../src/helloworld.c:52:0:
+../../Ex1_2_bsp/microblaze_0/include/xgpio.h:177:5: note: declared here
+ u32 XGpio_DiscreteRead(XGpio *InstancePtr, unsigned Channel);
+     ^
+make: *** [src/helloworld.o] Error 1
+13:38:02 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Ex1_2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:56:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'GPIO_0_conf'
+ XGpio_Config GPIO_0_conf;
+              ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:2: error: 'GPIO_0_conf' undeclared (first use in this function)
+  GPIO_0_conf.BaseAddress=XPAR_AXI_GPIO_0_BASEADDR;
+  ^
+../src/helloworld.c:60:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:69:25: error: 'GPIO_0' undeclared (first use in this function)
+    XGpio_DiscreteWrite(&GPIO_0,1,0xD1234567);
+                         ^
+../src/helloworld.c:71:24: error: too many arguments to function 'XGpio_DiscreteRead'
+    xil_printf("HW%d\n",XGpio_DiscreteRead(&GPIO_0,0,2));
+                        ^
+In file included from ../src/helloworld.c:52:0:
+../../Ex1_2_bsp/microblaze_0/include/xgpio.h:177:5: note: declared here
+ u32 XGpio_DiscreteRead(XGpio *InstancePtr, unsigned Channel);
+     ^
+make: *** [src/helloworld.o] Error 1
+13:38:52 **** Auto Build of configuration Debug for project Ex1_2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Ex1_2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:13: error: 'XGpio_Config {aka struct <anonymous>}' has no member named 'isDual'
+  GPIO_0_conf.isDual=XPAR_AXI_GPIO_0_IS_DUAL;
+             ^
+../src/helloworld.c:69:25: error: 'GPIO_0' undeclared (first use in this function)
+    XGpio_DiscreteWrite(&GPIO_0,1,0xD1234567);
+                         ^
+../src/helloworld.c:69:25: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:71:24: error: too many arguments to function 'XGpio_DiscreteRead'
+    xil_printf("HW%d\n",XGpio_DiscreteRead(&GPIO_0,0,2));
+                        ^
+In file included from ../src/helloworld.c:52:0:
+../../Ex1_2_bsp/microblaze_0/include/xgpio.h:177:5: note: declared here
+ u32 XGpio_DiscreteRead(XGpio *InstancePtr, unsigned Channel);
+     ^
+make: *** [src/helloworld.o] Error 1
+13:39:10 **** Auto Build of configuration Debug for project Ex1_2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Ex1_2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:25: error: 'GPIO_0' undeclared (first use in this function)
+    XGpio_DiscreteWrite(&GPIO_0,1,0xD1234567);
+                         ^
+../src/helloworld.c:69:25: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:71:24: error: too many arguments to function 'XGpio_DiscreteRead'
+    xil_printf("HW%d\n",XGpio_DiscreteRead(&GPIO_0,0,2));
+                        ^
+In file included from ../src/helloworld.c:52:0:
+../../Ex1_2_bsp/microblaze_0/include/xgpio.h:177:5: note: declared here
+ u32 XGpio_DiscreteRead(XGpio *InstancePtr, unsigned Channel);
+     ^
+make: *** [src/helloworld.o] Error 1
+13:39:24 **** Auto Build of configuration Debug for project Ex1_2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Ex1_2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:25: error: 'GPIO_0' undeclared (first use in this function)
+    XGpio_DiscreteWrite(&GPIO_0,1,0xD1234567);
+                         ^
+../src/helloworld.c:70:25: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:72:24: error: too many arguments to function 'XGpio_DiscreteRead'
+    xil_printf("HW%d\n",XGpio_DiscreteRead(&GPIO_0,0,2));
+                        ^
+In file included from ../src/helloworld.c:52:0:
+../../Ex1_2_bsp/microblaze_0/include/xgpio.h:177:5: note: declared here
+ u32 XGpio_DiscreteRead(XGpio *InstancePtr, unsigned Channel);
+     ^
+make: *** [src/helloworld.o] Error 1
+13:41:40 **** Auto Build of configuration Debug for project Ex1_2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Ex1_2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:23: error: 'GPI_0' undeclared (first use in this function)
+  XGpio_CfgInitialize(&GPI_0,&GPIO_0_conf,GPIO_0_conf.BaseAddress);
+                       ^
+../src/helloworld.c:65:23: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:72:24: error: too many arguments to function 'XGpio_DiscreteRead'
+    xil_printf("HW%d\n",XGpio_DiscreteRead(&GPIO_0,0,2));
+                        ^
+In file included from ../src/helloworld.c:52:0:
+../../Ex1_2_bsp/microblaze_0/include/xgpio.h:177:5: note: declared here
+ u32 XGpio_DiscreteRead(XGpio *InstancePtr, unsigned Channel);
+     ^
+make: *** [src/helloworld.o] Error 1
+13:41:48 **** Auto Build of configuration Debug for project Ex1_2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Ex1_2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:24: error: too many arguments to function 'XGpio_DiscreteRead'
+    xil_printf("HW%d\n",XGpio_DiscreteRead(&GPIO_0,0,2));
+                        ^
+In file included from ../src/helloworld.c:52:0:
+../../Ex1_2_bsp/microblaze_0/include/xgpio.h:177:5: note: declared here
+ u32 XGpio_DiscreteRead(XGpio *InstancePtr, unsigned Channel);
+     ^
+make: *** [src/helloworld.o] Error 1
+13:42:10 **** Auto Build of configuration Debug for project Ex1_2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Ex1_2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Ex1_2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Ex1_2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Ex1_2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Ex1_2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Ex1_2.elf  |tee "Ex1_2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7244	    296	   3156	  10696	   29c8	Ex1_2.elf
+'Finished building: Ex1_2.elf.size'
+' '
+13:42:15 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.
+13:43:10 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.
+13:46:13 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.
+13:46:25 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.
+13:47:37 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.
+13:47:42 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.
+13:47:44 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.
+13:47:49 **** Incremental Build of configuration Debug for project Ex1_2 ****
+make all 
+make: Nothing to be done for `all'.

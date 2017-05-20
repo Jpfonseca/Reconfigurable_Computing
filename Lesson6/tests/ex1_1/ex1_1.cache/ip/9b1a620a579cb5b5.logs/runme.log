@@ -1,0 +1,69 @@
+
+*** Running vivado
+    with args -log design_1_axi_gpio_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_gpio_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axi_gpio_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 301.184 ; gain = 90.973
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:1091]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:1091]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (8#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/ex1_1/ex1_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd:85]
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 339.711 ; gain = 129.500
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 339.711 ; gain = 129.500
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.438 . Memory (MB): peak = 648.152 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:53 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:17 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:18 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:18 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:19 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:19 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:19 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:19 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:19 . Memory (MB): peak = 648.152 ; gain = 437.941
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:19 . Memory (MB): peak = 648.152 ; gain = 437.941
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     6|
+|3     |LUT3 |     3|
+|4     |LUT4 |     3|
+|5     |LUT5 |     9|
+|6     |LUT6 |    57|
+|7     |FDR  |   128|
+|8     |FDRE |   149|
+|9     |FDSE |    32|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:19 . Memory (MB): peak = 648.152 ; gain = 437.941
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 648.152 ; gain = 430.363

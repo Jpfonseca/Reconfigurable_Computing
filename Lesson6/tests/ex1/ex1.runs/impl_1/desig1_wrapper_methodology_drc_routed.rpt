@@ -1,0 +1,57 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 09 18:50:53 2017
+| Host         : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
+| Command      : report_methodology -file desig1_wrapper_methodology_drc_routed.rpt -rpx desig1_wrapper_methodology_drc_routed.rpx
+| Design       : desig1_wrapper
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 4
++-----------+----------+------------------------------------------------+------------+
+| Rule      | Severity | Description                                    | Violations |
++-----------+----------+------------------------------------------------+------------+
+| TIMING-6  | Warning  | No common primary clock between related clocks | 2          |
+| TIMING-9  | Warning  | Unknown CDC Logic                              | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                  | 1          |
++-----------+----------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_desig1_clk_wiz_1_0 and clk_out1_desig1_clk_wiz_1_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_desig1_clk_wiz_1_0] -to [get_clocks clk_out1_desig1_clk_wiz_1_0_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_desig1_clk_wiz_1_0_1 and clk_out1_desig1_clk_wiz_1_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_desig1_clk_wiz_1_0_1] -to [get_clocks clk_out1_desig1_clk_wiz_1_0]
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on btnCpuReset relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+

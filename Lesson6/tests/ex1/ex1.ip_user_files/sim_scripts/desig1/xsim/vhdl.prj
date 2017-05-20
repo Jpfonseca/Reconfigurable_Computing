@@ -1,0 +1,10 @@
+vhdl xil_defaultlib "../../../bd/desig1/ip/desig1_microblaze_0_1/sim/desig1_microblaze_0_1.vhd" 
+vhdl xil_defaultlib "../../../bd/desig1/ip/desig1_dlmb_v10_0/sim/desig1_dlmb_v10_0.vhd" 
+vhdl xil_defaultlib "../../../bd/desig1/ip/desig1_ilmb_v10_0/sim/desig1_ilmb_v10_0.vhd" 
+vhdl xil_defaultlib "../../../bd/desig1/ip/desig1_dlmb_bram_if_cntlr_0/sim/desig1_dlmb_bram_if_cntlr_0.vhd" 
+vhdl xil_defaultlib "../../../bd/desig1/ip/desig1_ilmb_bram_if_cntlr_0/sim/desig1_ilmb_bram_if_cntlr_0.vhd" 
+vhdl xil_defaultlib "../../../bd/desig1/ip/desig1_mdm_1_0/sim/desig1_mdm_1_0.vhd" 
+vhdl xil_defaultlib "../../../bd/desig1/ip/desig1_rst_clk_wiz_1_100M_0/sim/desig1_rst_clk_wiz_1_100M_0.vhd" 
+vhdl xil_defaultlib "../../../bd/desig1/hdl/desig1.vhd" 
+
+nosort

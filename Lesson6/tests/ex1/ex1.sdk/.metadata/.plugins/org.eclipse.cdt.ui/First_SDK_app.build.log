@@ -1,0 +1,6 @@
+20:10:50 **** Incremental Build of configuration Debug for project First_SDK_app ****
+make all 
+make: Nothing to be done for `all'.
+
+20:10:50 Build Finished (took 225ms)
+

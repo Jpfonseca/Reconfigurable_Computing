@@ -1,0 +1,13 @@
+design1_blk_mem_gen_0_0.v,verilog,xil_defaultlib,../../../bd/design1/ip/design1_blk_mem_gen_0_0/sim/design1_blk_mem_gen_0_0.v,
+ClockDivider.vhd,vhdl,xil_defaultlib,../../../bd/design1/ipshared/5383/sources_1/imports/Downloads/ClockDivider.vhd,
+design1_ClockDivider_0_0.vhd,vhdl,xil_defaultlib,../../../bd/design1/ip/design1_ClockDivider_0_0/sim/design1_ClockDivider_0_0.vhd,
+design1.v,verilog,xil_defaultlib,../../../bd/design1/hdl/design1.v,
+Binary_to_BCD16.vhd,vhdl,xil_defaultlib,../../../bd/design1/ipshared/3dd5/Binary_to_BCD16.vhd,
+design1_BinToBCD16_0_0.vhd,vhdl,xil_defaultlib,../../../bd/design1/ip/design1_BinToBCD16_0_0/sim/design1_BinToBCD16_0_0.vhd,
+xlconstant.v,verilog,xil_defaultlib,../../../bd/design1/ipshared/e147/xlconstant.v,
+design1_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/design1/ip/design1_xlconstant_0_0/sim/design1_xlconstant_0_0.v,
+segment_decoder.vhd,vhdl,xil_defaultlib,../../../bd/design1/ipshared/1eec/segment_decoder.vhd,
+disp.vhd,vhdl,xil_defaultlib,../../../bd/design1/ipshared/1eec/disp.vhd,
+design1_EightDispControl_0_0.vhd,vhdl,xil_defaultlib,../../../bd/design1/ip/design1_EightDispControl_0_0/sim/design1_EightDispControl_0_0.vhd,
+design1_c_counter_binary_0_0.vhd,vhdl,xil_defaultlib,../../../bd/design1/ip/design1_c_counter_binary_0_0/sim/design1_c_counter_binary_0_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

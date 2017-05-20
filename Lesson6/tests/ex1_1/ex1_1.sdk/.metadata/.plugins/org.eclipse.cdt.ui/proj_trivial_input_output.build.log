@@ -1,0 +1,6 @@
+12:40:33 **** Incremental Build of configuration Debug for project proj_trivial_input_output ****
+make all 
+make: Nothing to be done for `all'.
+
+12:40:35 Build Finished (took 2s.167ms)
+

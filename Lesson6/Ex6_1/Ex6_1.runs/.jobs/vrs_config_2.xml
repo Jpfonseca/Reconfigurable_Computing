@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="vlock_design_blk_mem_gen_0_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/vlock_design_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vlock_design_BinToBCD16_0_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/vlock_design_BinToBCD16_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vlock_design_EightDispControl_0_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/vlock_design_EightDispControl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vlock_design_xlconstant_0_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/vlock_design_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vlock_design_clockdivider_0_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/vlock_design_clockdivider_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vlock_design_xlconcat_0_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/vlock_design_xlconcat_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vlock_design_c_counter_binary_0_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/vlock_design_c_counter_binary_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vlock_design_xlconstant_1_0_synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/vlock_design_xlconstant_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="vlock_design_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="vlock_design_BinToBCD16_0_0_synth_1"/>
+		<Parent Id="vlock_design_EightDispControl_0_0_synth_1"/>
+		<Parent Id="vlock_design_xlconstant_0_0_synth_1"/>
+		<Parent Id="vlock_design_clockdivider_0_0_synth_1"/>
+		<Parent Id="vlock_design_xlconcat_0_0_synth_1"/>
+		<Parent Id="vlock_design_c_counter_binary_0_0_synth_1"/>
+		<Parent Id="vlock_design_xlconstant_1_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_1/Ex6_1.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="vlock_design_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="vlock_design_BinToBCD16_0_0_synth_1"/>
+		<Parent Id="vlock_design_EightDispControl_0_0_synth_1"/>
+		<Parent Id="vlock_design_xlconstant_0_0_synth_1"/>
+		<Parent Id="vlock_design_clockdivider_0_0_synth_1"/>
+		<Parent Id="vlock_design_xlconcat_0_0_synth_1"/>
+		<Parent Id="vlock_design_c_counter_binary_0_0_synth_1"/>
+		<Parent Id="vlock_design_xlconstant_1_0_synth_1"/>
+	</Run>
+</Runs>
+

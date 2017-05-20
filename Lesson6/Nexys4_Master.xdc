@@ -188,8 +188,8 @@ set_property PACKAGE_PIN M1 [get_ports {an[7]}]
 
 ##Buttons
 ##Bank = 15, Pin name = IO_L3P_T0_DQS_AD1P_15,				Sch name = CPU_RESET
-#set_property PACKAGE_PIN C12 [get_ports btnCpuReset]				
-	#set_property IOSTANDARD LVCMOS33 [get_ports btnCpuReset]
+set_property PACKAGE_PIN C12 [get_ports btnCpuReset]				
+	set_property IOSTANDARD LVCMOS33 [get_ports btnCpuReset]
 #Bank = 15, Pin name = IO_L11N_T1_SRCC_15,					Sch name = BTNC
 set_property PACKAGE_PIN E16 [get_ports btnC]						
 	set_property IOSTANDARD LVCMOS33 [get_ports btnC]
