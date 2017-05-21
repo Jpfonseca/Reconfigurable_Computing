@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
 // Date        : Sun Mar 26 15:53:57 2017
 // Host        : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_counter_0_0/design_1_counter_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_counter_0_0 -prefix
+//               design_1_counter_0_0_ design_1_counter_0_0_sim_netlist.v
 // Design      : design_1_counter_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,31 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_counter_0_0,counter,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "counter,Vivado 2016.4" *) 
-(* NotValidForBitStream *)
-module design_1_counter_0_0
-   (clock,
-    reset,
-    operation,
-    val_output);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clock CLK" *) input clock;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset RST" *) input reset;
-  input [0:0]operation;
-  output [13:0]val_output;
-
-  wire clock;
-  wire [0:0]operation;
-  wire reset;
-  wire [13:0]val_output;
-
-  design_1_counter_0_0_counter U0
-       (.clock(clock),
-        .operation(operation),
-        .reset(reset),
-        .val_output(val_output));
-endmodule
-
-(* ORIG_REF_NAME = "counter" *) 
 module design_1_counter_0_0_counter
    (val_output,
     reset,
@@ -516,6 +491,30 @@ module design_1_counter_0_0_counter
         .D(\increment_reg[8]_i_1_n_6 ),
         .Q(\increment_reg_n_0_[9] ),
         .R(reset));
+endmodule
+
+(* CHECK_LICENSE_TYPE = "design_1_counter_0_0,counter,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "counter,Vivado 2016.4" *) 
+(* NotValidForBitStream *)
+module design_1_counter_0_0
+   (clock,
+    reset,
+    operation,
+    val_output);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clock CLK" *) input clock;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 reset RST" *) input reset;
+  input [0:0]operation;
+  output [13:0]val_output;
+
+  wire clock;
+  wire [0:0]operation;
+  wire reset;
+  wire [13:0]val_output;
+
+  design_1_counter_0_0_counter U0
+       (.clock(clock),
+        .operation(operation),
+        .reset(reset),
+        .val_output(val_output));
 endmodule
 `ifndef GLBL
 `define GLBL

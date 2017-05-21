@@ -22,56 +22,56 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2016.4
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/btnC' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:2964]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:2971]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:2979]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[10]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3049]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[11]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3056]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[12]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3063]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[13]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3070]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[14]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3077]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[15]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3084]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:2986]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:2993]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3000]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3007]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3014]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3021]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3028]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[8]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3035]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[9]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3042]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3234]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3241]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3248]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3255]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3262]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3269]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3276]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3283]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3226]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3291]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3298]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3305]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3312]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3319]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3326]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3333]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3341]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[10]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3411]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[11]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3418]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[12]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3425]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[13]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3432]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[14]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3439]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[15]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3446]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3348]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3355]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3362]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3369]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3376]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3383]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3390]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[8]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3397]
-WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[9]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-18844-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3404]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/btnC' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:2966]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:2973]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:2981]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[10]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3051]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[11]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3058]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[12]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3065]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[13]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3072]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[14]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3079]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[15]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3086]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:2988]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:2995]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3002]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3009]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3016]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3023]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3030]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[8]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3037]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/Find_Min_Max_0/sw[9]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_2/design_1_Find_Min_Max_0_0.edf:3044]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3234]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3241]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3248]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3255]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3262]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3269]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3276]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/an[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3283]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/clk' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3226]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3291]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3298]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3305]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3312]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3319]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3326]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/seg[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3333]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3341]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[10]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3411]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[11]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3418]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[12]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3425]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[13]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3432]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[14]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3439]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[15]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3446]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3348]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3355]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3362]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3369]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3376]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3383]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3390]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[8]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3397]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/disp32bits_wrapper_0/sw[9]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/.Xil/Vivado-19088-DESKTOP-2SMIO6T/dcp_7/design_1_disp32bits_wrapper_0_2.edf:3404]
 Parsing XDC File [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_Find_Min_Max_0_0/src/Nexys4_Master.xdc] for cell 'design_1_i/Find_Min_Max_0/U0'
 CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_Find_Min_Max_0_0/src/Nexys4_Master.xdc:8]
 Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
@@ -588,7 +588,7 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 486.996 ; gain = 277.363
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 486.887 ; gain = 276.977
 CRITICAL WARNING: [Pfi 67-13] Hardware Handoff file disp32bits.hwdef does not exist for instance design_1_i/disp32bits_wrapper_0/U0/disp32bits_i
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
@@ -600,7 +600,7 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.982 . Memory (MB): peak = 494.852 ; gain = 7.855
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 496.668 ; gain = 9.781
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
@@ -611,21 +611,21 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
 Phase 1 Retarget | Checksum: 16b9590b1
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1002.816 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.400 . Memory (MB): peak = 1004.145 ; gain = 0.000
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-10] Eliminated 0 cells.
 Phase 2 Constant propagation | Checksum: 16b9590b1
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.130 . Memory (MB): peak = 1002.816 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.524 . Memory (MB): peak = 1004.145 ; gain = 0.000
 
 Phase 3 Sweep
 INFO: [Opt 31-12] Eliminated 75 unconnected nets.
 INFO: [Opt 31-11] Eliminated 2 unconnected cells.
 Phase 3 Sweep | Checksum: 1d061d178
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.272 . Memory (MB): peak = 1002.816 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.783 . Memory (MB): peak = 1004.145 ; gain = 0.000
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-194] Inserted BUFG clk_IBUF_BUFG_inst to drive 33 load(s) on clock net clk_IBUF_BUFG
@@ -634,14 +634,14 @@ INFO: [Opt 31-12] Eliminated 0 unconnected nets.
 INFO: [Opt 31-11] Eliminated 0 unconnected cells.
 Phase 4 BUFG optimization | Checksum: 1515b8ca7
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.455 . Memory (MB): peak = 1002.816 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.989 . Memory (MB): peak = 1004.145 ; gain = 0.000
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1002.816 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1004.145 ; gain = 0.000
 Ending Logic Optimization Task | Checksum: 1515b8ca7
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.464 . Memory (MB): peak = 1002.816 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1004.145 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -659,19 +659,19 @@ INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 30
 Ending PowerOpt Patch Enables Task | Checksum: 1515b8ca7
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1163.277 ; gain = 0.000
 Ending Power Optimization Task | Checksum: 1515b8ca7
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1162.195 ; gain = 159.379
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1163.277 ; gain = 159.133
 INFO: [Common 17-83] Releasing license: Implementation
 41 Infos, 150 Warnings, 201 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1162.195 ; gain = 675.199
+opt_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1163.277 ; gain = 676.391
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.230 . Memory (MB): peak = 1163.277 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/design_1_wrapper_drc_opted.rpt.
@@ -693,113 +693,113 @@ Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1162.195 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1163.277 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 76462c47
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 1.2 Build Placer Netlist Model
 Phase 1.2 Build Placer Netlist Model | Checksum: 130775bf6
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 1.3 Constrain Clocks/Macros
 Phase 1.3 Constrain Clocks/Macros | Checksum: 130775bf6
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1163.277 ; gain = 0.000
 Phase 1 Placer Initialization | Checksum: 130775bf6
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 2 Global Placement
 Phase 2 Global Placement | Checksum: 157bf255e
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
 Phase 3.1 Commit Multi Column Macros | Checksum: 157bf255e
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
 Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1511b6f56
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
 Phase 3.3 Area Swap Optimization | Checksum: 9de9ee3e
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
 Phase 3.4 Pipeline Register Optimization | Checksum: 9de9ee3e
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 3.5 Small Shape Detail Placement
 Phase 3.5 Small Shape Detail Placement | Checksum: 14be94ffe
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 3.6 Re-assign LUT pins
 Phase 3.6 Re-assign LUT pins | Checksum: af99aff9
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 3.7 Pipeline Register Optimization
 Phase 3.7 Pipeline Register Optimization | Checksum: af99aff9
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.277 ; gain = 0.000
 Phase 3 Detail Placement | Checksum: af99aff9
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 Post Commit Optimization
 Phase 4.1 Post Commit Optimization | Checksum: af99aff9
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
 Phase 4.2 Post Placement Cleanup | Checksum: af99aff9
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
 Phase 4.3 Placer Reporting | Checksum: af99aff9
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
 Phase 4.4 Final Placement Cleanup | Checksum: af99aff9
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.277 ; gain = 0.000
 Phase 4 Post Placement Optimization and Clean-Up | Checksum: af99aff9
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.277 ; gain = 0.000
 Ending Placer Task | Checksum: 68569bc7
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.277 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 55 Infos, 150 Warnings, 201 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1162.195 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1163.277 ; gain = 0.000
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.194 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.195 . Memory (MB): peak = 1163.277 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1162.195 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1162.195 ; gain = 0.000
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1162.195 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 1163.277 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1163.277 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1163.277 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
@@ -816,40 +816,40 @@ Checksum: PlaceDB: 1c21980a ConstDB: 0 ShapeSum: 4c3503bd RouteDB: 0
 Phase 1 Build RT Design
 Phase 1 Build RT Design | Checksum: 14a84c50f
 
-Time (s): cpu = 00:00:59 ; elapsed = 00:00:55 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:54 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
 Phase 2.1 Create Timer | Checksum: 14a84c50f
 
-Time (s): cpu = 00:00:59 ; elapsed = 00:00:55 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:54 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 2.2 Fix Topology Constraints
 Phase 2.2 Fix Topology Constraints | Checksum: 14a84c50f
 
-Time (s): cpu = 00:00:59 ; elapsed = 00:00:55 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:54 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 2.3 Pre Route Cleanup
 Phase 2.3 Pre Route Cleanup | Checksum: 14a84c50f
 
-Time (s): cpu = 00:00:59 ; elapsed = 00:00:55 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:54 . Memory (MB): peak = 1163.277 ; gain = 0.000
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
 Phase 2.4 Update Timing | Checksum: 1b828b2cd
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:56 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:55 . Memory (MB): peak = 1163.277 ; gain = 0.000
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.739  | TNS=0.000  | WHS=-0.017 | THS=-0.110 |
 
 Phase 2 Router Initialization | Checksum: 175323908
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:56 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:55 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 3 Initial Routing
 Phase 3 Initial Routing | Checksum: 2261016af
 
-Time (s): cpu = 00:01:01 ; elapsed = 00:00:57 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 4 Rip-up And Reroute
 
@@ -860,30 +860,30 @@ Phase 4.1 Global Iteration 0
 Phase 4.1.1 Update Timing
 Phase 4.1.1 Update Timing | Checksum: 17a2176a8
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:57 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.598  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
 Phase 4.1 Global Iteration 0 | Checksum: 17a2176a8
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:57 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 Phase 4 Rip-up And Reroute | Checksum: 17a2176a8
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:57 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 Phase 5.1 Delay CleanUp | Checksum: 17a2176a8
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:57 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 5.2 Clock Skew Optimization
 Phase 5.2 Clock Skew Optimization | Checksum: 17a2176a8
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:57 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 Phase 5 Delay and Skew Optimization | Checksum: 17a2176a8
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:57 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 6 Post Hold Fix
 
@@ -892,15 +892,15 @@ Phase 6.1 Hold Fix Iter
 Phase 6.1.1 Update Timing
 Phase 6.1.1 Update Timing | Checksum: 1daa5e7ba
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:57 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.693  | TNS=0.000  | WHS=0.237  | THS=0.000  |
 
 Phase 6.1 Hold Fix Iter | Checksum: 1daa5e7ba
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:57 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 Phase 6 Post Hold Fix | Checksum: 1daa5e7ba
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:57 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 7 Route finalize
 
@@ -917,19 +917,19 @@ Router Utilization Summary
 
 Phase 7 Route finalize | Checksum: 1daa5e7ba
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:58 . Memory (MB): peak = 1162.195 ; gain = 0.000
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
 Phase 8 Verifying routed nets | Checksum: 1daa5e7ba
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:58 . Memory (MB): peak = 1162.957 ; gain = 0.762
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 9 Depositing Routes
 Phase 9 Depositing Routes | Checksum: 1dc48f580
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:58 . Memory (MB): peak = 1162.957 ; gain = 0.762
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Phase 10 Post Router Timing
 INFO: [Route 35-57] Estimated Timing Summary | WNS=7.693  | TNS=0.000  | WHS=0.237  | THS=0.000  |
@@ -937,21 +937,21 @@ INFO: [Route 35-57] Estimated Timing Summary | WNS=7.693  | TNS=0.000  | WHS=0.2
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
 Phase 10 Post Router Timing | Checksum: 1dc48f580
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:58 . Memory (MB): peak = 1162.957 ; gain = 0.762
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:58 . Memory (MB): peak = 1162.957 ; gain = 0.762
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:56 . Memory (MB): peak = 1163.277 ; gain = 0.000
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 68 Infos, 150 Warnings, 201 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:01:05 ; elapsed = 00:00:59 . Memory (MB): peak = 1162.957 ; gain = 0.762
+route_design: Time (s): cpu = 00:01:06 ; elapsed = 00:00:58 . Memory (MB): peak = 1163.277 ; gain = 0.000
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.231 . Memory (MB): peak = 1162.957 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.225 . Memory (MB): peak = 1163.277 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/design_1_wrapper_drc_routed.rpt.
@@ -993,9 +993,9 @@ Creating bitstream...
 Writing bitstream ./design_1_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Mar 27 12:06:09 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-186] 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun May 21 19:24:05 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
 86 Infos, 151 Warnings, 201 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1544.926 ; gain = 352.922
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 12:06:09 2017...
+write_bitstream: Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1537.965 ; gain = 350.453
+INFO: [Common 17-206] Exiting Vivado at Sun May 21 19:24:05 2017...

@@ -1,0 +1,54 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sun May 21 21:01:47 2017
+| Host         : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design1_Find_Min_Max_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design1_Find_Min_Max_0_0 (xilinx.com:user:Find_Min_Max:1.0) from (Rev. 10) to (Rev. 11)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design1_Find_Min_Max_0_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design1_Find_Min_Max_0_0'. These changes may impact your design.
+
+
+
+4. Customization warnings
+-------------------------
+
+Parameter 'number_of_bits' is no longer present on the upgraded IP 'design1_Find_Min_Max_0_0', and cannot be set to '32'
+
+Parameter 'num_of_bits' is no longer present on the upgraded IP 'design1_Find_Min_Max_0_0', and cannot be set to '14'
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:Find_Min_Max:1.0 -user_name design1_Find_Min_Max_0_0
+set_property -dict "\
+  CONFIG.Component_Name {design1_Find_Min_Max_0_0} " [get_ips design1_Find_Min_Max_0_0]
+
+

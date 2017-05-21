@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
 -- Date        : Sun Mar 26 15:43:11 2017
 -- Host        : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/Ex2.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_blk_mem_gen_0_0 -prefix
+--               design_1_blk_mem_gen_0_0_ design_1_blk_mem_gen_0_0_sim_netlist.vhdl
 -- Design      : design_1_blk_mem_gen_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -19,8 +19,6 @@ entity design_1_blk_mem_gen_0_0_bindec is
     ena_array : out STD_LOGIC_VECTOR ( 1 downto 0 );
     addra : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_blk_mem_gen_0_0_bindec : entity is "bindec";
 end design_1_blk_mem_gen_0_0_bindec;
 
 architecture STRUCTURE of design_1_blk_mem_gen_0_0_bindec is
@@ -78,8 +76,6 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_mux is
     \DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_19\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_20\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_blk_mem_gen_0_0_blk_mem_gen_mux : entity is "blk_mem_gen_mux";
 end design_1_blk_mem_gen_0_0_blk_mem_gen_mux;
 
 architecture STRUCTURE of design_1_blk_mem_gen_0_0_blk_mem_gen_mux is
@@ -469,8 +465,6 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 13 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of design_1_blk_mem_gen_0_0_blk_mem_gen_prim_wrapper_init is
@@ -4123,8 +4117,6 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 13 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of design_1_blk_mem_gen_0_0_blk_mem_gen_prim_width is
@@ -4516,8 +4508,6 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr is
     addra : in STD_LOGIC_VECTOR ( 13 downto 0 );
     clka : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of design_1_blk_mem_gen_0_0_blk_mem_gen_generic_cstr is
@@ -4962,8 +4952,6 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_top is
     addra : in STD_LOGIC_VECTOR ( 13 downto 0 );
     clka : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_blk_mem_gen_0_0_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end design_1_blk_mem_gen_0_0_blk_mem_gen_top;
 
 architecture STRUCTURE of design_1_blk_mem_gen_0_0_blk_mem_gen_top is
@@ -4985,8 +4973,6 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_5_synth is
     addra : in STD_LOGIC_VECTOR ( 13 downto 0 );
     clka : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_5_synth : entity is "blk_mem_gen_v8_3_5_synth";
 end design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_5_synth;
 
 architecture STRUCTURE of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_5_synth is
@@ -5214,8 +5200,6 @@ entity design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_5 is
   attribute C_WRITE_WIDTH_B of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_5 : entity is 32;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_5 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_5 : entity is "blk_mem_gen_v8_3_5";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_5 : entity is "yes";
 end design_1_blk_mem_gen_0_0_blk_mem_gen_v8_3_5;

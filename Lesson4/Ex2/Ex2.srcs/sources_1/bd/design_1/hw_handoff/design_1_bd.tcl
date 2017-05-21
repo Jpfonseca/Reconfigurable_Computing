@@ -234,17 +234,17 @@ preplace inst disp32bits_wrapper_0 -pg 1 -lvl 4 -y 270 -defaultsOSRD
 preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 90 -defaultsOSRD
 preplace inst clockdivider_0 -pg 1 -lvl 2 -y 190 -defaultsOSRD
 preplace inst counter_0 -pg 1 -lvl 2 -y 50 -defaultsOSRD
-preplace netloc clockdivider_0_led 1 1 2 310 120 580
-preplace netloc btnC_1 1 0 3 0J 200 290 260 550J
-preplace netloc counter_0_output 1 2 3 560 0 NJ 0 NJ
-preplace netloc disp32bits_wrapper_0_an 1 4 1 990
-preplace netloc clk_1 1 0 4 NJ 180 280 250 570J 200 810
+preplace netloc clockdivider_0_led 1 1 2 310 120 600
+preplace netloc btnC_1 1 0 3 0J 200 290 260 570J
+preplace netloc counter_0_output 1 2 3 580 0 NJ 0 NJ
+preplace netloc disp32bits_wrapper_0_an 1 4 1 1030
+preplace netloc clk_1 1 0 4 NJ 180 280 250 590J 200 840
 preplace netloc xlconstant_0_dout 1 1 1 300J
-preplace netloc blk_mem_gen_0_douta 1 2 1 590
-preplace netloc Find_Min_Max_0_output 1 3 1 810
+preplace netloc blk_mem_gen_0_douta 1 2 1 610
+preplace netloc Find_Min_Max_0_output 1 3 1 840
 preplace netloc sw_1 1 0 3 0J 290 NJ 290 NJ
-preplace netloc disp32bits_wrapper_0_seg 1 4 1 1000
-levelinfo -pg 1 -20 220 430 700 900 1020 -top -40 -bot 380
+preplace netloc disp32bits_wrapper_0_seg 1 4 1 1040
+levelinfo -pg 1 -20 220 450 730 940 1070 -top -40 -bot 380
 ",
 }
 

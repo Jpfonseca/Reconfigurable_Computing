@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
---Date        : Mon Mar 27 12:01:31 2017
+--Date        : Sun May 21 19:18:54 2017
 --Host        : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -28,9 +28,9 @@ architecture STRUCTURE of design_1_wrapper is
     btnC : in STD_LOGIC;
     led : out STD_LOGIC_VECTOR ( 13 downto 0 );
     sw : in STD_LOGIC_VECTOR ( 0 to 0 );
+    clk : in STD_LOGIC;
     an : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    seg : out STD_LOGIC_VECTOR ( 6 downto 0 );
-    clk : in STD_LOGIC
+    seg : out STD_LOGIC_VECTOR ( 6 downto 0 )
   );
   end component design_1;
 begin

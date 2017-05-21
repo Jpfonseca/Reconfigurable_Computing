@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 27 12:01:38 2017" VIVADOVERSION="2016.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun May 21 19:18:54 2017" VIVADOVERSION="2016.4">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -21,6 +21,12 @@
         <CONNECTION INSTANCE="Find_Min_Max_0" PORT="up"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clockdivider_0" PORT="clk"/>
+        <CONNECTION INSTANCE="disp32bits_wrapper_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="O" LEFT="7" NAME="an" RIGHT="0" SIGIS="undef" SIGNAME="disp32bits_wrapper_0_an">
       <CONNECTIONS>
         <CONNECTION INSTANCE="disp32bits_wrapper_0" PORT="an"/>
@@ -29,12 +35,6 @@
     <PORT DIR="O" LEFT="6" NAME="seg" RIGHT="0" SIGIS="undef" SIGNAME="disp32bits_wrapper_0_seg">
       <CONNECTIONS>
         <CONNECTION INSTANCE="disp32bits_wrapper_0" PORT="seg"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="clockdivider_0" PORT="clk"/>
-        <CONNECTION INSTANCE="disp32bits_wrapper_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -46,6 +46,7 @@
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="number_of_bits" VALUE="32"/>
+        <PARAMETER NAME="num_of_bits" VALUE="14"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_Find_Min_Max_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
