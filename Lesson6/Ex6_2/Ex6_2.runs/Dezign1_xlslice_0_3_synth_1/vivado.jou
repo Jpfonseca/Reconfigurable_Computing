@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun May 21 14:38:23 2017
+# Process ID: 52576
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.runs/Dezign1_xlslice_0_3_synth_1
+# Command line: vivado.exe -log Dezign1_xlslice_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Dezign1_xlslice_0_3.tcl
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.runs/Dezign1_xlslice_0_3_synth_1/Dezign1_xlslice_0_3.vds
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.runs/Dezign1_xlslice_0_3_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Dezign1_xlslice_0_3.tcl -notrace

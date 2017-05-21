@@ -1,0 +1,209 @@
+14:56:17 INFO  : Registering command handlers for SDK TCF services
+14:56:18 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson6\Ex6_2\Ex6_2.sdk\temp_xsdb_launch_script.tcl
+14:56:29 INFO  : XSCT server has started successfully.
+14:56:29 INFO  : Successfully done setting XSCT server connection channel  
+14:56:35 INFO  : Successfully done setting SDK workspace  
+14:56:35 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf.
+14:59:37 ERROR : Unexpected error while launching program.
+java.lang.IllegalArgumentException: Path for project must have only one segment.
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.resources.WorkspaceRoot.getProject(WorkspaceRoot.java:147)
+	at org.eclipse.cdt.debug.core.CDebugUtils.verifyCProject(CDebugUtils.java:618)
+	at org.eclipse.cdt.debug.core.CDebugUtils.verifyProgramPath(CDebugUtils.java:655)
+	at org.eclipse.cdt.debug.core.CDebugUtils.verifyProgramPath(CDebugUtils.java:707)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:578)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+14:59:47 ERROR : Unexpected error while launching program.
+java.lang.IllegalArgumentException: Path for project must have only one segment.
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.resources.WorkspaceRoot.getProject(WorkspaceRoot.java:147)
+	at org.eclipse.cdt.debug.core.CDebugUtils.verifyCProject(CDebugUtils.java:618)
+	at org.eclipse.cdt.debug.core.CDebugUtils.verifyProgramPath(CDebugUtils.java:655)
+	at org.eclipse.cdt.debug.core.CDebugUtils.verifyProgramPath(CDebugUtils.java:707)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:578)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:00:19 INFO  : Processor reset is completed for microblaze_0
+15:00:26 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:00:29 INFO  : Processor reset is completed for microblaze_0
+15:00:58 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:01:00 INFO  : Processor reset is completed for microblaze_0
+15:01:47 INFO  : Processor reset is completed for microblaze_0
+15:01:59 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:02:01 INFO  : Processor reset is completed for microblaze_0
+15:02:07 INFO  : Processor reset is completed for microblaze_0
+15:02:16 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:02:38 INFO  : Registering command handlers for SDK TCF services
+15:02:39 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson6\Ex6_2\Ex6_2.sdk\temp_xsdb_launch_script.tcl
+15:02:45 INFO  : XSCT server has started successfully.
+15:02:47 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf.
+15:02:47 INFO  : Successfully done setting XSCT server connection channel  
+15:02:47 INFO  : Checking for hwspec changes in the project Dezign1_wrapper_hw_platform_0.
+15:02:47 INFO  : Successfully done setting SDK workspace  
+15:07:25 INFO  : Processor reset is completed for microblaze_0
+16:01:23 INFO  : Processor reset is completed for microblaze_0
+16:01:24 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:01:25 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unknown Error Occured
+    Target '0' Does NOT exist in the Current System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:02:11 INFO  : Registering command handlers for SDK TCF services
+16:02:12 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson6\Ex6_2\Ex6_2.sdk\temp_xsdb_launch_script.tcl
+16:02:27 INFO  : XSCT server has started successfully.
+16:02:27 INFO  : Successfully done setting XSCT server connection channel  
+16:02:33 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf.
+16:02:34 INFO  : Successfully done setting SDK workspace  
+16:02:35 INFO  : Checking for hwspec changes in the project Dezign1_wrapper_hw_platform_0.
+16:02:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1495378637780,  Project:1495374742088
+16:02:35 INFO  : The hardware specification for project 'Dezign1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf.
+16:02:35 INFO  : Processor reset is completed for microblaze_0
+16:02:35 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf into \Dezign1_wrapper_hw_platform_0\system.hdf.
+16:02:36 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:02:50 INFO  : 
+16:02:51 INFO  : Updating hardware inferred compiler options for Ex6_2.
+16:02:51 INFO  : Clearing existing target manager status.
+16:03:13 INFO  : Processor reset is completed for microblaze_0
+16:03:14 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Failed to download ELF file
+
+Unknown Error Occured
+    Section, 0x00000000-0x00000007 Not Accessible from Processor I-Side Interface
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:04:00 INFO  : Processor reset is completed for microblaze_0
+16:04:00 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Failed to download ELF file
+
+Unknown Error Occured
+    Section, 0x00000000-0x00000007 Not Accessible from Processor I-Side Interface
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:05:02 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:05:47 INFO  : Registering command handlers for SDK TCF services
+16:05:48 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson6\Ex6_2\Ex6_2.sdk\temp_xsdb_launch_script.tcl
+16:05:51 INFO  : XSCT server has started successfully.
+16:05:52 INFO  : Successfully done setting XSCT server connection channel  
+16:05:52 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf.
+16:05:52 INFO  : Checking for hwspec changes in the project Dezign1_wrapper_hw_platform_0.
+16:05:52 INFO  : Successfully done setting SDK workspace  
+16:07:02 INFO  : Processor reset is completed for microblaze_0
+16:35:49 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:37:49 INFO  : Registering command handlers for SDK TCF services
+16:37:49 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson6\Ex6_2\Ex6_2.sdk\temp_xsdb_launch_script.tcl
+16:38:00 INFO  : XSCT server has started successfully.
+16:38:05 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf.
+16:38:05 INFO  : Successfully done setting XSCT server connection channel  
+16:38:05 INFO  : Successfully done setting SDK workspace  
+16:38:05 INFO  : Checking for hwspec changes in the project Dezign1_wrapper_hw_platform_0.
+16:38:05 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1495380759906,  Project:1495378637780
+16:38:05 INFO  : The hardware specification for project 'Dezign1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf.
+16:38:05 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf into \Dezign1_wrapper_hw_platform_0\system.hdf.
+16:38:06 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:38:19 INFO  : 
+16:38:21 INFO  : Updating hardware inferred compiler options for Ex6_2.
+16:38:21 INFO  : Clearing existing target manager status.
+16:40:27 INFO  : Processor reset is completed for microblaze_0
+16:40:53 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:41:29 INFO  : Registering command handlers for SDK TCF services
+16:41:30 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson6\Ex6_2\Ex6_2.sdk\temp_xsdb_launch_script.tcl
+16:41:33 INFO  : XSCT server has started successfully.
+16:41:35 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf.
+16:41:35 INFO  : Checking for hwspec changes in the project Dezign1_wrapper_hw_platform_0.
+16:41:35 INFO  : Successfully done setting XSCT server connection channel  
+16:41:36 INFO  : Successfully done setting SDK workspace  
+16:42:17 INFO  : Processor reset is completed for microblaze_0
+16:42:48 INFO  : Processor reset is completed for microblaze_0
+16:43:32 INFO  : Processor reset is completed for microblaze_0
+16:44:51 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:18:36 INFO  : Registering command handlers for SDK TCF services
+17:18:38 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson6\Ex6_2\Ex6_2.sdk\temp_xsdb_launch_script.tcl
+17:18:52 INFO  : XSCT server has started successfully.
+17:18:52 INFO  : Successfully done setting XSCT server connection channel  
+17:18:57 INFO  : Successfully done setting SDK workspace  
+17:18:57 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf.
+17:18:58 INFO  : Checking for hwspec changes in the project Dezign1_wrapper_hw_platform_0.
+17:18:58 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1495382011902,  Project:1495380759906
+17:18:58 INFO  : The hardware specification for project 'Dezign1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf.
+17:18:59 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf into \Dezign1_wrapper_hw_platform_0\system.hdf.
+17:18:59 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:19:01 INFO  : Processor reset is completed for microblaze_0
+17:19:14 INFO  : 
+17:19:15 INFO  : Updating hardware inferred compiler options for Ex6_2.
+17:19:15 INFO  : Clearing existing target manager status.
+17:19:36 ERROR : Unexpected error while fetching XMD's response: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read(BufferedReader.java:182)
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
+	at java.lang.Thread.run(Thread.java:745)
+17:19:36 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+17:20:22 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+17:20:22 ERROR : Timeout occured while waiting to get reply for command "xconnect mb mdm -cable type xilinx_tcf url TCP:127.0.0.1:3121"
+17:20:22 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+17:21:47 INFO  : Registering command handlers for SDK TCF services
+17:21:48 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson6\Ex6_2\Ex6_2.sdk\temp_xsdb_launch_script.tcl
+17:21:51 INFO  : XSCT server has started successfully.
+17:21:52 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.sdk/Dezign1_wrapper.hdf.
+17:21:52 INFO  : Successfully done setting XSCT server connection channel  
+17:21:53 INFO  : Checking for hwspec changes in the project Dezign1_wrapper_hw_platform_0.
+17:21:53 INFO  : Successfully done setting SDK workspace  
+17:23:08 INFO  : Processor reset is completed for microblaze_0
+17:58:15 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

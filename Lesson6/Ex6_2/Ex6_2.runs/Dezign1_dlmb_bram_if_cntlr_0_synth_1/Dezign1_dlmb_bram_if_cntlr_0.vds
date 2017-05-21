@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun May 21 14:21:08 2017
+# Process ID: 49364
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.runs/Dezign1_dlmb_bram_if_cntlr_0_synth_1
+# Command line: vivado.exe -log Dezign1_dlmb_bram_if_cntlr_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Dezign1_dlmb_bram_if_cntlr_0.tcl
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.runs/Dezign1_dlmb_bram_if_cntlr_0_synth_1/Dezign1_dlmb_bram_if_cntlr_0.vds
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.runs/Dezign1_dlmb_bram_if_cntlr_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Dezign1_dlmb_bram_if_cntlr_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:01:13 . Memory (MB): peak = 292.684 ; gain = 82.543
+INFO: [Synth 8-638] synthesizing module 'Dezign1_dlmb_bram_if_cntlr_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.srcs/sources_1/bd/Dezign1/ip/Dezign1_dlmb_bram_if_cntlr_0/synth/Dezign1_dlmb_bram_if_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.srcs/sources_1/bd/Dezign1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3106]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.srcs/sources_1/bd/Dezign1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2601]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.srcs/sources_1/bd/Dezign1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2121]
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (1#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.srcs/sources_1/bd/Dezign1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2121]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (2#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.srcs/sources_1/bd/Dezign1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2601]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (3#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.srcs/sources_1/bd/Dezign1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3106]
+INFO: [Synth 8-256] done synthesizing module 'Dezign1_dlmb_bram_if_cntlr_0' (4#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson6/Ex6_2/Ex6_2.srcs/sources_1/bd/Dezign1/ip/Dezign1_dlmb_bram_if_cntlr_0/synth/Dezign1_dlmb_bram_if_cntlr_0.vhd:84]
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:01:18 . Memory (MB): peak = 331.934 ; gain = 121.793
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:01:19 . Memory (MB): peak = 331.934 ; gain = 121.793
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 587.766 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:02:33 . Memory (MB): peak = 587.766 ; gain = 377.625
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:02:33 . Memory (MB): peak = 587.766 ; gain = 377.625
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:02:34 . Memory (MB): peak = 587.766 ; gain = 377.625
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:02:35 . Memory (MB): peak = 587.766 ; gain = 377.625
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:38 . Memory (MB): peak = 587.766 ; gain = 377.625
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:03:12 . Memory (MB): peak = 588.578 ; gain = 378.438
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:03:12 . Memory (MB): peak = 588.578 ; gain = 378.438
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:03:12 . Memory (MB): peak = 608.910 ; gain = 398.770
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:03:15 . Memory (MB): peak = 608.910 ; gain = 398.770
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:03:15 . Memory (MB): peak = 608.910 ; gain = 398.770
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:03:16 . Memory (MB): peak = 608.910 ; gain = 398.770
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:03:16 . Memory (MB): peak = 608.910 ; gain = 398.770
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:03:17 . Memory (MB): peak = 608.910 ; gain = 398.770
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:03:17 . Memory (MB): peak = 608.910 ; gain = 398.770
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     3|
+|2     |LUT3 |     4|
+|3     |FDRE |     2|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:03:17 . Memory (MB): peak = 608.910 ; gain = 398.770
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:02:42 . Memory (MB): peak = 626.227 ; gain = 409.949
