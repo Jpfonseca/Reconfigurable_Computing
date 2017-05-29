@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun May 28 23:47:15 2017
+# Process ID: 1720
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.runs/synth_1
+# Command line: vivado.exe -log bit_32_disp_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bit_32_disp_wrapper.tcl
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.runs/synth_1/bit_32_disp_wrapper.vds
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source bit_32_disp_wrapper.tcl -notrace

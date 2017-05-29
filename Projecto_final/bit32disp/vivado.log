@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun May 28 23:32:56 2017
+# Process ID: 6596
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11704 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\bit32disp\bit32disp.xpr
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/vivado.log
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+reset_target all [get_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/bit_32_disp.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/bit_32_disp.bd] -sync -no_script -force -quiet
+set_property synth_checkpoint_mode None [get_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/bit_32_disp.bd]
+generate_target all [get_files  C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/bit_32_disp.bd]
+Adding cell -- ua.pt:user:EightDispControl:1.0 - EightDispControl_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_3
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_4
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_5
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_6
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_7
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_8
+Successfully read diagram <bit_32_disp> from BD file <C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/bit_32_disp.bd>
+INFO: [BD 41-1662] The design 'bit_32_disp.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/hdl/bit_32_disp.v
+Verilog Output written to : C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/hdl/bit_32_disp_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block EightDispControl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_6 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_8 .
+Exporting to file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/hw_handoff/bit_32_disp.hwh
+Generated Block Design Tcl file C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/hw_handoff/bit_32_disp_bd.tcl
+Generated Hardware Definition File C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/hdl/bit_32_disp.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/bit_32_disp.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/bit_32_disp.bd] -directory C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.ip_user_files -ipstatic_source_dir C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.cache/compile_simlib/modelsim} {questa=C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.cache/compile_simlib/questa} {riviera=C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.cache/compile_simlib/riviera} {activehdl=C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/hdl/bit_32_disp_wrapper.v" into library work [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/hdl/bit_32_disp_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/hdl/bit_32_disp.v" into library work [C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.srcs/sources_1/bd/bit_32_disp/hdl/bit_32_disp.v:1]
+[Sun May 28 23:47:13 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp/bit32disp.runs/synth_1/runme.log
+ipx::package_project -root_dir c:/users/joao/desktop/cr/git/reconfigurable_computing/projecto_final -vendor xilinx.com -library user -taxonomy /UserIP -force
+WARNING: [IP_Flow 19-1834] The constraints file "Nexys4_Master.xdc" is added to the synthesis file group only, but will be used for both synthesis and implementation in the IP generation.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+ipx::package_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 849.320 ; gain = 0.000
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  {c:/users/joao/desktop/cr/git/reconfigurable_computing/projecto_final c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/joao/desktop/cr/git/reconfigurable_computing/projecto_final'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Repository'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:bit_32_disp_wrapper:1.0'. The one found in IP location 'c:/users/joao/desktop/cr/git/reconfigurable_computing/projecto_final' will take precedence over the same IP in location c:/users/joao/desktop/cr/git/reconfigurable_computing/projecto_final/bit32disp
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 854.355 ; gain = 5.035
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/users/joao/desktop/cr/git/reconfigurable_computing/projecto_final
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/joao/desktop/cr/git/reconfigurable_computing/projecto_final'
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:bit_32_disp_wrapper:1.0'. The one found in IP location 'c:/users/joao/desktop/cr/git/reconfigurable_computing/projecto_final' will take precedence over the same IP in locations: 
+   c:/users/joao/desktop/cr/git/reconfigurable_computing/projecto_final/bit32disp
+   c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/bit32disp
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 29 00:07:59 2017...

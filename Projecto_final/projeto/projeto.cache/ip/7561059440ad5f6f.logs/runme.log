@@ -1,0 +1,45 @@
+
+*** Running vivado
+    with args -log design1_dlmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design1_dlmb_v10_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design1_dlmb_v10_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:01:34 . Memory (MB): peak = 292.355 ; gain = 82.742
+INFO: [Synth 8-638] synthesizing module 'design1_dlmb_v10_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_dlmb_v10_0/synth/design1_dlmb_v10_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'lmb_v10' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ipshared/162e/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'FDS' [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'FDS' (1#1) [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (2#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ipshared/162e/hdl/lmb_v10_v3_0_vh_rfs.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'design1_dlmb_v10_0' (3#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_dlmb_v10_0/synth/design1_dlmb_v10_0.vhd:89]
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:01:37 . Memory (MB): peak = 330.754 ; gain = 121.141
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:01:37 . Memory (MB): peak = 330.754 ; gain = 121.141
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 546.102 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:02:08 . Memory (MB): peak = 546.102 ; gain = 336.488
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:02:08 . Memory (MB): peak = 546.102 ; gain = 336.488
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:02:08 . Memory (MB): peak = 546.102 ; gain = 336.488
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:02:08 . Memory (MB): peak = 546.102 ; gain = 336.488
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:09 . Memory (MB): peak = 546.102 ; gain = 336.488
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:02:38 . Memory (MB): peak = 567.055 ; gain = 357.441
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:02:38 . Memory (MB): peak = 567.055 ; gain = 357.441
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:02:38 . Memory (MB): peak = 577.754 ; gain = 368.141
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:02:39 . Memory (MB): peak = 577.754 ; gain = 368.141
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:02:39 . Memory (MB): peak = 577.754 ; gain = 368.141
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:02:39 . Memory (MB): peak = 577.754 ; gain = 368.141
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:02:39 . Memory (MB): peak = 577.754 ; gain = 368.141
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:02:40 . Memory (MB): peak = 577.754 ; gain = 368.141
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:02:40 . Memory (MB): peak = 577.754 ; gain = 368.141
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |FDS  |     1|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:02:40 . Memory (MB): peak = 577.754 ; gain = 368.141
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:20 . Memory (MB): peak = 604.859 ; gain = 389.078

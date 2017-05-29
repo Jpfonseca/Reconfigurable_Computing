@@ -1,0 +1,31 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port clk -pg 1 -y 0 -defaultsOSRD
+preplace portBus an -pg 1 -y 0 -defaultsOSRD
+preplace portBus seg -pg 1 -y 20 -defaultsOSRD
+preplace portBus val_input -pg 1 -y 30 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -y 0 -defaultsOSRD
+preplace inst EightDispControl_0 -pg 1 -lvl 2 -y 280 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 1 -y 80 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 1 -y 270 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 1 -y 350 -defaultsOSRD
+preplace inst xlslice_6 -pg 1 -lvl 1 -y 430 -defaultsOSRD
+preplace inst xlslice_7 -pg 1 -lvl 1 -y 510 -defaultsOSRD
+preplace inst xlslice_8 -pg 1 -lvl 1 -y 590 -defaultsOSRD
+preplace netloc EightDispControl_0_segments 1 2 1 490
+preplace netloc xlslice_4_Dout 1 1 1 210J
+preplace netloc xlslice_3_Dout 1 1 1 200J
+preplace netloc xlslice_7_Dout 1 1 1 210J
+preplace netloc xlslice_5_Dout 1 1 1 190J
+preplace netloc val_input_1 1 0 1 10
+preplace netloc clk_1 1 0 2 0J 210 190
+preplace netloc xlslice_2_Dout 1 1 1 210J
+preplace netloc xlslice_8_Dout 1 1 1 220J
+preplace netloc EightDispControl_0_select_display 1 2 1 480
+preplace netloc xlslice_6_Dout 1 1 1 200J
+preplace netloc xlslice_0_Dout 1 1 1 220J
+levelinfo -pg 1 -20 100 350 510 -top -40 -bot 650
+",
+}

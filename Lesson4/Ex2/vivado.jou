@@ -2,10 +2,10 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Sun May 21 21:23:28 2017
-# Process ID: 61392
+# Start of session at: Sat May 27 19:47:43 2017
+# Process ID: 8352
 # Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent61328 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson4\Ex2\Ex2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2888 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Lesson4\Ex2\Ex2.xpr
 # Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2/vivado.log
 # Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Lesson4/Ex2\vivado.jou
 #-----------------------------------------------------------

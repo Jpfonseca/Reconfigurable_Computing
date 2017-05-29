@@ -1,0 +1,49 @@
+
+*** Running vivado
+    with args -log design1_dlmb_bram_if_cntlr_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design1_dlmb_bram_if_cntlr_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design1_dlmb_bram_if_cntlr_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:01:09 . Memory (MB): peak = 293.023 ; gain = 83.367
+INFO: [Synth 8-638] synthesizing module 'design1_dlmb_bram_if_cntlr_0' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_dlmb_bram_if_cntlr_0/synth/design1_dlmb_bram_if_cntlr_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3106]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2601]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2121]
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (1#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2121]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (2#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:2601]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (3#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ipshared/f4d9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3106]
+INFO: [Synth 8-256] done synthesizing module 'design1_dlmb_bram_if_cntlr_0' (4#1) [c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_dlmb_bram_if_cntlr_0/synth/design1_dlmb_bram_if_cntlr_0.vhd:84]
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:01:13 . Memory (MB): peak = 331.512 ; gain = 121.855
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:01:13 . Memory (MB): peak = 331.512 ; gain = 121.855
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 587.805 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:02:04 . Memory (MB): peak = 587.805 ; gain = 378.148
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:02:04 . Memory (MB): peak = 587.805 ; gain = 378.148
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:02:04 . Memory (MB): peak = 587.805 ; gain = 378.148
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:02:05 . Memory (MB): peak = 587.805 ; gain = 378.148
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:02:06 . Memory (MB): peak = 587.805 ; gain = 378.148
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:02:35 . Memory (MB): peak = 588.684 ; gain = 379.027
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:02:35 . Memory (MB): peak = 588.684 ; gain = 379.027
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:02:35 . Memory (MB): peak = 609.004 ; gain = 399.348
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:02:37 . Memory (MB): peak = 609.004 ; gain = 399.348
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:02:37 . Memory (MB): peak = 609.004 ; gain = 399.348
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:02:37 . Memory (MB): peak = 609.004 ; gain = 399.348
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:02:37 . Memory (MB): peak = 609.004 ; gain = 399.348
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:02:37 . Memory (MB): peak = 609.004 ; gain = 399.348
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:02:37 . Memory (MB): peak = 609.004 ; gain = 399.348
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     3|
+|2     |LUT3 |     4|
+|3     |FDRE |     2|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:02:37 . Memory (MB): peak = 609.004 ; gain = 399.348
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:48 . Memory (MB): peak = 626.336 ; gain = 410.508

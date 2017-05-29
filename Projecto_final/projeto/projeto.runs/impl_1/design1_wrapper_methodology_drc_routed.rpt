@@ -1,0 +1,819 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Mon May 29 12:21:36 2017
+| Host         : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design1_wrapper_methodology_drc_routed.rpt -rpx design1_wrapper_methodology_drc_routed.rpx
+| Design       : design1_wrapper
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 155
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| TIMING-6  | Warning  | No common primary clock between related clocks         | 2          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                      | 1          |
+| TIMING-17 | Warning  | Non-clocked sequential cell                            | 2          |
+| TIMING-18 | Warning  | Missing input or output delay                          | 17         |
+| TIMING-20 | Warning  | Non-clocked latch                                      | 131        |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 2          |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_design1_clk_wiz_1_0 and clk_out1_design1_clk_wiz_1_0_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design1_clk_wiz_1_0] -to [get_clocks clk_out1_design1_clk_wiz_1_0_1]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_out1_design1_clk_wiz_1_0_1 and clk_out1_design1_clk_wiz_1_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_design1_clk_wiz_1_0_1] -to [get_clocks clk_out1_design1_clk_wiz_1_0]
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin design1_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin design1_i/blk_mem_gen_1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/CLKBWRCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on btnCpuReset relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on an[0] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on an[1] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on an[2] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on an[3] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on an[4] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on an[5] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on an[6] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on an[7] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on led[0] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on seg[0] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on seg[1] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on seg[2] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on seg[3] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on seg[4] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on seg[5] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on seg[6] relative to clock(s) clk sys_clk_pin 
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][3] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][4] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][5] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][6] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][7] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][8] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][9] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[0][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][3] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][4] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][5] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][6] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][7] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][8] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][9] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[1][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][3] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][4] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][5] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][6] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][7] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][8] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][9] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[2][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][3] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][4] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][5] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][6] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][7] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][8] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][9] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[3][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][3] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][4] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][5] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][6] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][7] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][8] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][9] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[4][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][3] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][4] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][5] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][6] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][7] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][8] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][9] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[5][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][3] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][4] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][5] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][6] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][7] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][8] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][9] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[6][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][3] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][4] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][5] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][6] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][7] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][8] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][9] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/converted_words_reg[7][9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_address_reg[0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_address_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_address_reg[1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_address_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_address_reg[2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_address_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[10] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[11] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[12] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[13] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[14] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#90 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[15] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#91 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[16] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#92 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[17] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#93 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[18] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#94 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[19] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#95 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#96 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[20] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#97 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[21] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#98 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[22] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#99 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[23] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#100 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[24] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#101 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[25] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#102 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[26] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#103 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[27] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#104 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[28] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#105 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[29] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#106 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#107 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[30] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#108 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[31] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#109 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[3] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#110 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[4] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#111 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[5] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#112 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[6] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#113 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[7] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#114 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[8] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#115 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[9] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_index_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#116 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_state_reg[0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_state_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#117 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_state_reg[1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_state_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#118 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_state_reg[2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/next_state_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#119 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#120 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#121 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#122 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[3] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#123 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[4] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#124 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[5] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#125 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[6] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#126 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[7] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#127 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[8] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#128 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[9] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/out_word_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#129 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/write_address_reg[0] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/write_address_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#130 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/write_address_reg[1] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/write_address_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#131 Warning
+Non-clocked latch  
+The latch design1_i/Convert_10_8_to_8_10_FSM_0/U0/write_address_reg[2] cannot be properly analyzed as its control pin design1_i/Convert_10_8_to_8_10_FSM_0/U0/write_address_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports -scoped_to_current_instance clk] (Source: c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_Convert_10_8_to_8_10_FSM_0_0/src/Nexys4_Master.xdc (Line: 10))
+Previous: create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports -scoped_to_current_instance clk] (Source: c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_Unroll_ROM_last_0_0/src/Nexys4_Master.xdc (Line: 10))
+Related violations: <none>
+
+XDCC-1#2 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports clk] (Source: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/Nexys4_Master.xdc (Line: 10))
+Previous: create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports -scoped_to_current_instance clk] (Source: c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_Convert_10_8_to_8_10_FSM_0_0/src/Nexys4_Master.xdc (Line: 10))
+Related violations: <none>
+
+
