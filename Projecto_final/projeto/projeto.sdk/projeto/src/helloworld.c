@@ -76,12 +76,12 @@ int main()
 			word=word|array[i];
 			word=word|0x1000; //write enable
 			word=word|(i<<8);
-			putnum(word);
-			print("\n");
+			//putnum(word);
+			//print("\n");
 			XGpio_DiscreteWrite(&GPIO, 1, word);
 			word=0x00000000;
 		}
-		print("Fim for");
+		//print("Fim for");
 		word =0x00002000;
 		XGpio_DiscreteWrite(&GPIO, 1, word);
 

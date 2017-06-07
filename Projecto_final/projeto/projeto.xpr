@@ -36,13 +36,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="3"/>
-    <Option Name="WTModelSimExportSim" Val="3"/>
-    <Option Name="WTQuestaExportSim" Val="3"/>
-    <Option Name="WTIesExportSim" Val="3"/>
-    <Option Name="WTVcsExportSim" Val="3"/>
-    <Option Name="WTRivieraExportSim" Val="3"/>
-    <Option Name="WTActivehdlExportSim" Val="3"/>
+    <Option Name="WTXSimExportSim" Val="4"/>
+    <Option Name="WTModelSimExportSim" Val="4"/>
+    <Option Name="WTQuestaExportSim" Val="4"/>
+    <Option Name="WTIesExportSim" Val="4"/>
+    <Option Name="WTVcsExportSim" Val="4"/>
+    <Option Name="WTRivieraExportSim" Val="4"/>
+    <Option Name="WTActivehdlExportSim" Val="4"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -58,48 +58,51 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_0/design1_xlslice_6_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_5/design1_xlslice_6_5.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_7/design1_xlslice_6_7.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_EightDispControl_0_0/design1_EightDispControl_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_2/design1_xlslice_6_2.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_dlmb_bram_if_cntlr_0/design1_dlmb_bram_if_cntlr_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_ilmb_v10_0/design1_ilmb_v10_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_dlmb_v10_0/design1_dlmb_v10_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_microblaze_0_0/design1_microblaze_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_rst_clk_wiz_1_100M_0/design1_rst_clk_wiz_1_100M_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_clk_wiz_1_0/design1_clk_wiz_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_mdm_1_0/design1_mdm_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_axi_gpio_0_0/design1_axi_gpio_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_microblaze_0_axi_periph_0/design1_microblaze_0_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_lmb_bram_0/design1_lmb_bram_0.xci"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_ilmb_bram_if_cntlr_0/design1_ilmb_bram_if_cntlr_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_1_2/design1_xlslice_1_2.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_1_1/design1_xlslice_1_1.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_1_0/design1_xlslice_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_dlmb_bram_if_cntlr_0/design1_dlmb_bram_if_cntlr_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_ilmb_v10_0/design1_ilmb_v10_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_dlmb_v10_0/design1_dlmb_v10_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_blk_mem_gen_0_1/design1_blk_mem_gen_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_Convert_10_8_to_8_10_FSM_0_0/design1_Convert_10_8_to_8_10_FSM_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_7/design1_xlslice_6_7.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_ClockDivider_0_0/design1_ClockDivider_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_0_0/design1_xlslice_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_blk_mem_gen_0_0/design1_blk_mem_gen_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xbar_0/design1_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_util_vector_logic_0_0/design1_util_vector_logic_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_axi_gpio_0_0/design1_axi_gpio_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_1_0/design1_xlslice_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_rst_clk_wiz_1_100M_0/design1_rst_clk_wiz_1_100M_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_clk_wiz_1_0/design1_clk_wiz_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_EightDispControl_0_0/design1_EightDispControl_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_3_0/design1_xlslice_3_0.xci"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_Unroll_ROM_last_0_0/design1_Unroll_ROM_last_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_ClockDivider_0_0/design1_ClockDivider_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_6/design1_xlslice_6_6.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="hdl/design1.v"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_1/design1_xlslice_6_1.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_1_2/design1_xlslice_1_2.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_1_1/design1_xlslice_1_1.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_util_vector_logic_0_0/design1_util_vector_logic_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_mdm_1_0/design1_mdm_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_0/design1_xlslice_6_0.xci"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_3/design1_xlslice_6_3.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_2/design1_xlslice_6_2.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_1/design1_xlslice_6_1.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_6/design1_xlslice_6_6.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_5/design1_xlslice_6_5.xci"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_6_4/design1_xlslice_6_4.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlconstant_0_0/design1_xlconstant_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_microblaze_0_0/design1_microblaze_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_16_0/design1_xlslice_16_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_Hamming_weight_0_0/design1_Hamming_weight_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlconcat_0_0/design1_xlconcat_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_VGA_for_block_0_0/design1_VGA_for_block_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_3_1/design1_xlslice_3_1.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_1_4/design1_xlslice_1_4.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_1_3/design1_xlslice_1_3.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="hdl/design1.v"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="hw_handoff/design1.hwh"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="hdl/design1.hwdef"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="hw_handoff/design1_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="hw_handoff/design1.hwh"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_5_2/design1_xlslice_5_2.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_blk_mem_gen_0_1/design1_blk_mem_gen_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="design1.bmm"/>
         <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="design1_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_5_1/design1_xlslice_5_1.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_Convert_10_8_to_8_10_FSM_0_0/design1_Convert_10_8_to_8_10_FSM_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="ip/design1_xlslice_5_3/design1_xlslice_5_3.xci"/>
+        <CompFileExtendedInfo CompFileName="design1.bd" FileRelPathName="design1.bmm"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/design1/hdl/design1_wrapper.v">
         <FileInfo>

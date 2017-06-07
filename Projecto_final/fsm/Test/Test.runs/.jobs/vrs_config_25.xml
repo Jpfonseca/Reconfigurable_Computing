@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_Convert_10_8_to_8_10_FSM_0_0_synth_1" LaunchDir="D:/Migo/University/Computacao_Reconfiguravel/Test/Test.runs/design_1_Convert_10_8_to_8_10_FSM_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

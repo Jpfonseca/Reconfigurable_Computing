@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:Convert_10_8_to_8_10_FSM:1.0
--- IP Revision: 5
+-- IP Revision: 2
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -84,7 +84,7 @@ ARCHITECTURE design1_Convert_10_8_to_8_10_FSM_0_0_arch OF design1_Convert_10_8_t
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design1_Convert_10_8_to_8_10_FSM_0_0_arch : ARCHITECTURE IS "design1_Convert_10_8_to_8_10_FSM_0_0,Convert_10_8_to_8_10_FSM,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design1_Convert_10_8_to_8_10_FSM_0_0_arch: ARCHITECTURE IS "design1_Convert_10_8_to_8_10_FSM_0_0,Convert_10_8_to_8_10_FSM,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Convert_10_8_to_8_10_FSM,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design1_Convert_10_8_to_8_10_FSM_0_0_arch: ARCHITECTURE IS "design1_Convert_10_8_to_8_10_FSM_0_0,Convert_10_8_to_8_10_FSM,{x_ipProduct=Vivado 2016.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Convert_10_8_to_8_10_FSM,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
   ATTRIBUTE X_INTERFACE_INFO OF reset: SIGNAL IS "xilinx.com:signal:reset:1.0 reset RST";

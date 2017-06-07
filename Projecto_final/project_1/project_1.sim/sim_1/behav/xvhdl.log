@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/project_1/project_1.srcs/sources_1/new/Hamming_weight.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Hamming_weight
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/project_1/project_1.srcs/sources_1/new/hamming_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity hamming_tb

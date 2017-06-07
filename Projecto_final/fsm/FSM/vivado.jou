@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed May 31 16:59:33 2017
+# Process ID: 7936
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8316 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\FSM\FSM\FSM.xpr
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM/vivado.log
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM/FSM.xpr
+launch_simulation
+source ex1_tb.tcl
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+close_sim
+launch_simulation
+source ex1_tb.tcl
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+refresh_design
+launch_simulation
+source ex1_tb.tcl
+run 100 ms
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+close_sim
+launch_simulation
+source ex1_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+refresh_design
+close_design
+launch_simulation
+source ex1_tb.tcl
+run 100 ms
+save_wave_config {C:/Users/Joao/Desktop/ex1_tb_behav1.wcfg}
+save_wave_config {C:/Users/Joao/Desktop/ex1_tb_behav1.wcfg}
+synth_design -rtl -name rtl_1
+refresh_design
+close_sim
+launch_simulation
+source ex1_tb.tcl
+run 100 ms
+close_sim
+launch_simulation
+source ex1_tb.tcl
+run 100 ms
+run 100 ms
+restart
+run 100 ms
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source ex1_tb.tcl
+run 100 ms
+close_sim

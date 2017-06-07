@@ -1,0 +1,1 @@
+-wto "eab14d2cdf0f4f388da16ab8b48b9fa3" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "hamming_tb_behav" "xil_defaultlib.hamming_tb" -log "elaborate.log" 

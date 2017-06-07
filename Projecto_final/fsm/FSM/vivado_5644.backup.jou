@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed May 31 09:37:45 2017
+# Process ID: 5644
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3564 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\FSM\FSM\FSM.xpr
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM/vivado.log
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM/FSM.xpr

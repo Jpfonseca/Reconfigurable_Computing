@@ -1,0 +1,1 @@
+-wto "89694dd388424f919a59c526af41ba81" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Inverter_Test_behav" "xil_defaultlib.Inverter_Test" -log "elaborate.log" 

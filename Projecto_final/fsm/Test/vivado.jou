@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed May 31 09:38:25 2017
+# Process ID: 5888
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/Test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2872 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\FSM\Test\Test.xpr
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/Test/vivado.log
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/Test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/Test/Test.xpr
+open_bd_design {C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/Test/Test.srcs/sources_1/bd/design_1/design_1.bd}
+set_property  ip_repo_paths  {c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/Computacao_Reconfiguravel c:/Users/Duarte/Downloads/Reconfigurable_Computing-master C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing} [current_project]
+update_ip_catalog
+report_ip_status -name ip_status 

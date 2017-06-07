@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon May 29 12:13:08 2017" VIVADOVERSION="2016.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun 07 03:47:36 2017" VIVADOVERSION="2016.4">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design1" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -14,14 +14,12 @@
         <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="ext_reset_in"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="0" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="Unroll_ROM_last_0_completed">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="Unroll_ROM_last_0" PORT="completed"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" NAME="btnC" SIGIS="undef" SIGNAME="External_Ports_btnC">
       <CONNECTIONS>
         <CONNECTION INSTANCE="ClockDivider_0" PORT="reset"/>
+        <CONNECTION INSTANCE="Hamming_weight_0" PORT="reset"/>
+        <CONNECTION INSTANCE="Convert_10_8_to_8_10_FSM_0" PORT="reset"/>
+        <CONNECTION INSTANCE="VGA_for_block_0" PORT="btnC"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="7" NAME="an" RIGHT="0" SIGIS="undef" SIGNAME="EightDispControl_0_select_display">
@@ -34,9 +32,34 @@
         <CONNECTION INSTANCE="EightDispControl_0" PORT="segments"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="2" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+    <PORT DIR="O" LEFT="2" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="Hamming_weight_0_final_addr">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="blk_mem_gen_1" PORT="addrb"/>
+        <CONNECTION INSTANCE="Hamming_weight_0" PORT="final_addr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Hsync" SIGIS="undef" SIGNAME="VGA_for_block_0_HSync">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGA_for_block_0" PORT="HSync"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Vsync" SIGIS="undef" SIGNAME="VGA_for_block_0_VSync">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGA_for_block_0" PORT="VSync"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="vgaRed" RIGHT="0" SIGIS="undef" SIGNAME="VGA_for_block_0_VGARed">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGA_for_block_0" PORT="VGARed"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="vgaBlue" RIGHT="0" SIGIS="undef" SIGNAME="VGA_for_block_0_VGABlue">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGA_for_block_0" PORT="VGABlue"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="vgaGreen" RIGHT="0" SIGIS="undef" SIGNAME="VGA_for_block_0_VGAGreen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGA_for_block_0" PORT="VGAGreen"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -62,7 +85,11 @@
             <CONNECTION INSTANCE="External_Ports" PORT="btnC"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="divided_clock" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="divided_clock" SIGIS="clk" SIGNAME="ClockDivider_0_divided_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Hamming_weight_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -78,9 +105,9 @@
             <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="util_vector_logic_0_Res">
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_btnC">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="btnC"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="Unroll_ROM_last_0_completed">
@@ -96,6 +123,7 @@
         <PORT DIR="O" NAME="ready" SIGIS="undef" SIGNAME="Convert_10_8_to_8_10_FSM_0_ready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="blk_mem_gen_1" PORT="wea"/>
+            <CONNECTION INSTANCE="Hamming_weight_0" PORT="enable"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="2" NAME="write_address" RIGHT="0" SIGIS="undef" SIGNAME="Convert_10_8_to_8_10_FSM_0_write_address">
@@ -176,6 +204,130 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
+    <MODULE FULLNAME="/Hamming_weight_0" HWVERSION="1.0" INSTANCE="Hamming_weight_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Hamming_weight" VLNV="xilinx.com:user:Hamming_weight:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="in_word_bits" VALUE="10"/>
+        <PARAMETER NAME="addr" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="design1_Hamming_weight_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="ClockDivider_0_divided_clock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ClockDivider_0" PORT="divided_clock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="in_word" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="doutb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="Convert_10_8_to_8_10_FSM_0_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Convert_10_8_to_8_10_FSM_0" PORT="ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_btnC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btnC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="addr_out" RIGHT="0" SIGIS="undef" SIGNAME="Hamming_weight_0_addr_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="addrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="final_word" RIGHT="0" SIGIS="undef" SIGNAME="Hamming_weight_0_final_word">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="final_addr" RIGHT="0" SIGIS="undef" SIGNAME="Hamming_weight_0_final_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="hamming_w" RIGHT="0" SIGIS="undef" SIGNAME="Hamming_weight_0_hamming_w">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/RAM_enable" HWVERSION="1.0" INSTANCE="RAM_enable" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="12"/>
+        <PARAMETER NAME="DIN_TO" VALUE="12"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_1_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="RAM_enable_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="wea"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Ram_Address" HWVERSION="1.0" INSTANCE="Ram_Address" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="11"/>
+        <PARAMETER NAME="DIN_TO" VALUE="8"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="Ram_Address_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="addra"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Ram_Data" HWVERSION="1.0" INSTANCE="Ram_Data" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="7"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="Ram_Data_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="dina"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
     <MODULE FULLNAME="/Unroll_ROM_last_0" HWVERSION="1.0" INSTANCE="Unroll_ROM_last_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Unroll_ROM_last" VLNV="user.org:user:Unroll_ROM_last:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -208,13 +360,92 @@
         </PORT>
         <PORT DIR="O" LEFT="79" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="Unroll_ROM_last_0_data_out">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_16" PORT="Din"/>
             <CONNECTION INSTANCE="Convert_10_8_to_8_10_FSM_0" PORT="in_word"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="completed" SIGIS="undef" SIGNAME="Unroll_ROM_last_0_completed">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="led"/>
             <CONNECTION INSTANCE="Convert_10_8_to_8_10_FSM_0" PORT="enable"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Unroll_enable" HWVERSION="1.0" INSTANCE="Unroll_enable" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="13"/>
+        <PARAMETER NAME="DIN_TO" VALUE="13"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="Unroll_enable_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/VGA_for_block_0" HWVERSION="1.0" INSTANCE="VGA_for_block_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="VGA_for_block" VLNV="ua.pt:user:VGA_for_block:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design1_VGA_for_block_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="RAMData" RIGHT="7" SIGIS="undef" SIGNAME="xlslice_3_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_3" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btnC" SIGIS="undef" SIGNAME="External_Ports_btnC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btnC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HSync" SIGIS="undef" SIGNAME="VGA_for_block_0_HSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Hsync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="VSync" SIGIS="undef" SIGNAME="VGA_for_block_0_VSync">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Vsync"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="VGARed" RIGHT="0" SIGIS="undef" SIGNAME="VGA_for_block_0_VGARed">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vgaRed"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="VGAGreen" RIGHT="0" SIGIS="undef" SIGNAME="VGA_for_block_0_VGAGreen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vgaGreen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="VGABlue" RIGHT="0" SIGIS="undef" SIGNAME="VGA_for_block_0_VGABlue">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vgaBlue"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="12" NAME="RAMWriteAddress" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_2" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -397,9 +628,9 @@
         <PARAMETER NAME="C_GPIO_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_GPIO2_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_ALL_INPUTS" VALUE="0"/>
-        <PARAMETER NAME="C_ALL_INPUTS_2" VALUE="1"/>
-        <PARAMETER NAME="C_ALL_OUTPUTS" VALUE="1"/>
-        <PARAMETER NAME="C_ALL_OUTPUTS_2" VALUE="0"/>
+        <PARAMETER NAME="C_ALL_INPUTS_2" VALUE="0"/>
+        <PARAMETER NAME="C_ALL_OUTPUTS" VALUE="0"/>
+        <PARAMETER NAME="C_ALL_OUTPUTS_2" VALUE="1"/>
         <PARAMETER NAME="C_INTERRUPT_PRESENT" VALUE="0"/>
         <PARAMETER NAME="C_DOUT_DEFAULT" VALUE="0x00000000"/>
         <PARAMETER NAME="C_TRI_DEFAULT" VALUE="0xFFFFFFFF"/>
@@ -510,12 +741,22 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M01_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="31" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="31" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio_io_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlslice_0" PORT="Din"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="gpio2_io_i" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="gpio_io_t" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="gpio2_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio2_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="microblaze_0_axi_periph_M01_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -571,12 +812,14 @@
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="GPIO" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
           <PORTMAPS>
+            <PORTMAP LOGICAL="TRI_I" PHYSICAL="gpio_io_i"/>
             <PORTMAP LOGICAL="TRI_O" PHYSICAL="gpio_io_o"/>
+            <PORTMAP LOGICAL="TRI_T" PHYSICAL="gpio_io_t"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="GPIO2" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
           <PORTMAPS>
-            <PORTMAP LOGICAL="TRI_I" PHYSICAL="gpio2_io_i"/>
+            <PORTMAP LOGICAL="TRI_O" PHYSICAL="gpio2_io_o"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -737,19 +980,19 @@
             <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_3_Dout">
+        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="RAM_enable_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_3" PORT="Dout"/>
+            <CONNECTION INSTANCE="RAM_enable" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+        <PORT DIR="I" LEFT="3" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="Ram_Address_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_1" PORT="Dout"/>
+            <CONNECTION INSTANCE="Ram_Address" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_2_Dout">
+        <PORT DIR="I" LEFT="7" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="Ram_Data_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_2" PORT="Dout"/>
+            <CONNECTION INSTANCE="Ram_Data" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="clkb" SIGIS="undef" SIGNAME="clk_wiz_1_clk_out1">
@@ -947,9 +1190,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="clka" SIGIS="undef" SIGNAME="util_vector_logic_0_Res">
+        <PORT DIR="I" NAME="clka" SIGIS="undef" SIGNAME="clk_wiz_1_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="Convert_10_8_to_8_10_FSM_0_ready">
@@ -967,21 +1210,19 @@
             <CONNECTION INSTANCE="Convert_10_8_to_8_10_FSM_0" PORT="out_word"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="clkb" SIGIS="undef" SIGNAME="util_vector_logic_0_Res">
+        <PORT DIR="I" NAME="clkb" SIGIS="undef" SIGNAME="clk_wiz_1_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Res"/>
+            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="2" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+        <PORT DIR="I" LEFT="2" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="Hamming_weight_0_addr_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="sw"/>
+            <CONNECTION INSTANCE="Hamming_weight_0" PORT="addr_out"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="9" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_15" PORT="Din"/>
-            <CONNECTION INSTANCE="xlslice_5" PORT="Din"/>
-            <CONNECTION INSTANCE="xlslice_14" PORT="Din"/>
+            <CONNECTION INSTANCE="Hamming_weight_0" PORT="in_word"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1598,6 +1839,9 @@
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clka"/>
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clkb"/>
             <CONNECTION INSTANCE="Unroll_ROM_last_0" PORT="clk"/>
+            <CONNECTION INSTANCE="EightDispControl_0" PORT="clk"/>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clka"/>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clkb"/>
             <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_v10" PORT="LMB_Clk"/>
             <CONNECTION INSTANCE="microblaze_0_local_memory_dlmb_bram_if_cntlr" PORT="LMB_Clk"/>
             <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="LMB_Clk"/>
@@ -1606,8 +1850,8 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M01_ACLK"/>
-            <CONNECTION INSTANCE="EightDispControl_0" PORT="clk"/>
             <CONNECTION INSTANCE="Convert_10_8_to_8_10_FSM_0" PORT="clk"/>
+            <CONNECTION INSTANCE="VGA_for_block_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2762,8 +3006,8 @@
         <PARAMETER NAME="C_ICACHE_HIGHADDR" VALUE="0x000000003FFFFFFF"/>
         <PARAMETER NAME="C_USE_ICACHE" VALUE="0"/>
         <PARAMETER NAME="C_ALLOW_ICACHE_WR" VALUE="1"/>
-        <PARAMETER NAME="C_ADDR_TAG_BITS" VALUE="17"/>
-        <PARAMETER NAME="C_CACHE_BYTE_SIZE" VALUE="8192"/>
+        <PARAMETER NAME="C_ADDR_TAG_BITS" VALUE="0"/>
+        <PARAMETER NAME="C_CACHE_BYTE_SIZE" VALUE="65536"/>
         <PARAMETER NAME="C_ICACHE_LINE_LEN" VALUE="4"/>
         <PARAMETER NAME="C_ICACHE_ALWAYS_USED" VALUE="0"/>
         <PARAMETER NAME="C_ICACHE_STREAMS" VALUE="0"/>
@@ -2780,10 +3024,10 @@
         <PARAMETER NAME="C_M_AXI_IC_RUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_M_AXI_IC_BUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_DCACHE_BASEADDR" VALUE="0x0000000000000000"/>
-        <PARAMETER NAME="C_DCACHE_HIGHADDR" VALUE="0x000000003FFFFFFF"/>
+        <PARAMETER NAME="C_DCACHE_HIGHADDR" VALUE="0x000000003fffffff"/>
         <PARAMETER NAME="C_USE_DCACHE" VALUE="0"/>
         <PARAMETER NAME="C_ALLOW_DCACHE_WR" VALUE="1"/>
-        <PARAMETER NAME="C_DCACHE_ADDR_TAG" VALUE="17"/>
+        <PARAMETER NAME="C_DCACHE_ADDR_TAG" VALUE="0"/>
         <PARAMETER NAME="C_DCACHE_BYTE_SIZE" VALUE="8192"/>
         <PARAMETER NAME="C_DCACHE_LINE_LEN" VALUE="4"/>
         <PARAMETER NAME="C_DCACHE_ALWAYS_USED" VALUE="0"/>
@@ -4953,38 +5197,73 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="7" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_4_Dout">
+        <PORT DIR="I" LEFT="7" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="Unroll_enable_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_4" PORT="Dout"/>
+            <CONNECTION INSTANCE="Unroll_enable" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="7" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_0_Res">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Unroll_ROM_last_0" PORT="rst"/>
-            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clka"/>
-            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clkb"/>
-            <CONNECTION INSTANCE="Convert_10_8_to_8_10_FSM_0" PORT="reset"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+    <MODULE FULLNAME="/xlconcat_0" HWVERSION="2.1" INSTANCE="xlconcat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="00000000000000000000000000000001"/>
-        <PARAMETER NAME="CONST_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="Component_Name" VALUE="design1_xlconstant_0_0"/>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="14"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="design1_xlconcat_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" LEFT="31" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+        <PORT DIR="I" LEFT="3" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="Hamming_weight_0_hamming_w">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_6" PORT="Din"/>
-            <CONNECTION INSTANCE="xlslice_7" PORT="Din"/>
-            <CONNECTION INSTANCE="xlslice_8" PORT="Din"/>
-            <CONNECTION INSTANCE="xlslice_9" PORT="Din"/>
-            <CONNECTION INSTANCE="xlslice_10" PORT="Din"/>
+            <CONNECTION INSTANCE="Hamming_weight_0" PORT="hamming_w"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="Hamming_weight_0_final_word">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Hamming_weight_0" PORT="final_word"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="13" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio_io_i"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -5008,10 +5287,10 @@
         </PORT>
         <PORT DIR="O" LEFT="15" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_3" PORT="Din"/>
-            <CONNECTION INSTANCE="xlslice_1" PORT="Din"/>
-            <CONNECTION INSTANCE="xlslice_2" PORT="Din"/>
-            <CONNECTION INSTANCE="xlslice_4" PORT="Din"/>
+            <CONNECTION INSTANCE="RAM_enable" PORT="Din"/>
+            <CONNECTION INSTANCE="Ram_Address" PORT="Din"/>
+            <CONNECTION INSTANCE="Ram_Data" PORT="Din"/>
+            <CONNECTION INSTANCE="Unroll_enable" PORT="Din"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -5020,22 +5299,23 @@
     <MODULE FULLNAME="/xlslice_1" HWVERSION="1.0" INSTANCE="xlslice_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
-        <PARAMETER NAME="DIN_FROM" VALUE="11"/>
-        <PARAMETER NAME="DIN_TO" VALUE="8"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_1_0"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="20"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="21"/>
+        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_1_3"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_0_gpio2_io_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio2_io_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+        <PORT DIR="O" LEFT="20" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="addra"/>
+            <CONNECTION INSTANCE="xlslice_2" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_3" PORT="Din"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -5052,9 +5332,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_16_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+            <CONNECTION INSTANCE="xlslice_16" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_10_Dout">
@@ -5076,9 +5356,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_15_Dout">
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_16_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_15" PORT="Dout"/>
+            <CONNECTION INSTANCE="xlslice_16" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_11_Dout">
@@ -5100,9 +5380,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_5_Dout">
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_16_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_5" PORT="Dout"/>
+            <CONNECTION INSTANCE="xlslice_16" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_12_Dout">
@@ -5124,9 +5404,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_14_Dout">
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_16_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_14" PORT="Dout"/>
+            <CONNECTION INSTANCE="xlslice_16" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_13_Dout">
@@ -5137,49 +5417,32 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/xlslice_14" HWVERSION="1.0" INSTANCE="xlslice_14" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+    <MODULE FULLNAME="/xlslice_16" HWVERSION="1.0" INSTANCE="xlslice_16" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="10"/>
-        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="79"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="31"/>
         <PARAMETER NAME="DIN_TO" VALUE="0"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_5_2"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_16_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="9" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
+        <PORT DIR="I" LEFT="78" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="Unroll_ROM_last_0_data_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="doutb"/>
+            <CONNECTION INSTANCE="Unroll_ROM_last_0" PORT="data_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_14_Dout">
+        <PORT DIR="O" LEFT="31" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_16_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_13" PORT="Din"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlslice_15" HWVERSION="1.0" INSTANCE="xlslice_15" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="10"/>
-        <PARAMETER NAME="DIN_FROM" VALUE="9"/>
-        <PARAMETER NAME="DIN_TO" VALUE="8"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="2"/>
-        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_5_3"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="9" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="doutb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_15_Dout">
-          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_6" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_7" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_8" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_9" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_10" PORT="Din"/>
             <CONNECTION INSTANCE="xlslice_11" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_12" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_13" PORT="Din"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -5188,22 +5451,22 @@
     <MODULE FULLNAME="/xlslice_2" HWVERSION="1.0" INSTANCE="xlslice_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
-        <PARAMETER NAME="DIN_FROM" VALUE="7"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="21"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="12"/>
         <PARAMETER NAME="DIN_TO" VALUE="0"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="8"/>
-        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_1_1"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="13"/>
+        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_1_4"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+        <PORT DIR="I" LEFT="20" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="7" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_2_Dout">
+        <PORT DIR="O" LEFT="12" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_2_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="dina"/>
+            <CONNECTION INSTANCE="VGA_for_block_0" PORT="RAMWriteAddress"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -5212,70 +5475,22 @@
     <MODULE FULLNAME="/xlslice_3" HWVERSION="1.0" INSTANCE="xlslice_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
-        <PARAMETER NAME="DIN_FROM" VALUE="12"/>
-        <PARAMETER NAME="DIN_TO" VALUE="12"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_1_2"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_3_Dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="wea"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlslice_4" HWVERSION="1.0" INSTANCE="xlslice_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
-        <PARAMETER NAME="DIN_FROM" VALUE="13"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="21"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="20"/>
         <PARAMETER NAME="DIN_TO" VALUE="13"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_3_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_3_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+        <PORT DIR="I" LEFT="20" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_4_Dout">
+        <PORT DIR="O" LEFT="7" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_3_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Op1"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlslice_5" HWVERSION="1.0" INSTANCE="xlslice_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="10"/>
-        <PARAMETER NAME="DIN_FROM" VALUE="7"/>
-        <PARAMETER NAME="DIN_TO" VALUE="4"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="Component_Name" VALUE="design1_xlslice_5_1"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="9" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="doutb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_5_Dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlslice_12" PORT="Din"/>
+            <CONNECTION INSTANCE="VGA_for_block_0" PORT="RAMData"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -5292,9 +5507,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_16_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+            <CONNECTION INSTANCE="xlslice_16" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_6_Dout">
@@ -5316,9 +5531,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_16_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+            <CONNECTION INSTANCE="xlslice_16" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_7_Dout">
@@ -5340,9 +5555,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_16_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+            <CONNECTION INSTANCE="xlslice_16" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_8_Dout">
@@ -5364,9 +5579,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_16_Dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+            <CONNECTION INSTANCE="xlslice_16" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_9_Dout">

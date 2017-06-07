@@ -1,11 +1,11 @@
-13:23:41 **** Clean-only build of configuration Debug for project projeto ****
+16:31:21 **** Clean-only build of configuration Debug for project projeto ****
 make clean 
 rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  projeto.elf.size  projeto.elf
 ' '
-13:23:42 **** Clean-only build of project projeto_bsp ****
+16:31:21 **** Clean-only build of project projeto_bsp ****
 make -k clean 
 rm -f microblaze_0/lib/libxil.a
-13:23:42 **** Build of project projeto_bsp ****
+16:31:22 **** Build of project projeto_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_1/src"
 make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
@@ -34,7 +34,7 @@ make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=m
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling uartlite"
 'Finished building libraries'
-13:23:52 **** Build of configuration Debug for project projeto ****
+16:31:30 **** Build of configuration Debug for project projeto ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -54,9 +54,30 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projeto_bsp/microblaze_0/lib -mlittl
 'Invoking: MicroBlaze Print Size'
 mb-size projeto.elf  |tee "projeto.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   4612	    292	   3160	   8064	   1f80	projeto.elf
+   4248	    292	   3156	   7696	   1e10	projeto.elf
 'Finished building: projeto.elf.size'
 ' '
-13:23:54 **** Incremental Build of configuration Debug for project projeto ****
+16:31:43 **** Incremental Build of configuration Debug for project projeto ****
+make all 
+make: Nothing to be done for `all'.
+20:01:33 **** Incremental Build of configuration Debug for project projeto ****
+make all 
+make: Nothing to be done for `all'.
+20:01:56 **** Incremental Build of configuration Debug for project projeto ****
+make all 
+make: Nothing to be done for `all'.
+20:03:27 **** Incremental Build of configuration Debug for project projeto ****
+make all 
+make: Nothing to be done for `all'.
+20:04:47 **** Incremental Build of configuration Debug for project projeto ****
+make all 
+make: Nothing to be done for `all'.
+20:20:19 **** Incremental Build of configuration Debug for project projeto ****
+make all 
+make: Nothing to be done for `all'.
+20:21:29 **** Incremental Build of configuration Debug for project projeto ****
+make all 
+make: Nothing to be done for `all'.
+20:22:16 **** Incremental Build of configuration Debug for project projeto ****
 make all 
 make: Nothing to be done for `all'.

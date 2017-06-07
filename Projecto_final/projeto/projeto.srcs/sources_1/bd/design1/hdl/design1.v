@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-//Date        : Mon May 29 12:13:07 2017
+//Date        : Wed Jun 07 03:47:34 2017
 //Host        : DESKTOP-2SMIO6T running 64-bit major release  (build 9200)
 //Command     : generate_target design1.bd
 //Design      : design1
@@ -9,31 +9,50 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=40,numReposBlks=35,numNonXlnxBlks=2,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_mb_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "design1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=43,numReposBlks=38,numNonXlnxBlks=3,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_mb_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "design1.hwdef" *) 
 module design1
-   (an,
+   (Hsync,
+    Vsync,
+    an,
     btnC,
     btnCpuReset,
     clk,
     led,
     seg,
-    sw);
+    vgaBlue,
+    vgaGreen,
+    vgaRed);
+  output Hsync;
+  output Vsync;
   output [7:0]an;
   input btnC;
   input btnCpuReset;
   input clk;
-  output [0:0]led;
+  output [2:0]led;
   output [6:0]seg;
-  input [2:0]sw;
+  output [3:0]vgaBlue;
+  output [3:0]vgaGreen;
+  output [3:0]vgaRed;
 
+  wire ClockDivider_0_divided_clock;
   wire [9:0]Convert_10_8_to_8_10_FSM_0_out_word;
   wire Convert_10_8_to_8_10_FSM_0_ready;
   wire [2:0]Convert_10_8_to_8_10_FSM_0_write_address;
   wire [6:0]EightDispControl_0_segments;
   wire [7:0]EightDispControl_0_select_display;
+  wire [2:0]Hamming_weight_0_addr_out;
+  wire [2:0]Hamming_weight_0_final_addr;
+  wire [9:0]Hamming_weight_0_final_word;
+  wire [3:0]Hamming_weight_0_hamming_w;
   wire [3:0]Unroll_ROM_last_0_addr;
   wire Unroll_ROM_last_0_completed;
   wire [79:0]Unroll_ROM_last_0_data_out;
+  wire VGA_for_block_0_HSync;
+  wire [3:0]VGA_for_block_0_VGABlue;
+  wire [3:0]VGA_for_block_0_VGAGreen;
+  wire [3:0]VGA_for_block_0_VGARed;
+  wire VGA_for_block_0_VSync;
+  wire [31:0]axi_gpio_0_gpio2_io_o;
   wire [31:0]axi_gpio_0_gpio_io_o;
   wire [7:0]blk_mem_gen_0_doutb;
   wire [9:0]blk_mem_gen_1_doutb;
@@ -127,35 +146,40 @@ module design1
   wire [0:0]rst_clk_wiz_1_100M_interconnect_aresetn;
   wire rst_clk_wiz_1_100M_mb_reset;
   wire [0:0]rst_clk_wiz_1_100M_peripheral_aresetn;
-  wire [2:0]sw_1;
   wire [7:0]util_vector_logic_0_Res;
+  wire [13:0]xlconcat_0_dout;
   wire [31:0]xlconstant_0_dout;
   wire [15:0]xlslice_0_Dout;
   wire [3:0]xlslice_10_Dout;
   wire [3:0]xlslice_11_Dout;
   wire [3:0]xlslice_12_Dout;
   wire [3:0]xlslice_13_Dout;
-  wire [3:0]xlslice_14_Dout;
-  wire [1:0]xlslice_15_Dout;
   wire [3:0]xlslice_1_Dout;
+  wire [20:0]xlslice_1_Dout1;
   wire [7:0]xlslice_2_Dout;
+  wire [12:0]xlslice_2_Dout1;
   wire [0:0]xlslice_3_Dout;
+  wire [7:0]xlslice_3_Dout1;
   wire [0:0]xlslice_4_Dout;
-  wire [3:0]xlslice_5_Dout;
   wire [3:0]xlslice_6_Dout;
   wire [3:0]xlslice_7_Dout;
   wire [3:0]xlslice_8_Dout;
   wire [3:0]xlslice_9_Dout;
 
+  assign Hsync = VGA_for_block_0_HSync;
+  assign Vsync = VGA_for_block_0_VSync;
   assign an[7:0] = EightDispControl_0_select_display;
   assign btnC_1 = btnC;
   assign btnCpuReset_1 = btnCpuReset;
   assign clk_1 = clk;
-  assign led[0] = Unroll_ROM_last_0_completed;
+  assign led[2:0] = Hamming_weight_0_final_addr;
   assign seg[6:0] = EightDispControl_0_segments;
-  assign sw_1 = sw[2:0];
+  assign vgaBlue[3:0] = VGA_for_block_0_VGABlue;
+  assign vgaGreen[3:0] = VGA_for_block_0_VGAGreen;
+  assign vgaRed[3:0] = VGA_for_block_0_VGARed;
   design1_ClockDivider_0_0 ClockDivider_0
        (.clk(clk_wiz_1_clk_out1),
+        .divided_clock(ClockDivider_0_divided_clock),
         .reset(btnC_1));
   design1_Convert_10_8_to_8_10_FSM_0_0 Convert_10_8_to_8_10_FSM_0
        (.clk(clk_wiz_1_clk_out1),
@@ -163,7 +187,7 @@ module design1
         .in_word(Unroll_ROM_last_0_data_out),
         .out_word(Convert_10_8_to_8_10_FSM_0_out_word),
         .ready(Convert_10_8_to_8_10_FSM_0_ready),
-        .reset(util_vector_logic_0_Res[0]),
+        .reset(btnC_1),
         .write_address(Convert_10_8_to_8_10_FSM_0_write_address));
   design1_EightDispControl_0_0 EightDispControl_0
        (.clk(clk_wiz_1_clk_out1),
@@ -177,6 +201,24 @@ module design1
         .rightR(xlslice_13_Dout),
         .segments(EightDispControl_0_segments),
         .select_display(EightDispControl_0_select_display));
+  design1_Hamming_weight_0_0 Hamming_weight_0
+       (.addr_out(Hamming_weight_0_addr_out),
+        .clk(ClockDivider_0_divided_clock),
+        .enable(Convert_10_8_to_8_10_FSM_0_ready),
+        .final_addr(Hamming_weight_0_final_addr),
+        .final_word(Hamming_weight_0_final_word),
+        .hamming_w(Hamming_weight_0_hamming_w),
+        .in_word(blk_mem_gen_1_doutb),
+        .reset(btnC_1));
+  design1_xlslice_1_2 RAM_enable
+       (.Din(xlslice_0_Dout),
+        .Dout(xlslice_3_Dout));
+  design1_xlslice_1_0 Ram_Address
+       (.Din(xlslice_0_Dout),
+        .Dout(xlslice_1_Dout));
+  design1_xlslice_1_1 Ram_Data
+       (.Din(xlslice_0_Dout),
+        .Dout(xlslice_2_Dout));
   design1_Unroll_ROM_last_0_0 Unroll_ROM_last_0
        (.addr(Unroll_ROM_last_0_addr),
         .clk(clk_wiz_1_clk_out1),
@@ -184,8 +226,22 @@ module design1
         .data_in(blk_mem_gen_0_doutb),
         .data_out(Unroll_ROM_last_0_data_out),
         .rst(util_vector_logic_0_Res[0]));
+  design1_xlslice_3_0 Unroll_enable
+       (.Din(xlslice_0_Dout),
+        .Dout(xlslice_4_Dout));
+  design1_VGA_for_block_0_0 VGA_for_block_0
+       (.HSync(VGA_for_block_0_HSync),
+        .RAMData({xlslice_3_Dout1[7],xlslice_3_Dout1[6],xlslice_3_Dout1[5],xlslice_3_Dout1[4],xlslice_3_Dout1[3],xlslice_3_Dout1[2],xlslice_3_Dout1[1],xlslice_3_Dout1[0]}),
+        .RAMWriteAddress(xlslice_2_Dout1),
+        .VGABlue(VGA_for_block_0_VGABlue),
+        .VGAGreen(VGA_for_block_0_VGAGreen),
+        .VGARed(VGA_for_block_0_VGARed),
+        .VSync(VGA_for_block_0_VSync),
+        .btnC(btnC_1),
+        .clk(clk_wiz_1_clk_out1));
   design1_axi_gpio_0_0 axi_gpio_0
-       (.gpio2_io_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+       (.gpio2_io_o(axi_gpio_0_gpio2_io_o),
+        .gpio_io_i(xlconcat_0_dout),
         .gpio_io_o(axi_gpio_0_gpio_io_o),
         .s_axi_aclk(clk_wiz_1_clk_out1),
         .s_axi_araddr(microblaze_0_axi_periph_M01_AXI_ARADDR[8:0]),
@@ -216,9 +272,9 @@ module design1
         .wea(xlslice_3_Dout));
   design1_blk_mem_gen_0_1 blk_mem_gen_1
        (.addra(Convert_10_8_to_8_10_FSM_0_write_address),
-        .addrb(sw_1),
-        .clka(util_vector_logic_0_Res[0]),
-        .clkb(util_vector_logic_0_Res[0]),
+        .addrb(Hamming_weight_0_addr_out),
+        .clka(clk_wiz_1_clk_out1),
+        .clkb(clk_wiz_1_clk_out1),
         .dina(Convert_10_8_to_8_10_FSM_0_out_word),
         .doutb(blk_mem_gen_1_doutb),
         .wea(Convert_10_8_to_8_10_FSM_0_ready));
@@ -406,44 +462,37 @@ module design1
   design1_util_vector_logic_0_0 util_vector_logic_0
        (.Op1(xlslice_4_Dout),
         .Res(util_vector_logic_0_Res));
-  design1_xlconstant_0_0 xlconstant_0
-       (.dout(xlconstant_0_dout));
+  design1_xlconcat_0_0 xlconcat_0
+       (.In0(Hamming_weight_0_hamming_w),
+        .In1(Hamming_weight_0_final_word),
+        .dout(xlconcat_0_dout));
   design1_xlslice_0_0 xlslice_0
        (.Din(axi_gpio_0_gpio_io_o),
         .Dout(xlslice_0_Dout));
-  design1_xlslice_1_0 xlslice_1
-       (.Din(xlslice_0_Dout),
-        .Dout(xlslice_1_Dout));
+  design1_xlslice_1_3 xlslice_1
+       (.Din(axi_gpio_0_gpio2_io_o),
+        .Dout(xlslice_1_Dout1));
   design1_xlslice_6_4 xlslice_10
        (.Din(xlconstant_0_dout),
         .Dout(xlslice_10_Dout));
   design1_xlslice_6_5 xlslice_11
-       (.Din(xlslice_15_Dout),
+       (.Din(xlconstant_0_dout),
         .Dout(xlslice_11_Dout));
   design1_xlslice_6_6 xlslice_12
-       (.Din(xlslice_5_Dout),
+       (.Din(xlconstant_0_dout),
         .Dout(xlslice_12_Dout));
   design1_xlslice_6_7 xlslice_13
-       (.Din(xlslice_14_Dout),
+       (.Din(xlconstant_0_dout),
         .Dout(xlslice_13_Dout));
-  design1_xlslice_5_2 xlslice_14
-       (.Din(blk_mem_gen_1_doutb),
-        .Dout(xlslice_14_Dout));
-  design1_xlslice_5_3 xlslice_15
-       (.Din(blk_mem_gen_1_doutb),
-        .Dout(xlslice_15_Dout));
-  design1_xlslice_1_1 xlslice_2
-       (.Din(xlslice_0_Dout),
-        .Dout(xlslice_2_Dout));
-  design1_xlslice_1_2 xlslice_3
-       (.Din(xlslice_0_Dout),
-        .Dout(xlslice_3_Dout));
-  design1_xlslice_3_0 xlslice_4
-       (.Din(xlslice_0_Dout),
-        .Dout(xlslice_4_Dout));
-  design1_xlslice_5_1 xlslice_5
-       (.Din(blk_mem_gen_1_doutb),
-        .Dout(xlslice_5_Dout));
+  design1_xlslice_16_0 xlslice_16
+       (.Din(Unroll_ROM_last_0_data_out[78:0]),
+        .Dout(xlconstant_0_dout));
+  design1_xlslice_1_4 xlslice_2
+       (.Din(xlslice_1_Dout1),
+        .Dout(xlslice_2_Dout1));
+  design1_xlslice_3_1 xlslice_3
+       (.Din(xlslice_1_Dout1),
+        .Dout(xlslice_3_Dout1));
   design1_xlslice_6_0 xlslice_6
        (.Din(xlconstant_0_dout),
         .Dout(xlslice_6_Dout));

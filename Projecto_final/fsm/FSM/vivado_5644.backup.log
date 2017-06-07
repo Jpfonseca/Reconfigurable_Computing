@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed May 31 09:37:45 2017
+# Process ID: 5644
+# Current directory: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3564 C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\FSM\FSM\FSM.xpr
+# Log file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM/vivado.log
+# Journal file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/FSM/FSM.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Migo/University/Computacao_Reconfiguravel/FSM' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Joao/Desktop/cr/Git/migo/university/computacao_reconfiguravel/component.xml', nor could it be found using path 'D:/migo/university/computacao_reconfiguravel/component.xml'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/FSM/Nexys4_Master.xdc', nor could it be found using path 'D:/Migo/University/Computacao_Reconfiguravel/Nexys4_Master.xdc'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Joao/Desktop/cr/Git/migo/university/computacao_reconfiguravel', nor could it be found using path 'D:/migo/university/computacao_reconfiguravel'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Joao/Desktop/cr/Git/migo/university/computacao_reconfiguravel'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 683.074 ; gain = 88.559

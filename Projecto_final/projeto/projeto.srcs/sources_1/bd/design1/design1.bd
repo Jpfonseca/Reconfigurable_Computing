@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x971E6B09B59DA55A" bd:device="xc7a100tcsg324-1" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2016.4" bd:top="design1" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x9972ABC356D1A7CE" bd:device="xc7a100tcsg324-1" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2016.4" bd:top="design1" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -34,16 +34,6 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>led</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
           <spirit:name>btnC</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
@@ -70,11 +60,53 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>sw</spirit:name>
+          <spirit:name>led</spirit:name>
           <spirit:wire>
-            <spirit:direction>in</spirit:direction>
+            <spirit:direction>out</spirit:direction>
             <spirit:vector>
               <spirit:left>2</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Hsync</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Vsync</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vgaRed</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>3</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vgaBlue</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>3</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vgaGreen</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>3</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
           </spirit:wire>
@@ -98,6 +130,8 @@
           <spirit:configurableElementValue spirit:referenceId="C_D_LMB">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_I_LMB">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_DEBUG_ENABLED">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_ICACHE">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_USE_DCACHE">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
         <bd:hdl_attributes/>
       </spirit:componentInstance>
@@ -146,8 +180,9 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_axi_gpio_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_IS_DUAL">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_ALL_INPUTS">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_ALL_INPUTS_2">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="C_ALL_OUTPUTS">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ALL_INPUTS_2">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ALL_OUTPUTS">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ALL_OUTPUTS_2">1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -181,7 +216,7 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>xlslice_1</spirit:instanceName>
+        <spirit:instanceName>Ram_Address</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlslice_1_0</spirit:configurableElementValue>
@@ -192,7 +227,7 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>xlslice_2</spirit:instanceName>
+        <spirit:instanceName>Ram_Data</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlslice_1_1</spirit:configurableElementValue>
@@ -203,7 +238,7 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>xlslice_3</spirit:instanceName>
+        <spirit:instanceName>RAM_enable</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlslice_1_2</spirit:configurableElementValue>
@@ -222,7 +257,7 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>xlslice_4</spirit:instanceName>
+        <spirit:instanceName>Unroll_enable</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlslice_3_0</spirit:configurableElementValue>
@@ -358,44 +393,14 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>xlconstant_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlconstant_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CONST_WIDTH">32</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>xlslice_5</spirit:instanceName>
+        <spirit:instanceName>xlslice_16</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlslice_5_1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">4</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DIN_TO">4</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">7</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">10</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>xlslice_14</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlslice_5_2</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlslice_16_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">32</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="DIN_TO">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">3</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">10</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>xlslice_15</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlslice_5_3</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">2</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DIN_TO">8</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">9</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">10</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">31</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">79</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -403,6 +408,57 @@
         <spirit:componentRef spirit:library="user" spirit:name="Convert_10_8_to_8_10_FSM" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_Convert_10_8_to_8_10_FSM_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>Hamming_weight_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="Hamming_weight" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_Hamming_weight_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>VGA_for_block_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="VGA_for_block" spirit:vendor="ua.pt" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_VGA_for_block_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconcat_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconcat" spirit:vendor="xilinx.com" spirit:version="2.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlconcat_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlslice_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlslice_1_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">21</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">20</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlslice_2</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlslice_1_4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DOUT_WIDTH">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_TO">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">12</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">21</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlslice_3</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlslice" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design1_xlslice_3_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_TO">13</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_FROM">20</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DIN_WIDTH">21</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -476,24 +532,24 @@
       <spirit:adHocConnection>
         <spirit:name>xlslice_0_Dout</spirit:name>
         <spirit:internalPortReference spirit:componentRef="xlslice_0" spirit:portRef="Dout"/>
-        <spirit:internalPortReference spirit:componentRef="xlslice_3" spirit:portRef="Din"/>
-        <spirit:internalPortReference spirit:componentRef="xlslice_1" spirit:portRef="Din"/>
-        <spirit:internalPortReference spirit:componentRef="xlslice_2" spirit:portRef="Din"/>
-        <spirit:internalPortReference spirit:componentRef="xlslice_4" spirit:portRef="Din"/>
+        <spirit:internalPortReference spirit:componentRef="RAM_enable" spirit:portRef="Din"/>
+        <spirit:internalPortReference spirit:componentRef="Ram_Address" spirit:portRef="Din"/>
+        <spirit:internalPortReference spirit:componentRef="Ram_Data" spirit:portRef="Din"/>
+        <spirit:internalPortReference spirit:componentRef="Unroll_enable" spirit:portRef="Din"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlslice_3_Dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlslice_3" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="RAM_enable" spirit:portRef="Dout"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="wea"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlslice_1_Dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlslice_1" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="Ram_Address" spirit:portRef="Dout"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="addra"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlslice_2_Dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlslice_2" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="Ram_Data" spirit:portRef="Dout"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="dina"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
@@ -512,13 +568,16 @@
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="clka"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_0" spirit:portRef="clkb"/>
         <spirit:internalPortReference spirit:componentRef="Unroll_ROM_last_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="clka"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="clkb"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_local_memory" spirit:portRef="LMB_Clk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M01_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="EightDispControl_0" spirit:portRef="clk"/>
         <spirit:internalPortReference spirit:componentRef="Convert_10_8_to_8_10_FSM_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="VGA_for_block_0" spirit:portRef="clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>blk_mem_gen_0_doutb</spirit:name>
@@ -533,7 +592,6 @@
       <spirit:adHocConnection>
         <spirit:name>Unroll_ROM_last_0_completed</spirit:name>
         <spirit:internalPortReference spirit:componentRef="Unroll_ROM_last_0" spirit:portRef="completed"/>
-        <spirit:externalPortReference spirit:portRef="led"/>
         <spirit:internalPortReference spirit:componentRef="Convert_10_8_to_8_10_FSM_0" spirit:portRef="enable"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
@@ -545,19 +603,14 @@
         <spirit:name>btnC_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="btnC"/>
         <spirit:internalPortReference spirit:componentRef="ClockDivider_0" spirit:portRef="reset"/>
+        <spirit:internalPortReference spirit:componentRef="Hamming_weight_0" spirit:portRef="reset"/>
+        <spirit:internalPortReference spirit:componentRef="Convert_10_8_to_8_10_FSM_0" spirit:portRef="reset"/>
+        <spirit:internalPortReference spirit:componentRef="VGA_for_block_0" spirit:portRef="btnC"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlslice_4_Dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlslice_4" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="Unroll_enable" spirit:portRef="Dout"/>
         <spirit:internalPortReference spirit:componentRef="util_vector_logic_0" spirit:portRef="Op1"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>util_vector_logic_0_Res</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="util_vector_logic_0" spirit:portRef="Res"/>
-        <spirit:internalPortReference spirit:componentRef="Unroll_ROM_last_0" spirit:portRef="rst"/>
-        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="clka"/>
-        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="clkb"/>
-        <spirit:internalPortReference spirit:componentRef="Convert_10_8_to_8_10_FSM_0" spirit:portRef="reset"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>EightDispControl_0_select_display</spirit:name>
@@ -612,12 +665,14 @@
       <spirit:adHocConnection>
         <spirit:name>Unroll_ROM_last_0_data_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="Unroll_ROM_last_0" spirit:portRef="data_out"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_16" spirit:portRef="Din"/>
         <spirit:internalPortReference spirit:componentRef="Convert_10_8_to_8_10_FSM_0" spirit:portRef="in_word"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>Convert_10_8_to_8_10_FSM_0_ready</spirit:name>
         <spirit:internalPortReference spirit:componentRef="Convert_10_8_to_8_10_FSM_0" spirit:portRef="ready"/>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="wea"/>
+        <spirit:internalPortReference spirit:componentRef="Hamming_weight_0" spirit:portRef="enable"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>Convert_10_8_to_8_10_FSM_0_out_word</spirit:name>
@@ -630,40 +685,102 @@
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="addra"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>sw_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="sw"/>
-        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="addrb"/>
+        <spirit:name>util_vector_logic_0_Res</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="util_vector_logic_0" spirit:portRef="Res"/>
+        <spirit:internalPortReference spirit:componentRef="Unroll_ROM_last_0" spirit:portRef="rst"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xlconstant_0_dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlconstant_0" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_16" spirit:portRef="Dout"/>
         <spirit:internalPortReference spirit:componentRef="xlslice_6" spirit:portRef="Din"/>
         <spirit:internalPortReference spirit:componentRef="xlslice_7" spirit:portRef="Din"/>
         <spirit:internalPortReference spirit:componentRef="xlslice_8" spirit:portRef="Din"/>
         <spirit:internalPortReference spirit:componentRef="xlslice_9" spirit:portRef="Din"/>
         <spirit:internalPortReference spirit:componentRef="xlslice_10" spirit:portRef="Din"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_11" spirit:portRef="Din"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_12" spirit:portRef="Din"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_13" spirit:portRef="Din"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Hamming_weight_0_addr_out</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="Hamming_weight_0" spirit:portRef="addr_out"/>
+        <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="addrb"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>blk_mem_gen_1_doutb</spirit:name>
         <spirit:internalPortReference spirit:componentRef="blk_mem_gen_1" spirit:portRef="doutb"/>
-        <spirit:internalPortReference spirit:componentRef="xlslice_15" spirit:portRef="Din"/>
-        <spirit:internalPortReference spirit:componentRef="xlslice_5" spirit:portRef="Din"/>
-        <spirit:internalPortReference spirit:componentRef="xlslice_14" spirit:portRef="Din"/>
+        <spirit:internalPortReference spirit:componentRef="Hamming_weight_0" spirit:portRef="in_word"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>xlslice_15_Dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlslice_15" spirit:portRef="Dout"/>
-        <spirit:internalPortReference spirit:componentRef="xlslice_11" spirit:portRef="Din"/>
+        <spirit:name>ClockDivider_0_divided_clock</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="ClockDivider_0" spirit:portRef="divided_clock"/>
+        <spirit:internalPortReference spirit:componentRef="Hamming_weight_0" spirit:portRef="clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>xlslice_5_Dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlslice_5" spirit:portRef="Dout"/>
-        <spirit:internalPortReference spirit:componentRef="xlslice_12" spirit:portRef="Din"/>
+        <spirit:name>Hamming_weight_0_final_addr</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="Hamming_weight_0" spirit:portRef="final_addr"/>
+        <spirit:externalPortReference spirit:portRef="led"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>xlslice_14_Dout</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xlslice_14" spirit:portRef="Dout"/>
-        <spirit:internalPortReference spirit:componentRef="xlslice_13" spirit:portRef="Din"/>
+        <spirit:name>Hamming_weight_0_final_word</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="Hamming_weight_0" spirit:portRef="final_word"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="In1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Hamming_weight_0_hamming_w</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="Hamming_weight_0" spirit:portRef="hamming_w"/>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="In0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconcat_0_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="gpio_io_i"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>VGA_for_block_0_HSync</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="VGA_for_block_0" spirit:portRef="HSync"/>
+        <spirit:externalPortReference spirit:portRef="Hsync"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>VGA_for_block_0_VSync</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="VGA_for_block_0" spirit:portRef="VSync"/>
+        <spirit:externalPortReference spirit:portRef="Vsync"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>VGA_for_block_0_VGARed</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="VGA_for_block_0" spirit:portRef="VGARed"/>
+        <spirit:externalPortReference spirit:portRef="vgaRed"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>VGA_for_block_0_VGAGreen</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="VGA_for_block_0" spirit:portRef="VGAGreen"/>
+        <spirit:externalPortReference spirit:portRef="vgaGreen"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>VGA_for_block_0_VGABlue</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="VGA_for_block_0" spirit:portRef="VGABlue"/>
+        <spirit:externalPortReference spirit:portRef="vgaBlue"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_gpio_0_gpio2_io_o</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="gpio2_io_o"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_1" spirit:portRef="Din"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlslice_1_Dout1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlslice_1" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_2" spirit:portRef="Din"/>
+        <spirit:internalPortReference spirit:componentRef="xlslice_3" spirit:portRef="Din"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlslice_3_Dout1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlslice_3" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="VGA_for_block_0" spirit:portRef="RAMData"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlslice_2_Dout1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlslice_2" spirit:portRef="Dout"/>
+        <spirit:internalPortReference spirit:componentRef="VGA_for_block_0" spirit:portRef="RAMWriteAddress"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>
