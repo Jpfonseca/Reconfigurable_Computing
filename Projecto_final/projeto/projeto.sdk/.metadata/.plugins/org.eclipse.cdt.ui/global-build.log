@@ -1,83 +1,731 @@
-16:31:21 **** Clean-only build of configuration Debug for project projeto ****
+15:23:03 **** Clean-only build of configuration Debug for project Projecto ****
 make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  projeto.elf.size  projeto.elf
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  Projecto.elf.size  Projecto.elf
 ' '
-16:31:21 **** Clean-only build of project projeto_bsp ****
+15:23:04 **** Clean-only build of project Projecto_bsp ****
 make -k clean 
 rm -f microblaze_0/lib/libxil.a
-16:31:22 **** Build of project projeto_bsp ****
+15:23:04 **** Build of project Projecto_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_1/src"
-make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high" "EXTRA_COMPILER_FLAGS=-g"
 "Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
-make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high" "EXTRA_COMPILER_FLAGS=-g"
 "Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
-make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high" "EXTRA_COMPILER_FLAGS=-g"
 "Running Make include in microblaze_0/libsrc/standalone_v6_1/src"
-make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high" "EXTRA_COMPILER_FLAGS=-g"
 "Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high" "EXTRA_COMPILER_FLAGS=-g"
 "Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
-make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling bram"
 mb-ar: creating ../../../lib/libxil.a
 "Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
-make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling cpu"
 "Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
-make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling gpio"
 "Running Make libs in microblaze_0/libsrc/standalone_v6_1/src"
-make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+make -C microblaze_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling standalone";
 "Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
-make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high" "EXTRA_COMPILER_FLAGS=-g"
 "Compiling uartlite"
 'Finished building libraries'
-16:31:30 **** Build of configuration Debug for project projeto ****
+15:23:13 **** Build of configuration Debug for project Projecto ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../projeto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c:57:16: warning: variable 'input' set but not used [-Wunused-but-set-variable]
+   unsigned int input;
+                ^
+../src/helloworld.c: In function 'print_2vga':
+../src/helloworld.c:151:5: error: 'to_send' undeclared (first use in this function)
+     to_send = (b & 0x1FFF) | (a << 13);
+     ^
+../src/helloworld.c:151:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+15:23:36 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c:57:16: warning: variable 'input' set but not used [-Wunused-but-set-variable]
+   unsigned int input;
+                ^
+../src/helloworld.c: In function 'print_2vga':
+../src/helloworld.c:151:5: error: 'to_send' undeclared (first use in this function)
+     to_send = (b & 0x1FFF) | (a << 13);
+     ^
+../src/helloworld.c:151:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+15:24:12 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c:57:16: warning: variable 'input' set but not used [-Wunused-but-set-variable]
+   unsigned int input;
+                ^
 'Finished building: ../src/helloworld.c'
 ' '
 'Building file: ../src/platform.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../projeto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 'Finished building: ../src/platform.c'
 ' '
-'Building target: projeto.elf'
+'Building target: Projecto.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projeto_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "projeto.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: projeto.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Projecto_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -o "Projecto.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Projecto.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size projeto.elf  |tee "projeto.elf.size"
+mb-size Projecto.elf  |tee "Projecto.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   4248	    292	   3156	   7696	   1e10	projeto.elf
-'Finished building: projeto.elf.size'
+   5260	    292	   3192	   8744	   2228	Projecto.elf
+'Finished building: Projecto.elf.size'
 ' '
-16:31:43 **** Incremental Build of configuration Debug for project projeto ****
+15:24:18 **** Incremental Build of configuration Debug for project Projecto ****
 make all 
 make: Nothing to be done for `all'.
-20:01:33 **** Incremental Build of configuration Debug for project projeto ****
+15:24:27 **** Incremental Build of configuration Debug for project Projecto ****
 make all 
 make: Nothing to be done for `all'.
-20:01:56 **** Incremental Build of configuration Debug for project projeto ****
+15:24:33 **** Incremental Build of configuration Debug for project Projecto ****
 make all 
 make: Nothing to be done for `all'.
-20:03:27 **** Incremental Build of configuration Debug for project projeto ****
+15:25:31 **** Incremental Build of configuration Debug for project Projecto ****
 make all 
 make: Nothing to be done for `all'.
-20:04:47 **** Incremental Build of configuration Debug for project projeto ****
+15:27:44 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:83:3: error: too many arguments to function 'print_2vga'
+   print_2vga(s1,305);
+   ^
+../src/helloworld.c:14:6: note: declared here
+ void print_2vga(char *s1);
+      ^
+../src/helloworld.c:84:3: error: too many arguments to function 'print_2vga'
+   print_2vga(s2,505);
+   ^
+../src/helloworld.c:14:6: note: declared here
+ void print_2vga(char *s1);
+      ^
+../src/helloworld.c:85:3: error: too many arguments to function 'print_2vga'
+   print_2vga(s4,605);
+   ^
+../src/helloworld.c:14:6: note: declared here
+ void print_2vga(char *s1);
+      ^
+../src/helloworld.c:86:3: error: too many arguments to function 'print_2vga'
+   print_2vga(s5,805);
+   ^
+../src/helloworld.c:14:6: note: declared here
+ void print_2vga(char *s1);
+      ^
+../src/helloworld.c:87:3: error: too many arguments to function 'print_2vga'
+   print_2vga(s5,1005);
+   ^
+../src/helloworld.c:14:6: note: declared here
+ void print_2vga(char *s1);
+      ^
+../src/helloworld.c:73:9: warning: unused variable 's3' [-Wunused-variable]
+   char *s3 = "Peso de Hamming :";
+         ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c:57:16: warning: variable 'input' set but not used [-Wunused-but-set-variable]
+   unsigned int input;
+                ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:147:6: error: conflicting types for 'print_2vga'
+ void print_2vga(char *s1, unsigned int b){
+      ^
+../src/helloworld.c:14:6: note: previous declaration of 'print_2vga' was here
+ void print_2vga(char *s1);
+      ^
+make: *** [src/helloworld.o] Error 1
+15:28:03 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:73:9: warning: unused variable 's3' [-Wunused-variable]
+   char *s3 = "Peso de Hamming :";
+         ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c:57:16: warning: variable 'input' set but not used [-Wunused-but-set-variable]
+   unsigned int input;
+                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Projecto.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Projecto_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Projecto.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Projecto.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Projecto.elf  |tee "Projecto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5504	    292	   3188	   8984	   2318	Projecto.elf
+'Finished building: Projecto.elf.size'
+' '
+15:28:07 **** Incremental Build of configuration Debug for project Projecto ****
 make all 
 make: Nothing to be done for `all'.
-20:20:19 **** Incremental Build of configuration Debug for project projeto ****
+15:28:18 **** Incremental Build of configuration Debug for project Projecto ****
 make all 
 make: Nothing to be done for `all'.
-20:21:29 **** Incremental Build of configuration Debug for project projeto ****
+16:12:38 **** Incremental Build of configuration Debug for project Projecto ****
 make all 
 make: Nothing to be done for `all'.
-20:22:16 **** Incremental Build of configuration Debug for project projeto ****
+16:12:46 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+16:13:16 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:90:9: warning: unused variable 's7' [-Wunused-variable]
+   char *s7 = "Hamming:";
+         ^
+../src/helloworld.c:89:9: warning: unused variable 's6' [-Wunused-variable]
+   char *s6 = "Palavra:";
+         ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c:57:16: warning: variable 'input' set but not used [-Wunused-but-set-variable]
+   unsigned int input;
+                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Projecto.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Projecto_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Projecto.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Projecto.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Projecto.elf  |tee "Projecto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5552	    292	   3188	   9032	   2348	Projecto.elf
+'Finished building: Projecto.elf.size'
+' '
+16:14:52 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+16:17:17 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:90:14: error: expected expression before ',' token
+   print_2vga(,2110);
+              ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c:57:16: warning: variable 'input' set but not used [-Wunused-but-set-variable]
+   unsigned int input;
+                ^
+make: *** [src/helloworld.o] Error 1
+16:17:22 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c:57:16: warning: variable 'input' set but not used [-Wunused-but-set-variable]
+   unsigned int input;
+                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Projecto.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Projecto_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Projecto.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Projecto.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Projecto.elf  |tee "Projecto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5572	    292	   3192	   9056	   2360	Projecto.elf
+'Finished building: Projecto.elf.size'
+' '
+16:17:25 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+16:17:33 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+16:17:39 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+16:18:13 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c:57:16: warning: variable 'input' set but not used [-Wunused-but-set-variable]
+   unsigned int input;
+                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Projecto.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Projecto_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Projecto.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Projecto.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Projecto.elf  |tee "Projecto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5572	    292	   3192	   9056	   2360	Projecto.elf
+'Finished building: Projecto.elf.size'
+' '
+16:34:26 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:90:9: error: redefinition of 's6'
+   char *s6 = "Palavra:";
+         ^
+../src/helloworld.c:88:9: note: previous definition of 's6' was here
+   char *s6 = "Palavra:";
+         ^
+../src/helloworld.c:91:9: error: redefinition of 's7'
+   char *s7 = "Peso Hamming:";
+         ^
+../src/helloworld.c:89:9: note: previous definition of 's7' was here
+   char *s7 = "Peso Hamming:";
+         ^
+../src/helloworld.c:83:16: warning: unused variable 'value_hamm' [-Wunused-variable]
+   unsigned int value_hamm=input&0x0C;
+                ^
+../src/helloworld.c:82:16: warning: unused variable 'value_addr' [-Wunused-variable]
+   unsigned int value_addr =input>>13;
+                ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+make: *** [src/helloworld.o] Error 1
+16:35:37 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:89:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s7 = value_addr;
+              ^
+../src/helloworld.c:91:14: error: 'Peso' undeclared (first use in this function)
+   char *s9 = Peso Hamming:;
+              ^
+../src/helloworld.c:91:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:91:19: error: expected ',' or ';' before 'Hamming'
+   char *s9 = Peso Hamming:;
+                   ^
+../src/helloworld.c:83:16: warning: unused variable 'value_hamm' [-Wunused-variable]
+   unsigned int value_hamm=input&0x0C;
+                ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+make: *** [src/helloworld.o] Error 1
+16:35:50 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:89:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s7 = value_addr;
+              ^
+../src/helloworld.c:91:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s9 = value_hamm;
+              ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Projecto.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Projecto_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Projecto.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Projecto.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Projecto.elf  |tee "Projecto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5664	    292	   3188	   9144	   23b8	Projecto.elf
+'Finished building: Projecto.elf.size'
+' '
+16:35:55 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+16:36:04 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+16:36:57 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+16:37:09 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+16:37:17 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+16:38:57 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:89:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s7 = value_addr;
+              ^
+../src/helloworld.c:91:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s9 = value_hamm;
+              ^
+../src/helloworld.c:70:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Projecto.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Projecto_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Projecto.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Projecto.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Projecto.elf  |tee "Projecto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6012	    292	   3192	   9496	   2518	Projecto.elf
+'Finished building: Projecto.elf.size'
+' '
+16:48:46 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:96:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s7 = value_addr;
+              ^
+../src/helloworld.c:98:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s9 = value_hamm;
+              ^
+../src/helloworld.c:71:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c: In function 'putnumVGA':
+../src/helloworld.c:181:3: warning: implicit declaration of function 'putcharVGA' [-Wimplicit-function-declaration]
+   putcharVGA('0');
+   ^
+../src/helloworld.c:193:16: warning: passing argument 1 of 'print_2vga' makes pointer from integer without a cast [-Wint-conversion]
+     print_2vga(48 + digit,b);
+                ^
+../src/helloworld.c:167:6: note: expected 'char *' but argument is of type 'int'
+ void print_2vga(char *s1, unsigned int b){
+      ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:91:4: warning: 's' is used uninitialized in this function [-Wuninitialized]
+   s[2] = (char)((input%10)+0x30);
+    ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Projecto.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Projecto_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Projecto.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `putnumVGA':
+C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\Projecto\Debug/../src/helloworld.c:181: undefined reference to `putcharVGA'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Projecto.elf] Error 1
+16:51:16 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:96:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s7 = value_addr;
+              ^
+../src/helloworld.c:98:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s9 = value_hamm;
+              ^
+../src/helloworld.c:71:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c: In function 'putnumVGA':
+../src/helloworld.c:181:14: warning: passing argument 1 of 'print_2vga' makes pointer from integer without a cast [-Wint-conversion]
+   print_2vga('0');
+              ^
+../src/helloworld.c:167:6: note: expected 'char *' but argument is of type 'int'
+ void print_2vga(char *s1, unsigned int b){
+      ^
+../src/helloworld.c:181:3: error: too few arguments to function 'print_2vga'
+   print_2vga('0');
+   ^
+../src/helloworld.c:167:6: note: declared here
+ void print_2vga(char *s1, unsigned int b){
+      ^
+../src/helloworld.c:193:16: warning: passing argument 1 of 'print_2vga' makes pointer from integer without a cast [-Wint-conversion]
+     print_2vga(48 + digit,b);
+                ^
+../src/helloworld.c:167:6: note: expected 'char *' but argument is of type 'int'
+ void print_2vga(char *s1, unsigned int b){
+      ^
+make: *** [src/helloworld.o] Error 1
+16:51:25 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:96:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s7 = value_addr;
+              ^
+../src/helloworld.c:98:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s9 = value_hamm;
+              ^
+../src/helloworld.c:71:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c: In function 'putnumVGA':
+../src/helloworld.c:181:14: warning: passing argument 1 of 'print_2vga' makes pointer from integer without a cast [-Wint-conversion]
+   print_2vga('0',b);
+              ^
+../src/helloworld.c:167:6: note: expected 'char *' but argument is of type 'int'
+ void print_2vga(char *s1, unsigned int b){
+      ^
+../src/helloworld.c:193:16: warning: passing argument 1 of 'print_2vga' makes pointer from integer without a cast [-Wint-conversion]
+     print_2vga(48 + digit,b);
+                ^
+../src/helloworld.c:167:6: note: expected 'char *' but argument is of type 'int'
+ void print_2vga(char *s1, unsigned int b){
+      ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:91:4: warning: 's' is used uninitialized in this function [-Wuninitialized]
+   s[2] = (char)((input%10)+0x30);
+    ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Projecto.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Projecto_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Projecto.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Projecto.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Projecto.elf  |tee "Projecto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6816	    292	   3188	  10296	   2838	Projecto.elf
+'Finished building: Projecto.elf.size'
+' '
+17:02:41 **** Auto Build of configuration Debug for project Projecto ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Projecto_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:3: warning: 'MB_Sleep' is deprecated [-Wdeprecated-declarations]
+   MB_Sleep(100);
+   ^
+In file included from ../src/helloworld.c:8:0:
+../../Projecto_bsp/microblaze_0/include/microblaze_sleep.h:74:6: note: declared here
+ void MB_Sleep(u32 MilliSeconds) __attribute__((__deprecated__));
+      ^
+../src/helloworld.c:92:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s7 = value_addr;
+              ^
+../src/helloworld.c:94:14: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+   char *s9 = value_hamm;
+              ^
+../src/helloworld.c:94:9: warning: unused variable 's9' [-Wunused-variable]
+   char *s9 = value_hamm;
+         ^
+../src/helloworld.c:92:9: warning: unused variable 's7' [-Wunused-variable]
+   char *s7 = value_addr;
+         ^
+../src/helloworld.c:71:16: warning: unused variable 'to_send' [-Wunused-variable]
+   unsigned int to_send;
+                ^
+../src/helloworld.c: In function 'putnumVGA':
+../src/helloworld.c:177:14: warning: passing argument 1 of 'print_2vga' makes pointer from integer without a cast [-Wint-conversion]
+   print_2vga('0',b);
+              ^
+../src/helloworld.c:163:6: note: expected 'char *' but argument is of type 'int'
+ void print_2vga(char *s1, unsigned int b){
+      ^
+../src/helloworld.c:189:16: warning: passing argument 1 of 'print_2vga' makes pointer from integer without a cast [-Wint-conversion]
+     print_2vga(48 + digit,b);
+                ^
+../src/helloworld.c:163:6: note: expected 'char *' but argument is of type 'int'
+ void print_2vga(char *s1, unsigned int b){
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Projecto.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Projecto_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -o "Projecto.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Projecto.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Projecto.elf  |tee "Projecto.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6644	    292	   3192	  10128	   2790	Projecto.elf
+'Finished building: Projecto.elf.size'
+' '
+17:02:44 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+17:07:24 **** Incremental Build of configuration Debug for project Projecto ****
+make all 
+make: Nothing to be done for `all'.
+17:07:32 **** Incremental Build of configuration Debug for project Projecto ****
 make all 
 make: Nothing to be done for `all'.

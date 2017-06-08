@@ -1,0 +1,164 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
+#include "microblaze_sleep.h"
+
+XGpio GPIO_0;
+XGpio GPIO_1;
+XGpio_Config GPIO_0_conf;
+XGpio_Config GPIO_1_conf;
+void print_2vga(char *s1,unsigned int b);
+int main()
+{
+    init_platform();
+
+        //GPIO Configuration´
+    	GPIO_0_conf.BaseAddress = XPAR_AXI_GPIO_0_BASEADDR;
+    	GPIO_0_conf.DeviceId = XPAR_GPIO_0_DEVICE_ID;
+    	GPIO_0_conf.IsDual = XPAR_GPIO_0_IS_DUAL;
+    	GPIO_0_conf.InterruptPresent = XPAR_GPIO_0_INTERRUPT_PRESENT;
+
+        GPIO_1_conf.BaseAddress = XPAR_AXI_GPIO_1_BASEADDR;
+        GPIO_1_conf.DeviceId = XPAR_GPIO_1_DEVICE_ID;
+        GPIO_1_conf.IsDual = XPAR_GPIO_1_IS_DUAL;
+        GPIO_1_conf.InterruptPresent = XPAR_GPIO_1_INTERRUPT_PRESENT;
+
+
+
+        //Initialize GPIO
+        XGpio_CfgInitialize(&GPIO_0, &GPIO_0_conf, GPIO_0_conf.BaseAddress);
+        XGpio_CfgInitialize(&GPIO_1, &GPIO_1_conf, GPIO_1_conf.BaseAddress);
+        //int array[]={0x01,0x02,0x04,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+        int array[]={0x0002,0x0001,0x0004,0x0063,0x000F,0x0060,0x0043,0x0054,0x0054,0x0043,0x0039,0x0073,0x0034,0x0037,0x0022,0x0010};
+		int num_words=10;
+		int word =0x00000000;
+
+		for (int i =0 ; i<num_words; i++ ){
+			word=word|array[i];
+			word=word|0x1000; //write enable
+			word=word|(i<<8);
+			//putnum(word);
+			//print("\n");
+			XGpio_DiscreteWrite(&GPIO_0, 1, word);
+			word=0x00000000;
+		}
+		//print("Fim for");
+
+		word =0x00002000;
+		XGpio_DiscreteWrite(&GPIO_0, 1, word);
+
+
+		word =0x00000000;
+		XGpio_DiscreteWrite(&GPIO_0, 1, word);
+		unsigned int input;
+		MB_Sleep(100);
+		for(int i=1; i<2; i++) // ler dados ordenados em hardware
+		    {
+
+				input = XGpio_DiscreteRead(&GPIO_0, 2);
+
+				//print("Lido valor : ");
+				//putnum(input);
+				//print(" \n");
+		    }
+
+		//unsigned int a,b;
+		unsigned int to_send;
+		char *s1 = "Universidade de Aveiro";
+		char *s2 = "Joao Pedro Fonseca 73779 | Miguel Ferreira 72583";
+		char *s4 = "Mestrado Integrado em Engenharia de Computadores e Telematica";
+		char *s5 = "*************Computacao Reconfiguravel 2016/2017*************";
+
+		for(unsigned int k = 0; k < 8192; k++)
+		{
+			unsigned int send = (k & 0x1FFF);
+			XGpio_DiscreteWrite(&GPIO_1, 1, send);
+		}
+
+		print_2vga(s1,305);
+		print_2vga(s2,505);
+		print_2vga(s4,605);
+		print_2vga(s5,805);
+		char *s6 = "Palavra:";
+		char *s7 = "Peso Hamming:";
+
+		print_2vga(s6,2010);
+		print_2vga(s6,2120);
+		print_2vga(s7,2510);
+		print_2vga(s7,2620);
+
+
+
+
+		/*for(unsigned int k=0; k<5000; k++){
+			a=32;
+			b= k;
+			to_send = (b<<8) | a;
+			XGpio_DiscreteWrite(&GPIO_1, 1, to_send);
+		}*/
+
+
+
+		/*
+		for(unsigned int k=0, b = 305; k<strlen(s2); k++) {
+			a = (unsigned int)s2[k];
+			to_send = (b << 8) | a;
+			XGpio_DiscreteWrite(&GPIO_1, 1, to_send);
+			b++;
+		}
+
+		for(unsigned int k=0, b = 505; k<strlen(s3); k++) {
+			a = (unsigned int)s3[k];
+			to_send = (b << 8) | a;
+			XGpio_DiscreteWrite(&GPIO_1, 1, to_send);
+			b++;
+		}
+
+		for(unsigned int k=0, b = 4005; k<strlen(s4); k++) {
+			a = (unsigned int)s4[k];
+			to_send = (b << 8) | a;
+			XGpio_DiscreteWrite(&GPIO_1, 1, to_send);
+			b++;
+		}
+
+		for(unsigned int k=0, b = 4205; k<strlen(s5); k++) {
+			a = (unsigned int)s5[k];
+			to_send = (b << 8) | a;
+			XGpio_DiscreteWrite(&GPIO_1, 1, to_send);
+			b++;
+		}
+
+		unsigned int x;
+		for(unsigned int k=0, x=605; k<15; k++) {
+			a = 0x30+ (input&0x0000003F);
+			b = 0xFF+x;
+			to_send = ((x << 8) & 0x001FFF00) | a;
+			MB_Sleep(100);
+			XGpio_DiscreteWrite(&GPIO_1, 1, to_send);
+			x = x+100;
+		}*/
+
+		/*for(unsigned int k = 0; k < 256; k++)
+		{
+			unsigned int send = (k & 0x1FFF) | (k << 13);
+			XGpio_DiscreteWrite(&GPIO_1, 1, send);
+		}*/
+
+
+    cleanup_platform();
+    return 0;
+}
+
+void print_2vga(char *s1, unsigned int b){
+	unsigned int to_send;
+	for(unsigned int k = 0; k < strlen(s1); k++, b++)
+			{
+				char a = s1[k];
+				to_send = (b & 0x1FFF) | (a << 13);
+				XGpio_DiscreteWrite(&GPIO_1, 1, to_send);
+			}
+}

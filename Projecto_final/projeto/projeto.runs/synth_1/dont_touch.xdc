@@ -72,38 +72,11 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_util_ve
 # IP: bd/design1/ip/design1_EightDispControl_0_0/design1_EightDispControl_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_EightDispControl_0_0 || ORIG_REF_NAME==design1_EightDispControl_0_0}]
 
-# IP: bd/design1/ip/design1_xlslice_6_0/design1_xlslice_6_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_6_0 || ORIG_REF_NAME==design1_xlslice_6_0}]
-
-# IP: bd/design1/ip/design1_xlslice_6_1/design1_xlslice_6_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_6_1 || ORIG_REF_NAME==design1_xlslice_6_1}]
-
-# IP: bd/design1/ip/design1_xlslice_6_2/design1_xlslice_6_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_6_2 || ORIG_REF_NAME==design1_xlslice_6_2}]
-
-# IP: bd/design1/ip/design1_xlslice_6_3/design1_xlslice_6_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_6_3 || ORIG_REF_NAME==design1_xlslice_6_3}]
-
-# IP: bd/design1/ip/design1_xlslice_6_4/design1_xlslice_6_4.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_6_4 || ORIG_REF_NAME==design1_xlslice_6_4}]
-
-# IP: bd/design1/ip/design1_xlslice_6_5/design1_xlslice_6_5.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_6_5 || ORIG_REF_NAME==design1_xlslice_6_5}]
-
-# IP: bd/design1/ip/design1_xlslice_6_6/design1_xlslice_6_6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_6_6 || ORIG_REF_NAME==design1_xlslice_6_6}]
-
-# IP: bd/design1/ip/design1_xlslice_6_7/design1_xlslice_6_7.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_6_7 || ORIG_REF_NAME==design1_xlslice_6_7}]
-
 # IP: bd/design1/ip/design1_Convert_10_8_to_8_10_FSM_0_0/design1_Convert_10_8_to_8_10_FSM_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_Convert_10_8_to_8_10_FSM_0_0 || ORIG_REF_NAME==design1_Convert_10_8_to_8_10_FSM_0_0}]
 
 # IP: bd/design1/ip/design1_blk_mem_gen_0_1/design1_blk_mem_gen_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_blk_mem_gen_0_1 || ORIG_REF_NAME==design1_blk_mem_gen_0_1}]
-
-# IP: bd/design1/ip/design1_xlslice_16_0/design1_xlslice_16_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_16_0 || ORIG_REF_NAME==design1_xlslice_16_0}]
 
 # IP: bd/design1/ip/design1_Hamming_weight_0_0/design1_Hamming_weight_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_Hamming_weight_0_0 || ORIG_REF_NAME==design1_Hamming_weight_0_0}]
@@ -122,6 +95,21 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice
 
 # IP: bd/design1/ip/design1_xlslice_3_1/design1_xlslice_3_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_3_1 || ORIG_REF_NAME==design1_xlslice_3_1}]
+
+# IP: bd/design1/ip/design1_xlconstant_0_0/design1_xlconstant_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlconstant_0_0 || ORIG_REF_NAME==design1_xlconstant_0_0}]
+
+# IP: bd/design1/ip/design1_xlslice_4_0/design1_xlslice_4_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_4_0 || ORIG_REF_NAME==design1_xlslice_4_0}]
+
+# IP: bd/design1/ip/design1_xlslice_4_1/design1_xlslice_4_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_xlslice_4_1 || ORIG_REF_NAME==design1_xlslice_4_1}]
+
+# IP: bd/design1/ip/design1_axi_gpio_0_2/design1_axi_gpio_0_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_axi_gpio_0_2 || ORIG_REF_NAME==design1_axi_gpio_0_2}]
+
+# IP: bd/design1/ip/design1_auto_pc_0/design1_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==design1_auto_pc_0 || ORIG_REF_NAME==design1_auto_pc_0}]
 
 # XDC: bd/design1/ip/design1_microblaze_0_0/design1_microblaze_0_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design1_microblaze_0_0 || ORIG_REF_NAME==design1_microblaze_0_0}] {/U0 }]/U0 ]]
@@ -194,5 +182,15 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/design1/ip/design1_Hamming_weight_0_0/src/Nexys4_Master.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design1_Hamming_weight_0_0 || ORIG_REF_NAME==design1_Hamming_weight_0_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/design1/ip/design1_axi_gpio_0_2/design1_axi_gpio_0_2_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design1_axi_gpio_0_2 || ORIG_REF_NAME==design1_axi_gpio_0_2}] {/U0 }]/U0 ]]
+
+# XDC: bd/design1/ip/design1_axi_gpio_0_2/design1_axi_gpio_0_2_ooc.xdc
+
+# XDC: bd/design1/ip/design1_axi_gpio_0_2/design1_axi_gpio_0_2.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design1_axi_gpio_0_2 || ORIG_REF_NAME==design1_axi_gpio_0_2}] {/U0 }]/U0 ]]
+
+# XDC: bd/design1/ip/design1_auto_pc_0/design1_auto_pc_0_ooc.xdc
 
 # XDC: bd/design1/design1_ooc.xdc

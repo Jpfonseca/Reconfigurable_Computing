@@ -1,305 +1,82 @@
-22:26:38 INFO  : Registering command handlers for SDK TCF services
-22:26:39 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-22:26:41 INFO  : XSCT server has started successfully.
-22:26:41 INFO  : Successfully done setting XSCT server connection channel  
-22:26:42 INFO  : Successfully done setting SDK workspace  
-22:26:42 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-22:30:56 INFO  : Processor reset is completed for microblaze_0
-22:31:01 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
-22:31:36 INFO  : Processor reset is completed for microblaze_0
-22:32:17 INFO  : Processor reset is completed for microblaze_0
-22:41:43 INFO  : Processor reset is completed for microblaze_0
-01:01:54 INFO  : Processor reset is completed for microblaze_0
-01:02:28 INFO  : Processor reset is completed for microblaze_0
-01:03:27 INFO  : Processor reset is completed for microblaze_0
-01:04:50 INFO  : Processor reset is completed for microblaze_0
-01:05:11 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
-01:05:16 INFO  : Processor reset is completed for microblaze_0
-01:05:20 INFO  : Processor reset is completed for microblaze_0
-01:05:35 INFO  : Processor reset is completed for microblaze_0
-01:05:55 INFO  : Processor reset is completed for microblaze_0
-01:05:58 INFO  : Processor reset is completed for microblaze_0
-01:06:05 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-01:06:27 INFO  : Registering command handlers for SDK TCF services
-01:06:27 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-01:06:30 INFO  : XSCT server has started successfully.
-01:06:31 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-01:06:31 INFO  : Successfully done setting XSCT server connection channel  
-01:06:31 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-01:06:31 INFO  : Successfully done setting SDK workspace  
-01:08:13 INFO  : Processor reset is completed for microblaze_0
-01:08:42 INFO  : Processor reset is completed for microblaze_0
-01:09:14 INFO  : Processor reset is completed for microblaze_0
-01:09:55 INFO  : Processor reset is completed for microblaze_0
-01:10:36 INFO  : Registering command handlers for SDK TCF services
-01:10:36 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-01:10:40 INFO  : XSCT server has started successfully.
-01:10:42 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-01:10:42 INFO  : Successfully done setting XSCT server connection channel  
-01:10:42 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-01:10:43 INFO  : Successfully done setting SDK workspace  
-01:11:12 INFO  : Time out for XMD transaction is 60000
-If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
-01:11:12 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
-01:11:12 ERROR : Disconnect target failed.
-01:11:13 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-01:21:51 INFO  : Processor reset is completed for microblaze_0
-01:22:26 INFO  : Processor reset is completed for microblaze_0
-01:23:08 INFO  : Processor reset is completed for microblaze_0
-01:25:12 INFO  : Processor reset is completed for microblaze_0
-01:26:29 INFO  : Processor reset is completed for microblaze_0
-01:26:58 INFO  : Processor reset is completed for microblaze_0
-01:27:30 INFO  : Processor reset is completed for microblaze_0
-01:27:58 INFO  : Processor reset is completed for microblaze_0
-01:29:24 INFO  : Processor reset is completed for microblaze_0
-01:29:57 INFO  : Processor reset is completed for microblaze_0
-01:30:02 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
-01:30:33 INFO  : Processor reset is completed for microblaze_0
-01:30:56 INFO  : Processor reset is completed for microblaze_0
-01:31:17 INFO  : Processor reset is completed for microblaze_0
-01:31:41 INFO  : Processor reset is completed for microblaze_0
-01:32:40 INFO  : Processor reset is completed for microblaze_0
-01:40:31 INFO  : Processor reset is completed for microblaze_0
-01:40:56 INFO  : Processor reset is completed for microblaze_0
-01:41:35 INFO  : Processor reset is completed for microblaze_0
-01:41:58 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
-10:41:58 INFO  : Processor reset is completed for microblaze_0
-10:42:38 INFO  : Processor reset is completed for microblaze_0
-10:43:31 INFO  : Processor reset is completed for microblaze_0
-10:44:05 INFO  : Processor reset is completed for microblaze_0
-10:45:00 INFO  : Processor reset is completed for microblaze_0
-10:45:28 INFO  : Processor reset is completed for microblaze_0
-10:45:39 INFO  : Processor reset is completed for microblaze_0
-10:46:09 INFO  : Processor reset is completed for microblaze_0
-10:46:26 INFO  : Processor reset is completed for microblaze_0
-11:52:26 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
-11:52:28 INFO  : Processor reset is completed for microblaze_0
-11:52:42 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
-11:52:45 INFO  : Processor reset is completed for microblaze_0
-11:53:14 INFO  : Processor reset is completed for microblaze_0
-11:53:35 INFO  : Processor reset is completed for microblaze_0
-14:33:35 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-14:35:03 INFO  : Registering command handlers for SDK TCF services
-14:35:03 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-14:35:07 INFO  : XSCT server has started successfully.
-14:35:07 INFO  : Successfully done setting XSCT server connection channel  
-14:35:10 INFO  : Successfully done setting SDK workspace  
-14:35:10 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-14:35:10 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-14:35:10 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1495978252396,  Project:1495919821715
-14:35:10 INFO  : The hardware specification for project 'design1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-14:35:10 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf into \design1_wrapper_hw_platform_0\system.hdf.
-14:35:11 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
-14:35:19 INFO  : 
-14:35:21 INFO  : Updating hardware inferred compiler options for projeto.
-14:35:21 INFO  : Clearing existing target manager status.
-14:36:04 INFO  : Processor reset is completed for microblaze_0
-14:36:54 INFO  : Processor reset is completed for microblaze_0
-14:38:00 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
-14:38:24 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-14:38:39 INFO  : Registering command handlers for SDK TCF services
-14:38:40 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-14:38:43 INFO  : XSCT server has started successfully.
-14:38:44 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-14:38:44 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-14:38:44 INFO  : Successfully done setting XSCT server connection channel  
-14:38:44 INFO  : Successfully done setting SDK workspace  
-14:39:40 INFO  : Processor reset is completed for microblaze_0
-14:40:17 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
-15:05:10 INFO  : Processor reset is completed for microblaze_0
-15:06:15 INFO  : Processor reset is completed for microblaze_0
-15:06:31 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
-15:07:18 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-15:07:47 INFO  : Registering command handlers for SDK TCF services
-15:07:47 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-15:07:51 INFO  : XSCT server has started successfully.
-15:07:54 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-15:07:54 INFO  : Successfully done setting XSCT server connection channel  
-15:07:54 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-15:07:54 INFO  : Successfully done setting SDK workspace  
-15:07:55 INFO  : Processor reset is completed for microblaze_0
-15:09:02 INFO  : Processor reset is completed for microblaze_0
-15:09:37 INFO  : Processor reset is completed for microblaze_0
-15:10:05 INFO  : Processor reset is completed for microblaze_0
-15:11:36 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
-15:11:54 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-15:12:09 INFO  : Registering command handlers for SDK TCF services
-15:12:10 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-15:12:15 INFO  : XSCT server has started successfully.
-15:12:16 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-15:12:16 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-15:12:16 INFO  : Successfully done setting XSCT server connection channel  
-15:12:16 INFO  : Successfully done setting SDK workspace  
-15:12:35 INFO  : Processor reset is completed for microblaze_0
-15:12:48 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
-16:06:21 INFO  : Processor reset is completed for microblaze_0
-16:14:21 INFO  : Processor reset is completed for microblaze_0
-16:20:53 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-16:51:21 INFO  : Registering command handlers for SDK TCF services
-16:51:21 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-16:51:29 INFO  : XSCT server has started successfully.
-16:51:32 INFO  : Successfully done setting XSCT server connection channel  
-16:51:32 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-16:51:32 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-16:51:32 INFO  : Successfully done setting SDK workspace  
-16:51:32 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1495986605984,  Project:1495978252396
-16:51:32 INFO  : The hardware specification for project 'design1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-16:51:33 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf into \design1_wrapper_hw_platform_0\system.hdf.
-16:51:33 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
-16:51:44 INFO  : 
-16:51:45 INFO  : Updating hardware inferred compiler options for projeto.
-16:51:46 INFO  : Clearing existing target manager status.
-16:54:08 INFO  : Processor reset is completed for microblaze_0
-16:55:44 INFO  : Processor reset is completed for microblaze_0
-16:56:24 INFO  : Processor reset is completed for microblaze_0
-16:56:57 INFO  : Processor reset is completed for microblaze_0
-17:01:03 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
-17:18:01 INFO  : Processor reset is completed for microblaze_0
-17:30:58 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-17:36:48 INFO  : Registering command handlers for SDK TCF services
-17:36:49 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-17:36:54 INFO  : XSCT server has started successfully.
-17:36:58 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-17:36:58 INFO  : Successfully done setting XSCT server connection channel  
-17:36:58 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-17:36:59 INFO  : Successfully done setting SDK workspace  
-17:37:00 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1495988968238,  Project:1495986605984
-17:37:00 INFO  : The hardware specification for project 'design1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-17:37:00 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf into \design1_wrapper_hw_platform_0\system.hdf.
-17:37:00 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
-17:37:11 INFO  : 
-17:37:13 INFO  : Updating hardware inferred compiler options for projeto.
-17:37:13 INFO  : Clearing existing target manager status.
-17:39:31 INFO  : Processor reset is completed for microblaze_0
-17:40:06 INFO  : Processor reset is completed for microblaze_0
-17:41:21 INFO  : Processor reset is completed for microblaze_0
-17:41:31 INFO  : Processor reset is completed for microblaze_0
-18:03:15 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
-18:27:14 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-18:28:05 INFO  : Registering command handlers for SDK TCF services
-18:28:06 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-18:28:17 INFO  : XSCT server has started successfully.
-18:28:21 INFO  : Successfully done setting XSCT server connection channel  
-18:28:21 INFO  : Successfully done setting SDK workspace  
-18:28:21 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-18:28:21 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-18:28:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1495991980874,  Project:1495988968238
-18:28:21 INFO  : The hardware specification for project 'design1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-18:28:21 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf into \design1_wrapper_hw_platform_0\system.hdf.
-18:28:21 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
-18:28:33 INFO  : 
-18:28:34 INFO  : Updating hardware inferred compiler options for projeto.
-18:28:34 INFO  : Clearing existing target manager status.
-18:32:00 INFO  : Processor reset is completed for microblaze_0
-18:32:38 INFO  : Processor reset is completed for microblaze_0
-18:33:00 INFO  : Processor reset is completed for microblaze_0
-18:33:19 INFO  : Processor reset is completed for microblaze_0
-18:33:41 INFO  : Processor reset is completed for microblaze_0
-18:37:58 INFO  : Processor reset is completed for microblaze_0
-18:41:23 INFO  : Processor reset is completed for microblaze_0
-18:42:48 INFO  : Processor reset is completed for microblaze_0
-19:17:47 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
-19:20:53 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-01:54:16 INFO  : Registering command handlers for SDK TCF services
-01:54:16 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-01:54:26 INFO  : XSCT server has started successfully.
-01:54:26 INFO  : Successfully done setting XSCT server connection channel  
-01:54:30 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-01:54:30 INFO  : Successfully done setting SDK workspace  
-01:54:30 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-01:54:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1496017926377,  Project:1495991980874
-01:54:31 INFO  : The hardware specification for project 'design1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-01:54:31 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf into \design1_wrapper_hw_platform_0\system.hdf.
-01:54:31 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
-01:54:41 INFO  : 
-01:54:42 INFO  : Updating hardware inferred compiler options for projeto.
-01:54:42 INFO  : Clearing existing target manager status.
-01:56:39 INFO  : Processor reset is completed for microblaze_0
-03:20:24 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
-10:37:30 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-13:10:53 INFO  : Registering command handlers for SDK TCF services
-13:10:54 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-13:11:06 INFO  : XSCT server has started successfully.
-13:11:07 INFO  : Successfully done setting XSCT server connection channel  
-13:11:11 INFO  : Successfully done setting SDK workspace  
-13:11:11 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-13:11:12 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-13:11:12 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1496059709228,  Project:1496017926377
-13:11:12 INFO  : The hardware specification for project 'design1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-13:11:12 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf into \design1_wrapper_hw_platform_0\system.hdf.
-13:11:46 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
-13:12:01 INFO  : 
-13:12:03 INFO  : Updating hardware inferred compiler options for projeto.
-13:12:03 INFO  : Clearing existing target manager status.
-13:12:24 INFO  : Processor reset is completed for microblaze_0
-13:23:55 INFO  : Processor reset is completed for microblaze_0
-13:37:21 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
-13:59:04 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-14:21:47 INFO  : Registering command handlers for SDK TCF services
-14:21:50 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-14:22:14 INFO  : XSCT server has started successfully.
-14:22:15 INFO  : Successfully done setting XSCT server connection channel  
-14:22:23 INFO  : Successfully done setting SDK workspace  
-14:22:23 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-14:22:23 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-14:22:23 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1496150369024,  Project:1496059709228
-14:22:23 INFO  : The hardware specification for project 'design1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-14:22:24 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf into \design1_wrapper_hw_platform_0\system.hdf.
-14:22:24 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
-14:23:04 INFO  : 
-14:23:07 INFO  : Updating hardware inferred compiler options for projeto.
-14:23:07 INFO  : Clearing existing target manager status.
-14:25:16 INFO  : Processor reset is completed for microblaze_0
-14:27:29 INFO  : Processor reset is completed for microblaze_0
-14:28:00 INFO  : Processor reset is completed for microblaze_0
-14:28:16 INFO  : Processor reset is completed for microblaze_0
-14:28:46 INFO  : Processor reset is completed for microblaze_0
-14:28:53 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-14:29:46 INFO  : Registering command handlers for SDK TCF services
-14:29:46 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-14:29:49 INFO  : XSCT server has started successfully.
-14:29:49 INFO  : Successfully done setting XSCT server connection channel  
-14:29:49 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-14:29:49 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-14:29:50 INFO  : Successfully done setting SDK workspace  
-14:33:03 INFO  : Processor reset is completed for microblaze_0
-14:33:31 INFO  : Processor reset is completed for microblaze_0
-14:33:42 INFO  : Processor reset is completed for microblaze_0
-14:34:01 INFO  : Processor reset is completed for microblaze_0
-14:34:09 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
-14:34:15 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
-14:34:27 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-14:43:00 INFO  : Registering command handlers for SDK TCF services
-14:43:01 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-14:43:06 INFO  : XSCT server has started successfully.
-14:43:06 INFO  : Successfully done setting XSCT server connection channel  
-14:43:13 INFO  : Successfully done setting SDK workspace  
-14:43:14 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-14:43:14 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-14:47:10 INFO  : Processor reset is completed for microblaze_0
-14:47:32 INFO  : Processor reset is completed for microblaze_0
-14:51:10 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-15:15:18 INFO  : Registering command handlers for SDK TCF services
-15:15:18 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-15:15:22 INFO  : XSCT server has started successfully.
-15:15:22 INFO  : Successfully done setting XSCT server connection channel  
-15:15:22 INFO  : Successfully done setting SDK workspace  
-15:15:22 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-15:15:22 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-15:15:22 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1496153509818,  Project:1496150369024
-15:15:22 INFO  : The hardware specification for project 'design1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-15:15:23 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf into \design1_wrapper_hw_platform_0\system.hdf.
-15:15:23 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
-15:15:31 INFO  : 
-15:15:33 INFO  : Updating hardware inferred compiler options for projeto.
-15:15:33 INFO  : Clearing existing target manager status.
-15:17:42 INFO  : Processor reset is completed for microblaze_0
-15:19:42 INFO  : Processor reset is completed for microblaze_0
-15:22:16 INFO  : Processor reset is completed for microblaze_0
-15:22:59 INFO  : Processor reset is completed for microblaze_0
-15:23:23 INFO  : Processor reset is completed for microblaze_0
-15:23:23 ERROR : Unexpected error while launching program.
-java.lang.RuntimeException: Cannot perform the Debug Command, Current Processor State is "Running"
+14:36:09 INFO  : Registering command handlers for SDK TCF services
+14:36:10 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
+14:36:12 INFO  : XSCT server has started successfully.
+14:36:12 INFO  : Successfully done setting XSCT server connection channel  
+14:36:13 INFO  : Successfully done setting SDK workspace  
+14:36:13 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
+14:37:27 INFO  : Processor reset is completed for microblaze_0
+14:43:46 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:43:54 INFO  : Processor reset is completed for microblaze_0
+14:46:13 INFO  : Processor reset is completed for microblaze_0
+14:46:52 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:47:01 INFO  : Processor reset is completed for microblaze_0
+14:47:26 INFO  : Processor reset is completed for microblaze_0
+14:48:48 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:49:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:49:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274664038A" && level==0} -index 0' command is executed.
+14:49:31 INFO  : FPGA configured successfully with bitstream "C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper_hw_platform_0/download.bit"
+14:49:39 INFO  : Processor reset is completed for microblaze_0
+14:49:55 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:50:04 INFO  : Processor reset is completed for microblaze_0
+14:50:09 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:56:46 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:56:52 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:57:00 INFO  : Processor reset is completed for microblaze_0
+14:57:08 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:57:14 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:57:20 INFO  : Processor reset is completed for microblaze_0
+15:01:05 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:17:45 INFO  : Registering command handlers for SDK TCF services
+15:17:46 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
+15:17:51 INFO  : XSCT server has started successfully.
+15:17:51 INFO  : Successfully done setting XSCT server connection channel  
+15:17:56 INFO  : Successfully done setting SDK workspace  
+15:17:56 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
+15:17:56 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
+15:17:56 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1496844771872,  Project:1496835000307
+15:17:56 INFO  : The hardware specification for project 'design1_wrapper_hw_platform_0' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
+15:18:00 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf into \design1_wrapper_hw_platform_0\system.hdf.
+15:18:01 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:18:12 INFO  : 
+15:18:13 INFO  : Processor reset is completed for microblaze_0
+15:18:13 INFO  : Updating hardware inferred compiler options for Projecto.
+15:18:13 INFO  : Clearing existing target manager status.
+15:22:28 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: The program file specified in the launch configuration does not exist
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:580)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:22:39 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: The program file specified in the launch configuration does not exist
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:580)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:23:37 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: The program file specified in the launch configuration does not exist
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:580)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:24:19 INFO  : Processor reset is completed for microblaze_0
+15:24:20 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Debug Operation Not Supported on the Target, Current Processor State is not "Stopped"
+MicroBlaze Pipeline Stalled on a Blocking Instruction or Invalid Bus Access
+    Stalled PC: 0x00001030
+    Try Resetting the Processor to Continue..
 
 	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
 	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
@@ -311,93 +88,24 @@ java.lang.RuntimeException: Cannot perform the Debug Command, Current Processor 
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-15:23:29 INFO  : Time out for XMD transaction is 60000
-If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
-15:23:29 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
-15:23:29 ERROR : Disconnect target failed.
-15:24:10 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-15:25:09 INFO  : Registering command handlers for SDK TCF services
-15:25:09 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-15:25:13 INFO  : XSCT server has started successfully.
-15:25:14 INFO  : Successfully done setting XSCT server connection channel  
-15:25:14 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-15:25:14 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
-15:25:14 INFO  : Successfully done setting SDK workspace  
-16:00:19 INFO  : Processor reset is completed for microblaze_0
-16:24:06 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
-16:26:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1496157373308,  Project:1496153509818
-16:26:02 INFO  : Project design1_wrapper_hw_platform_0's source hardware specification located at C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf is now different from the local copy.
-		 The local copy will be replaced with the source specification and your workspace will be updated.
-16:28:23 INFO  : Project design1_wrapper_hw_platform_0's source hardware specification location will not be monitored anymore.
-16:28:31 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-16:29:24 INFO  : Registering command handlers for SDK TCF services
-16:29:24 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-16:29:30 INFO  : XSCT server has started successfully.
-16:29:30 INFO  : Successfully done setting XSCT server connection channel  
-16:29:52 INFO  : Successfully done setting SDK workspace  
-16:29:52 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-16:29:54 INFO  : Processor reset is completed for microblaze_0
-16:31:44 INFO  : Processor reset is completed for microblaze_0
-16:41:09 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
-19:41:36 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-20:01:27 INFO  : Registering command handlers for SDK TCF services
-20:01:28 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-20:01:34 INFO  : XSCT server has started successfully.
-20:01:34 INFO  : Successfully done setting XSCT server connection channel  
-20:01:46 INFO  : Successfully done setting SDK workspace  
-20:01:46 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-20:01:46 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_1.
-20:01:46 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1496170273260,  Project:1496157373308
-20:01:46 INFO  : The hardware specification for project 'design1_wrapper_hw_platform_1' is different from C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-20:01:46 INFO  : Copied contents of C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf into \design1_wrapper_hw_platform_1\system.hdf.
-20:01:47 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
-20:01:47 INFO  : Clearing existing target manager status.
-20:01:47 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
-20:01:47 WARN  : Linker script will not be updated automatically. Users need to update it manually.
-20:01:48 INFO  : Processor reset is completed for microblaze_0
-20:01:48 ERROR : Unexpected error while launching program.
-java.lang.IllegalStateException: Cannot connect to processor before Hardware Platform has been specified
-	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:432)
-	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:618)
-	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
-	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-20:01:57 INFO  : Processor reset is completed for microblaze_0
-20:02:22 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-20:03:20 INFO  : Registering command handlers for SDK TCF services
-20:03:20 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-20:03:23 INFO  : XSCT server has started successfully.
-20:03:24 INFO  : Successfully done setting XSCT server connection channel  
-20:03:24 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-20:03:24 INFO  : Successfully done setting SDK workspace  
-20:03:24 ERROR : Error occurred while creating hardware platform design1_wrapper_hw_platform_0 from sysdef
-org.eclipse.core.internal.resources.ResourceException: Resource '/design1_wrapper_hw_platform_0/system.hdf' already exists.
-	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:313)
-	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:300)
-	at org.eclipse.core.internal.resources.File.create(File.java:106)
-	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:103)
-	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
-	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
-	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
-	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
-	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
-	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
-	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-20:03:24 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf
-20:03:31 INFO  : Processor reset is completed for microblaze_0
-20:04:47 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
-20:05:49 INFO  : Time out for XMD transaction is 60000
-If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
-20:05:49 ERROR : Timeout occured while waiting to get reply for command "xreset 0 0x80"
-20:05:49 ERROR : Unexpected error while launching program.
-java.lang.RuntimeException: 
-	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1011)
-	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:455)
+15:24:48 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:25:12 INFO  : Registering command handlers for SDK TCF services
+15:25:13 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
+15:25:16 INFO  : XSCT server has started successfully.
+15:25:17 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
+15:25:17 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
+15:25:17 INFO  : Successfully done setting XSCT server connection channel  
+15:25:18 INFO  : Successfully done setting SDK workspace  
+15:25:33 INFO  : Processor reset is completed for microblaze_0
+15:28:07 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:28:21 INFO  : Processor reset is completed for microblaze_0
+16:12:38 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:12:47 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
 	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
 	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
 	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
@@ -406,59 +114,33 @@ java.lang.RuntimeException:
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-20:08:39 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
-20:19:54 INFO  : Registering command handlers for SDK TCF services
-20:19:54 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
-20:19:58 INFO  : XSCT server has started successfully.
-20:19:59 INFO  : Successfully done setting XSCT server connection channel  
-20:19:59 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
-20:19:59 INFO  : Successfully done setting SDK workspace  
-20:20:00 ERROR : Error occurred while creating hardware platform design1_wrapper_hw_platform_1 from sysdef
-org.eclipse.core.internal.resources.ResourceException: Resource '/design1_wrapper_hw_platform_1/system.hdf' already exists.
-	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:313)
-	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:300)
-	at org.eclipse.core.internal.resources.File.create(File.java:106)
-	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:103)
-	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
-	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
-	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
-	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
-	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
-	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
-	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-20:20:00 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf
-20:20:21 INFO  : Processor reset is completed for microblaze_0
-20:21:30 INFO  : Processor reset is completed for microblaze_0
-20:21:30 ERROR : Unexpected error while launching program.
-java.lang.RuntimeException: Cannot perform the Debug Command, Current Processor State is "Running"
-
-	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
-	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
-	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
-	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
-	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
-	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
-	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-20:22:12 INFO  : Time out for XMD transaction is 60000
-If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
-20:22:12 ERROR : Timeout occured while waiting to get reply for command "xdisconnect 0"
-20:22:12 ERROR : Disconnect target failed.
-20:22:18 INFO  : Processor reset is completed for microblaze_0
-20:24:32 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
-11:43:21 ERROR : Unexpected error while fetching XMD's response: 
-java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:209)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
-	at java.io.InputStreamReader.read(InputStreamReader.java:184)
-	at java.io.BufferedReader.fill(BufferedReader.java:161)
-	at java.io.BufferedReader.read(BufferedReader.java:182)
-	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess$CommandResultsReader.run(XMDJSONProcess.java:332)
-	at java.lang.Thread.run(Thread.java:745)
-11:43:21 ERROR : Zero sized response read from XMD. This indicates a communication error or a programming error.
+16:13:17 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:13:43 INFO  : Registering command handlers for SDK TCF services
+16:13:43 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
+16:13:47 INFO  : XSCT server has started successfully.
+16:13:47 INFO  : Successfully done setting XSCT server connection channel  
+16:13:48 INFO  : Successfully done setting SDK workspace  
+16:13:48 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
+16:13:48 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
+16:14:55 INFO  : Processor reset is completed for microblaze_0
+16:17:26 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:17:33 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:17:40 INFO  : Processor reset is completed for microblaze_0
+16:35:56 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:36:05 INFO  : Processor reset is completed for microblaze_0
+16:36:57 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:37:10 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:37:17 INFO  : Processor reset is completed for microblaze_0
+16:37:25 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:37:58 INFO  : Registering command handlers for SDK TCF services
+16:37:58 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Joao\Desktop\cr\Git\Reconfigurable_Computing\Projecto_final\projeto\projeto.sdk\temp_xsdb_launch_script.tcl
+16:38:01 INFO  : XSCT server has started successfully.
+16:38:02 INFO  : Processing command line option -hwspec C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.sdk/design1_wrapper.hdf.
+16:38:02 INFO  : Successfully done setting XSCT server connection channel  
+16:38:02 INFO  : Checking for hwspec changes in the project design1_wrapper_hw_platform_0.
+16:38:02 INFO  : Successfully done setting SDK workspace  
+17:02:54 INFO  : Processor reset is completed for microblaze_0
+17:07:25 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:07:33 INFO  : Processor reset is completed for microblaze_0
+17:27:00 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+19:12:22 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

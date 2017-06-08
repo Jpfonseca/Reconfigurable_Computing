@@ -1413,7 +1413,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>78c444dd</spirit:value>
+            <spirit:value>ed0e418f</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1431,7 +1431,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jun 07 02:22:45 UTC 2017</spirit:value>
+            <spirit:value>Wed Jun 07 11:19:40 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -1443,7 +1443,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>78c444dd</spirit:value>
+            <spirit:value>ed0e418f</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1462,7 +1462,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jun 07 02:22:45 UTC 2017</spirit:value>
+            <spirit:value>Wed Jun 07 11:19:40 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -1474,7 +1474,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>78c444dd</spirit:value>
+            <spirit:value>ed0e418f</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1505,7 +1505,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>7bcfec96</spirit:value>
+            <spirit:value>14901547</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1524,7 +1524,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jun 07 02:22:45 UTC 2017</spirit:value>
+            <spirit:value>Wed Jun 07 11:19:40 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -1536,7 +1536,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>7bcfec96</spirit:value>
+            <spirit:value>14901547</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -3140,7 +3140,7 @@
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_MASK</spirit:name>
         <spirit:displayName>SLMB Address Decode Mask</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MASK" spirit:bitStringLength="64">0x0000000000000000</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MASK" spirit:bitStringLength="64">0x0000000040000000</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="std_logic_vector">
         <spirit:name>C_MASK1</spirit:name>
@@ -3428,7 +3428,7 @@
     <spirit:parameter>
       <spirit:name>C_MASK</spirit:name>
       <spirit:displayName>SLMB Address Decode Mask</spirit:displayName>
-      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_MASK" spirit:order="1300" spirit:configGroups="1 Addresses" spirit:bitStringLength="64">0x0000000000000000</spirit:value>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_MASK" spirit:order="1300" spirit:configGroups="1 Addresses" spirit:bitStringLength="64">0x0000000040000000</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>

@@ -49,6 +49,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.cache/wt [current_project]
@@ -91,6 +92,10 @@ set rc [catch {
   set_property processing_order EARLY [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_Convert_10_8_to_8_10_FSM_0_0/src/Nexys4_Master.xdc]
   read_xdc -ref design1_Hamming_weight_0_0 -cells U0 c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_Hamming_weight_0_0/src/Nexys4_Master.xdc
   set_property processing_order EARLY [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_Hamming_weight_0_0/src/Nexys4_Master.xdc]
+  read_xdc -prop_thru_buffers -ref design1_axi_gpio_0_2 -cells U0 c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_axi_gpio_0_2/design1_axi_gpio_0_2_board.xdc
+  set_property processing_order EARLY [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_axi_gpio_0_2/design1_axi_gpio_0_2_board.xdc]
+  read_xdc -ref design1_axi_gpio_0_2 -cells U0 c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_axi_gpio_0_2/design1_axi_gpio_0_2.xdc
+  set_property processing_order EARLY [get_files c:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/projeto/projeto.srcs/sources_1/bd/design1/ip/design1_axi_gpio_0_2/design1_axi_gpio_0_2.xdc]
   read_xdc C:/Users/Joao/Desktop/cr/Git/Reconfigurable_Computing/Projecto_final/Nexys4_Master.xdc
   link_design -top design1_wrapper -part xc7a100tcsg324-1
   write_hwdef -file design1_wrapper.hwdef

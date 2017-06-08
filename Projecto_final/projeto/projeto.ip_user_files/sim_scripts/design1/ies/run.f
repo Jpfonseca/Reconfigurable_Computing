@@ -112,24 +112,11 @@
   "../../../bd/design1/ipshared/1eec/segment_decoder.vhd" \
   "../../../bd/design1/ipshared/1eec/disp.vhd" \
   "../../../bd/design1/ip/design1_EightDispControl_0_0/sim/design1_EightDispControl_0_0.vhd" \
--endlib
--makelib ies/xil_defaultlib \
-  "../../../bd/design1/ip/design1_xlslice_6_0/sim/design1_xlslice_6_0.v" \
-  "../../../bd/design1/ip/design1_xlslice_6_1/sim/design1_xlslice_6_1.v" \
-  "../../../bd/design1/ip/design1_xlslice_6_2/sim/design1_xlslice_6_2.v" \
-  "../../../bd/design1/ip/design1_xlslice_6_3/sim/design1_xlslice_6_3.v" \
-  "../../../bd/design1/ip/design1_xlslice_6_4/sim/design1_xlslice_6_4.v" \
-  "../../../bd/design1/ip/design1_xlslice_6_5/sim/design1_xlslice_6_5.v" \
-  "../../../bd/design1/ip/design1_xlslice_6_6/sim/design1_xlslice_6_6.v" \
-  "../../../bd/design1/ip/design1_xlslice_6_7/sim/design1_xlslice_6_7.v" \
--endlib
--makelib ies/xil_defaultlib \
   "../../../bd/design1/ipshared/67e3/src/Control_1.vhd" \
   "../../../bd/design1/ip/design1_Convert_10_8_to_8_10_FSM_0_0/sim/design1_Convert_10_8_to_8_10_FSM_0_0.vhd" \
 -endlib
 -makelib ies/xil_defaultlib \
   "../../../bd/design1/ip/design1_blk_mem_gen_0_1/sim/design1_blk_mem_gen_0_1.v" \
-  "../../../bd/design1/ip/design1_xlslice_16_0/sim/design1_xlslice_16_0.v" \
 -endlib
 -makelib ies/xil_defaultlib \
   "../../../bd/design1/ipshared/2160/project_1.srcs/sources_1/new/Hamming_weight.vhd" \
@@ -150,7 +137,10 @@
   "../../../bd/design1/ip/design1_xlslice_1_3/sim/design1_xlslice_1_3.v" \
   "../../../bd/design1/ip/design1_xlslice_1_4/sim/design1_xlslice_1_4.v" \
   "../../../bd/design1/ip/design1_xlslice_3_1/sim/design1_xlslice_3_1.v" \
-  "../../../bd/design1/hdl/design1.v" \
+  "../../../bd/design1/ipshared/e147/xlconstant.v" \
+  "../../../bd/design1/ip/design1_xlconstant_0_0/sim/design1_xlconstant_0_0.v" \
+  "../../../bd/design1/ip/design1_xlslice_4_0/sim/design1_xlslice_4_0.v" \
+  "../../../bd/design1/ip/design1_xlslice_4_1/sim/design1_xlslice_4_1.v" \
 -endlib
 -makelib ies/xil_defaultlib \
   glbl.v

@@ -14,98 +14,89 @@ preplace portBus vgaRed -pg 1 -y 1050 -defaultsOSRD
 preplace portBus vgaGreen -pg 1 -y 1070 -defaultsOSRD
 preplace inst EightDispControl_0 -pg 1 -lvl 13 -y 340 -defaultsOSRD
 preplace inst xlslice_0 -pg 1 -lvl 7 -y 830 -defaultsOSRD
-preplace inst xlslice_1 -pg 1 -lvl 11 -y 890 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 12 -y 170 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 11 -y 900 -defaultsOSRD
 preplace inst xlslice_2 -pg 1 -lvl 12 -y 1110 -defaultsOSRD
 preplace inst xlslice_3 -pg 1 -lvl 12 -y 1010 -defaultsOSRD
 preplace inst VGA_for_block_0 -pg 1 -lvl 13 -y 1050 -defaultsOSRD
 preplace inst RAM_enable -pg 1 -lvl 8 -y 570 -defaultsOSRD
 preplace inst Ram_Address -pg 1 -lvl 8 -y 310 -defaultsOSRD
 preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 810 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 12 -y 470 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 13 -y 880 -defaultsOSRD
 preplace inst Convert_10_8_to_8_10_FSM_0 -pg 1 -lvl 11 -y 600 -defaultsOSRD
-preplace inst xlslice_10 -pg 1 -lvl 12 -y 360 -defaultsOSRD
 preplace inst util_vector_logic_0 -pg 1 -lvl 9 -y 490 -defaultsOSRD
 preplace inst Ram_Data -pg 1 -lvl 8 -y 390 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 6 -y 840 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 6 -y 850 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 6 -y 1080 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 12 -y 390 -defaultsOSRD
 preplace inst Hamming_weight_0 -pg 1 -lvl 12 -y 870 -defaultsOSRD
-preplace inst xlslice_11 -pg 1 -lvl 12 -y 440 -defaultsOSRD
 preplace inst Unroll_enable -pg 1 -lvl 8 -y 490 -defaultsOSRD
-preplace inst ClockDivider_0 -pg 1 -lvl 11 -y 800 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 11 -y 410 -defaultsOSRD
-preplace inst blk_mem_gen_1 -pg 1 -lvl 13 -y 710 -defaultsOSRD
-preplace inst xlslice_12 -pg 1 -lvl 12 -y 520 -defaultsOSRD
-preplace inst xlslice_6 -pg 1 -lvl 12 -y 40 -defaultsOSRD
+preplace inst ClockDivider_0 -pg 1 -lvl 11 -y 780 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 11 -y 360 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 13 -y 690 -defaultsOSRD
 preplace inst mdm_1 -pg 1 -lvl 3 -y 1020 -defaultsOSRD
-preplace inst xlslice_13 -pg 1 -lvl 12 -y 600 -defaultsOSRD
-preplace inst xlslice_7 -pg 1 -lvl 12 -y 120 -defaultsOSRD
-preplace inst xlslice_8 -pg 1 -lvl 12 -y 200 -defaultsOSRD
 preplace inst microblaze_0 -pg 1 -lvl 4 -y 1030 -defaultsOSRD
-preplace inst xlslice_9 -pg 1 -lvl 12 -y 280 -defaultsOSRD
 preplace inst Unroll_ROM_last_0 -pg 1 -lvl 10 -y 470 -defaultsOSRD
 preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 980 -defaultsOSRD
-preplace inst xlslice_16 -pg 1 -lvl 11 -y 710 -defaultsOSRD
 preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 910 -defaultsOSRD
-preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 1050 -defaultsOSRD
-preplace netloc xlslice_1_Dout1 1 11 1 3000
-preplace netloc Hamming_weight_0_final_addr 1 12 2 3280J 940 NJ
-preplace netloc Convert_10_8_to_8_10_FSM_0_write_address 1 11 2 2990 650 NJ
-preplace netloc Unroll_ROM_last_0_data_out 1 10 1 2690
-preplace netloc microblaze_0_mdm_axi 1 2 4 550 660 NJ 660 NJ 660 1580
-preplace netloc Convert_10_8_to_8_10_FSM_0_ready 1 11 2 3020 710 NJ
-preplace netloc xlslice_9_Dout 1 12 1 3280J
-preplace netloc xlslice_12_Dout 1 12 1 3290J
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 1120 -defaultsOSRD
+preplace netloc Unroll_ROM_last_0_data_out 1 10 1 2880
+preplace netloc xlslice_1_Dout1 1 11 1 3190
+preplace netloc Hamming_weight_0_final_addr 1 12 2 3470J 940 NJ
+preplace netloc Convert_10_8_to_8_10_FSM_0_write_address 1 11 2 NJ 600 3520J
+preplace netloc microblaze_0_mdm_axi 1 2 4 420 950 NJ 950 1210J 1030 1480
+preplace netloc Convert_10_8_to_8_10_FSM_0_ready 1 11 2 3220 580 3510J
 preplace netloc EightDispControl_0_segments 1 13 1 NJ
 preplace netloc xlslice_4_Dout 1 8 1 NJ
-preplace netloc xlslice_1_Dout 1 8 3 NJ 310 NJ 310 2730J
-preplace netloc xlslice_3_Dout 1 8 3 NJ 570 NJ 570 2700J
-preplace netloc blk_mem_gen_1_doutb 1 11 2 3040 790 NJ
+preplace netloc xlslice_1_Dout 1 8 3 NJ 310 NJ 310 2920J
+preplace netloc xlslice_3_Dout 1 8 3 NJ 570 NJ 570 2900J
+preplace netloc blk_mem_gen_1_doutb 1 11 2 3230 770 NJ
 preplace netloc btnCpuReset_1 1 0 2 NJ 960 NJ
-preplace netloc xlslice_7_Dout 1 12 1 3330J
-preplace netloc xlslice_13_Dout 1 12 1 3300J
-preplace netloc btnC_1 1 0 13 20J 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 2730 940 3040 1060 NJ
+preplace netloc xlslice_5_Dout 1 12 1 3520
+preplace netloc btnC_1 1 0 13 -110J 440 NJ 440 NJ 440 NJ 440 NJ 440 NJ 440 NJ 440 NJ 440 NJ 440 2630J 790 2930 720 3200 960 3480J
+preplace netloc xlslice_4_Dout1 1 12 1 3470
 preplace netloc util_vector_logic_0_Res 1 9 1 NJ
-preplace netloc Unroll_ROM_last_0_completed 1 10 1 2680
-preplace netloc microblaze_0_ilmb_1 1 4 1 1280
+preplace netloc Unroll_ROM_last_0_completed 1 10 1 2870
+preplace netloc microblaze_0_ilmb_1 1 4 1 1160
 preplace netloc VGA_for_block_0_VSync 1 13 1 NJ
-preplace netloc xlslice_10_Dout 1 12 1 NJ
-preplace netloc microblaze_0_axi_dp 1 4 1 1300
+preplace netloc microblaze_0_axi_dp 1 4 1 1170
+preplace netloc axi_gpio_1_gpio_io_o 1 6 5 N 1090 NJ 1090 NJ 1090 NJ 1090 2930J
 preplace netloc VGA_for_block_0_VGAGreen 1 13 1 NJ
 preplace netloc VGA_for_block_0_VGARed 1 13 1 NJ
+preplace netloc xlconcat_0_dout 1 6 8 1770J 950 NJ 950 NJ 950 NJ 950 NJ 950 NJ 950 NJ 950 3800
+preplace netloc xlconstant_0_dout 1 12 1 3520
 preplace netloc VGA_for_block_0_HSync 1 13 1 NJ
-preplace netloc xlconcat_0_dout 1 6 8 1860J 960 NJ 960 NJ 960 NJ 960 NJ 960 NJ 960 NJ 960 3620
-preplace netloc Hamming_weight_0_addr_out 1 12 1 3340
-preplace netloc xlconstant_0_dout 1 11 1 3000
-preplace netloc axi_gpio_0_gpio_io_o 1 6 1 NJ
+preplace netloc Hamming_weight_0_addr_out 1 12 1 3470
+preplace netloc axi_gpio_0_gpio_io_o 1 6 1 1770J
 preplace netloc clk_1 1 0 1 NJ
-preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 2 3 510 770 NJ 770 NJ
-preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 540 950 NJ 950 1290J
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 N
-preplace netloc clk_wiz_1_clk_out1 1 1 12 180 260 530 260 840 260 1320 260 1600 260 NJ 260 NJ 260 NJ 260 2460 260 2720 260 3030J 950 3310
-preplace netloc xlslice_2_Dout 1 8 3 NJ 390 NJ 390 NJ
-preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 520 890 NJ 890 1290 670 1590J
-preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 NJ 940 820
-preplace netloc xlslice_3_Dout1 1 12 1 3280J
-preplace netloc xlslice_11_Dout 1 12 1 3280J
-preplace netloc microblaze_0_dlmb_1 1 4 1 1310
-preplace netloc xlslice_2_Dout1 1 12 1 3310J
-preplace netloc axi_gpio_0_gpio2_io_o 1 6 5 NJ 890 NJ 890 NJ 890 NJ 890 NJ
+preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 2 3 390 730 NJ 730 NJ
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 400J 1150 NJ 1150 NJ
+preplace netloc microblaze_0_M_AXI_IC 1 4 1 1200
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 1510
+preplace netloc clk_wiz_1_clk_out1 1 1 12 60 1200 420 1200 720 1200 1220 1200 1500 1200 NJ 1200 NJ 1200 NJ 1200 2640 1200 2920 1200 NJ 1200 3490
+preplace netloc xlslice_2_Dout 1 8 3 NJ 390 NJ 390 2890J
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 4 410 770 NJ 770 1190 1210 1510J
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 NJ 940 710
+preplace netloc xlslice_3_Dout1 1 12 1 3470J
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 5 1 1490
+preplace netloc microblaze_0_dlmb_1 1 4 1 1180
+preplace netloc xlslice_2_Dout1 1 12 1 3520J
 preplace netloc VGA_for_block_0_VGABlue 1 13 1 NJ
-preplace netloc ClockDivider_0_divided_clock 1 11 1 3000
-preplace netloc xlslice_8_Dout 1 12 1 3320J
-preplace netloc Unroll_ROM_last_0_addr 1 10 1 N
-preplace netloc blk_mem_gen_0_doutb 1 9 2 2460 540 2710J
-preplace netloc microblaze_0_debug 1 3 1 830
-preplace netloc Convert_10_8_to_8_10_FSM_0_out_word 1 11 2 3010 690 NJ
+preplace netloc ClockDivider_0_divided_clock 1 11 1 3210
+preplace netloc Unroll_ROM_last_0_addr 1 10 1 2910
+preplace netloc blk_mem_gen_0_doutb 1 9 3 2650 400 2890J 490 3230
+preplace netloc microblaze_0_debug 1 3 1 700
+preplace netloc Convert_10_8_to_8_10_FSM_0_out_word 1 11 2 NJ 620 3500J
 preplace netloc EightDispControl_0_select_display 1 13 1 NJ
-preplace netloc mdm_1_debug_sys_rst 1 1 3 190 880 NJ 880 810
-preplace netloc Hamming_weight_0_hamming_w 1 12 1 3330
-preplace netloc Hamming_weight_0_final_word 1 12 1 3290
-preplace netloc xlslice_6_Dout 1 12 1 3340J
-preplace netloc xlslice_0_Dout 1 7 1 2040
-levelinfo -pg 1 0 100 350 680 1060 1450 1730 1950 2140 2350 2570 2860 3160 3480 3640 -top 0 -bot 1160
+preplace netloc mdm_1_debug_sys_rst 1 1 3 70 880 NJ 880 690
+preplace netloc Hamming_weight_0_hamming_w 1 12 1 3510
+preplace netloc Hamming_weight_0_final_word 1 12 1 3480
+preplace netloc xlslice_0_Dout 1 7 1 2210
+levelinfo -pg 1 -130 -20 230 560 940 1350 1640 2120 2310 2520 2760 3060 3350 3660 3820 -top -250 -bot 1490
 ",
 }
 {
-   da_axi4_cnt: "1",
+   da_axi4_cnt: "5",
    da_mb_cnt: "1",
 }
